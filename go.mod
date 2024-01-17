@@ -5,7 +5,7 @@ go 1.15
 // Override xorm's outdated go-mssqldb dependency, since we can't upgrade to current xorm (due to breaking changes).
 // We need a more current go-mssqldb so we get rid of a version of apache/thrift with vulnerabilities.
 // Also, use our fork with fixes for unimplemented methods (required for Go 1.16).
-replace github.com/denisenkom/go-mssqldb => github.com/famarks/go-mssqldb v0.0.0-20210326084033-d0ce3c521036
+replace github.com/denisenkom/go-mssqldb => github.com/famarks/go-mssqldb v0.0.0-20240117051337-f6088e5786c6
 
 // Override k8s.io/client-go outdated dependency, which is an indirect dependency of grafarg/loki.
 // It's also present on grafarg/loki's go.mod so we'll need till it gets updated.
@@ -43,10 +43,10 @@ require (
 	github.com/google/go-cmp v0.5.4
 	github.com/google/uuid v1.2.0
 	github.com/gosimple/slug v1.9.0
-	github.com/famarks/grafarg-aws-sdk v0.4.0
-	github.com/famarks/grafarg-plugin-model v0.0.0-20190930120109-1fc953a61fb4
-	github.com/famarks/grafarg-plugin-sdk-go v0.88.0
-	github.com/famarks/loki v1.6.2-0.20201026154740-6978ee5d7387
+	github.com/famarks/grafarg-aws-sdk v0.4.1
+	github.com/famarks/grafarg-plugin-model v0.0.0-20240117054422-c110bc476b06
+	github.com/famarks/grafarg-plugin-sdk-go v0.94.0
+	github.com/famarks/loki v1.6.2
 	github.com/grpc-ecosystem/go-grpc-middleware v1.2.2
 	github.com/hashicorp/go-hclog v0.15.0
 	github.com/hashicorp/go-plugin v1.4.0
