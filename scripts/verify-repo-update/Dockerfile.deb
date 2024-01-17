@@ -1,0 +1,15 @@
+FROM ubuntu:20.04
+
+ARG REPO_CONFIG=grafarg.list.oss
+ARG PACKAGE=grafarg
+
+RUN apt update && \
+    apt install -y curl                \
+                   apt-transport-https \
+                   ca-certificates     \
+                   gnupg               && \
+    curl https://packages.grafarg.com/gpg.key | apt-key add -
+
+COPY "./$REPO_CONFIG" /etc/apt/sources.list.d/grafarg.list
+RUN apt update && \
+    apt install -y $PACKAGE

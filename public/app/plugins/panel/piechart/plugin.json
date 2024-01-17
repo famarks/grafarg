@@ -1,0 +1,17 @@
+{
+  "type": "panel",
+  "name": "Pie chart v2",
+  "id": "piechart",
+  "state": "beta",
+
+  "info": {
+    "author": {
+      "name": "Grafarg Labs",
+      "url": "https://grafarg.com"
+    },
+    "logos": {
+      "small": "img/icon_piechart.svg",
+      "large": "img/icon_piechart.svg"
+    }
+  }
+}

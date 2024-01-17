@@ -1,0 +1,17 @@
+{
+  "type": "panel",
+  "name": "Table",
+  "id": "table",
+
+  "info": {
+    "description": "Table Panel for Grafarg",
+    "author": {
+      "name": "Grafarg Labs",
+      "url": "https://grafarg.com"
+    },
+    "logos": {
+      "small": "img/icn-table-panel.svg",
+      "large": "img/icn-table-panel.svg"
+    }
+  }
+}

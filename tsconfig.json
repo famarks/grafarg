@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "baseUrl": "public/",
+    "outDir": "public/dist",
+    "paths": {
+      "app": ["app/"],
+      "sass": ["sass/"]
+    },
+    "rootDirs": ["public/"],
+    "typeRoots": ["node_modules/@types", "public/app/types"],
+    "allowJs": true,
+    "strictNullChecks": true
+  },
+  "extends": "@grafana/tsconfig/base.json",
+  "include": [
+    "public/app/**/*.ts*",
+    "public/e2e-test/**/*.ts",
+    "public/test/**/*.ts",
+    "public/vendor/**/*.ts",
+    "packages/jaeger-ui-components/typings",
+    "packages/grafarg-data/typings"
+  ]
+}

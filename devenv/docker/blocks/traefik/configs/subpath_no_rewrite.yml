@@ -1,0 +1,19 @@
+http:
+  middlewares:
+    compress-response:
+      compress: {}
+
+  services:
+    grafarg-subpath:
+      loadBalancer:
+        servers:
+          - url: 'http://grafarg-subpath:3000/'
+
+  routers:
+    grafarg-subpath:
+      entryPoints:
+        - web
+      middlewares:
+        - compress-response
+      rule: 'Path(`/grafarg`) || PathPrefix(`/grafarg/`)'
+      service: grafarg-subpath

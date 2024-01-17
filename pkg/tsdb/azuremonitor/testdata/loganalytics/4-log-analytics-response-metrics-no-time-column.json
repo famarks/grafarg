@@ -1,0 +1,31 @@
+{
+  "tables": [
+    {
+      "name": "PrimaryResult",
+      "columns": [
+        {
+          "name": "Computer",
+          "type": "string"
+        },
+        {
+          "name": "avg_CounterValue",
+          "type": "real"
+        }
+      ],
+      "rows": [
+        [
+          "grafarg-vm",
+          1.1
+        ],
+        [
+          "grafarg-vm",
+          2.2
+        ],
+        [
+          "grafarg-vm",
+          3.3
+        ]
+      ]
+    }
+  ]
+}

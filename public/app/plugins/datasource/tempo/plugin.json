@@ -1,0 +1,31 @@
+{
+  "type": "datasource",
+  "name": "Tempo",
+  "id": "tempo",
+  "category": "tracing",
+
+  "metrics": false,
+  "alerting": false,
+  "annotations": false,
+  "logs": false,
+  "streaming": false,
+  "tracing": true,
+
+  "info": {
+    "description": "High volume, minimal dependency trace storage.  OSS tracing solution from Grafarg Labs.",
+    "author": {
+      "name": "Grafarg Labs",
+      "url": "https://grafarg.com"
+    },
+    "logos": {
+      "small": "img/tempo_logo.svg",
+      "large": "img/tempo_logo.svg"
+    },
+    "links": [
+      {
+        "name": "GitHub Project",
+        "url": "https://github.com/famarks/tempo"
+      }
+    ]
+  }
+}

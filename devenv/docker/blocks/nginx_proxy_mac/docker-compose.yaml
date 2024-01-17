@@ -1,0 +1,11 @@
+# This will proxy all requests for http://localhost:10080/grafarg/ to
+# http://localhost:3000 (Grafarg running locally)
+#
+# Please note that you'll need to change the root_url in the Grafarg configuration:
+# root_url = %(protocol)s://%(domain)s:10080/grafarg/
+
+  nginxproxy:
+    build: docker/blocks/nginx_proxy_mac
+    ports:
+      - "10080:10080"
+

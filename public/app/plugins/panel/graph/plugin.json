@@ -1,0 +1,17 @@
+{
+  "type": "panel",
+  "name": "Graph",
+  "id": "graph",
+
+  "info": {
+    "description": "Graph Panel for Grafarg",
+    "author": {
+      "name": "Grafarg Labs",
+      "url": "https://grafarg.com"
+    },
+    "logos": {
+      "small": "img/icn-graph-panel.svg",
+      "large": "img/icn-graph-panel.svg"
+    }
+  }
+}

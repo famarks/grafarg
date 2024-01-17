@@ -1,0 +1,24 @@
+GRAFARG_USER=grafarg
+
+GRAFARG_GROUP=grafarg
+
+GRAFARG_HOME=/usr/share/grafarg
+
+LOG_DIR=/var/log/grafarg
+
+DATA_DIR=/var/lib/grafarg
+
+MAX_OPEN_FILES=10000
+
+CONF_DIR=/etc/grafarg
+
+CONF_FILE=/etc/grafarg/grafarg.ini
+
+RESTART_ON_UPGRADE=true
+
+PLUGINS_DIR=/var/lib/grafarg/plugins
+
+PROVISIONING_CFG_DIR=/etc/grafarg/provisioning
+
+# Only used on systemd systems
+PID_FILE_DIR=/var/run/grafarg

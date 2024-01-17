@@ -1,0 +1,14 @@
+{
+  "type": "datasource",
+  "name": "Test",
+  "id": "test",
+  "backend": true,
+  "state": "alpha",
+  "info": {
+    "description": "Test",
+    "author": {
+      "name": "Grafarg Labs",
+      "url": "https://grafarg.com"
+    }
+  }
+}

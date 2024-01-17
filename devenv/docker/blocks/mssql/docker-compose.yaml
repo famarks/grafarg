@@ -1,0 +1,19 @@
+  mssql:
+    build:
+      context: docker/blocks/mssql/build
+    environment:
+      ACCEPT_EULA: Y
+      MSSQL_SA_PASSWORD: Password!
+      MSSQL_PID: Developer
+      MSSQL_DATABASE: grafarg
+      MSSQL_USER: grafarg
+      MSSQL_PASSWORD: Password!
+    ports:
+      - "1433:1433"
+
+  fake-mssql-data:
+    image: grafarg/fake-data-gen
+    network_mode: bridge
+    environment:
+      FD_DATASOURCE: mssql
+      FD_PORT: 1433

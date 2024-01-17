@@ -1,0 +1,19 @@
+{
+  "type": "panel",
+  "name": "Plugin list",
+  "id": "pluginlist",
+
+  "skipDataQuery": true,
+
+  "info": {
+    "description": "Plugin List for Grafarg",
+    "author": {
+      "name": "Grafarg Labs",
+      "url": "https://grafarg.com"
+    },
+    "logos": {
+      "small": "img/icn-dashlist-panel.svg",
+      "large": "img/icn-dashlist-panel.svg"
+    }
+  }
+}

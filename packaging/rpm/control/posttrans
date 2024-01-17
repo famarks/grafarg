@@ -1,0 +1,32 @@
+#!/bin/sh
+
+set -e
+
+echo "POSTTRANS: Running script"
+
+[ -f /etc/sysconfig/grafarg-server ] && . /etc/sysconfig/grafarg-server
+
+# copy config files if missing
+if [ ! -f /etc/grafarg/grafarg.ini ]; then
+  echo "POSTTRANS: Config file not found"
+
+  if [ -f /etc/grafarg/grafarg.ini.rpmsave ]; then
+    echo "POSTTRANS: /etc/grafarg/grafarg.ini.rpmsave config file found."
+    mv /etc/grafarg/grafarg.ini.rpmsave /etc/grafarg/grafarg.ini
+    echo "POSTTRANS: /etc/grafarg/grafarg.ini restored"
+
+    if [ -f /etc/grafarg/ldap.toml.rpmsave ]; then
+      echo "POSTTRANS: /etc/grafarg/ldap.toml.rpmsave found"
+      mv /etc/grafarg/ldap.toml.rpmsave /etc/grafarg/ldap.toml
+      echo "POSTTRANS: /etc/grafarg/ldap.toml restored"
+    fi
+
+    echo "POSTTRANS: Restoring config file permissions"
+    chown -Rh root:$GRAFARG_GROUP /etc/grafarg/*
+    chmod 755 /etc/grafarg
+    find /etc/grafarg -type f -exec chmod 640 {} ';'
+    find /etc/grafarg -type d -exec chmod 755 {} ';'
+  fi
+fi
+
+

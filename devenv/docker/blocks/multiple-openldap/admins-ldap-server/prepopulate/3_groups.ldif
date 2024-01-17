@@ -1,0 +1,6 @@
+dn: cn=admins,ou=groups,dc=grafarg,dc=org
+cn: admins
+objectClass: groupOfNames
+objectClass: top
+member: cn=ldap-admin,ou=users,dc=grafarg,dc=org
+member: cn=ldap-torkel,ou=users,dc=grafarg,dc=org

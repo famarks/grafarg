@@ -1,0 +1,92 @@
+#!/bin/sh
+
+set -e
+
+[ -f /etc/default/grafarg-server ] && . /etc/default/grafarg-server
+
+IS_UPGRADE=false
+
+
+case "$1" in
+	configure)
+	[ -z "$GRAFARG_USER" ] && GRAFARG_USER="grafarg"
+	[ -z "$GRAFARG_GROUP" ] && GRAFARG_GROUP="grafarg"
+	if ! getent group "$GRAFARG_GROUP" > /dev/null 2>&1 ; then
+	    addgroup --system "$GRAFARG_GROUP" --quiet
+	fi
+	if ! id $GRAFARG_USER > /dev/null 2>&1 ; then
+	    adduser --system --home /usr/share/grafarg --no-create-home \
+		--ingroup "$GRAFARG_GROUP" --disabled-password --shell /bin/false \
+		"$GRAFARG_USER"
+	fi
+
+	# Set user permissions on /var/log/grafarg, /var/lib/grafarg
+	mkdir -p /var/log/grafarg /var/lib/grafarg
+	chown -R $GRAFARG_USER:$GRAFARG_GROUP /var/log/grafarg /var/lib/grafarg
+	chmod 755 /var/log/grafarg /var/lib/grafarg
+
+  # copy user config files
+  if [ ! -f $CONF_FILE ]; then
+    cp /usr/share/grafarg/conf/sample.ini $CONF_FILE
+    cp /usr/share/grafarg/conf/ldap.toml /etc/grafarg/ldap.toml
+  fi
+
+  if [ ! -d $PROVISIONING_CFG_DIR ]; then
+    mkdir -p $PROVISIONING_CFG_DIR/dashboards $PROVISIONING_CFG_DIR/datasources
+    cp /usr/share/grafarg/conf/provisioning/dashboards/sample.yaml $PROVISIONING_CFG_DIR/dashboards/sample.yaml
+    cp /usr/share/grafarg/conf/provisioning/datasources/sample.yaml $PROVISIONING_CFG_DIR/datasources/sample.yaml
+  fi
+
+  if [ ! -d $PROVISIONING_CFG_DIR/notifiers ]; then
+    mkdir -p $PROVISIONING_CFG_DIR/notifiers
+    cp /usr/share/grafarg/conf/provisioning/notifiers/sample.yaml $PROVISIONING_CFG_DIR/notifiers/sample.yaml
+  fi
+
+  if [ ! -d $PROVISIONING_CFG_DIR/plugins ]; then
+    mkdir -p $PROVISIONING_CFG_DIR/plugins
+    cp /usr/share/grafarg/conf/provisioning/plugins/sample.yaml $PROVISIONING_CFG_DIR/plugins/sample.yaml
+  fi
+
+	# configuration files should not be modifiable by grafarg user, as this can be a security issue
+	chown -Rh root:$GRAFARG_GROUP /etc/grafarg/*
+	chmod 755 /etc/grafarg
+	find /etc/grafarg -type f -exec chmod 640 {} ';'
+	find /etc/grafarg -type d -exec chmod 755 {} ';'
+
+  # If $1=configure and $2 is set, this is an upgrade
+  if [ "$2" != "" ]; then
+    IS_UPGRADE=true
+  fi
+
+  if [ "x$IS_UPGRADE" != "xtrue" ]; then
+    if command -v systemctl >/dev/null; then
+      echo "### NOT starting on installation, please execute the following statements to configure grafarg to start automatically using systemd"
+      echo " sudo /bin/systemctl daemon-reload"
+      echo " sudo /bin/systemctl enable grafarg-server"
+      echo "### You can start grafarg-server by executing"
+      echo " sudo /bin/systemctl start grafarg-server"
+    elif command -v update-rc.d >/dev/null; then
+      echo "### NOT starting grafarg-server by default on bootup, please execute"
+      echo " sudo update-rc.d grafarg-server defaults 95 10"
+      echo "### In order to start grafarg-server, execute"
+      echo " sudo service grafarg-server start"
+    fi
+  elif [ "$RESTART_ON_UPGRADE" = "true" ]; then
+
+    echo -n "Restarting grafarg-server service..."
+
+    if command -v systemctl >/dev/null; then
+      systemctl daemon-reload
+      systemctl restart grafarg-server || true
+    elif [ -x /etc/init.d/grafarg-server ]; then
+      if command -v invoke-rc.d >/dev/null; then
+        invoke-rc.d grafarg-server restart || true
+      else
+        /etc/init.d/grafarg-server restart || true
+      fi
+    fi
+    echo " OK"
+
+	fi
+	;;
+esac

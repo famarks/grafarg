@@ -1,0 +1,3 @@
+CREATE DATABASE grafargdstest;
+REVOKE CONNECT ON DATABASE grafargdstest FROM PUBLIC;
+GRANT CONNECT ON DATABASE grafargdstest TO grafargtest;

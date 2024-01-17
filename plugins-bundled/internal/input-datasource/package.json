@@ -1,0 +1,26 @@
+{
+  "name": "@grafarg-plugins/input-datasource",
+  "version": "7.5.17",
+  "description": "Input Datasource",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/famarks/grafarg.git"
+  },
+  "scripts": {
+    "build": "grafarg-toolkit plugin:build",
+    "test": "grafarg-toolkit plugin:test",
+    "dev": "grafarg-toolkit plugin:dev",
+    "watch": "grafarg-toolkit plugin:dev --watch"
+  },
+  "author": "Grafarg Labs",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@grafana/data": "7.5.17",
+    "@grafana/toolkit": "7.5.17",
+    "@grafana/ui": "7.5.17"
+  },
+  "volta": {
+    "node": "12.16.2"
+  }
+}

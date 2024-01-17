@@ -1,0 +1,9 @@
+{
+  "type": "datasource",
+  "name": "-- Grafarg --",
+  "id": "grafarg",
+
+  "builtIn": true,
+  "annotations": true,
+  "metrics": true
+}

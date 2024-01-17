@@ -1,0 +1,9 @@
+[grafarg]
+name=grafarg
+baseurl=https://packages.grafarg.com/oss/rpm
+repo_gpgcheck=1
+enabled=1
+gpgcheck=1
+gpgkey=https://packages.grafarg.com/gpg.key
+sslverify=1
+sslcacert=/etc/pki/tls/certs/ca-bundle.crt

@@ -1,0 +1,31 @@
+{
+  "tables": [
+    {
+      "name": "PrimaryResult",
+      "columns": [
+        {
+          "name": "TimeGenerated",
+          "type": "datetime"
+        },
+        {
+          "name": "Computer",
+          "type": "string"
+        }
+      ],
+      "rows": [
+        [
+          "2020-04-19T19:16:06.5Z",
+          "grafarg-vm"
+        ],
+        [
+          "2020-04-19T19:16:16.5Z",
+          "grafarg-vm"
+        ],
+        [
+          "2020-04-19T19:16:26.5Z",
+          "grafarg-vm"
+        ]
+      ]
+    }
+  ]
+}

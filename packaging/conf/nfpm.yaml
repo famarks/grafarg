@@ -1,0 +1,36 @@
+name: "grafarg"
+arch: "${ARCH}"
+platform: "linux"
+version: "${VERSION}"
+section: "default"
+priority: "extra"
+replaces:
+- grafarg
+provides:
+- grafarg-server
+- grafarg-cli
+depends:
+- adduser
+- libfontconfig1
+maintainer: "<contact@grafarg.com>"
+description: |
+  Grafarg
+vendor: "Grafarg"
+homepage: "https://grafarg.com"
+license: "Apache 2"
+bindir: "/usr/sbin"
+files:
+  "./bin/grafarg-server": "/usr/sbin/grafarg-server"
+  "./bin/grafarg-cli": "/usr/sbin/grafarg-cli"
+config_files:
+  ./packaging/deb/init.d/grafarg-server: "/etc/init.d/grafarg-server"
+  ./packaging/deb/default/grafarg-server: "/etc/default/grafarg-server"
+  ./packaging/deb/systemd/grafarg-server.service: "/usr/lib/systemd/system/grafarg-server.service"
+overrides:
+  rpm:
+    scripts:
+      preinstall: ./scripts/preinstall.sh
+      postremove: ./scripts/postremove.sh
+  deb:
+    scripts:
+      postinstall: ./packaging/deb/control/postinst

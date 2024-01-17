@@ -1,0 +1,108 @@
+# ldap-admin
+dn: cn=ldap-admin,ou=users,dc=grafarg,dc=org
+mail: ldap-admin@grafarg.com
+userPassword: grafarg
+objectClass: person
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+sn: ldap-admin
+cn: ldap-admin
+
+dn: cn=ldap-editor,ou=users,dc=grafarg,dc=org
+mail: ldap-editor@grafarg.com
+userPassword: grafarg
+objectClass: person
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+sn: ldap-editor
+cn: ldap-editor
+
+dn: cn=ldap-viewer,ou=users,dc=grafarg,dc=org
+mail: ldap-viewer@grafarg.com
+userPassword: grafarg
+objectClass: person
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+sn: ldap-viewer
+cn: ldap-viewer
+
+dn: cn=ldap-carl,ou=users,dc=grafarg,dc=org
+mail: ldap-carl@grafarg.com
+userPassword: grafarg
+objectClass: person
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+sn: ldap-carl
+cn: ldap-carl
+
+dn: cn=ldap-daniel,ou=users,dc=grafarg,dc=org
+mail: ldap-daniel@grafarg.com
+userPassword: grafarg
+objectClass: person
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+sn: ldap-daniel
+cn: ldap-daniel
+
+dn: cn=ldap-leo,ou=users,dc=grafarg,dc=org
+mail: ldap-leo@grafarg.com
+userPassword: grafarg
+objectClass: person
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+sn: ldap-leo
+cn: ldap-leo
+
+dn: cn=ldap-tobias,ou=users,dc=grafarg,dc=org
+mail: ldap-tobias@grafarg.com
+userPassword: grafarg
+objectClass: person
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+sn: ldap-tobias
+cn: ldap-tobias
+
+dn: cn=ldap-torkel,ou=users,dc=grafarg,dc=org
+mail: ldap-torkel@grafarg.com
+userPassword: grafarg
+objectClass: person
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+sn: ldap-torkel
+cn: ldap-torkel
+
+# admin for posix group (without support for memberOf attribute)
+dn: uid=ldap-posix-admin,ou=users,dc=grafarg,dc=org
+mail: ldap-posix-admin@grafarg.com
+userPassword: grafarg
+objectclass: top
+objectclass: posixAccount
+objectclass: inetOrgPerson
+homedirectory: /home/ldap-posix-admin
+sn: ldap-posix-admin
+cn: ldap-posix-admin
+uid: ldap-posix-admin
+uidnumber: 1
+gidnumber: 1
+
+# user for posix group (without support for memberOf attribute)
+dn: uid=ldap-posix,ou=users,dc=grafarg,dc=org
+mail: ldap-posix@grafarg.com
+userPassword: grafarg
+objectclass: top
+objectclass: posixAccount
+objectclass: inetOrgPerson
+homedirectory: /home/ldap-posix
+sn: ldap-posix
+cn: ldap-posix
+uid: ldap-posix
+uidnumber: 2
+gidnumber: 2

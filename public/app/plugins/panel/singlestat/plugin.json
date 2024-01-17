@@ -1,0 +1,18 @@
+{
+  "type": "panel",
+  "name": "Singlestat",
+  "id": "singlestat",
+  "state": "deprecated",
+
+  "info": {
+    "description": "Singlestat Panel for Grafarg",
+    "author": {
+      "name": "Grafarg Labs",
+      "url": "https://grafarg.com"
+    },
+    "logos": {
+      "small": "img/icn-singlestat-panel.svg",
+      "large": "img/icn-singlestat-panel.svg"
+    }
+  }
+}

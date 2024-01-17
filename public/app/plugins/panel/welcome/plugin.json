@@ -1,0 +1,19 @@
+{
+  "type": "panel",
+  "name": "Welcome",
+  "id": "welcome",
+
+  "skipDataQuery": true,
+  "hideFromList": true,
+
+  "info": {
+    "author": {
+      "name": "Grafarg Labs",
+      "url": "https://grafarg.com"
+    },
+    "logos": {
+      "small": "img/icn-dashlist-panel.svg",
+      "large": "img/icn-dashlist-panel.svg"
+    }
+  }
+}
