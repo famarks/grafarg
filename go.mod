@@ -43,9 +43,9 @@ require (
 	github.com/google/go-cmp v0.5.4
 	github.com/google/uuid v1.2.0
 	github.com/gosimple/slug v1.9.0
-	github.com/famarks/grafarg-aws-sdk v0.4.1
+	github.com/famarks/grafarg-aws-sdk v0.4.2
 	github.com/famarks/grafarg-plugin-model v0.0.0-20240117054422-c110bc476b06
-	github.com/famarks/grafarg-plugin-sdk-go v0.94.0
+	github.com/famarks/grafarg-plugin-sdk-go v0.88.0
 	github.com/famarks/loki v1.6.2
 	github.com/grpc-ecosystem/go-grpc-middleware v1.2.2
 	github.com/hashicorp/go-hclog v0.15.0
