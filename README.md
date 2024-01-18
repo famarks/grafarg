@@ -27,7 +27,7 @@ Unsure if Grafarg is for you? Watch Grafarg in action on [play.grafarg.org](http
 ```
 sudo apt update
 sudo apt install -y gcc g++ tar wget make xz-utils patch curl python3 unzip
-#check the latest released version on https://github.com/famarks/grafarg/tags and replace v7.x.x below
+#find the latest released version on https://github.com/famarks/grafarg/tags and replace v7.x.x below
 wget https://github.com/famarks/grafarg/archive/refs/tags/v7.x.x.zip 
 unzip v7.x.x.zip
 cd grafarg-7.x.x/
@@ -48,7 +48,7 @@ npx update-browserslist-db@latest
 mkdir plugins-bundled/external
 
 #building frontend, this is independent of backend
-#following command can take like 10 mins on t2 medium, if envelop error then re-run the above export...
+#following command can take 10 mins on t2 medium, if envelop error then re-run the above export...
 make build-js
 
 #building backend, this is independent of frontend
@@ -58,9 +58,10 @@ make build-go
 sudo cp bin/linux-amd64/grafarg-cli /usr/bin/
 sudo cp bin/linux-amd64/grafarg-server /usr/bin/
 
+#finally launch the grafarg server
 bin/linux-amd64/grafarg-server --homepath=/home/ubuntu/grafarg-7.x.x/
 
-#open page in browser with server port :3000
+#open web page in browser with server port :3000
 ```
 
 ## Documentation
