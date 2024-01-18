@@ -27,7 +27,7 @@ Unsure if Grafarg is for you? Watch Grafarg in action on [play.grafarg.org](http
 ```
 sudo apt update
 sudo apt install -y gcc g++ tar wget make xz-utils patch curl python3 unzip
-#find the latest released version on https://github.com/famarks/grafarg/tags and replace v7.x.x below
+#find the latest release from https://github.com/famarks/grafarg/tags and replace v7.x.x below
 wget https://github.com/famarks/grafarg/archive/refs/tags/v7.x.x.zip 
 unzip v7.x.x.zip
 cd grafarg-7.x.x/
