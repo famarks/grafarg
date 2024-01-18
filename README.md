@@ -22,6 +22,45 @@ Grafarg allows you to query, visualize, alert on and understand your metrics no 
 
 Unsure if Grafarg is for you? Watch Grafarg in action on [play.grafarg.org](https://play.grafarg.org/)!
 
+### Setup with Source Code on Ubuntu
+
+```
+sudo apt update
+sudo apt install -y gcc g++ tar wget make xz-utils patch curl python3 unzip
+#check the latest released version on https://github.com/famarks/grafarg/tags and replace v7.x.x in following 3 commands
+wget https://github.com/famarks/grafarg/archive/refs/tags/v7.x.x.zip 
+unzip v7.x.x.zip
+cd grafarg-7.x.x/
+sudo snap install go --channel=1.15/stable --classic
+sudo apt install -y nodejs
+sudo apt install -y npm
+sudo npm install -g n
+sudo n latest
+sudo npm install -g yarn
+
+#set node memory to 1536 for 2GB ram t2.small (to use 1.5GB) or 3072 for 4GB t2.medium
+export NODE_OPTIONS="--max-old-space-size=3072 --openssl-legacy-provider"
+	
+yarn install
+
+npx update-browserslist-db@latest
+
+mkdir plugins-bundled/external
+
+#following command can take like 10 mins on t2 medium, if envelop error then re run the above export NODE_OPTIONS... command
+make build-js
+
+make deps-go
+make build-go
+
+sudo cp bin/linux-amd64/grafarg-cli /usr/bin/
+sudo cp bin/linux-amd64/grafarg-server /usr/bin/
+
+bin/linux-amd64/grafarg-server --homepath=/home/ubuntu/grafarg-7.x.x/
+
+#open page in browser with server port :3000
+```
+
 ## Documentation
 
 The Grafarg documentation is available at [grafarg.com/docs](https://grafarg.com/docs/).
