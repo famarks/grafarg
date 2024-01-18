@@ -5,7 +5,7 @@ go 1.15
 // Override xorm's outdated go-mssqldb dependency, since we can't upgrade to current xorm (due to breaking changes).
 // We need a more current go-mssqldb so we get rid of a version of apache/thrift with vulnerabilities.
 // Also, use our fork with fixes for unimplemented methods (required for Go 1.16).
-replace github.com/denisenkom/go-mssqldb => github.com/famarks/go-mssqldb v0.0.0-20240117170020-e9f30d08c253
+replace github.com/denisenkom/go-mssqldb => github.com/famarks/go-mssqldb v0.0.0-20240118064113-4d8a88026753
 
 // Override k8s.io/client-go outdated dependency, which is an indirect dependency of grafarg/loki.
 // It's also present on grafarg/loki's go.mod so we'll need till it gets updated.
