@@ -17,7 +17,7 @@ require (
 	github.com/VividCortex/mysqlerr v0.0.0-20170204212430-6c6b55f8796f
 	github.com/aws/aws-sdk-go v1.37.20
 	github.com/beevik/etree v1.1.0
-	github.com/benbjohnson/clock v0.0.0-20161215174838-7dc76406b6d3
+	github.com/benbjohnson/clock v1.3.5
 	github.com/bradfitz/gomemcache v0.0.0-20190913173617-a41fca850d0b
 	github.com/centrifugal/centrifuge v0.13.0
 	github.com/cortexproject/cortex v1.4.1-0.20201022071705-85942c5703cf
@@ -29,6 +29,10 @@ require (
 	github.com/facebookgo/stack v0.0.0-20160209184415-751773369052 // indirect
 	github.com/facebookgo/structtag v0.0.0-20150214074306-217e25fb9691 // indirect
 	github.com/facebookgo/subset v0.0.0-20150612182917-8dac2c3c4870 // indirect
+	github.com/famarks/grafarg-aws-sdk v0.4.2
+	github.com/famarks/grafarg-plugin-model v0.0.0-20240117054422-c110bc476b06
+	github.com/famarks/grafarg-plugin-sdk-go v0.88.0
+	github.com/famarks/loki v1.6.2
 	github.com/fatih/color v1.10.0
 	github.com/gchaincl/sqlhooks v1.3.0
 	github.com/getsentry/sentry-go v0.10.0
@@ -43,10 +47,6 @@ require (
 	github.com/google/go-cmp v0.5.4
 	github.com/google/uuid v1.2.0
 	github.com/gosimple/slug v1.9.0
-	github.com/famarks/grafarg-aws-sdk v0.4.2
-	github.com/famarks/grafarg-plugin-model v0.0.0-20240117054422-c110bc476b06
-	github.com/famarks/grafarg-plugin-sdk-go v0.88.0
-	github.com/famarks/loki v1.6.2
 	github.com/grpc-ecosystem/go-grpc-middleware v1.2.2
 	github.com/hashicorp/go-hclog v0.15.0
 	github.com/hashicorp/go-plugin v1.4.0
