@@ -2,7 +2,7 @@
   "author": "Grafarg Labs",
   "license": "Apache-2.0",
   "name": "@grafarg/e2e-selectors",
-  "version": "7.5.17",
+  "version": "7.4.5",
   "description": "Grafarg End-to-End Test Selectors Library",
   "keywords": [
     "cli",
