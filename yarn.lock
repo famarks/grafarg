@@ -3430,10 +3430,10 @@
     source-map "~0.6.1"
     typescript "~3.9.7"
 
-"@grafana/aws-sdk@0.0.3":
+"@grafarg/aws-sdk@0.0.3":
   version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@grafana/aws-sdk/-/aws-sdk-0.0.3.tgz#bc632c6c77971a5474acbe45847420503679fc75"
-  integrity sha512-V0PJLk+oU1C33knurXp8BkT5N2ctDu9b21zpK16vkJAs5aOiH/OaOhQ/IP9ipxYhB+b9PFjr8RXagV/8XJ8xwg==
+  resolved "https://registry.yarnpkg.com/@grafarg/aws-sdk/-/aws-sdk-0.0.3.tgz#5155727e03e3bfa07e7b22ec774e1f2bdfa5d1e6"
+  integrity sha512-FG3dXi0QND3zV9PSAm2zp0v0ShPoDad8R4aYemd/m0GJ04VrC2RCVaQvqP+9GMVp0Pwz6pKd81kIFX8yAjr8nA==
 
 "@grafarg/eslint-config@2.3.0":
   version "2.3.0"

@@ -1,5 +1,5 @@
 {
-  "extends": ["@grafana/eslint-config"],
+  "extends": ["@grafarg/eslint-config"],
   "root": true,
   "plugins": [
     "no-only-tests"
