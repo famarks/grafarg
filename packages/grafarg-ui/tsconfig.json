@@ -10,6 +10,6 @@
     "typeRoots": ["node_modules/@types"]
   },
   "exclude": ["dist", "node_modules"],
-  "extends": "@grafana/tsconfig",
+  "extends": "@grafarg/tsconfig",
   "include": ["src/**/*.ts*", "../../public/app/types/sanitize-url.d.ts", "../../public/app/types/svg.d.ts"]
 }

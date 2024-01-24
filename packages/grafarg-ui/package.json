@@ -30,7 +30,7 @@
     "@grafana/aws-sdk": "0.0.3",
     "@grafana/data": "7.5.17",
     "@grafarg/e2e-selectors": "7.5.17",
-    "@grafana/tsconfig": "^1.0.0-rc1",
+    "@grafarg/tsconfig": "^1.2.0-rc1",
     "@iconscout/react-unicons": "1.1.4",
     "@popperjs/core": "2.5.4",
     "@sentry/browser": "5.25.0",
