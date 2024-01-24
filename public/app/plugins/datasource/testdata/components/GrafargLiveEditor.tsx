@@ -1,6 +1,6 @@
 import React from 'react';
-import { InlineField, InlineFieldRow, Select } from '@grafana/ui';
-import { SelectableValue } from '@grafana/data';
+import { InlineField, InlineFieldRow, Select } from '@grafarg/ui';
+import { SelectableValue } from '@grafarg/data';
 import { EditorProps } from '../QueryEditor';
 
 const liveTestDataChannels = [

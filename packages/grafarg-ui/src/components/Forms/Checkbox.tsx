@@ -1,5 +1,5 @@
 import React, { HTMLProps, useCallback } from 'react';
-import { GrafargTheme } from '@grafana/data';
+import { GrafargTheme } from '@grafarg/data';
 import { getLabelStyles } from './Label';
 import { useTheme, stylesFactory } from '../../themes';
 import { css, cx } from 'emotion';

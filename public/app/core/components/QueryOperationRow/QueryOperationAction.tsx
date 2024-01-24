@@ -1,7 +1,7 @@
-import { IconButton, IconName, stylesFactory, useTheme } from '@grafana/ui';
+import { IconButton, IconName, stylesFactory, useTheme } from '@grafarg/ui';
 import React from 'react';
 import { css } from 'emotion';
-import { GrafargTheme } from '@grafana/data';
+import { GrafargTheme } from '@grafarg/data';
 import { selectors } from '@grafarg/e2e-selectors';
 
 interface QueryOperationActionProps {

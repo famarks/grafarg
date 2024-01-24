@@ -1,5 +1,5 @@
 import React from 'react';
-import { LogLevel, LogRowModel, MutableDataFrame } from '@grafana/data';
+import { LogLevel, LogRowModel, MutableDataFrame } from '@grafarg/data';
 import { mount } from 'enzyme';
 import { LiveLogsWithTheme } from './LiveLogs';
 

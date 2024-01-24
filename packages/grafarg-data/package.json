@@ -1,7 +1,7 @@
 {
   "author": "Grafarg Labs",
   "license": "Apache-2.0",
-  "name": "@grafana/data",
+  "name": "@grafarg/data",
   "version": "7.5.17",
   "description": "Grafarg Data Library",
   "keywords": [

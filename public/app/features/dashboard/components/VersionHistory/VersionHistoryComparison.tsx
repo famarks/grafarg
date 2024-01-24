@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { AngularComponent, getAngularLoader } from '@grafana/runtime';
+import { AngularComponent, getAngularLoader } from '@grafarg/runtime';
 import { DashboardModel } from '../../state/DashboardModel';
 import { DecoratedRevisionModel } from '../DashboardSettings/VersionsSettings';
 

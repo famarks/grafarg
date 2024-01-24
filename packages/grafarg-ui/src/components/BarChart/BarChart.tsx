@@ -1,6 +1,6 @@
 import React from 'react';
 import { AlignedData } from 'uplot';
-import { compareArrayValues, compareDataFrameStructures, DataFrame, TimeRange } from '@grafana/data';
+import { compareArrayValues, compareDataFrameStructures, DataFrame, TimeRange } from '@grafarg/data';
 import { VizLayout } from '../VizLayout/VizLayout';
 import { Themeable } from '../../types';
 import { UPlotChart } from '../uPlot/Plot';

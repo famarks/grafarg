@@ -1,5 +1,5 @@
-import { DateTimeInput, GrafargTheme } from '@grafana/data';
-import { stylesFactory, useStyles } from '@grafana/ui';
+import { DateTimeInput, GrafargTheme } from '@grafarg/data';
+import { stylesFactory, useStyles } from '@grafarg/ui';
 import { OptionsGroup } from 'app/features/dashboard/components/PanelEditor/OptionsGroup';
 import { PanelModel } from 'app/features/dashboard/state';
 import { css } from 'emotion';

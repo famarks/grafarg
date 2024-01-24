@@ -1,8 +1,8 @@
 import React, { FC, PureComponent } from 'react';
 import { connect } from 'react-redux';
 import { hot } from 'react-hot-loader';
-import { DataSourcePluginMeta, NavModel } from '@grafana/data';
-import { Button, LinkButton, List } from '@grafana/ui';
+import { DataSourcePluginMeta, NavModel } from '@grafarg/data';
+import { Button, LinkButton, List } from '@grafarg/ui';
 import { selectors } from '@grafarg/e2e-selectors';
 
 import Page from 'app/core/components/Page/Page';

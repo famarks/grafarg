@@ -2,8 +2,8 @@
 import React, { memo } from 'react';
 
 // Types
-import { AbsoluteTimeRange, QueryEditorProps } from '@grafana/data';
-import { InlineFormLabel } from '@grafana/ui';
+import { AbsoluteTimeRange, QueryEditorProps } from '@grafarg/data';
+import { InlineFormLabel } from '@grafarg/ui';
 import { CloudWatchDatasource } from '../datasource';
 import { CloudWatchJsonData, CloudWatchLogsQuery, CloudWatchQuery } from '../types';
 import { CloudWatchLogsQueryField } from './LogsQueryField';

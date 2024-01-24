@@ -1,7 +1,7 @@
 import React, { FC, HTMLProps, ReactNode } from 'react';
 import { css, cx } from 'emotion';
 import { useStyles } from '../../themes';
-import { GrafargTheme } from '@grafana/data';
+import { GrafargTheme } from '@grafarg/data';
 
 export interface Props extends Omit<HTMLProps<HTMLDivElement>, 'css'> {
   children: ReactNode | ReactNode[];

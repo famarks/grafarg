@@ -6,8 +6,8 @@ import { getTitleFromNavModel } from 'app/core/selectors/navModel';
 import PageHeader from '../PageHeader/PageHeader';
 import { Footer } from '../Footer/Footer';
 import { PageContents } from './PageContents';
-import { CustomScrollbar, useStyles } from '@grafana/ui';
-import { GrafargTheme, NavModel } from '@grafana/data';
+import { CustomScrollbar, useStyles } from '@grafarg/ui';
+import { GrafargTheme, NavModel } from '@grafarg/data';
 import { Branding } from '../Branding/Branding';
 import { css } from 'emotion';
 

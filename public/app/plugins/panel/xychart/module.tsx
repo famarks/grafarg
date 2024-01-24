@@ -1,5 +1,5 @@
-import { PanelPlugin } from '@grafana/data';
-import { DrawStyle, GraphFieldConfig } from '@grafana/ui';
+import { PanelPlugin } from '@grafarg/data';
+import { DrawStyle, GraphFieldConfig } from '@grafarg/ui';
 import { XYChartPanel } from './XYChartPanel';
 import { Options } from './types';
 import { XYDimsEditor } from './XYDimsEditor';

@@ -1,4 +1,4 @@
-import { getGrafargLiveSrv, getLegacyAngularInjector } from '@grafana/runtime';
+import { getGrafargLiveSrv, getLegacyAngularInjector } from '@grafarg/runtime';
 import { getDashboardSrv } from '../../dashboard/services/DashboardSrv';
 import { appEvents } from 'app/core/core';
 import {
@@ -10,7 +10,7 @@ import {
   LiveChannelConnectionState,
   isLiveChannelStatusEvent,
   isLiveChannelMessageEvent,
-} from '@grafana/data';
+} from '@grafarg/data';
 import { CoreEvents } from 'app/types';
 import { DashboardChangedModal } from './DashboardChangedModal';
 import { DashboardEvent, DashboardEventAction } from './types';

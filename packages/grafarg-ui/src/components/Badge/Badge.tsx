@@ -4,7 +4,7 @@ import { useTheme } from '../../themes/ThemeContext';
 import { stylesFactory } from '../../themes/stylesFactory';
 import { IconName } from '../../types';
 import { Tooltip } from '../Tooltip/Tooltip';
-import { getColorForTheme, GrafargTheme } from '@grafana/data';
+import { getColorForTheme, GrafargTheme } from '@grafarg/data';
 import tinycolor from 'tinycolor2';
 import { css, cx } from 'emotion';
 import { HorizontalGroup } from '../Layout/Layout';

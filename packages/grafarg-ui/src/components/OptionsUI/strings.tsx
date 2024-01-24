@@ -1,5 +1,5 @@
 import React from 'react';
-import { FieldConfigEditorProps, StringFieldConfigSettings, GrafargTheme } from '@grafana/data';
+import { FieldConfigEditorProps, StringFieldConfigSettings, GrafargTheme } from '@grafarg/data';
 import { Input } from '../Input/Input';
 import { Icon } from '../Icon/Icon';
 import { stylesFactory, getTheme } from '../../themes';

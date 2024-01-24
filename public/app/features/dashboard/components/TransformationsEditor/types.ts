@@ -1,4 +1,4 @@
-import { DataTransformerConfig } from '@grafana/data';
+import { DataTransformerConfig } from '@grafarg/data';
 
 export interface TransformationsEditorTransformation {
   transformation: DataTransformerConfig;

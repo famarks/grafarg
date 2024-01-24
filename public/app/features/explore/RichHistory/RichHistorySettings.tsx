@@ -1,7 +1,7 @@
 import React from 'react';
 import { css } from 'emotion';
-import { stylesFactory, useTheme, Select, Button, Switch, Field } from '@grafana/ui';
-import { GrafargTheme, AppEvents } from '@grafana/data';
+import { stylesFactory, useTheme, Select, Button, Switch, Field } from '@grafarg/ui';
+import { GrafargTheme, AppEvents } from '@grafarg/data';
 import appEvents from 'app/core/app_events';
 import { CoreEvents } from 'app/types';
 

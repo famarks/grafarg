@@ -4,7 +4,7 @@ import { select, text } from '@storybook/addon-knobs';
 import { withCenteredStory } from '../../utils/storybook/withCenteredStory';
 import { GraphWithLegend, GraphWithLegendProps } from './GraphWithLegend';
 import { LegendPlacement, LegendDisplayMode } from '../VizLegend/types';
-import { GraphSeriesXY, FieldType, ArrayVector, dateTime, FieldColorModeId } from '@grafana/data';
+import { GraphSeriesXY, FieldType, ArrayVector, dateTime, FieldColorModeId } from '@grafarg/data';
 
 export default {
   title: 'Visualizations/Graph/GraphWithLegend',

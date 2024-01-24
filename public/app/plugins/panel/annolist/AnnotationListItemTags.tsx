@@ -1,8 +1,8 @@
 import React, { FC, MouseEvent, useCallback } from 'react';
 
-import { GrafargTheme } from '@grafana/data';
+import { GrafargTheme } from '@grafarg/data';
 import { css } from 'emotion';
-import { useStyles } from '@grafana/ui';
+import { useStyles } from '@grafarg/ui';
 
 import { TagBadge } from '../../../core/components/TagFilter/TagBadge';
 

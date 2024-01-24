@@ -1,4 +1,4 @@
-import { MetricFindValue } from '@grafana/data';
+import { MetricFindValue } from '@grafarg/data';
 
 export interface MysqlQueryForInterpolation {
   alias?: any;

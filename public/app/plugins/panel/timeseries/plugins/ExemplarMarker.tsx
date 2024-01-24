@@ -7,8 +7,8 @@ import {
   LinkModel,
   systemDateFormats,
   TimeZone,
-} from '@grafana/data';
-import { FieldLinkList, Portal, TooltipContainer, useStyles } from '@grafana/ui';
+} from '@grafarg/data';
+import { FieldLinkList, Portal, TooltipContainer, useStyles } from '@grafarg/ui';
 import { css, cx } from 'emotion';
 import React, { useCallback, useRef, useState } from 'react';
 

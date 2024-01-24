@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import { Button, ConfirmModal, HorizontalGroup, Modal, stylesFactory, useTheme } from '@grafana/ui';
-import { GrafargTheme } from '@grafana/data';
+import { Button, ConfirmModal, HorizontalGroup, Modal, stylesFactory, useTheme } from '@grafarg/ui';
+import { GrafargTheme } from '@grafarg/data';
 import { css } from 'emotion';
 import { DashboardModel } from 'app/features/dashboard/state';
 import { useDashboardSave } from './useDashboardSave';

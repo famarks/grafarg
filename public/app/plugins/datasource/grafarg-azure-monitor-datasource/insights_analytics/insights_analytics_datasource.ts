@@ -1,5 +1,5 @@
-import { ScopedVars, DataSourceInstanceSettings } from '@grafana/data';
-import { getTemplateSrv } from '@grafana/runtime';
+import { ScopedVars, DataSourceInstanceSettings } from '@grafarg/data';
+import { getTemplateSrv } from '@grafarg/runtime';
 
 import { AzureDataSourceJsonData, AzureMonitorQuery, AzureQueryType } from '../types';
 import AppInsightsDatasource from '../app_insights/app_insights_datasource';

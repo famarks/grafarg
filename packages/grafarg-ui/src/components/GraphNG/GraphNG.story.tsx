@@ -1,4 +1,4 @@
-import { FieldColorModeId, toDataFrame, dateTime } from '@grafana/data';
+import { FieldColorModeId, toDataFrame, dateTime } from '@grafarg/data';
 import React from 'react';
 import { withCenteredStory } from '../../utils/storybook/withCenteredStory';
 import { GraphNG } from './GraphNG';

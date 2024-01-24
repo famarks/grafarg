@@ -1,7 +1,7 @@
 import React from 'react';
-import { LegacyForms } from '@grafana/ui';
-import { TemplateSrv } from '@grafana/runtime';
-import { SelectableValue } from '@grafana/data';
+import { LegacyForms } from '@grafarg/ui';
+import { TemplateSrv } from '@grafarg/runtime';
+import { SelectableValue } from '@grafarg/data';
 
 import CloudMonitoringDatasource from '../datasource';
 import { AnnotationsHelp, LabelFilter, Metrics, Project } from './';

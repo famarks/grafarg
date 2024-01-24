@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { NavModel } from '@grafana/data';
+import { NavModel } from '@grafarg/data';
 
 import { OrgDetailsPage, Props } from './OrgDetailsPage';
 import { Organization } from '../../types';

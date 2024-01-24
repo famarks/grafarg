@@ -1,8 +1,8 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import take from 'lodash/take';
 
-import { PanelProps } from '@grafana/data';
-import { CustomScrollbar, Icon, useStyles } from '@grafana/ui';
+import { PanelProps } from '@grafarg/data';
+import { CustomScrollbar, Icon, useStyles } from '@grafarg/ui';
 
 import { getBackendSrv } from 'app/core/services/backend_srv';
 import { getDashboardSrv } from 'app/features/dashboard/services/DashboardSrv';

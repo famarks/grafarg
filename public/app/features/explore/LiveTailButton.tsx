@@ -1,8 +1,8 @@
 import React from 'react';
 import { css } from 'emotion';
 import { CSSTransition } from 'react-transition-group';
-import { useTheme, Tooltip, stylesFactory, ButtonGroup, ToolbarButton } from '@grafana/ui';
-import { GrafargTheme } from '@grafana/data';
+import { useTheme, Tooltip, stylesFactory, ButtonGroup, ToolbarButton } from '@grafarg/ui';
+import { GrafargTheme } from '@grafarg/data';
 
 type LiveTailButtonProps = {
   splitted: boolean;

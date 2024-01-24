@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { SelectableValue } from '@grafana/data';
-import { Segment, SegmentAsync } from '@grafana/ui';
+import { SelectableValue } from '@grafarg/data';
+import { Segment, SegmentAsync } from '@grafarg/ui';
 import { CloudWatchMetricsQuery, SelectableStrings } from '../types';
 import { CloudWatchDatasource } from '../datasource';
 import { Dimensions, QueryInlineField, Stats } from '.';

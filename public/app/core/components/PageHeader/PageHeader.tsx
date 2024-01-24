@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { css } from 'emotion';
-import { Tab, TabsBar, Icon, IconName, useStyles } from '@grafana/ui';
-import { NavModel, NavModelItem, NavModelBreadcrumb, GrafargTheme } from '@grafana/data';
+import { Tab, TabsBar, Icon, IconName, useStyles } from '@grafarg/ui';
+import { NavModel, NavModelItem, NavModelBreadcrumb, GrafargTheme } from '@grafarg/data';
 import { PanelHeaderMenuItem } from 'app/features/dashboard/dashgrid/PanelHeader/PanelHeaderMenuItem';
 
 export interface Props {

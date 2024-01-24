@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import { css, cx } from 'emotion';
-import { GrafargTheme, TimeZone, AbsoluteTimeRange, GraphSeriesXY, dateTime } from '@grafana/data';
+import { GrafargTheme, TimeZone, AbsoluteTimeRange, GraphSeriesXY, dateTime } from '@grafarg/data';
 
 import {
   selectThemeVariant,
@@ -13,7 +13,7 @@ import {
   GraphSeriesTogglerAPI,
   Chart,
   Icon,
-} from '@grafana/ui';
+} from '@grafarg/ui';
 
 const MAX_NUMBER_OF_TIME_SERIES = 20;
 

@@ -1,6 +1,6 @@
 import React from 'react';
-import { DataTransformerID, standardTransformers, TransformerRegistryItem, TransformerUIProps } from '@grafana/data';
-import { MergeTransformerOptions } from '@grafana/data/src/transformations/transformers/merge';
+import { DataTransformerID, standardTransformers, TransformerRegistryItem, TransformerUIProps } from '@grafarg/data';
+import { MergeTransformerOptions } from '@grafarg/data/src/transformations/transformers/merge';
 
 export const MergeTransformerEditor: React.FC<TransformerUIProps<MergeTransformerOptions>> = ({
   input,

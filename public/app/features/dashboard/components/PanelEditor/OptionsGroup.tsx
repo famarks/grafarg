@@ -1,8 +1,8 @@
 import React, { FC, memo, ReactNode, useCallback, useEffect, useState } from 'react';
 import { css, cx } from 'emotion';
 import _ from 'lodash';
-import { GrafargTheme } from '@grafana/data';
-import { Icon, stylesFactory, useTheme } from '@grafana/ui';
+import { GrafargTheme } from '@grafarg/data';
+import { Icon, stylesFactory, useTheme } from '@grafarg/ui';
 import { PANEL_EDITOR_UI_STATE_STORAGE_KEY } from './state/reducers';
 import { useLocalStorage } from 'react-use';
 import { selectors } from '@grafarg/e2e-selectors';

@@ -5,10 +5,10 @@ import {
   TransformerRegistryItem,
   TransformerUIProps,
   stringToJsRegex,
-} from '@grafana/data';
-import { Field, Input } from '@grafana/ui';
+} from '@grafarg/data';
+import { Field, Input } from '@grafarg/ui';
 import { css } from 'emotion';
-import { RenameByRegexTransformerOptions } from '@grafana/data/src/transformations/transformers/renameByRegex';
+import { RenameByRegexTransformerOptions } from '@grafarg/data/src/transformations/transformers/renameByRegex';
 
 interface RenameByRegexTransformerEditorProps extends TransformerUIProps<RenameByRegexTransformerOptions> {}
 

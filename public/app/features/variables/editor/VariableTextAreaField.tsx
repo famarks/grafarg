@@ -1,6 +1,6 @@
 import React, { FormEvent, PropsWithChildren, ReactElement, useCallback } from 'react';
-import { InlineField, TextArea, useStyles } from '@grafana/ui';
-import { GrafargTheme } from '@grafana/data';
+import { InlineField, TextArea, useStyles } from '@grafarg/ui';
+import { GrafargTheme } from '@grafarg/data';
 import { css } from 'emotion';
 
 interface VariableTextAreaFieldProps<T> {

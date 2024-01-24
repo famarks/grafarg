@@ -3,10 +3,10 @@ import React, { PureComponent } from 'react';
 import extend from 'lodash/extend';
 
 import { PluginDashboard } from 'app/types';
-import { getBackendSrv } from '@grafana/runtime';
+import { getBackendSrv } from '@grafarg/runtime';
 import { appEvents } from 'app/core/core';
 import DashboardsTable from 'app/features/datasources/DashboardsTable';
-import { AppEvents, PluginMeta, DataSourceApi } from '@grafana/data';
+import { AppEvents, PluginMeta, DataSourceApi } from '@grafarg/data';
 
 interface Props {
   plugin: PluginMeta;

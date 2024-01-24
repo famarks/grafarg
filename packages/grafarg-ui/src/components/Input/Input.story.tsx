@@ -3,8 +3,8 @@ import { boolean, text, select, number } from '@storybook/addon-knobs';
 import { withCenteredStory } from '../../utils/storybook/withCenteredStory';
 import mdx from './Input.mdx';
 import { getAvailableIcons, IconName } from '../../types';
-import { KeyValue } from '@grafana/data';
-import { Field, Icon, Button, Input } from '@grafana/ui';
+import { KeyValue } from '@grafarg/data';
+import { Field, Icon, Button, Input } from '@grafarg/ui';
 
 export default {
   title: 'Forms/Input',

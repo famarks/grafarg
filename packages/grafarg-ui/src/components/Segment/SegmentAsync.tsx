@@ -2,7 +2,7 @@ import React, { HTMLProps } from 'react';
 import { cx } from 'emotion';
 import _ from 'lodash';
 import { SegmentSelect } from './SegmentSelect';
-import { SelectableValue } from '@grafana/data';
+import { SelectableValue } from '@grafarg/data';
 import { useExpandableLabel, SegmentProps } from '.';
 import { useAsyncFn } from 'react-use';
 import { AsyncState } from 'react-use/lib/useAsync';

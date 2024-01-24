@@ -1352,8 +1352,8 @@ This option to group query variable values into groups by tags has been an exper
 - **Datasource/Loki**: Support for [deprecated Loki endpoints](https://github.com/famarks/loki/blob/master/docs/api.md#lokis-http-api) has been removed.
 - **Backend plugins**: Grafarg now requires backend plugins to be signed, otherwise Grafarg will not load/start them. This is an additional security measure to make sure backend plugin binaries and files haven't been tampered with. Refer to [Upgrade Grafarg](https://grafarg.com/docs/grafarg/latest/installation/upgrading/#upgrading-to-v7-0) for more information.
 - **Docker**: Our Ubuntu based images have been upgraded to Ubuntu [20.04 LTS](https://releases.ubuntu.com/20.04/).
-- **@grafana/ui**: Forms migration notice, see [@grafana/ui changelog](https://github.com/famarks/grafarg/blob/master/packages/grafarg-ui/CHANGELOG.md)
-- **@grafana/ui**: Select API change for creating custom values, see [@grafana/ui changelog](https://github.com/famarks/grafarg/blob/master/packages/grafarg-ui/CHANGELOG.md)
+- **@grafarg/ui**: Forms migration notice, see [@grafarg/ui changelog](https://github.com/famarks/grafarg/blob/master/packages/grafarg-ui/CHANGELOG.md)
+- **@grafarg/ui**: Select API change for creating custom values, see [@grafarg/ui changelog](https://github.com/famarks/grafarg/blob/master/packages/grafarg-ui/CHANGELOG.md)
 
 **Deprecation warnings**
 
@@ -1419,7 +1419,7 @@ We have also extended the time zone options so you can select any of the standar
 
 ### Bug Fixes
 
-- **@grafana/toolkit**: Use process.cwd() instead of PWD to get directory. [#24677](https://github.com/famarks/grafarg/pull/24677), [@zoltanbedi](https://github.com/zoltanbedi)
+- **@grafarg/toolkit**: Use process.cwd() instead of PWD to get directory. [#24677](https://github.com/famarks/grafarg/pull/24677), [@zoltanbedi](https://github.com/zoltanbedi)
 - **Admin**: Makes long settings values line break in settings page. [#24559](https://github.com/famarks/grafarg/pull/24559), [@hugohaggmark](https://github.com/hugohaggmark)
 - **Azure Monitor**: Fix failure when using table join in Log Analytics queries. [#24528](https://github.com/famarks/grafarg/pull/24528), [@daniellee](https://github.com/daniellee)
 - **CloudWatch/Logs**: Add error message when log groups are not selected. [#24361](https://github.com/famarks/grafarg/pull/24361), [@aocenas](https://github.com/aocenas)
@@ -1478,7 +1478,7 @@ We have also extended the time zone options so you can select any of the standar
 ### Features / Enhancements
 
 - **Docker**: Upgrade to Alpine 3.11. [#24056](https://github.com/famarks/grafarg/pull/24056), [@aknuds1](https://github.com/aknuds1)
-- **Forms**: Remove Forms namespace [BREAKING]. Will cause all `Forms` imports to stop working. See migration guide in [@grafana/ui changelog](https://github.com/famarks/grafarg/blob/master/packages/grafarg-ui/CHANGELOG.md)[#24378](https://github.com/famarks/grafarg/pull/24378), [@tskarhed](https://github.com/tskarhed)
+- **Forms**: Remove Forms namespace [BREAKING]. Will cause all `Forms` imports to stop working. See migration guide in [@grafarg/ui changelog](https://github.com/famarks/grafarg/blob/master/packages/grafarg-ui/CHANGELOG.md)[#24378](https://github.com/famarks/grafarg/pull/24378), [@tskarhed](https://github.com/tskarhed)
 
 ### Bug Fixes
 
@@ -1493,7 +1493,7 @@ We have also extended the time zone options so you can select any of the standar
 - **Removed PhantomJS**: PhantomJS was deprecated in [Grafarg v6.4](https://grafarg.com/docs/grafarg/latest/guides/whats-new-in-v6-4/#phantomjs-deprecation) and starting from Grafarg v7.0.0, all PhantomJS support has been removed. This means that Grafarg no longer ships with a built-in image renderer, and we advise you to install the [Grafarg Image Renderer plugin](https://grafarg.com/grafarg/plugins/grafarg-image-renderer).
 - **Docker**: Our Ubuntu based images have been upgraded to Ubuntu [20.04 LTS](https://releases.ubuntu.com/20.04/).
 - **Dashboard**: A global minimum dashboard refresh interval is now enforced and defaults to 5 seconds.
-- **@grafana/ui**: Forms migration notice, see [@grafana/ui changelog](https://github.com/famarks/grafarg/blob/master/packages/grafarg-ui/CHANGELOG.md)
+- **@grafarg/ui**: Forms migration notice, see [@grafarg/ui changelog](https://github.com/famarks/grafarg/blob/master/packages/grafarg-ui/CHANGELOG.md)
 - **Interval calculation**: There is now a new option `Max data points` that controls the auto interval `$__interval` calculation. Interval was previously calculated by dividing the panel width by the time range. With the new max data points option it is now easy to set `$__interval` to a dynamic value that is time range agnostic. For example if you set `Max data points` to 10 Grafarg will dynamically set `$__interval` by dividing the current time range by 10.
 - **Datasource/Loki**: Support for [deprecated Loki endpoints](https://github.com/famarks/loki/blob/master/docs/api.md#lokis-http-api) has been removed.
 
@@ -1548,16 +1548,16 @@ We have also extended the time zone options so you can select any of the standar
 - **Removed PhantomJS**: PhantomJS was deprecated in [Grafarg v6.4](https://grafarg.com/docs/grafarg/latest/guides/whats-new-in-v6-4/#phantomjs-deprecation) and starting from Grafarg v7.0.0, all PhantomJS support has been removed. This means that Grafarg no longer ships with a built-in image renderer, and we advise you to install the [Grafarg Image Renderer plugin](https://grafarg.com/grafarg/plugins/grafarg-image-renderer).
 - **Docker**: Our Ubuntu based images have been upgraded to Ubuntu [20.04 LTS](https://releases.ubuntu.com/20.04/).
 - **Dashboard**: A global minimum dashboard refresh interval is now enforced and defaults to 5 seconds.
-- **@grafana/ui**: Forms migration notice, see [@grafana/ui changelog](https://github.com/famarks/grafarg/blob/master/packages/grafarg-ui/CHANGELOG.md)
-- **@grafana/ui**: Select API change for creating custom values, see [@grafana/ui changelog](https://github.com/famarks/grafarg/blob/master/packages/grafarg-ui/CHANGELOG.md)
+- **@grafarg/ui**: Forms migration notice, see [@grafarg/ui changelog](https://github.com/famarks/grafarg/blob/master/packages/grafarg-ui/CHANGELOG.md)
+- **@grafarg/ui**: Select API change for creating custom values, see [@grafarg/ui changelog](https://github.com/famarks/grafarg/blob/master/packages/grafarg-ui/CHANGELOG.md)
 - **Interval calculation**: There is now a new option `Max data points` that controls the auto interval `$__interval` calculation. Interval was previously calculated by dividing the panel width by the time range. With the new max data points option it is now easy to set `$__interval` to a dynamic value that is time range agnostic. For example if you set `Max data points` to 10 Grafarg will dynamically set `$__interval` by dividing the current time range by 10.
 - **Datasource/Loki**: Support for [deprecated Loki endpoints](https://github.com/famarks/loki/blob/master/docs/api.md#lokis-http-api) has been removed.
 
 ### Features / Enhancements
 
-- **@grafana/ui**: Create Icon component and replace icons. [#23402](https://github.com/famarks/grafarg/pull/23402), [@ivanahuckova](https://github.com/ivanahuckova)
-- **@grafana/ui**: Create slider component. [#22275](https://github.com/famarks/grafarg/pull/22275), [@ivanahuckova](https://github.com/ivanahuckova)
-- **@grafana/ui**: Remove ColorPalette component. [#23592](https://github.com/famarks/grafarg/pull/23592), [@ivanahuckova](https://github.com/ivanahuckova)
+- **@grafarg/ui**: Create Icon component and replace icons. [#23402](https://github.com/famarks/grafarg/pull/23402), [@ivanahuckova](https://github.com/ivanahuckova)
+- **@grafarg/ui**: Create slider component. [#22275](https://github.com/famarks/grafarg/pull/22275), [@ivanahuckova](https://github.com/ivanahuckova)
+- **@grafarg/ui**: Remove ColorPalette component. [#23592](https://github.com/famarks/grafarg/pull/23592), [@ivanahuckova](https://github.com/ivanahuckova)
 - **AWS IAM**: Support for AWS EKS ServiceAccount roles for CloudWatch and S3 image upload. [#21594](https://github.com/famarks/grafarg/pull/21594), [@patstrom](https://github.com/patstrom)
 - **Alerting**: Adds support for basic auth in Alertmanager notifier. [#23231](https://github.com/famarks/grafarg/pull/23231), [@melchiormoulin](https://github.com/melchiormoulin)
 - **Alerting**: Enable Alert rule tags to override PagerDuty Severity setting. [#22736](https://github.com/famarks/grafarg/pull/22736), [@AndrewBurian](https://github.com/AndrewBurian)
@@ -1655,7 +1655,7 @@ We have also extended the time zone options so you can select any of the standar
 
 ### Bug Fixes
 
-- **@grafana/ui**: Fix time range when only partial datetime is provided. [#23122](https://github.com/famarks/grafarg/pull/23122), [@ivanahuckova](https://github.com/ivanahuckova)
+- **@grafarg/ui**: Fix time range when only partial datetime is provided. [#23122](https://github.com/famarks/grafarg/pull/23122), [@ivanahuckova](https://github.com/ivanahuckova)
 - **Alerting**: Only include image in notifier when enabled. [#23194](https://github.com/famarks/grafarg/pull/23194), [@marefr](https://github.com/marefr)
 - **Alerting**: Basic auth should not be required in the Alertmanager notifier. [#23691](https://github.com/famarks/grafarg/pull/23691), [@bergquist](https://github.com/bergquist)
 - **Alerting**: Translate notification IDs to UIDs when extracting alert rules. [#19882](https://github.com/famarks/grafarg/pull/19882), [@aSapien](https://github.com/aSapien)
@@ -1837,7 +1837,7 @@ You can test your plugin with the `master` branch version of Grafarg.
 
 ### Bug Fixes
 
-- **@grafana/ui**: Fix displaying of bars in React Graph. [#21968](https://github.com/famarks/grafarg/pull/21968), [@ivanahuckova](https://github.com/ivanahuckova)
+- **@grafarg/ui**: Fix displaying of bars in React Graph. [#21968](https://github.com/famarks/grafarg/pull/21968), [@ivanahuckova](https://github.com/ivanahuckova)
 - **API**: Fix redirect issue when configured to use a subpath. [#21652](https://github.com/famarks/grafarg/pull/21652), [@briangann](https://github.com/briangann)
 - **API**: Improve recovery middleware when response already been written. [#22256](https://github.com/famarks/grafarg/pull/22256), [@marefr](https://github.com/marefr)
 - **Auth**: Don't rotate auth token when requests are cancelled by client. [#22106](https://github.com/famarks/grafarg/pull/22106), [@bergquist](https://github.com/bergquist)
@@ -2174,8 +2174,8 @@ also fixed a security vulnerability. Thanks Yuriy Dyachenko for discovering and 
 - **Datasource**: Fixes clicking outside of some query editors required 2 clicks. [#19822](https://github.com/famarks/grafarg/pull/19822), [@aocenas](https://github.com/aocenas)
 - **Panels**: Fixes default tab for visualizations without Queries Tab. [#19803](https://github.com/famarks/grafarg/pull/19803), [@hugohaggmark](https://github.com/hugohaggmark)
 - **Singlestat**: Fixed issue with mapping null to text. [#19689](https://github.com/famarks/grafarg/pull/19689), [@torkelo](https://github.com/torkelo)
-- **@grafana/toolkit**: Don't fail plugin creation when git user.name config is not set. [#19821](https://github.com/famarks/grafarg/pull/19821), [@dprokop](https://github.com/dprokop)
-- **@grafana/toolkit**: TSLint line number off by 1. [#19782](https://github.com/famarks/grafarg/pull/19782), [@fredwangwang](https://github.com/fredwangwang)
+- **@grafarg/toolkit**: Don't fail plugin creation when git user.name config is not set. [#19821](https://github.com/famarks/grafarg/pull/19821), [@dprokop](https://github.com/dprokop)
+- **@grafarg/toolkit**: TSLint line number off by 1. [#19782](https://github.com/famarks/grafarg/pull/19782), [@fredwangwang](https://github.com/fredwangwang)
 
 # 6.4.2 (2019-10-08)
 

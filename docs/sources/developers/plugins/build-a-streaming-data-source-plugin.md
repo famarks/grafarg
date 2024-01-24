@@ -57,7 +57,7 @@ Grafarg uses [RxJS](https://rxjs.dev/) to continuously send data from a data sou
 1. In the `subscribe` function, create a `CircularDataFrame`.
 
    ```ts
-   import { CircularDataFrame } from '@grafana/data';
+   import { CircularDataFrame } from '@grafarg/data';
    ```
 
    ```ts
@@ -76,7 +76,7 @@ Grafarg uses [RxJS](https://rxjs.dev/) to continuously send data from a data sou
 1. Use `subscriber.next()` to send the updated data frame whenever you receive new updates.
 
    ```ts
-   import { LoadingState } from '@grafana/data';
+   import { LoadingState } from '@grafarg/data';
    ```
 
    ```ts

@@ -1,5 +1,5 @@
-import { GrafargTheme } from '@grafana/data';
-import { stylesFactory } from '@grafana/ui';
+import { GrafargTheme } from '@grafarg/data';
+import { stylesFactory } from '@grafarg/ui';
 import { css } from 'emotion';
 
 export const getStyles = stylesFactory((theme: GrafargTheme, hidden: boolean) => ({

@@ -8,7 +8,7 @@ import {
   FieldType,
   getFieldColorModeForField,
   getFieldDisplayName,
-} from '@grafana/data';
+} from '@grafarg/data';
 import {
   AxisPlacement,
   DrawStyle,

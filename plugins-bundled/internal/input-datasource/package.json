@@ -16,9 +16,9 @@
   "author": "Grafarg Labs",
   "license": "Apache-2.0",
   "devDependencies": {
-    "@grafana/data": "7.5.17",
-    "@grafana/toolkit": "7.5.17",
-    "@grafana/ui": "7.5.17"
+    "@grafarg/data": "7.5.17",
+    "@grafarg/toolkit": "7.5.17",
+    "@grafarg/ui": "7.5.17"
   },
   "volta": {
     "node": "12.16.2"

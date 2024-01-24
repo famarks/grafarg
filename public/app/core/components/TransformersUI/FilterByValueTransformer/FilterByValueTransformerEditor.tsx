@@ -11,15 +11,15 @@ import {
   FieldType,
   ValueMatcherID,
   valueMatchers,
-} from '@grafana/data';
-import { Button, RadioButtonGroup, stylesFactory } from '@grafana/ui';
+} from '@grafarg/data';
+import { Button, RadioButtonGroup, stylesFactory } from '@grafarg/ui';
 import cloneDeep from 'lodash/cloneDeep';
 import {
   FilterByValueFilter,
   FilterByValueMatch,
   FilterByValueTransformerOptions,
   FilterByValueType,
-} from '@grafana/data/src/transformations/transformers/filterByValue';
+} from '@grafarg/data/src/transformations/transformers/filterByValue';
 
 import { DataFrameFieldsInfo, FilterByValueFilterEditor } from './FilterByValueFilterEditor';
 

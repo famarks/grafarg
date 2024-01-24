@@ -19,7 +19,7 @@ import {
   LinkModel,
   Field,
   GrafargTheme,
-} from '@grafana/data';
+} from '@grafarg/data';
 import {
   LogLabels,
   RadioButtonGroup,
@@ -32,12 +32,12 @@ import {
   stylesFactory,
   Icon,
   Tooltip,
-} from '@grafana/ui';
+} from '@grafarg/ui';
 import store from 'app/core/store';
 import { ExploreGraphPanel } from './ExploreGraphPanel';
 import { MetaInfoText } from './MetaInfoText';
-import { RowContextOptions } from '@grafana/ui/src/components/Logs/LogRowContextProvider';
-import { MAX_CHARACTERS } from '@grafana/ui/src/components/Logs/LogRowMessage';
+import { RowContextOptions } from '@grafarg/ui/src/components/Logs/LogRowContextProvider';
+import { MAX_CHARACTERS } from '@grafarg/ui/src/components/Logs/LogRowMessage';
 
 const SETTINGS_KEYS = {
   showLabels: 'grafarg.explore.logs.showLabels',

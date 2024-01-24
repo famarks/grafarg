@@ -8,8 +8,8 @@ import {
   getFieldDisplayName,
   isSystemOverrideWithRef,
   SystemConfigOverrideRule,
-} from '@grafana/data';
-import { GraphNGLegendEvent, GraphNGLegendEventMode } from '@grafana/ui';
+} from '@grafarg/data';
+import { GraphNGLegendEvent, GraphNGLegendEventMode } from '@grafarg/ui';
 
 const displayOverrideRef = 'hideSeriesFrom';
 const isHideSeriesOverride = isSystemOverrideWithRef(displayOverrideRef);

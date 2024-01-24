@@ -1,6 +1,6 @@
 import React from 'react';
 import { merge } from 'lodash';
-import { Table } from '@grafana/ui';
+import { Table } from '@grafarg/ui';
 import { withCenteredStory } from '../../utils/storybook/withCenteredStory';
 import { number } from '@storybook/addon-knobs';
 import { useTheme } from '../../themes';
@@ -13,7 +13,7 @@ import {
   ThresholdsConfig,
   ThresholdsMode,
   FieldConfig,
-} from '@grafana/data';
+} from '@grafarg/data';
 import { prepDataForStorybook } from '../../utils/storybook/data';
 
 export default {

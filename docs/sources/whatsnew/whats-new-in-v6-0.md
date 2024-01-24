@@ -104,7 +104,7 @@ continue to refine and start using in other panels.
 
 A major part of all the work that has gone into Grafarg v6.0 has been on the migration to React. This investment
 is part of the future-proofing of Grafarg's code base and ecosystem. Starting in v6.0 **Panels** and **Data
-source** plugins can be written in React using our published `@grafana/ui` sdk library. More information on this
+source** plugins can be written in React using our published `@grafarg/ui` sdk library. More information on this
 will be shared soon.
 
 {{< figure src="/static/img/docs/v60/react_panels.png" max-width="600px" caption="React Panel" >}}

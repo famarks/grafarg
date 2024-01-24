@@ -1,4 +1,4 @@
-import { PluginMeta } from '@grafana/data';
+import { PluginMeta } from '@grafarg/data';
 
 export const validatePluginJson = (pluginJson: any) => {
   if (!pluginJson.id) {

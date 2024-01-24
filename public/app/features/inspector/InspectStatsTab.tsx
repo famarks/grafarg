@@ -1,4 +1,4 @@
-import { PanelData, QueryResultMetaStat, TimeZone } from '@grafana/data';
+import { PanelData, QueryResultMetaStat, TimeZone } from '@grafarg/data';
 import { selectors } from '@grafarg/e2e-selectors';
 import { InspectStatsTable } from './InspectStatsTable';
 import React from 'react';

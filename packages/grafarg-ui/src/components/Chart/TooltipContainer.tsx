@@ -3,7 +3,7 @@ import { stylesFactory } from '../../themes/stylesFactory';
 import { css, cx } from 'emotion';
 import { useTheme } from '../../themes/ThemeContext';
 import useWindowSize from 'react-use/lib/useWindowSize';
-import { Dimensions2D, GrafargTheme } from '@grafana/data';
+import { Dimensions2D, GrafargTheme } from '@grafarg/data';
 
 interface TooltipContainerProps extends HTMLAttributes<HTMLDivElement> {
   position: { x: number; y: number };

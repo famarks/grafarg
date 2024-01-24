@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ErrorBoundary, ErrorBoundaryAlert } from './ErrorBoundary';
-import { withCenteredStory } from '@grafana/ui/src/utils/storybook/withCenteredStory';
+import { withCenteredStory } from '@grafarg/ui/src/utils/storybook/withCenteredStory';
 import mdx from './ErrorBoundary.mdx';
 import { Button } from '../Button';
 import { ErrorWithStack } from './ErrorWithStack';

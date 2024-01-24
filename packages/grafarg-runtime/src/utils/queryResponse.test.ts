@@ -1,4 +1,4 @@
-import { DataQuery, toDataFrameDTO, DataFrame } from '@grafana/data';
+import { DataQuery, toDataFrameDTO, DataFrame } from '@grafarg/data';
 import { toDataQueryResponse } from './queryResponse';
 
 /* eslint-disable */

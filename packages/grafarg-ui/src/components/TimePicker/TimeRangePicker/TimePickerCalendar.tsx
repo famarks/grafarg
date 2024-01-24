@@ -1,7 +1,7 @@
 import React, { FormEvent, memo, useCallback } from 'react';
 import { css } from 'emotion';
 import Calendar from 'react-calendar/dist/entry.nostyle';
-import { dateTime, DateTime, dateTimeParse, GrafargTheme, TimeZone } from '@grafana/data';
+import { dateTime, DateTime, dateTimeParse, GrafargTheme, TimeZone } from '@grafarg/data';
 import { stylesFactory, useTheme } from '../../../themes';
 import { TimePickerTitle } from './TimePickerTitle';
 import { Button } from '../../Button';

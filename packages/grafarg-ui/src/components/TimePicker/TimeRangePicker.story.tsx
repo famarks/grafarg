@@ -2,10 +2,10 @@ import { Story } from '@storybook/react';
 import React from 'react';
 import { action } from '@storybook/addon-actions';
 
-import { Button, TimeRangePicker } from '@grafana/ui';
+import { Button, TimeRangePicker } from '@grafarg/ui';
 import { UseState } from '../../utils/storybook/UseState';
 import { withCenteredStory } from '../../utils/storybook/withCenteredStory';
-import { dateTime, TimeRange, DefaultTimeZone, TimeZone, isDateTime } from '@grafana/data';
+import { dateTime, TimeRange, DefaultTimeZone, TimeZone, isDateTime } from '@grafarg/data';
 import { TimeRangePickerProps } from './TimeRangePicker';
 import { DashboardStoryCanvas } from '../../utils/storybook/DashboardStoryCanvas';
 import { HorizontalGroup, VerticalGroup } from '../Layout/Layout';

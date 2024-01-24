@@ -6,7 +6,7 @@ import { useStyles } from '../../themes/ThemeContext';
 import union from 'lodash/union';
 import sortBy from 'lodash/sortBy';
 import { LegendTableItem } from './VizLegendTableItem';
-import { GrafargTheme } from '@grafana/data';
+import { GrafargTheme } from '@grafarg/data';
 
 /**
  * @internal

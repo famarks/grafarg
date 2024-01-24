@@ -1,4 +1,4 @@
-import { EchoEvent, EchoEventType } from '@grafana/runtime';
+import { EchoEvent, EchoEventType } from '@grafarg/runtime';
 import { Event as SentryEvent } from '@sentry/browser';
 import { Response } from '@sentry/types';
 

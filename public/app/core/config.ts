@@ -1,4 +1,4 @@
-import { config, GrafargBootConfig } from '@grafana/runtime';
+import { config, GrafargBootConfig } from '@grafarg/runtime';
 // Legacy binding paths
 export { config, GrafargBootConfig as Settings };
 

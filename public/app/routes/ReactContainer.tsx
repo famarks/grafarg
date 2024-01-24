@@ -8,7 +8,7 @@ import coreModule from 'app/core/core_module';
 import { store } from 'app/store/store';
 import { ContextSrv } from 'app/core/services/context_srv';
 import { provideTheme } from 'app/core/utils/ConfigProvider';
-import { ErrorBoundaryAlert, ModalRoot, ModalsProvider } from '@grafana/ui';
+import { ErrorBoundaryAlert, ModalRoot, ModalsProvider } from '@grafarg/ui';
 import { GrafargRootScope } from './GrafargCtrl';
 
 export function WrapInProvider(store: any, Component: any, props: any) {

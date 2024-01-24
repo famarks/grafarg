@@ -1,5 +1,5 @@
 import { customBuilder, queryBuilder } from '../shared/testing/builders';
-import { VariableSupportType } from '@grafana/data';
+import { VariableSupportType } from '@grafarg/data';
 import { toVariableIdentifier } from './types';
 import { upgradeLegacyQueries } from './actions';
 import { changeVariableProp } from './sharedReducer';

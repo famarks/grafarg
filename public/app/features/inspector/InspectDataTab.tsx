@@ -11,8 +11,8 @@ import {
   SelectableValue,
   toCSV,
   transformDataFrame,
-} from '@grafana/data';
-import { Button, Container, Field, HorizontalGroup, Select, Spinner, Switch, Table, VerticalGroup } from '@grafana/ui';
+} from '@grafarg/data';
+import { Button, Container, Field, HorizontalGroup, Select, Spinner, Switch, Table, VerticalGroup } from '@grafarg/ui';
 import { selectors } from '@grafarg/e2e-selectors';
 
 import { getPanelInspectorStyles } from './styles';

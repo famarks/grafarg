@@ -185,9 +185,9 @@ const getBaseWebpackConfig: WebpackConfigurationGetter = async (options) => {
       'rxjs',
       'd3',
       'angular',
-      '@grafana/ui',
-      '@grafana/runtime',
-      '@grafana/data',
+      '@grafarg/ui',
+      '@grafarg/runtime',
+      '@grafarg/data',
       'monaco-editor',
       'react-monaco-editor',
       // @ts-ignore

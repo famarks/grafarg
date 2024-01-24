@@ -1,7 +1,7 @@
 import { Props, BigValueColorMode, BigValueGraphMode } from './BigValue';
 import { buildLayout, StackedWithChartLayout, WideWithChartLayout } from './BigValueLayout';
 import { getTheme } from '../../themes';
-import { ArrayVector, FieldType } from '@grafana/data';
+import { ArrayVector, FieldType } from '@grafarg/data';
 
 function getProps(propOverrides?: Partial<Props>): Props {
   const props: Props = {

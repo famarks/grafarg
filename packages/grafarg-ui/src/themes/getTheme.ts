@@ -1,6 +1,6 @@
 import darkTheme from './dark';
 import lightTheme from './light';
-import { GrafargTheme } from '@grafana/data';
+import { GrafargTheme } from '@grafarg/data';
 
 let themeMock: ((name?: string) => GrafargTheme) | null;
 

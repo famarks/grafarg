@@ -1,9 +1,9 @@
 import React from 'react';
 import { css } from 'emotion';
-import { IconButton } from '@grafana/ui';
+import { IconButton } from '@grafarg/ui';
 import { withCenteredStory } from '../../utils/storybook/withCenteredStory';
 import { useTheme } from '../../themes/ThemeContext';
-import { GrafargTheme } from '@grafana/data';
+import { GrafargTheme } from '@grafarg/data';
 import { IconSize, IconName } from '../../types';
 import mdx from './IconButton.mdx';
 

@@ -12,8 +12,8 @@ import {
   rangeUtil,
   ScopedVars,
   TimeRange,
-} from '@grafana/data';
-import { BackendSrvRequest, FetchError, getBackendSrv } from '@grafana/runtime';
+} from '@grafarg/data';
+import { BackendSrvRequest, FetchError, getBackendSrv } from '@grafarg/runtime';
 import { safeStringifyValue } from 'app/core/utils/explore';
 import { getTimeSrv, TimeSrv } from 'app/features/dashboard/services/TimeSrv';
 import { getTemplateSrv, TemplateSrv } from 'app/features/templating/template_srv';

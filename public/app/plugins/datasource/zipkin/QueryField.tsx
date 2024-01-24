@@ -1,6 +1,6 @@
-import { AppEvents, ExploreQueryFieldProps } from '@grafana/data';
+import { AppEvents, ExploreQueryFieldProps } from '@grafarg/data';
 import { selectors } from '@grafarg/e2e-selectors';
-import { ButtonCascader, CascaderOption } from '@grafana/ui';
+import { ButtonCascader, CascaderOption } from '@grafarg/ui';
 import { fromPairs } from 'lodash';
 import React, { useCallback, useMemo, useState } from 'react';
 import { useAsyncFn, useMount, useMountedState } from 'react-use';

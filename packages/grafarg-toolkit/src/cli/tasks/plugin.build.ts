@@ -41,9 +41,9 @@ const copyIfNonExistent = (srcPath: string, destPath: string) =>
 export const prepare = () =>
   useSpinner('Preparing', () =>
     Promise.all([
-      // Remove local dependencies for @grafana/data/node_modules
+      // Remove local dependencies for @grafarg/data/node_modules
       // See: https://github.com/famarks/grafarg/issues/26748
-      rimraf(resolvePath(__dirname, 'node_modules/@grafana/data/node_modules')),
+      rimraf(resolvePath(__dirname, 'node_modules/@grafarg/data/node_modules')),
 
       // Copy only if local tsconfig does not exist.  Otherwise this will work, but have odd behavior
       copyIfNonExistent(
@@ -63,7 +63,7 @@ export const versions = async () => {
   console.log(`Using Node.js ${nodeVersion}`);
 
   const toolkitVersion = await execa('grafarg-toolkit', ['--version']);
-  console.log(`Using @grafana/toolkit ${toolkitVersion}`);
+  console.log(`Using @grafarg/toolkit ${toolkitVersion}`);
 };
 
 // @ts-ignore
@@ -81,7 +81,7 @@ export const lintPlugin = ({ fix }: Fixable = {}) =>
       await access(resolvePath(process.cwd(), 'tslint.json'));
       console.log('\n');
       console.log('--------------------------------------------------------------');
-      console.log('NOTE: @grafana/toolkit has migrated to use eslint');
+      console.log('NOTE: @grafarg/toolkit has migrated to use eslint');
       console.log('Update your configs to use .eslintrc rather than tslint.json');
       console.log('--------------------------------------------------------------');
     } catch {

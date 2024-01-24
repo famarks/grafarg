@@ -1,5 +1,5 @@
-import { DataQueryRequest, DataSourceInstanceSettings, ScopedVars, MetricFindValue } from '@grafana/data';
-import { getBackendSrv, getTemplateSrv, DataSourceWithBackend } from '@grafana/runtime';
+import { DataQueryRequest, DataSourceInstanceSettings, ScopedVars, MetricFindValue } from '@grafarg/data';
+import { getBackendSrv, getTemplateSrv, DataSourceWithBackend } from '@grafarg/runtime';
 import _, { isString } from 'lodash';
 
 import TimegrainConverter from '../time_grain_converter';

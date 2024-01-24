@@ -1,5 +1,5 @@
 import React, { useContext, useRef, useState, useLayoutEffect, useEffect } from 'react';
-import { GrafargTheme, DataQueryError, LogRowModel, textUtil } from '@grafana/data';
+import { GrafargTheme, DataQueryError, LogRowModel, textUtil } from '@grafarg/data';
 import { css, cx } from 'emotion';
 
 import { Alert } from '../Alert/Alert';

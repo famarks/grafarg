@@ -1,14 +1,14 @@
 import { init as initSentry, setUser as sentrySetUser, Event as SentryEvent } from '@sentry/browser';
 import { SentryEchoBackend, SentryEchoBackendOptions } from './SentryBackend';
-import { BuildInfo } from '@grafana/data';
+import { BuildInfo } from '@grafarg/data';
 import { FetchTransport } from '@sentry/browser/dist/transports';
 import { CustomEndpointTransport } from './transports/CustomEndpointTransport';
 import { EchoSrvTransport } from './transports/EchoSrvTransport';
 import { SentryEchoEvent } from './types';
-import { EchoBackend, EchoEventType, EchoMeta, setEchoSrv } from '@grafana/runtime';
+import { EchoBackend, EchoEventType, EchoMeta, setEchoSrv } from '@grafarg/runtime';
 import { waitFor } from '@testing-library/react';
 import { Echo } from '../../Echo';
-import { GrafargEdition } from '@grafana/data/src/types/config';
+import { GrafargEdition } from '@grafarg/data/src/types/config';
 
 jest.mock('@sentry/browser');
 

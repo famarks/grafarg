@@ -1,9 +1,9 @@
-import { ScopedVars, DataSourceApi, DataSourceInstanceSettings } from '@grafana/data';
+import { ScopedVars, DataSourceApi, DataSourceInstanceSettings } from '@grafarg/data';
 
 /**
  * This is the entry point for communicating with a datasource that is added as
  * a plugin (both external and internal). Via this service you will get access
- * to the {@link @grafana/data#DataSourceApi | DataSourceApi} that have a rich API for
+ * to the {@link @grafarg/data#DataSourceApi | DataSourceApi} that have a rich API for
  * communicating with the datasource.
  *
  * @public

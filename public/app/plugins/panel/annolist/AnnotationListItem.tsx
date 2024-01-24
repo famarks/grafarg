@@ -1,7 +1,7 @@
 import React, { FC, MouseEvent } from 'react';
 import { css, cx } from 'emotion';
-import { AnnotationEvent, DateTimeInput, GrafargTheme, PanelProps } from '@grafana/data';
-import { styleMixins, Tooltip, useStyles } from '@grafana/ui';
+import { AnnotationEvent, DateTimeInput, GrafargTheme, PanelProps } from '@grafarg/data';
+import { styleMixins, Tooltip, useStyles } from '@grafarg/ui';
 import { AnnoOptions } from './types';
 import { AnnotationListItemTags } from './AnnotationListItemTags';
 

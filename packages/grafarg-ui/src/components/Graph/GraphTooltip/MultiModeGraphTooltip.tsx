@@ -3,7 +3,7 @@ import { SeriesTable } from './SeriesTable';
 import { GraphTooltipContentProps } from './types';
 import { getMultiSeriesGraphHoverInfo } from '../utils';
 import { FlotPosition } from '../types';
-import { getValueFromDimension } from '@grafana/data';
+import { getValueFromDimension } from '@grafarg/data';
 
 export const MultiModeGraphTooltip: React.FC<
   GraphTooltipContentProps & {

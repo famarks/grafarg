@@ -1,7 +1,7 @@
 import { Story } from '@storybook/react';
 import { withCenteredStory } from '../../utils/storybook/withCenteredStory';
 import { NOOP_CONTROL } from '../../utils/storybook/noopControl';
-import { Cascader } from '@grafana/ui';
+import { Cascader } from '@grafarg/ui';
 import { CascaderOption, CascaderProps } from './Cascader';
 import mdx from './Cascader.mdx';
 import React from 'react';

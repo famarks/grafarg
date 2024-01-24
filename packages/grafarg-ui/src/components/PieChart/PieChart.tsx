@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { DisplayValue, FALLBACK_COLOR, formattedValueToString, GrafargTheme } from '@grafana/data';
+import { DisplayValue, FALLBACK_COLOR, formattedValueToString, GrafargTheme } from '@grafarg/data';
 import { useStyles, useTheme } from '../../themes/ThemeContext';
 import tinycolor from 'tinycolor2';
 import Pie, { PieArcDatum } from '@visx/shape/lib/shapes/Pie';

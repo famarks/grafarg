@@ -1,5 +1,5 @@
 import { ThunkResult } from 'app/types';
-import { getBackendSrv } from '@grafana/runtime';
+import { getBackendSrv } from '@grafarg/runtime';
 import { organizationLoaded } from './reducers';
 import { updateConfigurationSubtitle } from 'app/core/actions';
 

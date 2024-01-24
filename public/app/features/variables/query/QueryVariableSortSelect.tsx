@@ -1,5 +1,5 @@
 import React, { PropsWithChildren, useMemo } from 'react';
-import { SelectableValue } from '@grafana/data';
+import { SelectableValue } from '@grafarg/data';
 import { selectors } from '@grafarg/e2e-selectors';
 import { VariableSelectField } from '../editor/VariableSelectField';
 import { VariableSort } from '../types';

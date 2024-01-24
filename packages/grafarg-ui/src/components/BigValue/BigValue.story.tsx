@@ -12,7 +12,7 @@ import { withCenteredStory } from '../../utils/storybook/withCenteredStory';
 import mdx from './BigValue.mdx';
 import { useTheme } from '../../themes';
 import { NOOP_CONTROL } from '../../utils/storybook/noopControl';
-import { ArrayVector, FieldSparkline, FieldType } from '@grafana/data';
+import { ArrayVector, FieldSparkline, FieldType } from '@grafarg/data';
 
 export default {
   title: 'Visualizations/BigValue',

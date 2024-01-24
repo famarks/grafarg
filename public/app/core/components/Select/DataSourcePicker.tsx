@@ -2,11 +2,11 @@
 import React, { PureComponent } from 'react';
 
 // Components
-import { HorizontalGroup, Select } from '@grafana/ui';
-import { DataSourceInstanceSettings, SelectableValue } from '@grafana/data';
+import { HorizontalGroup, Select } from '@grafarg/ui';
+import { DataSourceInstanceSettings, SelectableValue } from '@grafarg/data';
 import { selectors } from '@grafarg/e2e-selectors';
 import { isUnsignedPluginSignature, PluginSignatureBadge } from '../../../features/plugins/PluginSignatureBadge';
-import { getDataSourceSrv } from '@grafana/runtime';
+import { getDataSourceSrv } from '@grafarg/runtime';
 
 export interface Props {
   onChange: (ds: DataSourceInstanceSettings) => void;

@@ -3,7 +3,7 @@ import { mount, ReactWrapper } from 'enzyme';
 import { render, screen } from '@testing-library/react';
 import selectEvent from 'react-select-event';
 import { SelectBase } from './SelectBase';
-import { SelectableValue } from '@grafana/data';
+import { SelectableValue } from '@grafarg/data';
 import { MultiValueContainer } from './MultiValue';
 
 const onChangeHandler = () => jest.fn();

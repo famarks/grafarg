@@ -1,8 +1,8 @@
 import React from 'react';
 import config from 'app/core/config';
 import { css, cx } from 'emotion';
-import { useStyles } from '@grafana/ui';
-import { GrafargTheme } from '@grafana/data';
+import { useStyles } from '@grafarg/ui';
+import { GrafargTheme } from '@grafarg/data';
 
 const loginServices: () => LoginServices = () => {
   const oauthEnabled = !!config.oauth;

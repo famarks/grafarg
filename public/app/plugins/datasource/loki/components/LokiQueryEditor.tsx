@@ -2,8 +2,8 @@
 import React, { memo } from 'react';
 
 // Types
-import { QueryEditorProps } from '@grafana/data';
-import { InlineFormLabel } from '@grafana/ui';
+import { QueryEditorProps } from '@grafarg/data';
+import { InlineFormLabel } from '@grafarg/ui';
 import { LokiDatasource } from '../datasource';
 import { LokiQuery, LokiOptions } from '../types';
 import { LokiQueryField } from './LokiQueryField';

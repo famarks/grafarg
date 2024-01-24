@@ -4,10 +4,10 @@ import { Resizable, ResizeCallback } from 're-resizable';
 import { css, cx, keyframes } from 'emotion';
 
 // Services & Utils
-import { stylesFactory, useTheme } from '@grafana/ui';
+import { stylesFactory, useTheme } from '@grafarg/ui';
 
 // Types
-import { GrafargTheme } from '@grafana/data';
+import { GrafargTheme } from '@grafarg/data';
 
 const drawerSlide = keyframes`
   0% {

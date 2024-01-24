@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { css } from 'emotion';
 import pick from 'lodash/pick';
-import { GrafargTheme } from '@grafana/data';
-import { Button, stylesFactory, useStyles } from '@grafana/ui';
+import { GrafargTheme } from '@grafarg/data';
+import { Button, stylesFactory, useStyles } from '@grafarg/ui';
 
 import { OptionsGroup } from 'app/features/dashboard/components/PanelEditor/OptionsGroup';
 import { DashboardModel, PanelModel } from 'app/features/dashboard/state';

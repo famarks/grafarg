@@ -1,4 +1,4 @@
-import { DataFrame, dateTime, FieldType } from '@grafana/data';
+import { DataFrame, dateTime, FieldType } from '@grafarg/data';
 import throttle from 'lodash/throttle';
 import { AlignedData, Options } from 'uplot';
 import { PlotPlugin, PlotProps } from './types';

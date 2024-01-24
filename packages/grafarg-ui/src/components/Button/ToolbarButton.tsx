@@ -1,6 +1,6 @@
 import React, { forwardRef, ButtonHTMLAttributes } from 'react';
 import { cx, css } from 'emotion';
-import { GrafargTheme } from '@grafana/data';
+import { GrafargTheme } from '@grafarg/data';
 import { styleMixins, useStyles } from '../../themes';
 import { IconName } from '../../types/icon';
 import { Tooltip } from '../Tooltip/Tooltip';

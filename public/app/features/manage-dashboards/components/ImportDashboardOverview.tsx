@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
-import { dateTimeFormat } from '@grafana/data';
-import { Legend, Form } from '@grafana/ui';
+import { dateTimeFormat } from '@grafarg/data';
+import { Legend, Form } from '@grafarg/ui';
 import { connect, MapDispatchToProps, MapStateToProps } from 'react-redux';
 import { ImportDashboardForm } from './ImportDashboardForm';
 import { clearLoadedDashboard, importDashboard } from '../state/actions';

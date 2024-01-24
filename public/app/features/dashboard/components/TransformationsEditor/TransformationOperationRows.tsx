@@ -1,5 +1,5 @@
 import React from 'react';
-import { DataFrame, DataTransformerConfig, standardTransformersRegistry } from '@grafana/data';
+import { DataFrame, DataTransformerConfig, standardTransformersRegistry } from '@grafarg/data';
 
 import { TransformationOperationRow } from './TransformationOperationRow';
 import { TransformationsEditorTransformation } from './types';

@@ -2,7 +2,7 @@ import React from 'react';
 import { Story } from '@storybook/react';
 import { withCenteredStory } from '../../utils/storybook/withCenteredStory';
 import { UseState } from '../../utils/storybook/UseState';
-import { TabsBar, Tab, TabContent, Counter as TabCounter } from '@grafana/ui';
+import { TabsBar, Tab, TabContent, Counter as TabCounter } from '@grafarg/ui';
 import mdx from './TabsBar.mdx';
 import { CounterProps } from './Counter';
 

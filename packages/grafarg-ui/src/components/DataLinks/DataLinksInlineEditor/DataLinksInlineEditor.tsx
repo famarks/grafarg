@@ -1,4 +1,4 @@
-import { DataFrame, DataLink, GrafargTheme, VariableSuggestion } from '@grafana/data';
+import { DataFrame, DataLink, GrafargTheme, VariableSuggestion } from '@grafarg/data';
 import React, { useState } from 'react';
 import { css } from 'emotion';
 import { Button } from '../../Button/Button';

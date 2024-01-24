@@ -1,13 +1,13 @@
 import React, { FC, useMemo } from 'react';
 import { css } from 'emotion';
-import { IconButton, Label, Select, stylesFactory, useTheme } from '@grafana/ui';
+import { IconButton, Label, Select, stylesFactory, useTheme } from '@grafarg/ui';
 import {
   SelectableValue,
   getFrameDisplayName,
   GrafargTheme,
   StandardEditorProps,
   getFieldDisplayName,
-} from '@grafana/data';
+} from '@grafarg/data';
 
 import { XYDimensionConfig, Options } from './types';
 import { getXYDimensions, isGraphable } from './dims';

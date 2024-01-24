@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
-import { SelectableValue } from '@grafana/data';
-import { Field, Input, InputControl, Select } from '@grafana/ui';
+import { SelectableValue } from '@grafarg/data';
+import { Field, Input, InputControl, Select } from '@grafarg/ui';
 import { NotificationChannelOptions } from './NotificationChannelOptions';
 import { NotificationSettingsProps } from './NotificationChannelForm';
 import { NotificationChannelSecureFields, NotificationChannelType } from '../../../types';

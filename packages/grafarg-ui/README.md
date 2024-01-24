@@ -1,8 +1,8 @@
 # Grafarg UI components library
 
-> **@grafana/ui is currently in BETA**.
+> **@grafarg/ui is currently in BETA**.
 
-@grafana/ui is a collection of components used by [Grafarg](https://github.com/famarks/grafarg)
+@grafarg/ui is a collection of components used by [Grafarg](https://github.com/famarks/grafarg)
 
 Our goal is to deliver Grafarg's common UI elements for plugins developers and contributors.
 
@@ -10,13 +10,13 @@ See [package source](https://github.com/famarks/grafarg/tree/master/packages/gra
 
 ## Installation
 
-`yarn add @grafana/ui`
+`yarn add @grafarg/ui`
 
-`npm install @grafana/ui`
+`npm install @grafarg/ui`
 
 ## Development
 
-For development purposes we suggest using `yarn link` that will create symlink to @grafana/ui lib. To do so navigate to `packages/grafarg-ui` and run `yarn link`. Then, navigate to your project and run `yarn link @grafana/ui` to use the linked version of the lib. To unlink follow the same procedure, but use `yarn unlink` instead.
+For development purposes we suggest using `yarn link` that will create symlink to @grafarg/ui lib. To do so navigate to `packages/grafarg-ui` and run `yarn link`. Then, navigate to your project and run `yarn link @grafarg/ui` to use the linked version of the lib. To unlink follow the same procedure, but use `yarn unlink` instead.
 
 ### Storybook 6.x migration
 

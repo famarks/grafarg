@@ -1,4 +1,4 @@
-import { dateTimeFormat, GrafargTheme, systemDateFormats, TimeZone } from '@grafana/data';
+import { dateTimeFormat, GrafargTheme, systemDateFormats, TimeZone } from '@grafarg/data';
 import uPlot, { Axis } from 'uplot';
 import { PlotConfigBuilder } from '../types';
 import { measureText } from '../../../utils/measureText';

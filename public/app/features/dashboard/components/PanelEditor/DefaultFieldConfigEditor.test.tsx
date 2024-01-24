@@ -7,7 +7,7 @@ import {
   PanelPlugin,
   standardEditorsRegistry,
   standardFieldConfigEditorRegistry,
-} from '@grafana/data';
+} from '@grafarg/data';
 import { mockStandardFieldConfigOptions } from '../../../../../test/helpers/fieldConfig';
 import { selectors } from '@grafarg/e2e-selectors';
 

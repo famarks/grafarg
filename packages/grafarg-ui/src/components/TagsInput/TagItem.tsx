@@ -3,7 +3,7 @@ import { css } from 'emotion';
 import { getTagColorsFromName } from '../../utils';
 import { stylesFactory, useTheme } from '../../themes';
 import { Icon } from '../Icon/Icon';
-import { GrafargTheme } from '@grafana/data';
+import { GrafargTheme } from '@grafarg/data';
 
 interface Props {
   name: string;

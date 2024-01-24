@@ -1,8 +1,8 @@
 import React, { FormEvent, useMemo, useReducer } from 'react';
 import { useDebounce } from 'react-use';
 import { css, cx } from 'emotion';
-import { Button, Icon, Input, Pagination, stylesFactory, useStyles } from '@grafana/ui';
-import { DateTimeInput, GrafargTheme, LoadingState } from '@grafana/data';
+import { Button, Icon, Input, Pagination, stylesFactory, useStyles } from '@grafarg/ui';
+import { DateTimeInput, GrafargTheme, LoadingState } from '@grafarg/data';
 
 import { LibraryPanelCard } from '../LibraryPanelCard/LibraryPanelCard';
 import { LibraryPanelDTO } from '../../types';

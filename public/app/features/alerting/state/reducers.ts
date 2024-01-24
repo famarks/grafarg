@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { ApplyFieldOverrideOptions, DataFrame, DataTransformerConfig, dateTime, FieldColorModeId } from '@grafana/data';
+import { ApplyFieldOverrideOptions, DataFrame, DataTransformerConfig, dateTime, FieldColorModeId } from '@grafarg/data';
 import alertDef from './alertDef';
 import {
   AlertDefinition,
@@ -16,7 +16,7 @@ import {
   QueryGroupOptions,
 } from 'app/types';
 import store from 'app/core/store';
-import { config } from '@grafana/runtime';
+import { config } from '@grafarg/runtime';
 import { PanelQueryRunner } from '../../query/state/PanelQueryRunner';
 
 export const ALERT_DEFINITION_UI_STATE_STORAGE_KEY = 'grafarg.alerting.alertDefinition.ui';

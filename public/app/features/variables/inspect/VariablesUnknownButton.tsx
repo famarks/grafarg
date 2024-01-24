@@ -1,5 +1,5 @@
 import React, { FC, useMemo } from 'react';
-import { IconButton } from '@grafana/ui';
+import { IconButton } from '@grafarg/ui';
 import { UsagesToNetwork } from './utils';
 import { NetworkGraphModal } from './NetworkGraphModal';
 

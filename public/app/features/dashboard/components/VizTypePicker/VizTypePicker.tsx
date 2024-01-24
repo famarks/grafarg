@@ -2,8 +2,8 @@ import React, { useCallback, useMemo } from 'react';
 
 import config from 'app/core/config';
 import VizTypePickerPlugin from './VizTypePickerPlugin';
-import { EmptySearchResult, stylesFactory, useTheme } from '@grafana/ui';
-import { GrafargTheme, PanelPluginMeta, PluginState } from '@grafana/data';
+import { EmptySearchResult, stylesFactory, useTheme } from '@grafarg/ui';
+import { GrafargTheme, PanelPluginMeta, PluginState } from '@grafarg/data';
 import { css } from 'emotion';
 
 export interface Props {

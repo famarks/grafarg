@@ -4,7 +4,7 @@ import { FetchQueue, FetchQueueUpdate, FetchStatus } from './FetchQueue';
 import { ResponseQueue } from './ResponseQueue';
 import { FetchQueueWorker } from './FetchQueueWorker';
 import { expect } from '../../../test/lib/common';
-import { GrafargBootConfig } from '@grafana/runtime';
+import { GrafargBootConfig } from '@grafarg/runtime';
 
 const getTestContext = (http2Enabled = false) => {
   const config: GrafargBootConfig = ({ http2Enabled } as unknown) as GrafargBootConfig;

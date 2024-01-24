@@ -1,8 +1,8 @@
 import React, { PureComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 import { css } from 'emotion';
-import { GrafargTheme } from '@grafana/data';
-import { RefreshPicker, stylesFactory } from '@grafana/ui';
+import { GrafargTheme } from '@grafarg/data';
+import { RefreshPicker, stylesFactory } from '@grafarg/ui';
 
 import { config } from 'app/core/config';
 import { QueryGroup } from '../../query/components/QueryGroup';

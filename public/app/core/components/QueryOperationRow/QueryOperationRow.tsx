@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from 'react';
-import { Icon, renderOrCallToRender, stylesFactory, useTheme } from '@grafana/ui';
-import { GrafargTheme } from '@grafana/data';
+import { Icon, renderOrCallToRender, stylesFactory, useTheme } from '@grafarg/ui';
+import { GrafargTheme } from '@grafarg/data';
 import { css } from 'emotion';
 import { useUpdateEffect } from 'react-use';
 import { Draggable } from 'react-beautiful-dnd';

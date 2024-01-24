@@ -1,7 +1,7 @@
 import React, { FC, memo } from 'react';
 import { css } from 'emotion';
-import { useTheme, CustomScrollbar, stylesFactory, IconButton } from '@grafana/ui';
-import { GrafargTheme } from '@grafana/data';
+import { useTheme, CustomScrollbar, stylesFactory, IconButton } from '@grafarg/ui';
+import { GrafargTheme } from '@grafarg/data';
 import { useSearchQuery } from '../hooks/useSearchQuery';
 import { useDashboardSearch } from '../hooks/useDashboardSearch';
 import { SearchField } from './SearchField';

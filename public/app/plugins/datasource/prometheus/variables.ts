@@ -6,8 +6,8 @@ import {
   rangeUtil,
   StandardVariableQuery,
   StandardVariableSupport,
-} from '@grafana/data';
-import { getTemplateSrv, TemplateSrv } from '@grafana/runtime';
+} from '@grafarg/data';
+import { getTemplateSrv, TemplateSrv } from '@grafarg/runtime';
 
 import { PrometheusDatasource } from './datasource';
 import { PromQuery } from './types';

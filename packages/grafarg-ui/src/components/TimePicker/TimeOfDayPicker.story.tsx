@@ -1,10 +1,10 @@
 import React from 'react';
 import { action } from '@storybook/addon-actions';
 
-import { TimeOfDayPicker } from '@grafana/ui';
+import { TimeOfDayPicker } from '@grafarg/ui';
 import { UseState } from '../../utils/storybook/UseState';
 import { withCenteredStory } from '../../utils/storybook/withCenteredStory';
-import { dateTime } from '@grafana/data';
+import { dateTime } from '@grafarg/data';
 
 export default {
   title: 'Pickers and Editors/TimePickers/TimeOfDayPicker',

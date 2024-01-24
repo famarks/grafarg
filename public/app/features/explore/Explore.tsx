@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 import AutoSizer from 'react-virtualized-auto-sizer';
 import memoizeOne from 'memoize-one';
 import { selectors } from '@grafarg/e2e-selectors';
-import { ErrorBoundaryAlert, stylesFactory, withTheme } from '@grafana/ui';
+import { ErrorBoundaryAlert, stylesFactory, withTheme } from '@grafarg/ui';
 import {
   AbsoluteTimeRange,
   DataQuery,
@@ -18,7 +18,7 @@ import {
   TimeZone,
   LogsModel,
   DataFrame,
-} from '@grafana/data';
+} from '@grafarg/data';
 
 import LogsContainer from './LogsContainer';
 import QueryRows from './QueryRows';
@@ -39,7 +39,7 @@ import { ErrorContainer } from './ErrorContainer';
 //TODO:unification
 import { TraceView } from './TraceView/TraceView';
 import { SecondaryActions } from './SecondaryActions';
-import { FILTER_FOR_OPERATOR, FILTER_OUT_OPERATOR, FilterItem } from '@grafana/ui/src/components/Table/types';
+import { FILTER_FOR_OPERATOR, FILTER_OUT_OPERATOR, FilterItem } from '@grafarg/ui/src/components/Table/types';
 import { ExploreGraphNGPanel } from './ExploreGraphNGPanel';
 import { NodeGraphContainer } from './NodeGraphContainer';
 

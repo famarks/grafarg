@@ -1,7 +1,7 @@
 import React, { PureComponent, ChangeEvent } from 'react';
-import { SelectableValue } from '@grafana/data';
+import { SelectableValue } from '@grafarg/data';
 import { AzureCredentialsForm } from './AzureCredentialsForm';
-import { InlineFormLabel, LegacyForms, Button } from '@grafana/ui';
+import { InlineFormLabel, LegacyForms, Button } from '@grafarg/ui';
 const { Select, Switch } = LegacyForms;
 import { AzureDataSourceSettings } from '../types';
 

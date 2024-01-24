@@ -4,7 +4,7 @@
     "declarationDir": "dist",
     "outDir": "compiled",
     "paths": {
-      "@grafana/ui": ["."]
+      "@grafarg/ui": ["."]
     },
     "rootDirs": [".", "stories"],
     "typeRoots": ["node_modules/@types"]

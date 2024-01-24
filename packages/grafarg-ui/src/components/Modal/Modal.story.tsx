@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { oneLineTrim } from 'common-tags';
 import { boolean, text } from '@storybook/addon-knobs';
-import { Icon, Modal, ModalTabsHeader, TabContent } from '@grafana/ui';
+import { Icon, Modal, ModalTabsHeader, TabContent } from '@grafarg/ui';
 import { css, cx } from 'emotion';
 
 import { withCenteredStory } from '../../utils/storybook/withCenteredStory';

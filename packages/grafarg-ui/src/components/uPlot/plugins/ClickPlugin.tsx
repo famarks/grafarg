@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { css as cssCore, Global } from '@emotion/core';
-import { CartesianCoords2D } from '@grafana/data';
+import { CartesianCoords2D } from '@grafarg/data';
 
 import { PlotPluginProps } from '../types';
 import { usePlotPluginContext } from '../context';

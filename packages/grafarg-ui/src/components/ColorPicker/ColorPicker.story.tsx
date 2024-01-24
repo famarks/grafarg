@@ -1,6 +1,6 @@
 import React from 'react';
 import { Story } from '@storybook/react';
-import { SeriesColorPicker, ColorPicker } from '@grafana/ui';
+import { SeriesColorPicker, ColorPicker } from '@grafarg/ui';
 import { action } from '@storybook/addon-actions';
 import { withCenteredStory } from '../../utils/storybook/withCenteredStory';
 import { NOOP_CONTROL } from '../../utils/storybook/noopControl';

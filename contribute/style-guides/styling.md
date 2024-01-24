@@ -31,8 +31,8 @@ To access the theme in your styles, use the `useStyles` hook. It provides basic 
 
 ```tsx
 import React, { FC } from 'react';
-import { GrafargTheme } from '@grafana/data';
-import { useStyles } from '@grafana/ui';
+import { GrafargTheme } from '@grafarg/data';
+import { useStyles } from '@grafarg/ui';
 import { css } from 'emotion';
 
 const Foo: FC<FooProps> = () => {
@@ -57,8 +57,8 @@ Let's say you need to style a component that has a different background dependin
 ```tsx
 import React from 'react';
 import { css } from 'emotion';
-import { GrafargTheme } from '@grafana/data';
-import { selectThemeVariant, stylesFactory, useTheme } from '@grafana/ui';
+import { GrafargTheme } from '@grafarg/data';
+import { selectThemeVariant, stylesFactory, useTheme } from '@grafarg/ui';
 
 interface ComponentAProps {
   isActive: boolean

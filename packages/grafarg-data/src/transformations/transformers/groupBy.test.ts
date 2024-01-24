@@ -6,7 +6,7 @@ import { Field, FieldType } from '../../types';
 import { DataTransformerID } from './ids';
 import { ArrayVector } from '../../vector';
 import { ReducerID } from '../fieldReducer';
-import { DataTransformerConfig } from '@grafana/data';
+import { DataTransformerConfig } from '@grafarg/data';
 
 describe('GroupBy transformer', () => {
   beforeAll(() => {

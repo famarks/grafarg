@@ -1,4 +1,4 @@
-import { toDataFrame, FieldType, VizOrientation } from '@grafana/data';
+import { toDataFrame, FieldType, VizOrientation } from '@grafarg/data';
 import React from 'react';
 import { withCenteredStory } from '../../utils/storybook/withCenteredStory';
 import { BarChart } from './BarChart';

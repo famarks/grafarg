@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { css, cx } from 'emotion';
-import { DataQuery, GrafargTheme } from '@grafana/data';
-import { FieldValidationMessage, Icon, Input, stylesFactory, useTheme } from '@grafana/ui';
+import { DataQuery, GrafargTheme } from '@grafarg/data';
+import { FieldValidationMessage, Icon, Input, stylesFactory, useTheme } from '@grafarg/ui';
 import { selectors } from '@grafarg/e2e-selectors';
 
 export interface Props {

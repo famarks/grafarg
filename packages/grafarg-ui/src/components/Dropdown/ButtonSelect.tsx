@@ -1,6 +1,6 @@
 import React, { useState, HTMLAttributes } from 'react';
 import { PopoverContent } from '../Tooltip/Tooltip';
-import { GrafargTheme, SelectableValue } from '@grafana/data';
+import { GrafargTheme, SelectableValue } from '@grafarg/data';
 import { ToolbarButtonVariant, ToolbarButton } from '../Button';
 import { ClickOutsideWrapper } from '../ClickOutsideWrapper/ClickOutsideWrapper';
 import { css } from 'emotion';

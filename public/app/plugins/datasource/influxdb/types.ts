@@ -1,4 +1,4 @@
-import { DataQuery, DataSourceJsonData } from '@grafana/data';
+import { DataQuery, DataSourceJsonData } from '@grafarg/data';
 
 export enum InfluxVersion {
   InfluxQL = 'InfluxQL',

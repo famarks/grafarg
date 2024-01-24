@@ -6,10 +6,10 @@ import {
   updateDatasourcePluginResetOption,
   updateDatasourcePluginJsonDataOption,
   updateDatasourcePluginSecureJsonDataOption,
-} from '@grafana/data';
+} from '@grafarg/data';
 import { MonitorConfig } from './MonitorConfig';
 import { AnalyticsConfig } from './AnalyticsConfig';
-import { getBackendSrv, TemplateSrv, getTemplateSrv } from '@grafana/runtime';
+import { getBackendSrv, TemplateSrv, getTemplateSrv } from '@grafarg/runtime';
 import { InsightsConfig } from './InsightsConfig';
 import ResponseParser from '../azure_monitor/response_parser';
 import { AzureDataSourceJsonData, AzureDataSourceSecureJsonData, AzureDataSourceSettings } from '../types';

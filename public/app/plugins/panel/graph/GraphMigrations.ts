@@ -1,4 +1,4 @@
-import { PanelModel, FieldConfigSource, DataLink } from '@grafana/data';
+import { PanelModel, FieldConfigSource, DataLink } from '@grafarg/data';
 
 /**
  * Called when upgrading from a previously saved versoin

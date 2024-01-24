@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import _ from 'lodash';
-import { SelectableValue } from '@grafana/data';
-import { Segment } from '@grafana/ui';
+import { SelectableValue } from '@grafarg/data';
+import { Segment } from '@grafarg/ui';
 import { QueryType, queryTypes } from '../types';
 
 export interface Props {

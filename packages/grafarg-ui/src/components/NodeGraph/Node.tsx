@@ -1,7 +1,7 @@
 import React, { MouseEvent, memo } from 'react';
 import { NodeDatum } from './types';
 import { stylesFactory, useTheme } from '../../themes';
-import { getColorForTheme, GrafargTheme } from '@grafana/data';
+import { getColorForTheme, GrafargTheme } from '@grafarg/data';
 import { css } from 'emotion';
 import tinycolor from 'tinycolor2';
 

@@ -4,9 +4,9 @@ import classNames from 'classnames';
 import _ from 'lodash';
 // Utils & Services
 import { getDatasourceSrv } from 'app/features/plugins/datasource_srv';
-import { AngularComponent, getAngularLoader, getTemplateSrv } from '@grafana/runtime';
+import { AngularComponent, getAngularLoader, getTemplateSrv } from '@grafarg/runtime';
 import { getTimeSrv } from 'app/features/dashboard/services/TimeSrv';
-import { ErrorBoundaryAlert, HorizontalGroup, InfoBox } from '@grafana/ui';
+import { ErrorBoundaryAlert, HorizontalGroup, InfoBox } from '@grafarg/ui';
 import {
   DataQuery,
   DataSourceApi,
@@ -18,7 +18,7 @@ import {
   PanelEvents,
   TimeRange,
   toLegacyResponseData,
-} from '@grafana/data';
+} from '@grafarg/data';
 import { QueryEditorRowTitle } from './QueryEditorRowTitle';
 import {
   QueryOperationRow,

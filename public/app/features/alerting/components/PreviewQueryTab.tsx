@@ -1,6 +1,6 @@
 import React, { FC, useMemo, useState } from 'react';
-import { getFrameDisplayName, GrafargTheme, PanelData, SelectableValue, toDataFrame } from '@grafana/data';
-import { Select, stylesFactory, Table, useTheme } from '@grafana/ui';
+import { getFrameDisplayName, GrafargTheme, PanelData, SelectableValue, toDataFrame } from '@grafarg/data';
+import { Select, stylesFactory, Table, useTheme } from '@grafarg/ui';
 import { css } from 'emotion';
 
 interface Props {

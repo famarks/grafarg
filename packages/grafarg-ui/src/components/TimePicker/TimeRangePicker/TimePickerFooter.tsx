@@ -1,6 +1,6 @@
 import React, { FC, useState, useCallback } from 'react';
 import { css, cx } from 'emotion';
-import { TimeZone, GrafargTheme, getTimeZoneInfo } from '@grafana/data';
+import { TimeZone, GrafargTheme, getTimeZoneInfo } from '@grafarg/data';
 import { stylesFactory, useTheme } from '../../../themes';
 import { TimeZoneTitle } from '../TimeZonePicker/TimeZoneTitle';
 import { TimeZoneDescription } from '../TimeZonePicker/TimeZoneDescription';

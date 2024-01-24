@@ -1,10 +1,10 @@
 import React, { useCallback, useState } from 'react';
 import { css } from 'emotion';
 import { saveAs } from 'file-saver';
-import { Button, HorizontalGroup, stylesFactory, TextArea, useTheme, VerticalGroup } from '@grafana/ui';
+import { Button, HorizontalGroup, stylesFactory, TextArea, useTheme, VerticalGroup } from '@grafarg/ui';
 import { CopyToClipboard } from 'app/core/components/CopyToClipboard/CopyToClipboard';
 import { SaveDashboardFormProps } from '../types';
-import { AppEvents, GrafargTheme } from '@grafana/data';
+import { AppEvents, GrafargTheme } from '@grafarg/data';
 import appEvents from '../../../../../core/app_events';
 
 export const SaveProvisionedDashboardForm: React.FC<SaveDashboardFormProps> = ({ dashboard, onCancel }) => {

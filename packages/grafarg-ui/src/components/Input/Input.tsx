@@ -1,5 +1,5 @@
 import React, { HTMLProps, ReactNode } from 'react';
-import { GrafargTheme } from '@grafana/data';
+import { GrafargTheme } from '@grafarg/data';
 import { css, cx } from 'emotion';
 import { getFocusStyle, sharedInputStyle } from '../Forms/commonStyles';
 import { stylesFactory, useTheme } from '../../themes';

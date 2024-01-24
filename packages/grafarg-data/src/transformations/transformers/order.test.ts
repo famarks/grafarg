@@ -5,7 +5,7 @@ import {
   FieldType,
   toDataFrame,
   transformDataFrame,
-} from '@grafana/data';
+} from '@grafarg/data';
 import { orderFieldsTransformer, OrderFieldsTransformerOptions } from './order';
 import { mockTransformationsRegistry } from '../../utils/tests/mockTransformationsRegistry';
 

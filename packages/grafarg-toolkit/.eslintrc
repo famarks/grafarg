@@ -1,6 +1,6 @@
 {
   "rules": {
-    "no-restricted-imports": ["error", { "patterns": ["@grafana/runtime"] }]
+    "no-restricted-imports": ["error", { "patterns": ["@grafarg/runtime"] }]
   },
   "overrides": [
     {

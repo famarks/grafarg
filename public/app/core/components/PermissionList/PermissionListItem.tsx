@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
-import { Select, Icon } from '@grafana/ui';
-import { SelectableValue } from '@grafana/data';
+import { Select, Icon } from '@grafarg/ui';
+import { SelectableValue } from '@grafarg/data';
 import { dashboardPermissionLevels, DashboardAcl, PermissionLevel } from 'app/types/acl';
 import { FolderInfo } from 'app/types';
 

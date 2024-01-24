@@ -1,5 +1,5 @@
 import React, { ChangeEvent, FormEvent, FunctionComponent, useCallback } from 'react';
-import { InlineFieldRow, VerticalGroup } from '@grafana/ui';
+import { InlineFieldRow, VerticalGroup } from '@grafarg/ui';
 import { selectors } from '@grafarg/e2e-selectors';
 
 import { VariableWithMultiSupport } from '../types';

@@ -1,7 +1,7 @@
 import { css } from 'emotion';
 
-import { GrafargTheme } from '@grafana/data';
-import { styleMixins, stylesFactory } from '@grafana/ui';
+import { GrafargTheme } from '@grafarg/data';
+import { styleMixins, stylesFactory } from '@grafarg/ui';
 
 export const getStyles = stylesFactory((theme: GrafargTheme) => ({
   dashlistSectionHeader: css`

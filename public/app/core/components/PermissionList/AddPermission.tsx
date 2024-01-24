@@ -3,8 +3,8 @@ import { css } from 'emotion';
 import config from 'app/core/config';
 import { UserPicker } from 'app/core/components/Select/UserPicker';
 import { TeamPicker, Team } from 'app/core/components/Select/TeamPicker';
-import { Button, Form, HorizontalGroup, Icon, Select, stylesFactory } from '@grafana/ui';
-import { GrafargTheme, SelectableValue } from '@grafana/data';
+import { Button, Form, HorizontalGroup, Icon, Select, stylesFactory } from '@grafarg/ui';
+import { GrafargTheme, SelectableValue } from '@grafarg/data';
 import { User } from 'app/types';
 import {
   dashboardPermissionLevels,

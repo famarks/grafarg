@@ -6,7 +6,7 @@ import {
   LogsSortOrder,
   DataQueryResponse,
   DataQueryError,
-} from '@grafana/data';
+} from '@grafarg/data';
 import React, { useState, useEffect } from 'react';
 import useAsync from 'react-use/lib/useAsync';
 

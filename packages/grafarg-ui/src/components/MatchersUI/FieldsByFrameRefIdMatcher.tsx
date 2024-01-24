@@ -1,6 +1,6 @@
 import React, { memo, useMemo, useCallback } from 'react';
 import { MatcherUIProps, FieldMatcherUIRegistryItem } from './types';
-import { FieldMatcherID, fieldMatchers, SelectableValue, DataFrame } from '@grafana/data';
+import { FieldMatcherID, fieldMatchers, SelectableValue, DataFrame } from '@grafarg/data';
 import { Select } from '../Select/Select';
 
 /**

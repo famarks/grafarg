@@ -1,8 +1,8 @@
 import React from 'react';
-import { Button, InfoBox, Portal, stylesFactory, useTheme } from '@grafana/ui';
-import { getModalStyles } from '@grafana/ui/src/components/Modal/getModalStyles';
+import { Button, InfoBox, Portal, stylesFactory, useTheme } from '@grafarg/ui';
+import { getModalStyles } from '@grafarg/ui/src/components/Modal/getModalStyles';
 import { css, cx } from 'emotion';
-import { GrafargTheme } from '@grafana/data';
+import { GrafargTheme } from '@grafarg/data';
 
 interface Props {
   maxConcurrentSessions?: number;

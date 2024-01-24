@@ -11,7 +11,7 @@ import {
   FieldColorConfigSettings,
   FieldColorSeriesByMode,
   getFieldColorMode,
-} from '@grafana/data';
+} from '@grafarg/data';
 import { Select } from '../Select/Select';
 import { ColorValueEditor } from './color';
 import { useStyles, useTheme } from '../../themes/ThemeContext';

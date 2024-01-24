@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { withCenteredStory } from '../../utils/storybook/withCenteredStory';
-import { TagsInput } from '@grafana/ui';
+import { TagsInput } from '@grafarg/ui';
 import mdx from './TagsInput.mdx';
 import { StoryExample } from '../../utils/storybook/StoryExample';
 import { VerticalGroup } from '../Layout/Layout';

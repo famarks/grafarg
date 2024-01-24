@@ -4,7 +4,7 @@ import { GraphSeriesValue } from '../types/graph';
 import { TimeRange } from '../types/time';
 
 // Types
-// import { NullValueMode, GraphSeriesValue, Field, TimeRange } from '@grafana/data';
+// import { NullValueMode, GraphSeriesValue, Field, TimeRange } from '@grafarg/data';
 export interface FlotPairsOptions {
   xField: Field;
   yField: Field;

@@ -15,7 +15,7 @@ const isLinkedMode = () => {
   }
 
   try {
-    const resolvedPath = path.resolve(`${__dirname}/../../../node_modules/@grafana/toolkit`);
+    const resolvedPath = path.resolve(`${__dirname}/../../../node_modules/@grafarg/toolkit`);
     return fs.lstatSync(resolvedPath).isSymbolicLink();
   } catch {
     return false;

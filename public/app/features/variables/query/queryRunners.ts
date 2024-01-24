@@ -8,7 +8,7 @@ import {
   LoadingState,
   PanelData,
   VariableSupportType,
-} from '@grafana/data';
+} from '@grafarg/data';
 
 import { QueryVariableModel } from '../types';
 import {

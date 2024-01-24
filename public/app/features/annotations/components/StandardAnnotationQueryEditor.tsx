@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 
-import { AnnotationEventMappings, DataQuery, LoadingState, DataSourceApi, AnnotationQuery } from '@grafana/data';
-import { Spinner, Icon, IconName, Button } from '@grafana/ui';
+import { AnnotationEventMappings, DataQuery, LoadingState, DataSourceApi, AnnotationQuery } from '@grafarg/data';
+import { Spinner, Icon, IconName, Button } from '@grafarg/ui';
 
 import { getDashboardSrv } from 'app/features/dashboard/services/DashboardSrv';
 import { getTimeSrv } from 'app/features/dashboard/services/TimeSrv';

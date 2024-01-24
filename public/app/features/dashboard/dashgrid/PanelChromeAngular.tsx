@@ -7,13 +7,13 @@ import { connect, MapDispatchToProps, MapStateToProps } from 'react-redux';
 import { PanelHeader } from './PanelHeader/PanelHeader';
 // Utils & Services
 import { getTimeSrv, TimeSrv } from '../services/TimeSrv';
-import { AngularComponent, getAngularLoader } from '@grafana/runtime';
+import { AngularComponent, getAngularLoader } from '@grafarg/runtime';
 import { setPanelAngularComponent } from '../state/reducers';
 import config from 'app/core/config';
 // Types
 import { DashboardModel, PanelModel } from '../state';
 import { StoreState } from 'app/types';
-import { getDefaultTimeRange, LoadingState, PanelData, PanelPlugin } from '@grafana/data';
+import { getDefaultTimeRange, LoadingState, PanelData, PanelPlugin } from '@grafarg/data';
 import { PANEL_BORDER } from 'app/core/constants';
 import { selectors } from '@grafarg/e2e-selectors';
 import { RenderEvent } from 'app/types/events';

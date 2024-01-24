@@ -1,12 +1,12 @@
 import React from 'react';
-import { DataSourceApi, LoadingState, toUtc, DataQueryError, DataQueryRequest, CoreApp } from '@grafana/data';
+import { DataSourceApi, LoadingState, toUtc, DataQueryError, DataQueryRequest, CoreApp } from '@grafarg/data';
 import { getFirstNonQueryRowSpecificError } from 'app/core/utils/explore';
 import { ExploreId } from 'app/types/explore';
 import { shallow } from 'enzyme';
 import { Explore, ExploreProps } from './Explore';
 import { scanStopAction } from './state/query';
 import { SecondaryActions } from './SecondaryActions';
-import { getTheme } from '@grafana/ui';
+import { getTheme } from '@grafarg/ui';
 
 const dummyProps: ExploreProps = {
   changeSize: jest.fn(),

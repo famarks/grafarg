@@ -3,7 +3,7 @@ import Clipboard from 'clipboard';
 import coreModule from '../core_module';
 import kbn from 'app/core/utils/kbn';
 import { appEvents } from 'app/core/core';
-import { AppEvents } from '@grafana/data';
+import { AppEvents } from '@grafarg/data';
 
 /** @ngInject */
 function tip($compile: any) {

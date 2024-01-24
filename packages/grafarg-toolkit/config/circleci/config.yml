@@ -245,7 +245,7 @@ jobs:
         when: always
         name: Prepare task output dir
         command: |
-          # TODO: probably move all of this to `@grafana/toolkit plugin:ci-test`
+          # TODO: probably move all of this to `@grafarg/toolkit plugin:ci-test`
           mkdir ci/jobs/e2e_canary
           # only copy if they exist
           cp cypress/screenshots/*.* ci/jobs/e2e_canary 2>/dev/null || :

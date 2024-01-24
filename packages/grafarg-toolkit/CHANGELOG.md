@@ -17,7 +17,7 @@
 
 ### Bug Fixes
 
-- **@grafana/toolkit**: Use process.cwd() instead of PWD to get directory. [#24677](https://github.com/famarks/grafarg/pull/24677), [@zoltanbedi](https://github.com/zoltanbedi)
+- **@grafarg/toolkit**: Use process.cwd() instead of PWD to get directory. [#24677](https://github.com/famarks/grafarg/pull/24677), [@zoltanbedi](https://github.com/zoltanbedi)
 
 # 7.0.0-beta.1 (2020-04-28)
 

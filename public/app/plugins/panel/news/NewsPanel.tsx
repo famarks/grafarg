@@ -2,14 +2,14 @@
 import React, { PureComponent } from 'react';
 
 // Utils & Services
-import { CustomScrollbar, stylesFactory } from '@grafana/ui';
+import { CustomScrollbar, stylesFactory } from '@grafarg/ui';
 
 import config from 'app/core/config';
 import { feedToDataFrame } from './utils';
 import { loadRSSFeed } from './rss';
 
 // Types
-import { PanelProps, DataFrameView, dateTimeFormat, GrafargTheme, textUtil } from '@grafana/data';
+import { PanelProps, DataFrameView, dateTimeFormat, GrafargTheme, textUtil } from '@grafarg/data';
 import { NewsOptions, NewsItem } from './types';
 import { DEFAULT_FEED_URL, PROXY_PREFIX } from './constants';
 import { css } from 'emotion';

@@ -1,6 +1,6 @@
 import React, { HTMLAttributes, SFC } from 'react';
 import { css, cx } from 'emotion';
-import { GrafargTheme } from '@grafana/data';
+import { GrafargTheme } from '@grafarg/data';
 import { Spinner } from '../Spinner/Spinner';
 import { useStyles } from '../../themes';
 

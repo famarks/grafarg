@@ -1,4 +1,4 @@
-import { GrafargThemeType } from '@grafana/data';
+import { GrafargThemeType } from '@grafarg/data';
 
 type VariantDescriptor = { [key in GrafargThemeType]: string | number };
 

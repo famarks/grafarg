@@ -1,4 +1,4 @@
-import { DataSourceSettings } from '@grafana/data';
+import { DataSourceSettings } from '@grafarg/data';
 
 export interface HttpSettingsBaseProps {
   /** The configuration object of the data source */

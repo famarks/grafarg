@@ -1,8 +1,8 @@
 import React, { FC, useCallback } from 'react';
 import { css, cx } from 'emotion';
 import { useLocalStorage } from 'react-use';
-import { GrafargTheme } from '@grafana/data';
-import { Icon, Spinner, stylesFactory, useTheme } from '@grafana/ui';
+import { GrafargTheme } from '@grafarg/data';
+import { Icon, Spinner, stylesFactory, useTheme } from '@grafarg/ui';
 import { DashboardSection, OnToggleChecked } from '../types';
 import { SearchCheckbox } from './SearchCheckbox';
 import { getSectionIcon, getSectionStorageKey } from '../utils';

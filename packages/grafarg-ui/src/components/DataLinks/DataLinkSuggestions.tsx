@@ -1,5 +1,5 @@
 import { ThemeContext } from '../../index';
-import { GrafargTheme, VariableSuggestion } from '@grafana/data';
+import { GrafargTheme, VariableSuggestion } from '@grafarg/data';
 import { css, cx } from 'emotion';
 import _ from 'lodash';
 import React, { useRef, useContext, useMemo } from 'react';

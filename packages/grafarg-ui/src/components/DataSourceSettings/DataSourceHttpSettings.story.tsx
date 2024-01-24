@@ -1,5 +1,5 @@
 import React from 'react';
-import { DataSourceSettings } from '@grafana/data';
+import { DataSourceSettings } from '@grafarg/data';
 
 import { DataSourceHttpSettings } from './DataSourceHttpSettings';
 import { UseState } from '../../utils/storybook/UseState';

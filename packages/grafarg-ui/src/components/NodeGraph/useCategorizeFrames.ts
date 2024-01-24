@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { DataFrame } from '@grafana/data';
+import { DataFrame } from '@grafarg/data';
 
 /**
  * As we need 2 dataframes for the service map, one with nodes and one with edges we have to figure out which is which.

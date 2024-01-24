@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
-import { SelectableValue } from '@grafana/data';
-import { Button, Checkbox, Field, FormAPI, Input } from '@grafana/ui';
+import { SelectableValue } from '@grafarg/data';
+import { Button, Checkbox, Field, FormAPI, Input } from '@grafarg/ui';
 import { OptionElement } from './OptionElement';
 import { NotificationChannelDTO, NotificationChannelOption, NotificationChannelSecureFields } from '../../../types';
 

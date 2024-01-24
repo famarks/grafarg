@@ -1,15 +1,15 @@
-import { DataFrame, getFrameDisplayName, toUtc } from '@grafana/data';
+import { DataFrame, getFrameDisplayName, toUtc } from '@grafarg/data';
 import { TemplateSrv } from 'app/features/templating/template_srv';
 import { backendSrv } from 'app/core/services/backend_srv';
-import { setBackendSrv } from '@grafana/runtime';
+import { setBackendSrv } from '@grafarg/runtime';
 import AppInsightsDatasource from './app_insights_datasource';
 import { of } from 'rxjs';
 
 const templateSrv = new TemplateSrv();
 
 jest.mock('app/core/services/backend_srv');
-jest.mock('@grafana/runtime', () => ({
-  ...((jest.requireActual('@grafana/runtime') as unknown) as object),
+jest.mock('@grafarg/runtime', () => ({
+  ...((jest.requireActual('@grafarg/runtime') as unknown) as object),
   getBackendSrv: () => backendSrv,
   getTemplateSrv: () => templateSrv,
 }));

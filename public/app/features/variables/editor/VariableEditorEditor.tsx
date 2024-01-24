@@ -1,7 +1,7 @@
 import React, { FormEvent, PureComponent } from 'react';
 import isEqual from 'lodash/isEqual';
-import { AppEvents, LoadingState, SelectableValue, VariableType } from '@grafana/data';
-import { Button, Icon, InlineFieldRow, VerticalGroup } from '@grafana/ui';
+import { AppEvents, LoadingState, SelectableValue, VariableType } from '@grafarg/data';
+import { Button, Icon, InlineFieldRow, VerticalGroup } from '@grafarg/ui';
 import { selectors } from '@grafarg/e2e-selectors';
 
 import { variableAdapters } from '../adapters';

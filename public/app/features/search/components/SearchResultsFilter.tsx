@@ -1,7 +1,7 @@
 import React, { Dispatch, FC, SetStateAction } from 'react';
 import { css } from 'emotion';
-import { Button, Checkbox, stylesFactory, useTheme, HorizontalGroup } from '@grafana/ui';
-import { GrafargTheme, SelectableValue } from '@grafana/data';
+import { Button, Checkbox, stylesFactory, useTheme, HorizontalGroup } from '@grafarg/ui';
+import { GrafargTheme, SelectableValue } from '@grafarg/data';
 import { DashboardQuery } from '../types';
 import { ActionRow } from './ActionRow';
 

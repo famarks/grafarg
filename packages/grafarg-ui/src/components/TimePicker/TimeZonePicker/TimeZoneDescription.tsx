@@ -1,6 +1,6 @@
 import React, { PropsWithChildren, useMemo } from 'react';
 import { css } from 'emotion';
-import { GrafargTheme, TimeZoneInfo } from '@grafana/data';
+import { GrafargTheme, TimeZoneInfo } from '@grafarg/data';
 import { useTheme, stylesFactory } from '../../../themes';
 
 interface Props {

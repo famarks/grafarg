@@ -3,9 +3,9 @@ import React, { PureComponent } from 'react';
 import cloneDeep from 'lodash/cloneDeep';
 import extend from 'lodash/extend';
 
-import { Button } from '@grafana/ui';
-import { PluginMeta, AppPlugin, deprecationWarning } from '@grafana/data';
-import { AngularComponent, getAngularLoader, getBackendSrv } from '@grafana/runtime';
+import { Button } from '@grafarg/ui';
+import { PluginMeta, AppPlugin, deprecationWarning } from '@grafarg/data';
+import { AngularComponent, getAngularLoader, getBackendSrv } from '@grafarg/runtime';
 
 import { css } from 'emotion';
 

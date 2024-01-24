@@ -4,7 +4,7 @@ import { sharedInputStyle } from '../Forms/commonStyles';
 import { getInputStyles } from '../Input/Input';
 import { css, cx } from 'emotion';
 import { stylesFactory } from '../../themes';
-import { GrafargTheme } from '@grafana/data';
+import { GrafargTheme } from '@grafarg/data';
 import { focusCss } from '../../themes/mixins';
 
 interface InputControlProps {

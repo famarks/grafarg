@@ -1,6 +1,6 @@
 import React, { memo } from 'react';
 import { css } from 'emotion';
-import { GrafargTheme, TimeOption } from '@grafana/data';
+import { GrafargTheme, TimeOption } from '@grafarg/data';
 import { useTheme, stylesFactory, styleMixins } from '../../../themes';
 import { Icon } from '../../Icon/Icon';
 

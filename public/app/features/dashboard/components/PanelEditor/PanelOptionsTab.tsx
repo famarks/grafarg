@@ -1,7 +1,7 @@
 import React, { FC, useCallback, useMemo, useRef } from 'react';
 import { DashboardModel, PanelModel } from '../../state';
-import { PanelData, PanelPlugin } from '@grafana/data';
-import { Counter, DataLinksInlineEditor, Field, Input, RadioButtonGroup, Select, Switch, TextArea } from '@grafana/ui';
+import { PanelData, PanelPlugin } from '@grafarg/data';
+import { Counter, DataLinksInlineEditor, Field, Input, RadioButtonGroup, Select, Switch, TextArea } from '@grafarg/ui';
 import { getPanelLinksVariableSuggestions } from '../../../panel/panellinks/link_srv';
 import { PanelOptionsEditor } from './PanelOptionsEditor';
 import { AngularPanelOptions } from './AngularPanelOptions';

@@ -3,7 +3,7 @@ import React, { CSSProperties } from 'react';
 import tinycolor from 'tinycolor2';
 
 // Utils
-import { formattedValueToString, DisplayValue, getColorForTheme, FieldConfig } from '@grafana/data';
+import { formattedValueToString, DisplayValue, getColorForTheme, FieldConfig } from '@grafarg/data';
 import { calculateFontSize } from '../../utils/measureText';
 
 // Types

@@ -1,6 +1,6 @@
 import 'vendor/flot/jquery.flot';
 import _ from 'lodash';
-import { getColorForTheme, dateTime, DateTime, AbsoluteTimeRange, GrafargTheme } from '@grafana/data';
+import { getColorForTheme, dateTime, DateTime, AbsoluteTimeRange, GrafargTheme } from '@grafarg/data';
 import { config } from 'app/core/config';
 
 type TimeRegionColorDefinition = {

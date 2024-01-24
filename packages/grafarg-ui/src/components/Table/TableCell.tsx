@@ -1,6 +1,6 @@
 import React, { FC, MouseEventHandler } from 'react';
 import { Cell } from 'react-table';
-import { Field, LinkModel } from '@grafana/data';
+import { Field, LinkModel } from '@grafarg/data';
 import { TableFilterActionCallback } from './types';
 import { TableStyles } from './styles';
 

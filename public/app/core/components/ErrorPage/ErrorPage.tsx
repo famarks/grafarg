@@ -1,8 +1,8 @@
 import React, { PureComponent } from 'react';
 import { connect, MapStateToProps } from 'react-redux';
-import { NavModel } from '@grafana/data';
-import { config } from '@grafana/runtime';
-import { Icon } from '@grafana/ui';
+import { NavModel } from '@grafarg/data';
+import { config } from '@grafarg/runtime';
+import { Icon } from '@grafarg/ui';
 import Page from '../Page/Page';
 import { getNavModel } from 'app/core/selectors/navModel';
 import { StoreState } from 'app/types';

@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { css } from 'emotion';
-import { GraphSeriesValue } from '@grafana/data';
+import { GraphSeriesValue } from '@grafarg/data';
 
 import { Graph, GraphProps } from './Graph';
 import { VizLegendItem, LegendDisplayMode, SeriesColorChangeHandler, LegendPlacement } from '../VizLegend/types';

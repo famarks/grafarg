@@ -8,8 +8,8 @@ import {
   GrafargTheme,
   isSystemOverride as isSystemOverrideGuard,
   VariableSuggestionsScope,
-} from '@grafana/data';
-import { Field, fieldMatchersUI, HorizontalGroup, Icon, IconButton, Label, useStyles, ValuePicker } from '@grafana/ui';
+} from '@grafarg/data';
+import { Field, fieldMatchersUI, HorizontalGroup, Icon, IconButton, Label, useStyles, ValuePicker } from '@grafarg/ui';
 import { DynamicConfigValueEditor } from './DynamicConfigValueEditor';
 
 import { getDataLinksVariableSuggestions } from '../../../panel/panellinks/link_srv';

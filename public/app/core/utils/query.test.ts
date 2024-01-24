@@ -1,4 +1,4 @@
-import { DataQuery } from '@grafana/data';
+import { DataQuery } from '@grafarg/data';
 import { getNextRefIdChar } from './query';
 
 const dataQueries: DataQuery[] = [

@@ -10,7 +10,7 @@ import {
   getDisplayProcessor,
   getFieldDisplayName,
   TimeZone,
-} from '@grafana/data';
+} from '@grafarg/data';
 import { TooltipContainer } from '../../Chart/TooltipContainer';
 import { TooltipMode } from '../../Chart/Tooltip';
 import { useGraphNGContext } from '../../GraphNG/hooks';

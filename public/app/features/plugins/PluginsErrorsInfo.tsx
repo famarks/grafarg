@@ -1,6 +1,6 @@
 import React from 'react';
 import { selectors } from '@grafarg/e2e-selectors';
-import { HorizontalGroup, InfoBox, List, useTheme } from '@grafana/ui';
+import { HorizontalGroup, InfoBox, List, useTheme } from '@grafarg/ui';
 import { mapPluginErrorCodeToSignatureStatus, PluginSignatureBadge } from './PluginSignatureBadge';
 import { StoreState } from '../../types';
 import { getAllPluginsErrors } from './state/selectors';
@@ -8,7 +8,7 @@ import { loadPlugins, loadPluginsErrors } from './state/actions';
 import useAsync from 'react-use/lib/useAsync';
 import { connect, MapDispatchToProps, MapStateToProps } from 'react-redux';
 import { hot } from 'react-hot-loader';
-import { PluginError } from '@grafana/data';
+import { PluginError } from '@grafarg/data';
 import { css } from 'emotion';
 
 interface ConnectedProps {

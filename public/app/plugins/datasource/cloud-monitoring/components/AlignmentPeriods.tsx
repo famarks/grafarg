@@ -1,9 +1,9 @@
 import React, { FC } from 'react';
 import _ from 'lodash';
 
-import { TemplateSrv } from '@grafana/runtime';
-import { SelectableValue, rangeUtil } from '@grafana/data';
-import { Segment } from '@grafana/ui';
+import { TemplateSrv } from '@grafarg/runtime';
+import { SelectableValue, rangeUtil } from '@grafarg/data';
+import { Segment } from '@grafarg/ui';
 import { alignmentPeriods, alignOptions } from '../constants';
 
 export interface Props {

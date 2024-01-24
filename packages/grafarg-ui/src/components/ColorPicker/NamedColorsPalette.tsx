@@ -1,5 +1,5 @@
 import React from 'react';
-import { getNamedColorPalette } from '@grafana/data';
+import { getNamedColorPalette } from '@grafarg/data';
 import { Themeable } from '../../types/index';
 import NamedColorsGroup from './NamedColorsGroup';
 

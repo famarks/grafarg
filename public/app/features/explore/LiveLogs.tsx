@@ -2,8 +2,8 @@ import React, { PureComponent } from 'react';
 import { css, cx } from 'emotion';
 import tinycolor from 'tinycolor2';
 
-import { LogMessageAnsi, Themeable, withTheme, getLogRowStyles, Icon } from '@grafana/ui';
-import { GrafargTheme, LogRowModel, TimeZone, dateTimeFormat } from '@grafana/data';
+import { LogMessageAnsi, Themeable, withTheme, getLogRowStyles, Icon } from '@grafarg/ui';
+import { GrafargTheme, LogRowModel, TimeZone, dateTimeFormat } from '@grafarg/data';
 
 import { ElapsedTime } from './ElapsedTime';
 

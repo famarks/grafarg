@@ -1,6 +1,6 @@
-import { AppEvents, ExploreQueryFieldProps } from '@grafana/data';
+import { AppEvents, ExploreQueryFieldProps } from '@grafarg/data';
 import { selectors } from '@grafarg/e2e-selectors';
-import { ButtonCascader, CascaderOption } from '@grafana/ui';
+import { ButtonCascader, CascaderOption } from '@grafarg/ui';
 import React from 'react';
 import { appEvents } from '../../../core/core';
 import { JaegerDatasource, JaegerQuery } from './datasource';

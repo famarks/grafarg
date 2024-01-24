@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { css } from 'emotion';
-import { GrafargTheme } from '@grafana/data';
-import { stylesFactory, useTheme } from '@grafana/ui';
+import { GrafargTheme } from '@grafarg/data';
+import { stylesFactory, useTheme } from '@grafarg/ui';
 import lightBackground from './img/background_light.svg';
 
 const helpOptions = [

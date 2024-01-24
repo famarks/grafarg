@@ -1,8 +1,8 @@
 import React, { FC, useState } from 'react';
-import { Form, Field, Input, Button, Legend, Container, useStyles, HorizontalGroup, LinkButton } from '@grafana/ui';
-import { getBackendSrv } from '@grafana/runtime';
+import { Form, Field, Input, Button, Legend, Container, useStyles, HorizontalGroup, LinkButton } from '@grafarg/ui';
+import { getBackendSrv } from '@grafarg/runtime';
 import { css } from 'emotion';
-import { GrafargTheme } from '@grafana/data';
+import { GrafargTheme } from '@grafarg/data';
 import config from 'app/core/config';
 
 interface EmailDTO {

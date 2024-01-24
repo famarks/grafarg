@@ -1,7 +1,7 @@
 import React from 'react';
 import { Story } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import { Alert, AlertVariant, VerticalGroup } from '@grafana/ui';
+import { Alert, AlertVariant, VerticalGroup } from '@grafarg/ui';
 import { Props } from './Alert';
 import { withCenteredStory, withHorizontallyCenteredStory } from '../../utils/storybook/withCenteredStory';
 import mdx from '../Alert/Alert.mdx';

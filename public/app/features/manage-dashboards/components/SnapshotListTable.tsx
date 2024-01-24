@@ -1,6 +1,6 @@
 import React, { FC, useState, useCallback, useEffect } from 'react';
-import { ConfirmModal, Button, LinkButton } from '@grafana/ui';
-import { getBackendSrv } from '@grafana/runtime';
+import { ConfirmModal, Button, LinkButton } from '@grafarg/ui';
+import { getBackendSrv } from '@grafarg/runtime';
 import { Snapshot } from '../types';
 
 interface Props {

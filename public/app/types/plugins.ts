@@ -1,5 +1,5 @@
-import { PluginError, PluginMeta, PanelPlugin } from '@grafana/data';
-import { TemplateSrv } from '@grafana/runtime';
+import { PluginError, PluginMeta, PanelPlugin } from '@grafarg/data';
+import { TemplateSrv } from '@grafarg/runtime';
 
 export interface PluginDashboard {
   dashboardId: number;

@@ -1,5 +1,5 @@
-import { GrafargTheme } from '@grafana/data';
-import { Icon, InlineSegmentGroup, stylesFactory, useTheme } from '@grafana/ui';
+import { GrafargTheme } from '@grafarg/data';
+import { Icon, InlineSegmentGroup, stylesFactory, useTheme } from '@grafarg/ui';
 import { css, cx } from 'emotion';
 import React, { FunctionComponent, useState } from 'react';
 import { segmentStyles } from './styles';

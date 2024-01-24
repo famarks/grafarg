@@ -12,7 +12,7 @@ import {
   withTheme,
   Input,
   IconButton,
-} from '@grafana/ui';
+} from '@grafarg/ui';
 import {
   DataFrame,
   DataTransformerConfig,
@@ -21,7 +21,7 @@ import {
   PanelData,
   SelectableValue,
   standardTransformersRegistry,
-} from '@grafana/data';
+} from '@grafarg/data';
 import { Card, CardProps } from '../../../../core/components/Card/Card';
 import { css } from 'emotion';
 import { selectors } from '@grafarg/e2e-selectors';

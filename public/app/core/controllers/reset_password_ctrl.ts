@@ -1,7 +1,7 @@
 import coreModule from '../core_module';
 import config from 'app/core/config';
-import { AppEvents } from '@grafana/data';
-import { getBackendSrv } from '@grafana/runtime';
+import { AppEvents } from '@grafarg/data';
+import { getBackendSrv } from '@grafarg/runtime';
 import { promiseToDigest } from '../utils/promiseToDigest';
 
 export class ResetPasswordCtrl {

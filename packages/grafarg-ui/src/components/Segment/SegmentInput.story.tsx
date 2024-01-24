@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { action } from '@storybook/addon-actions';
-import { SegmentInput, Icon } from '@grafana/ui';
+import { SegmentInput, Icon } from '@grafarg/ui';
 
 const SegmentFrame = ({ children }: any) => (
   <>

@@ -3,7 +3,7 @@ import { mount, ReactWrapper } from 'enzyme';
 import { ColorPickerPopover } from './ColorPickerPopover';
 import { ColorSwatch } from './NamedColorsGroup';
 import flatten from 'lodash/flatten';
-import { getNamedColorPalette, getColorFromHexRgbOrName } from '@grafana/data';
+import { getNamedColorPalette, getColorFromHexRgbOrName } from '@grafarg/data';
 
 const allColors = flatten(Array.from(getNamedColorPalette().values()));
 

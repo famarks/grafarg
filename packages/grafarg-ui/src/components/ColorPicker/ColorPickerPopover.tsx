@@ -5,7 +5,7 @@ import SpectrumPalette from './SpectrumPalette';
 import { Themeable } from '../../types/theme';
 import { warnAboutColorPickerPropsDeprecation } from './warnAboutColorPickerPropsDeprecation';
 import { css, cx } from 'emotion';
-import { GrafargTheme, GrafargThemeType, getColorForTheme } from '@grafana/data';
+import { GrafargTheme, GrafargThemeType, getColorForTheme } from '@grafarg/data';
 import { stylesFactory, withTheme } from '../../themes';
 
 export type ColorPickerChangeHandler = (color: string) => void;

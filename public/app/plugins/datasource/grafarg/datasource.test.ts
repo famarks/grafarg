@@ -1,11 +1,11 @@
-import { DataSourceInstanceSettings, dateTime, AnnotationQueryRequest } from '@grafana/data';
+import { DataSourceInstanceSettings, dateTime, AnnotationQueryRequest } from '@grafarg/data';
 
 import { backendSrv } from 'app/core/services/backend_srv'; // will use the version in __mocks__
 import { GrafargDatasource } from './datasource';
 import { GrafargQuery, GrafargAnnotationQuery, GrafargAnnotationType } from './types';
 
-jest.mock('@grafana/runtime', () => ({
-  ...((jest.requireActual('@grafana/runtime') as unknown) as object),
+jest.mock('@grafarg/runtime', () => ({
+  ...((jest.requireActual('@grafarg/runtime') as unknown) as object),
   getBackendSrv: () => backendSrv,
   getTemplateSrv: () => ({
     replace: (val: string) => {

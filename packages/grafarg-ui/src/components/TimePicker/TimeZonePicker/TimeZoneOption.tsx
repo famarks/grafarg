@@ -1,6 +1,6 @@
 import React, { PropsWithChildren } from 'react';
 import { css, cx } from 'emotion';
-import { GrafargTheme, SelectableValue, getTimeZoneInfo } from '@grafana/data';
+import { GrafargTheme, SelectableValue, getTimeZoneInfo } from '@grafarg/data';
 import { useTheme } from '../../../themes/ThemeContext';
 import { stylesFactory } from '../../../themes/stylesFactory';
 import { Icon } from '../../Icon/Icon';

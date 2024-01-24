@@ -10,8 +10,8 @@ import {
   stylesFactory,
   Themeable,
   withTheme,
-} from '@grafana/ui';
-import { GrafargTheme } from '@grafana/data';
+} from '@grafarg/ui';
+import { GrafargTheme } from '@grafarg/data';
 import { Organization, OrgRole, UserOrg } from 'app/types';
 import { OrgPicker, OrgSelectItem } from 'app/core/components/Select/OrgPicker';
 import { OrgRolePicker } from './OrgRolePicker';

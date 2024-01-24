@@ -1,9 +1,9 @@
 import React, { FC, useCallback } from 'react';
 import { useDispatch } from 'react-redux';
 import { Dispatch } from 'redux';
-import { Button, VerticalGroup } from '@grafana/ui';
+import { Button, VerticalGroup } from '@grafarg/ui';
 
-import { Layout } from '@grafana/ui/src/components/Layout/Layout';
+import { Layout } from '@grafarg/ui/src/components/Layout/Layout';
 import { PanelEditorTabId } from './types';
 import { updateLocation } from '../../../../core/actions';
 

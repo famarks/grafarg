@@ -4,7 +4,7 @@ import tinycolor from 'tinycolor2';
 import { useTheme } from '../../themes';
 import { IconName } from '../../types/icon';
 import { getPropertiesForButtonSize } from '../Forms/commonStyles';
-import { GrafargTheme } from '@grafana/data';
+import { GrafargTheme } from '@grafarg/data';
 import { ComponentSize } from '../../types/size';
 import { focusCss } from '../../themes/mixins';
 import { Icon } from '../Icon/Icon';

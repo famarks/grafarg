@@ -2,7 +2,7 @@ import React, { memo } from 'react';
 import { EdgeDatum, NodeDatum } from './types';
 import { css } from 'emotion';
 import { stylesFactory, useTheme } from '../../themes';
-import { GrafargTheme } from '@grafana/data';
+import { GrafargTheme } from '@grafarg/data';
 import tinycolor from 'tinycolor2';
 import lightTheme from '../../themes/light';
 import darkTheme from '../../themes/dark';

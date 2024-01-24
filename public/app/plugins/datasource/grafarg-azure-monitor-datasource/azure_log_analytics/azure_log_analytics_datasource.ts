@@ -8,8 +8,8 @@ import {
   ScopedVars,
   DataSourceInstanceSettings,
   MetricFindValue,
-} from '@grafana/data';
-import { getBackendSrv, getTemplateSrv, DataSourceWithBackend } from '@grafana/runtime';
+} from '@grafarg/data';
+import { getBackendSrv, getTemplateSrv, DataSourceWithBackend } from '@grafarg/runtime';
 import { Observable, from } from 'rxjs';
 import { mergeMap } from 'rxjs/operators';
 

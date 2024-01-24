@@ -1,7 +1,7 @@
 import React from 'react';
 import { ThemeContext } from '../../themes/ThemeContext';
 import { getTheme } from '../../themes/index';
-import { GrafargThemeType } from '@grafana/data';
+import { GrafargThemeType } from '@grafarg/data';
 import { RenderFunction } from '../../types';
 import { useDarkMode } from 'storybook-dark-mode';
 

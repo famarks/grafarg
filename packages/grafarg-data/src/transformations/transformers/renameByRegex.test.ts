@@ -1,4 +1,4 @@
-import { DataTransformerConfig, DataTransformerID, FieldType, toDataFrame, transformDataFrame } from '@grafana/data';
+import { DataTransformerConfig, DataTransformerID, FieldType, toDataFrame, transformDataFrame } from '@grafarg/data';
 import { renameByRegexTransformer, RenameByRegexTransformerOptions } from './renameByRegex';
 import { mockTransformationsRegistry } from '../../utils/tests/mockTransformationsRegistry';
 

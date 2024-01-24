@@ -1,7 +1,7 @@
 import React, { FC, memo, useState } from 'react';
 import { css } from 'emotion';
-import { HorizontalGroup, stylesFactory, useTheme, Spinner } from '@grafana/ui';
-import { GrafargTheme } from '@grafana/data';
+import { HorizontalGroup, stylesFactory, useTheme, Spinner } from '@grafarg/ui';
+import { GrafargTheme } from '@grafarg/data';
 import { contextSrv } from 'app/core/services/context_srv';
 import EmptyListCTA from 'app/core/components/EmptyListCTA/EmptyListCTA';
 import { FilterInput } from 'app/core/components/FilterInput/FilterInput';

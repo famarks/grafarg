@@ -1,5 +1,5 @@
 import React, { FC, FormEvent, useCallback, useState } from 'react';
-import { GrafargTheme } from '@grafana/data';
+import { GrafargTheme } from '@grafarg/data';
 import { css, cx } from 'emotion';
 import { getFormStyles, Icon } from '../index';
 import { stylesFactory, useTheme } from '../../themes';

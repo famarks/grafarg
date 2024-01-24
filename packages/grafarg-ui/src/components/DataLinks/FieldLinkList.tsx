@@ -1,4 +1,4 @@
-import { Field, GrafargTheme, LinkModel } from '@grafana/data';
+import { Field, GrafargTheme, LinkModel } from '@grafarg/data';
 import { css } from 'emotion';
 import React from 'react';
 import { useStyles } from '../../themes';

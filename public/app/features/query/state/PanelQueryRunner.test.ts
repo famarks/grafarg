@@ -1,16 +1,16 @@
 const applyFieldOverridesMock = jest.fn();
 
-jest.mock('@grafana/data', () => ({
+jest.mock('@grafarg/data', () => ({
   __esModule: true,
-  ...(jest.requireActual('@grafana/data') as any),
+  ...(jest.requireActual('@grafarg/data') as any),
   applyFieldOverrides: applyFieldOverridesMock,
 }));
 
 import { PanelQueryRunner } from './PanelQueryRunner';
 // Importing this way to be able to spy on grafarg/data
-import * as grafargData from '@grafana/data';
+import * as grafargData from '@grafarg/data';
 import { DashboardModel } from '../../dashboard/state/index';
-import { setDataSourceSrv, setEchoSrv } from '@grafana/runtime';
+import { setDataSourceSrv, setEchoSrv } from '@grafarg/runtime';
 import { Echo } from '../../../core/services/echo/Echo';
 
 jest.mock('app/core/services/backend_srv');

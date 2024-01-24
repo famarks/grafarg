@@ -2,7 +2,7 @@ import React from 'react';
 import { render, screen, within } from '@testing-library/react';
 import { ApiKeysPageUnconnected, Props } from './ApiKeysPage';
 import { ApiKey, OrgRole } from 'app/types';
-import { NavModel } from '@grafana/data';
+import { NavModel } from '@grafarg/data';
 import { setSearchQuery } from './state/reducers';
 import { mockToolkitActionCreator } from '../../../test/core/redux/mocks';
 import { getMultipleMockKeys } from './__mocks__/apiKeysMock';

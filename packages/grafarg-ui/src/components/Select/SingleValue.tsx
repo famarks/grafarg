@@ -9,7 +9,7 @@ import { stylesFactory, useTheme } from '../../themes';
 import { SlideOutTransition } from '../transitions/SlideOutTransition';
 import { FadeTransition } from '../transitions/FadeTransition';
 import { Spinner } from '../Spinner/Spinner';
-import { GrafargTheme } from '@grafana/data';
+import { GrafargTheme } from '@grafarg/data';
 
 const getStyles = stylesFactory((theme: GrafargTheme) => {
   const singleValue = css`

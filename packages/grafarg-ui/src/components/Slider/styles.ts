@@ -1,5 +1,5 @@
 import { stylesFactory } from '../../themes';
-import { GrafargTheme } from '@grafana/data';
+import { GrafargTheme } from '@grafarg/data';
 import { focusCss } from '../../themes/mixins';
 import { css as cssCore } from '@emotion/core';
 import { css } from 'emotion';

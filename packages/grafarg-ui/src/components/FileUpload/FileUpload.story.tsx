@@ -1,6 +1,6 @@
 import React from 'react';
 import { withCenteredStory } from '../../utils/storybook/withCenteredStory';
-import { FileUpload } from '@grafana/ui';
+import { FileUpload } from '@grafarg/ui';
 import mdx from './FileUpload.mdx';
 import { useSize } from '../../utils/storybook/useSize';
 import { ComponentSize } from '../../types/size';

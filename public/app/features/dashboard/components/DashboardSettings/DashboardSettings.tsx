@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import { css, cx } from 'emotion';
 import { selectors } from '@grafarg/e2e-selectors';
-import { Button, CustomScrollbar, Icon, IconName, PageToolbar, stylesFactory } from '@grafana/ui';
+import { Button, CustomScrollbar, Icon, IconName, PageToolbar, stylesFactory } from '@grafarg/ui';
 import config from 'app/core/config';
 import { contextSrv } from 'app/core/services/context_srv';
 import { dashboardWatcher } from 'app/features/live/dashboard/dashboardWatcher';
@@ -15,7 +15,7 @@ import { AnnotationsSettings } from './AnnotationsSettings';
 import { LinksSettings } from './LinksSettings';
 import { VersionsSettings } from './VersionsSettings';
 import { JsonEditorSettings } from './JsonEditorSettings';
-import { GrafargTheme } from '@grafana/data';
+import { GrafargTheme } from '@grafarg/data';
 export interface Props {
   dashboard: DashboardModel;
   updateLocation: typeof updateLocation;

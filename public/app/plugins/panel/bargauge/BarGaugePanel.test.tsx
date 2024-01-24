@@ -10,8 +10,8 @@ import {
   dateTime,
   FieldConfigSource,
   toDataFrame,
-} from '@grafana/data';
-import { BarGaugeDisplayMode } from '@grafana/ui';
+} from '@grafarg/data';
+import { BarGaugeDisplayMode } from '@grafarg/ui';
 import { selectors } from '@grafarg/e2e-selectors';
 
 import { BarGaugePanel } from './BarGaugePanel';

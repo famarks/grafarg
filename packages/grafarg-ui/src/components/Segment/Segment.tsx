@@ -1,7 +1,7 @@
 import React, { HTMLProps } from 'react';
 import { cx } from 'emotion';
 import _ from 'lodash';
-import { SelectableValue } from '@grafana/data';
+import { SelectableValue } from '@grafarg/data';
 import { SegmentSelect, useExpandableLabel, SegmentProps } from './';
 import { getSegmentStyles } from './styles';
 import { InlineLabel } from '../Forms/InlineLabel';

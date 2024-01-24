@@ -97,7 +97,7 @@ streaming in the future!
 
 ## Alpha version of grafarg-toolkit
 
-[grafarg-toolkit](https://www.npmjs.com/package/@grafana/toolkit/v/6.4.0-beta.1) is our attempt to simplify the life of plugin developers. It’s a CLI that helps them focus on the core value of their plugin rather than the ceremony around setting up the environment, configs, tests and builds. It’s available as an NPM package under `next` tag.
+[grafarg-toolkit](https://www.npmjs.com/package/@grafarg/toolkit/v/6.4.0-beta.1) is our attempt to simplify the life of plugin developers. It’s a CLI that helps them focus on the core value of their plugin rather than the ceremony around setting up the environment, configs, tests and builds. It’s available as an NPM package under `next` tag.
 
 You can read more about the grafarg-toolkit [in the Readme](https://github.com/famarks/grafarg/blob/master/packages/grafarg-toolkit/README.md) and play with it by trying out our [react panel](https://github.com/famarks/simple-react-panel) or [angular panel](https://github.com/famarks/simple-angular-panel) templates.
 

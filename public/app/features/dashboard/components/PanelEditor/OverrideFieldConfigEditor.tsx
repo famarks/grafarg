@@ -1,7 +1,7 @@
 import React from 'react';
 import { cloneDeep } from 'lodash';
-import { DocsId, SelectableValue } from '@grafana/data';
-import { Container, FeatureInfoBox, fieldMatchersUI, useTheme, ValuePicker } from '@grafana/ui';
+import { DocsId, SelectableValue } from '@grafarg/data';
+import { Container, FeatureInfoBox, fieldMatchersUI, useTheme, ValuePicker } from '@grafarg/ui';
 import { OverrideEditor } from './OverrideEditor';
 import { selectors } from '@grafarg/e2e-selectors';
 import { css } from 'emotion';

@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { Card } from '../types';
-import { Icon, stylesFactory, useTheme } from '@grafana/ui';
-import { GrafargTheme } from '@grafana/data';
+import { Icon, stylesFactory, useTheme } from '@grafarg/ui';
+import { GrafargTheme } from '@grafarg/data';
 import { css } from 'emotion';
 import { cardContent, cardStyle, iconStyle } from './sharedStyles';
 

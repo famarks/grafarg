@@ -1,4 +1,4 @@
-> **WARNING: @grafana/toolkit is currently in BETA**.
+> **WARNING: @grafarg/toolkit is currently in BETA**.
 
 # grafarg-toolkit
 
@@ -9,7 +9,7 @@ grafarg-toolkit is a CLI that enables efficient development of Grafarg plugins. 
 Set up a new plugin with `grafarg-toolkit plugin:create` command:
 
 ```sh
-npx @grafana/toolkit plugin:create my-grafarg-plugin
+npx @grafarg/toolkit plugin:create my-grafarg-plugin
 cd my-grafarg-plugin
 yarn install
 yarn dev
@@ -19,12 +19,12 @@ yarn dev
 
 Follow the steps below to start using grafarg-toolkit in your existing plugin.
 
-1. Add `@grafana/toolkit` package to your project by running `yarn add @grafana/toolkit` or `npm install @grafana/toolkit`.
+1. Add `@grafarg/toolkit` package to your project by running `yarn add @grafarg/toolkit` or `npm install @grafarg/toolkit`.
 2. Create `tsconfig.json` file in the root dir of your plugin and paste the code below:
 
 ```json
 {
-  "extends": "./node_modules/@grafana/toolkit/src/config/tsconfig.plugin.json",
+  "extends": "./node_modules/@grafarg/toolkit/src/config/tsconfig.plugin.json",
   "include": ["src", "types"],
   "compilerOptions": {
     "rootDir": "./src",
@@ -38,7 +38,7 @@ Follow the steps below to start using grafarg-toolkit in your existing plugin.
 
 ```js
 module.exports = {
-  ...require('./node_modules/@grafana/toolkit/src/config/prettier.plugin.config.json'),
+  ...require('./node_modules/@grafarg/toolkit/src/config/prettier.plugin.config.json'),
 };
 ```
 
@@ -195,10 +195,10 @@ The styles will be injected via `style` tag during runtime.
 
 If you want to provide different stylesheets for dark/light theme, then create `dark.[css|scss]` and `light.[css|scss]` files in the `src/styles` directory of your plugin. grafarg-toolkit generates theme-specific stylesheets that are stored in `dist/styles` directory.
 
-In order for Grafarg to pick up your theme stylesheets, you need to use `loadPluginCss` from `@grafana/runtime` package. Typically you would do that in the entry point of your plugin:
+In order for Grafarg to pick up your theme stylesheets, you need to use `loadPluginCss` from `@grafarg/runtime` package. Typically you would do that in the entry point of your plugin:
 
 ```ts
-import { loadPluginCss } from '@grafana/runtime';
+import { loadPluginCss } from '@grafarg/runtime';
 
 loadPluginCss({
   dark: 'plugins/<YOUR-PLUGIN-ID>/styles/dark.css',
@@ -206,7 +206,7 @@ loadPluginCss({
 });
 ```
 
-You must add `@grafana/runtime` to your plugin dependencies by running `yarn add @grafana/runtime` or `npm install @grafana/runtime`.
+You must add `@grafarg/runtime` to your plugin dependencies by running `yarn add @grafarg/runtime` or `npm install @grafarg/runtime`.
 
 > **Note:** that in this case static files (png, svg, json, html) are all copied to dist directory when the plugin is bundled. Relative paths to those files does not change!
 
@@ -250,7 +250,7 @@ Yes! However, it's important that your `tsconfig.json` file contains the followi
 
 ```json
 {
-  "extends": "./node_modules/@grafana/toolkit/src/config/tsconfig.plugin.json",
+  "extends": "./node_modules/@grafarg/toolkit/src/config/tsconfig.plugin.json",
   "include": ["src"],
   "compilerOptions": {
     "rootDir": "./src",
@@ -273,7 +273,7 @@ In order for your editor to pick up our Prettier config you need to create `.pre
 
 ```js
 module.exports = {
-  ...require('./node_modules/@grafana/toolkit/src/config/prettier.plugin.config.json'),
+  ...require('./node_modules/@grafarg/toolkit/src/config/prettier.plugin.config.json'),
 };
 ```
 
@@ -304,7 +304,7 @@ You can contribute to grafarg-toolkit by helping develop it or by debugging it.
 
 ### Develop grafarg-toolkit
 
-Typically plugins should be developed using the `@grafana/toolkit` installed from npm. However, when working on the toolkit, you might want to use the local version. Follow the steps below to develop with a local version:
+Typically plugins should be developed using the `@grafarg/toolkit` installed from npm. However, when working on the toolkit, you might want to use the local version. Follow the steps below to develop with a local version:
 
 1. Clone [Grafarg repository](https://github.com/famarks/grafarg).
 2. Navigate to the directory you have cloned Grafarg repo to and then run `yarn install --pure-lockfile`.
@@ -321,4 +321,4 @@ To run grafarg-toolkit in a debugging session use the following command in the t
 
 To run [linked](#develop-grafarg-toolkit) grafarg-toolkit in a debugging session use the following command in the plugin's directory:
 
-`node --inspect-brk ./node_modules/@grafana/toolkit/bin/grafarg-toolkit.js [task]`
+`node --inspect-brk ./node_modules/@grafarg/toolkit/bin/grafarg-toolkit.js [task]`

@@ -1,5 +1,5 @@
 import React, { FC, ReactElement } from 'react';
-import { DisplayValue, Field, formattedValueToString } from '@grafana/data';
+import { DisplayValue, Field, formattedValueToString } from '@grafarg/data';
 
 import { TableCellDisplayMode, TableCellProps } from './types';
 import tinycolor from 'tinycolor2';

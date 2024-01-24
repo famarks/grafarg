@@ -8,7 +8,7 @@ import {
   GroupedTimeZones,
   TimeZone,
   InternalTimeZones,
-} from '@grafana/data';
+} from '@grafarg/data';
 import { Select } from '../Select/Select';
 import { CompactTimeZoneOption, WideTimeZoneOption, SelectableZone } from './TimeZonePicker/TimeZoneOption';
 import { TimeZoneGroup } from './TimeZonePicker/TimeZoneGroup';

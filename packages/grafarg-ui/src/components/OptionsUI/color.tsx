@@ -1,5 +1,5 @@
 import React from 'react';
-import { getColorForTheme, GrafargTheme } from '@grafana/data';
+import { getColorForTheme, GrafargTheme } from '@grafarg/data';
 import { ColorPicker } from '../ColorPicker/ColorPicker';
 import { stylesFactory, useTheme } from '../../themes';
 import { css } from 'emotion';

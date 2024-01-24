@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import RcTimePicker from 'rc-time-picker';
 import { css, cx } from 'emotion';
-import { dateTime, DateTime, dateTimeAsMoment, GrafargTheme } from '@grafana/data';
+import { dateTime, DateTime, dateTimeAsMoment, GrafargTheme } from '@grafarg/data';
 import { useTheme, Icon } from '../../index';
 import { stylesFactory } from '../../themes';
 import { inputSizes } from '../Forms/commonStyles';

@@ -4,7 +4,7 @@ import { Modal } from '../Modal/Modal';
 import { IconName } from '../../types/icon';
 import { Button } from '../Button';
 import { stylesFactory, ThemeContext } from '../../themes';
-import { GrafargTheme } from '@grafana/data';
+import { GrafargTheme } from '@grafarg/data';
 import { HorizontalGroup } from '..';
 
 export interface Props {
