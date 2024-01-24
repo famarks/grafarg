@@ -3435,10 +3435,10 @@
   resolved "https://registry.yarnpkg.com/@grafana/aws-sdk/-/aws-sdk-0.0.3.tgz#bc632c6c77971a5474acbe45847420503679fc75"
   integrity sha512-V0PJLk+oU1C33knurXp8BkT5N2ctDu9b21zpK16vkJAs5aOiH/OaOhQ/IP9ipxYhB+b9PFjr8RXagV/8XJ8xwg==
 
-"@grafana/eslint-config@2.3.0":
+"@grafarg/eslint-config@2.3.0":
   version "2.3.0"
-  resolved "https://registry.yarnpkg.com/@grafana/eslint-config/-/eslint-config-2.3.0.tgz#2d053d488854e2fcbaa1ebc0ed4c0258fc014aa4"
-  integrity sha512-QX9QbgT6nehLU91HncdE0bXEaGLmB7tSyxyj60+lQYWPygaoFUCsQWKBYxBRsyTYQahQGqkfS+y3scvkCLDCcw==
+  resolved "https://registry.yarnpkg.com/@grafarg/eslint-config/-/eslint-config-2.3.0.tgz#d344d43e6e948c8d6ee33dcea4011b8568ea09e1"
+  integrity sha512-ZmfXyleDRGeCIp4wYFmnOOqPs+6SliFtR4gJ8tN2yl1V0kvYBopGbU0uIfN350bbcEuTLD//L5xXCAzwFnrsfg==
   dependencies:
     "@typescript-eslint/eslint-plugin" "4.15.0"
     "@typescript-eslint/parser" "4.15.0"

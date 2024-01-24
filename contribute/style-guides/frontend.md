@@ -276,7 +276,7 @@ For code that needs to be used by external plugin:
 
 ### Linting
 
-Linting is performed using [@grafana/eslint-config](https://github.com/famarks/eslint-config-grafarg).
+Linting is performed using [@grafarg/eslint-config](https://github.com/famarks/eslint-config-grafarg).
 
 ## React
 
