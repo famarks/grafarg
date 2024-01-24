@@ -1,4 +1,4 @@
-import { GraphTooltipOptions } from '@grafana/ui';
+import { GraphTooltipOptions } from '@grafarg/ui';
 import { OptionsWithLegend } from '../timeseries/types';
 
 export interface XYDimensionConfig {

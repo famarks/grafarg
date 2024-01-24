@@ -1,5 +1,5 @@
 import React, { ChangeEvent, useContext } from 'react';
-import { VariableSuggestion, GrafargTheme, DataLink } from '@grafana/data';
+import { VariableSuggestion, GrafargTheme, DataLink } from '@grafarg/data';
 import { Switch } from '../Switch/Switch';
 import { css } from 'emotion';
 import { ThemeContext, stylesFactory } from '../../themes/index';

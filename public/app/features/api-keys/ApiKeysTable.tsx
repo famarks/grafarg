@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
-import { DeleteButton } from '@grafana/ui';
-import { dateTimeFormat, TimeZone } from '@grafana/data';
+import { DeleteButton } from '@grafarg/ui';
+import { dateTimeFormat, TimeZone } from '@grafarg/data';
 
 import { ApiKey } from '../../types';
 

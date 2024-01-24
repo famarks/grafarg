@@ -1,4 +1,4 @@
-import { rangeUtil } from '@grafana/data';
+import { rangeUtil } from '@grafarg/data';
 
 import { toVariablePayload, VariableIdentifier } from '../state/types';
 import { ThunkResult } from '../../../types';

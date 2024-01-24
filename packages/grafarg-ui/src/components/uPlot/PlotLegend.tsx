@@ -1,5 +1,5 @@
 import React, { useCallback } from 'react';
-import { DataFrame, DisplayValue, fieldReducers, getFieldDisplayName, reduceField } from '@grafana/data';
+import { DataFrame, DisplayValue, fieldReducers, getFieldDisplayName, reduceField } from '@grafarg/data';
 import { UPlotConfigBuilder } from './config/UPlotConfigBuilder';
 import { VizLegendItem, VizLegendOptions } from '../VizLegend/types';
 import { AxisPlacement } from './config';

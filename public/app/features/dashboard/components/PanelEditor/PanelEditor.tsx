@@ -4,7 +4,7 @@ import AutoSizer from 'react-virtualized-auto-sizer';
 import { css, cx } from 'emotion';
 import { Subscription } from 'rxjs';
 
-import { FieldConfigSource, GrafargTheme } from '@grafana/data';
+import { FieldConfigSource, GrafargTheme } from '@grafarg/data';
 import { selectors } from '@grafarg/e2e-selectors';
 import {
   HorizontalGroup,
@@ -13,7 +13,7 @@ import {
   RadioButtonGroup,
   stylesFactory,
   ToolbarButton,
-} from '@grafana/ui';
+} from '@grafarg/ui';
 
 import config from 'app/core/config';
 import { appEvents } from 'app/core/core';

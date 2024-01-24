@@ -1,7 +1,7 @@
 import React, { PureComponent, SyntheticEvent } from 'react';
 import { cx, css } from 'emotion';
 import { stylesFactory, withTheme } from '../../themes';
-import { GrafargTheme } from '@grafana/data';
+import { GrafargTheme } from '@grafarg/data';
 import { Themeable } from '../../types';
 import { ComponentSize } from '../../types/size';
 import { Button, ButtonVariant } from '../Button';

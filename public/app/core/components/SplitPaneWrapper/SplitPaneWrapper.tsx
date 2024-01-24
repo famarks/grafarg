@@ -1,8 +1,8 @@
 import React, { createRef, MutableRefObject, PureComponent, ReactNode } from 'react';
 import SplitPane from 'react-split-pane';
 import { css, cx } from 'emotion';
-import { GrafargTheme } from '@grafana/data';
-import { stylesFactory } from '@grafana/ui';
+import { GrafargTheme } from '@grafarg/data';
+import { stylesFactory } from '@grafarg/ui';
 import { config } from 'app/core/config';
 
 enum Pane {

@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
-import { Alert, InlineFieldRow, VerticalGroup } from '@grafana/ui';
-import { SelectableValue } from '@grafana/data';
+import { Alert, InlineFieldRow, VerticalGroup } from '@grafarg/ui';
+import { SelectableValue } from '@grafarg/data';
 
 import { AdHocVariableModel } from '../types';
 import { VariableEditorProps } from '../editor/types';

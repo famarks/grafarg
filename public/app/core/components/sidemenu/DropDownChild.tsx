@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { css } from 'emotion';
-import { Icon, IconName, useTheme } from '@grafana/ui';
+import { Icon, IconName, useTheme } from '@grafarg/ui';
 
 export interface Props {
   child: any;

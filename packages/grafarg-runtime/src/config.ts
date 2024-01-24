@@ -1,5 +1,5 @@
 import merge from 'lodash/merge';
-import { getTheme } from '@grafana/ui';
+import { getTheme } from '@grafarg/ui';
 import {
   BuildInfo,
   DataSourceInstanceSettings,
@@ -11,7 +11,7 @@ import {
   PanelPluginMeta,
   systemDateFormats,
   SystemDateFormatSettings,
-} from '@grafana/data';
+} from '@grafarg/data';
 
 export class GrafargBootConfig implements GrafargConfig {
   datasources: { [str: string]: DataSourceInstanceSettings } = {};

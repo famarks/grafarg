@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 
-import { Button, Checkbox, Form, HorizontalGroup, TextArea } from '@grafana/ui';
+import { Button, Checkbox, Form, HorizontalGroup, TextArea } from '@grafarg/ui';
 import { selectors } from '@grafarg/e2e-selectors';
 
 import { SaveDashboardFormProps } from '../types';

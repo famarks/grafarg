@@ -2,8 +2,8 @@
 import React, { PureComponent, ChangeEvent } from 'react';
 import { css } from 'emotion';
 
-import { InlineField, InlineFieldRow, Input, Select, TextArea } from '@grafana/ui';
-import { SelectableValue, ReducerID, QueryEditorProps } from '@grafana/data';
+import { InlineField, InlineFieldRow, Input, Select, TextArea } from '@grafarg/ui';
+import { SelectableValue, ReducerID, QueryEditorProps } from '@grafarg/data';
 
 // Types
 import { ExpressionQuery, GELQueryType } from './types';

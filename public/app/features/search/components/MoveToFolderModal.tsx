@@ -1,7 +1,7 @@
 import React, { FC, useState } from 'react';
 import { css } from 'emotion';
-import { Button, HorizontalGroup, Modal, stylesFactory, useTheme } from '@grafana/ui';
-import { AppEvents, GrafargTheme } from '@grafana/data';
+import { Button, HorizontalGroup, Modal, stylesFactory, useTheme } from '@grafarg/ui';
+import { AppEvents, GrafargTheme } from '@grafarg/data';
 import { FolderInfo } from 'app/types';
 import { FolderPicker } from 'app/core/components/Select/FolderPicker';
 import appEvents from 'app/core/app_events';

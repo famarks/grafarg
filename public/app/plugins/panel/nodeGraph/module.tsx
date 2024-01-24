@@ -1,4 +1,4 @@
-import { PanelPlugin } from '@grafana/data';
+import { PanelPlugin } from '@grafarg/data';
 import { NodeGraphPanel } from './NodeGraphPanel';
 import { Options } from './types';
 

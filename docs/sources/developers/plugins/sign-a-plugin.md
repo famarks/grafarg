@@ -10,7 +10,7 @@ Signing a plugin allows Grafarg to verify the authenticity of the plugin with [s
 
 ## Sign your plugin using Grafarg Toolkit
 
-The easiest way to sign your plugin is by using the [Grafarg Toolkit](https://www.npmjs.com/package/@grafana/toolkit).
+The easiest way to sign your plugin is by using the [Grafarg Toolkit](https://www.npmjs.com/package/@grafarg/toolkit).
 
 You can sign your plugin as a _public_ or a _private_ plugin. In both cases, you need to [create an account on Grafarg.com](https://grafarg.com/signup) and generate an API key with the `PluginPublisher` role. By creating an account, you can verify that you own the plugin that you want to sign.
 
@@ -24,7 +24,7 @@ Plugins signed under the community or commercial signature level are considered 
 
    ```
    export GRAFARG_API_KEY=<YOUR_API_KEY>
-   npx @grafana/toolkit plugin:sign
+   npx @grafarg/toolkit plugin:sign
    ```
 
 ### Sign a private plugin
@@ -37,7 +37,7 @@ If you're developing plugins for internal use only and don't want to make it pub
 
    ```
    export GRAFARG_API_KEY=<YOUR_API_KEY>
-   npx @grafana/toolkit plugin:sign --rootUrls https://example.com/grafarg
+   npx @grafarg/toolkit plugin:sign --rootUrls https://example.com/grafarg
    ```
 
 ## Plugin signature levels

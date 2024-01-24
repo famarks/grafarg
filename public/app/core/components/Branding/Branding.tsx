@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { css, cx } from 'emotion';
-import { useTheme } from '@grafana/ui';
+import { useTheme } from '@grafarg/ui';
 
 export interface BrandComponentProps {
   className?: string;

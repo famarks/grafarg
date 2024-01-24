@@ -1,5 +1,5 @@
 import { stylesFactory } from '../../themes';
-import { GrafargTheme } from '@grafana/data';
+import { GrafargTheme } from '@grafarg/data';
 import { getLabelStyles } from './Label';
 import { getLegendStyles } from './Legend';
 import { getFieldValidationMessageStyles } from './FieldValidationMessage';

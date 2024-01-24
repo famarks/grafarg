@@ -2,8 +2,8 @@
 import React, { PureComponent } from 'react';
 // Components
 import { DataSourcePicker } from 'app/core/components/Select/DataSourcePicker';
-import { Button, CustomScrollbar, HorizontalGroup, Icon, Modal, stylesFactory, Tooltip } from '@grafana/ui';
-import { getDataSourceSrv } from '@grafana/runtime';
+import { Button, CustomScrollbar, HorizontalGroup, Icon, Modal, stylesFactory, Tooltip } from '@grafarg/ui';
+import { getDataSourceSrv } from '@grafarg/runtime';
 import { QueryEditorRows } from './QueryEditorRows';
 // Services
 import { backendSrv } from 'app/core/services/backend_srv';
@@ -16,7 +16,7 @@ import {
   getDefaultTimeRange,
   LoadingState,
   PanelData,
-} from '@grafana/data';
+} from '@grafarg/data';
 import { PluginHelp } from 'app/core/components/PluginHelp/PluginHelp';
 import { addQuery } from 'app/core/utils/query';
 import { Unsubscribable } from 'rxjs';

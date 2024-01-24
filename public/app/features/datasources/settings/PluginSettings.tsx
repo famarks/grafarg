@@ -7,8 +7,8 @@ import {
   DataSourceApi,
   DataQuery,
   DataSourceJsonData,
-} from '@grafana/data';
-import { getAngularLoader, AngularComponent } from '@grafana/runtime';
+} from '@grafarg/data';
+import { getAngularLoader, AngularComponent } from '@grafarg/runtime';
 
 export type GenericDataSourcePlugin = DataSourcePlugin<DataSourceApi<DataQuery, DataSourceJsonData>>;
 

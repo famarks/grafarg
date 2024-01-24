@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
 import { useTheme, stylesFactory } from '../../themes';
-import { GrafargTheme } from '@grafana/data';
+import { GrafargTheme } from '@grafarg/data';
 import { css, cx } from 'emotion';
 
 export interface LabelProps extends React.HTMLAttributes<HTMLLegendElement> {

@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { stylesFactory, ThemeContext } from '../../themes';
-import { GrafargTheme } from '@grafana/data';
+import { GrafargTheme } from '@grafarg/data';
 import { css } from 'emotion';
 import { IconButton } from '../IconButton/IconButton';
 import { IconName } from '../../types';

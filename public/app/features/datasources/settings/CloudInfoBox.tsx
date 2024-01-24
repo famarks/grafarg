@@ -1,9 +1,9 @@
-import { DataSourceSettings, GrafargTheme } from '@grafana/data';
-import { FeatureInfoBox, useStyles } from '@grafana/ui';
+import { DataSourceSettings, GrafargTheme } from '@grafarg/data';
+import { FeatureInfoBox, useStyles } from '@grafarg/ui';
 import { css } from 'emotion';
 import React, { FC } from 'react';
 import { config } from 'app/core/config';
-import { GrafargEdition } from '@grafana/data/src/types/config';
+import { GrafargEdition } from '@grafarg/data/src/types/config';
 import { LocalStorageValueProvider } from 'app/core/components/LocalStorageValueProvider';
 
 const LOCAL_STORAGE_KEY = 'datasources.settings.cloudInfoBox.isDismissed';

@@ -1,7 +1,7 @@
 import Centrifuge from 'centrifuge/dist/centrifuge.protobuf';
-import { GrafargLiveSrv, setGrafargLiveSrv, getGrafargLiveSrv, config } from '@grafana/runtime';
+import { GrafargLiveSrv, setGrafargLiveSrv, getGrafargLiveSrv, config } from '@grafarg/runtime';
 import { BehaviorSubject } from 'rxjs';
-import { LiveChannel, LiveChannelScope, LiveChannelAddress } from '@grafana/data';
+import { LiveChannel, LiveChannelScope, LiveChannelAddress } from '@grafarg/data';
 import { CentrifugeLiveChannel, getErrorChannel } from './channel';
 import {
   GrafargLiveScope,

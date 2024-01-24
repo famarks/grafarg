@@ -1,4 +1,4 @@
-import { SelectableValue } from '@grafana/data';
+import { SelectableValue } from '@grafarg/data';
 import { GrafargAnnotationType } from './types';
 
 export const annotationTypes: Array<SelectableValue<GrafargAnnotationType>> = [

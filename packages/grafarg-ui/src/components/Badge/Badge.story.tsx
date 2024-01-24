@@ -1,6 +1,6 @@
 import React from 'react';
 import { Story } from '@storybook/react';
-import { Badge, BadgeProps } from '@grafana/ui';
+import { Badge, BadgeProps } from '@grafarg/ui';
 import { iconOptions } from '../../utils/storybook/knobs';
 
 export default {

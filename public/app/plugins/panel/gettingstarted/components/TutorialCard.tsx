@@ -1,6 +1,6 @@
 import React, { FC, MouseEvent } from 'react';
-import { GrafargTheme } from '@grafana/data';
-import { Icon, stylesFactory, useTheme } from '@grafana/ui';
+import { GrafargTheme } from '@grafarg/data';
+import { Icon, stylesFactory, useTheme } from '@grafarg/ui';
 import { css } from 'emotion';
 import store from 'app/core/store';
 import { cardContent, cardStyle, iconStyle } from './sharedStyles';

@@ -2,7 +2,7 @@ import angular from 'angular';
 import _ from 'lodash';
 
 import { getPluginSettings } from './PluginSettingsCache';
-import { PluginMeta, AppEvents } from '@grafana/data';
+import { PluginMeta, AppEvents } from '@grafarg/data';
 import { NavModelSrv } from 'app/core/core';
 import { GrafargRootScope } from 'app/routes/GrafargCtrl';
 import { promiseToDigest } from '../../core/utils/promiseToDigest';

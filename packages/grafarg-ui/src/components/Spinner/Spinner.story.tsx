@@ -1,7 +1,7 @@
 import React from 'react';
 import { number, color } from '@storybook/addon-knobs';
 import { withCenteredStory } from '../../utils/storybook/withCenteredStory';
-import { Spinner } from '@grafana/ui';
+import { Spinner } from '@grafarg/ui';
 import mdx from './Spinner.mdx';
 
 export default {

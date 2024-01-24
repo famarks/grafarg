@@ -1,6 +1,6 @@
-import { DataLink, dateTime, Field, mapInternalLinkToExplore, TimeRange } from '@grafana/data';
-import { getTemplateSrv } from '@grafana/runtime';
-import { Icon } from '@grafana/ui';
+import { DataLink, dateTime, Field, mapInternalLinkToExplore, TimeRange } from '@grafarg/data';
+import { getTemplateSrv } from '@grafarg/runtime';
+import { Icon } from '@grafarg/ui';
 import { SplitOpen } from 'app/types/explore';
 import { TraceToLogsOptions } from 'app/core/components/TraceToLogsSettings';
 import { getDatasourceSrv } from 'app/features/plugins/datasource_srv';

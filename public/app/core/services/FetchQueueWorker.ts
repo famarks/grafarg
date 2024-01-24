@@ -1,7 +1,7 @@
 import { concatMap, filter } from 'rxjs/operators';
 
 import { FetchQueue, FetchStatus } from './FetchQueue';
-import { BackendSrvRequest, GrafargBootConfig } from '@grafana/runtime';
+import { BackendSrvRequest, GrafargBootConfig } from '@grafarg/runtime';
 import { isDataQuery } from '../utils/query';
 import { ResponseQueue } from './ResponseQueue';
 

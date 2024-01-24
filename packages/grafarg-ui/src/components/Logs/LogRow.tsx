@@ -10,7 +10,7 @@ import {
   dateTimeFormat,
   checkLogsError,
   escapeUnescapedString,
-} from '@grafana/data';
+} from '@grafarg/data';
 import { Icon } from '../Icon/Icon';
 import { Tooltip } from '../Tooltip/Tooltip';
 import { cx, css } from 'emotion';

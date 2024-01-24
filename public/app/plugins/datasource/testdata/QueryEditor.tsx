@@ -4,8 +4,8 @@ import { useAsync } from 'react-use';
 
 // Components
 import { selectors as editorSelectors } from '@grafarg/e2e-selectors';
-import { Input, InlineFieldRow, InlineField, Select, TextArea, InlineSwitch } from '@grafana/ui';
-import { QueryEditorProps, SelectableValue } from '@grafana/data';
+import { Input, InlineFieldRow, InlineField, Select, TextArea, InlineSwitch } from '@grafarg/ui';
+import { QueryEditorProps, SelectableValue } from '@grafarg/data';
 import { StreamingClientEditor, ManualEntryEditor, RandomWalkEditor } from './components';
 
 // Types

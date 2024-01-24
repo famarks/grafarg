@@ -1,7 +1,7 @@
 import React, { useCallback } from 'react';
-import { Button, Select } from '@grafana/ui';
-import { Field, SelectableValue, valueMatchers } from '@grafana/data';
-import { FilterByValueFilter } from '@grafana/data/src/transformations/transformers/filterByValue';
+import { Button, Select } from '@grafarg/ui';
+import { Field, SelectableValue, valueMatchers } from '@grafarg/data';
+import { FilterByValueFilter } from '@grafarg/data/src/transformations/transformers/filterByValue';
 import { valueMatchersUI } from './ValueMatchers/valueMatchersUI';
 
 interface Props {

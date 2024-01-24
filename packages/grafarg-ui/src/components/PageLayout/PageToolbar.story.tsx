@@ -1,5 +1,5 @@
 import React from 'react';
-import { ToolbarButton, VerticalGroup } from '@grafana/ui';
+import { ToolbarButton, VerticalGroup } from '@grafarg/ui';
 import { withCenteredStory } from '../../utils/storybook/withCenteredStory';
 import { PageToolbar } from './PageToolbar';
 import { StoryExample } from '../../utils/storybook/StoryExample';

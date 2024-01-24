@@ -16,8 +16,8 @@ import {
   DataSourceApi,
   rangeUtil,
   ScopedVars,
-} from '@grafana/data';
-import { getBackendSrv, getDataSourceSrv } from '@grafana/runtime';
+} from '@grafarg/data';
+import { getBackendSrv, getDataSourceSrv } from '@grafarg/runtime';
 import { appEvents } from 'app/core/core';
 import { getTimeSrv } from '../dashboard/services/TimeSrv';
 import { Observable, of } from 'rxjs';

@@ -3,8 +3,8 @@ import { selectors } from '@grafarg/e2e-selectors';
 
 import { VariableQueryProps } from 'app/types/plugins';
 import { VariableTextAreaField } from './VariableTextAreaField';
-import { useStyles } from '@grafana/ui';
-import { GrafargTheme } from '@grafana/data';
+import { useStyles } from '@grafarg/ui';
+import { GrafargTheme } from '@grafarg/data';
 import { css } from 'emotion';
 
 export const LEGACY_VARIABLE_QUERY_EDITOR_NAME = 'Grafarg-LegacyVariableQueryEditor';

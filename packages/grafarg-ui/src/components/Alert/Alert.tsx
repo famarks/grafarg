@@ -1,6 +1,6 @@
 import React, { FC, HTMLAttributes, ReactNode } from 'react';
 import { css } from 'emotion';
-import { GrafargTheme } from '@grafana/data';
+import { GrafargTheme } from '@grafarg/data';
 import { selectors } from '@grafarg/e2e-selectors';
 import { useTheme } from '../../themes';
 import { Icon } from '../Icon/Icon';

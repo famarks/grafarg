@@ -50,7 +50,7 @@ lerna.json @grafarg/grafarg-frontend-platform
 .prettierrc.js @grafarg/grafarg-frontend-platform
 .eslintrc @grafarg/grafarg-frontend-platform
 
-# @grafana/ui component documentation
+# @grafarg/ui component documentation
 *.mdx @marcusolsson @jessover9000 @grafarg/grafarg-frontend-platform
 
 /public/app/features/explore/ @grafarg/observability-squad

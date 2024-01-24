@@ -1,6 +1,6 @@
 import React, { MouseEvent, useContext } from 'react';
 import { css } from 'emotion';
-import { CallToActionCard, Icon, IconName, LinkButton, ThemeContext } from '@grafana/ui';
+import { CallToActionCard, Icon, IconName, LinkButton, ThemeContext } from '@grafarg/ui';
 import { selectors } from '@grafarg/e2e-selectors';
 
 export interface Props {

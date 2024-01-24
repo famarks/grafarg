@@ -1,4 +1,4 @@
-import { ArrayVector, Field, FieldType, MutableDataFrame, SelectableValue } from '@grafana/data';
+import { ArrayVector, Field, FieldType, MutableDataFrame, SelectableValue } from '@grafarg/data';
 import {
   calculateUniqueFieldValues,
   filterByValue,

@@ -13,7 +13,7 @@ import {
   BracesPlugin,
   DOMUtil,
   SuggestionsState,
-} from '@grafana/ui';
+} from '@grafarg/ui';
 
 import { LanguageMap, languages as prismLanguages } from 'prismjs';
 
@@ -28,7 +28,7 @@ import {
   toLegacyResponseData,
   HistoryItem,
   TimeRange,
-} from '@grafana/data';
+} from '@grafarg/data';
 import { PrometheusDatasource } from '../datasource';
 
 const HISTOGRAM_GROUP = '__histograms__';

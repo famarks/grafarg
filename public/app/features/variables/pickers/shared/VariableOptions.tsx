@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { getTagColorsFromName, Icon, Tooltip } from '@grafana/ui';
+import { getTagColorsFromName, Icon, Tooltip } from '@grafarg/ui';
 import { selectors } from '@grafarg/e2e-selectors';
 
 import { VariableOption, VariableTag } from '../../types';

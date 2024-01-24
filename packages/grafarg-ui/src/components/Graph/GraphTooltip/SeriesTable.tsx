@@ -1,6 +1,6 @@
 import React from 'react';
 import { stylesFactory } from '../../../themes/stylesFactory';
-import { GrafargTheme, GraphSeriesValue } from '@grafana/data';
+import { GrafargTheme, GraphSeriesValue } from '@grafarg/data';
 import { css, cx } from 'emotion';
 import { SeriesIcon } from '../../VizLegend/SeriesIcon';
 import { useTheme } from '../../../themes';

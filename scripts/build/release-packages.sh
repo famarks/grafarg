@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-PACKAGES=("@grafana/ui" "@grafana/data" "@grafana/toolkit" "@grafana/runtime" "@grafarg/e2e" "@grafarg/e2e-selectors")
+PACKAGES=("@grafarg/ui" "@grafarg/data" "@grafarg/toolkit" "@grafarg/runtime" "@grafarg/e2e" "@grafarg/e2e-selectors")
 GRAFARG_TAG=${1:-}
 RELEASE_CHANNEL="latest"
 

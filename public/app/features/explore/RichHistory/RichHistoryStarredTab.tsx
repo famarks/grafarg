@@ -6,8 +6,8 @@ import { uniqBy, debounce } from 'lodash';
 import { RichHistoryQuery, ExploreId } from 'app/types/explore';
 
 // Utils
-import { stylesFactory, useTheme, Select } from '@grafana/ui';
-import { GrafargTheme, SelectableValue } from '@grafana/data';
+import { stylesFactory, useTheme, Select } from '@grafarg/ui';
+import { GrafargTheme, SelectableValue } from '@grafarg/data';
 import { filterAndSortQueries, createDatasourcesList, SortOrder } from 'app/core/utils/richHistory';
 
 // Components

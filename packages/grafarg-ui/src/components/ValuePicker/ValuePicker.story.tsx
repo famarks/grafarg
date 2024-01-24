@@ -1,6 +1,6 @@
 import React from 'react';
 import { boolean, select, text } from '@storybook/addon-knobs';
-import { ButtonVariant, ValuePicker } from '@grafana/ui';
+import { ButtonVariant, ValuePicker } from '@grafarg/ui';
 import { generateOptions } from '../Select/mockOptions';
 import { getIconKnob } from '../../utils/storybook/knobs';
 import { withCenteredStory } from '../../utils/storybook/withCenteredStory';

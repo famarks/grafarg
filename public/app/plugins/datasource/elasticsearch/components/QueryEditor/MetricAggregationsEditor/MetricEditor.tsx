@@ -1,5 +1,5 @@
-import { MetricFindValue, SelectableValue } from '@grafana/data';
-import { InlineSegmentGroup, Segment, SegmentAsync, useTheme } from '@grafana/ui';
+import { MetricFindValue, SelectableValue } from '@grafarg/data';
+import { InlineSegmentGroup, Segment, SegmentAsync, useTheme } from '@grafarg/ui';
 import { cx } from 'emotion';
 import React, { FunctionComponent } from 'react';
 import { useDatasource, useQuery } from '../ElasticsearchQueryContext';

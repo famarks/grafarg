@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { css, cx } from 'emotion';
-import { DataFrame, DataLink, GrafargTheme, VariableSuggestion } from '@grafana/data';
+import { DataFrame, DataLink, GrafargTheme, VariableSuggestion } from '@grafarg/data';
 import { stylesFactory, useTheme } from '../../../themes';
 import { HorizontalGroup, VerticalGroup } from '../../Layout/Layout';
 import { IconButton } from '../../IconButton/IconButton';

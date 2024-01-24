@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, ButtonVariant, ModalsController, FullWidthButtonContainer } from '@grafana/ui';
+import { Button, ButtonVariant, ModalsController, FullWidthButtonContainer } from '@grafarg/ui';
 import { DashboardModel } from 'app/features/dashboard/state';
 import { SaveDashboardAsModal } from './SaveDashboardAsModal';
 import { SaveDashboardModalProxy } from './SaveDashboardModalProxy';

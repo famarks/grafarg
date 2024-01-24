@@ -1,7 +1,7 @@
 import React from 'react';
 import { InlineList } from '../List/InlineList';
 import { css } from 'emotion';
-import { DisplayValue, formattedValueToString } from '@grafana/data';
+import { DisplayValue, formattedValueToString } from '@grafarg/data';
 import capitalize from 'lodash/capitalize';
 import { useStyles } from '../../themes/ThemeContext';
 

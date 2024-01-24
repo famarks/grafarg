@@ -16,7 +16,7 @@ import { css, cx } from 'emotion';
 import { SlatePrism } from '../../slate-plugins';
 import { SCHEMA } from '../../utils/slate';
 import { stylesFactory } from '../../themes';
-import { DataLinkBuiltInVars, GrafargTheme, VariableOrigin, VariableSuggestion } from '@grafana/data';
+import { DataLinkBuiltInVars, GrafargTheme, VariableOrigin, VariableSuggestion } from '@grafarg/data';
 
 const modulo = (a: number, n: number) => a - n * Math.floor(a / n);
 

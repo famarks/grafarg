@@ -1,6 +1,6 @@
 import React, { useCallback } from 'react';
 import { css, cx } from 'emotion';
-import { GrafargTheme, LinkTarget } from '@grafana/data';
+import { GrafargTheme, LinkTarget } from '@grafarg/data';
 import { List } from '../List/List';
 import { styleMixins, useStyles } from '../../themes';
 import { Icon } from '../Icon/Icon';

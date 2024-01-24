@@ -1,5 +1,5 @@
 import React, { FormEvent, ReactElement, useCallback } from 'react';
-import { VerticalGroup } from '@grafana/ui';
+import { VerticalGroup } from '@grafarg/ui';
 
 import { TextBoxVariableModel } from '../types';
 import { VariableEditorProps } from '../editor/types';

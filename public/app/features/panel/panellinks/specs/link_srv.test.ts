@@ -1,5 +1,5 @@
-import { FieldType, locationUtil, toDataFrame, VariableOrigin } from '@grafana/data';
-import { setTemplateSrv } from '@grafana/runtime';
+import { FieldType, locationUtil, toDataFrame, VariableOrigin } from '@grafarg/data';
+import { setTemplateSrv } from '@grafarg/runtime';
 import { getDataFrameVars, LinkSrv } from '../link_srv';
 import { TimeSrv } from 'app/features/dashboard/services/TimeSrv';
 import { TemplateSrv } from 'app/features/templating/template_srv';

@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 
 import { Gauge, Props } from './Gauge';
 import { getTheme } from '../../themes';
-import { ThresholdsMode, FieldConfig, FieldColorModeId } from '@grafana/data';
+import { ThresholdsMode, FieldConfig, FieldColorModeId } from '@grafarg/data';
 
 jest.mock('jquery', () => ({
   plot: jest.fn(),

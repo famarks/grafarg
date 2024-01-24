@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 
-import { SelectableValue } from '@grafana/data';
-import { Segment } from '@grafana/ui';
+import { SelectableValue } from '@grafarg/data';
+import { Segment } from '@grafarg/ui';
 
 export interface Props {
   onChange: (perSeriesAligner: string) => void;

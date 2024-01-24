@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from 'react';
 import { boolean } from '@storybook/addon-knobs';
 import { withCenteredStory, withHorizontallyCenteredStory } from '../../utils/storybook/withCenteredStory';
-import { InlineField, Switch, InlineSwitch } from '@grafana/ui';
+import { InlineField, Switch, InlineSwitch } from '@grafarg/ui';
 import mdx from './Switch.mdx';
 import { InlineFieldRow } from '../Forms/InlineFieldRow';
 import { Field } from '../Forms/Field';

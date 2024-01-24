@@ -6,7 +6,7 @@ import { EdgeDatum, NodeDatum } from './types';
 import { Node } from './Node';
 import { Edge } from './Edge';
 import { ViewControls } from './ViewControls';
-import { DataFrame, GrafargTheme, LinkModel } from '@grafana/data';
+import { DataFrame, GrafargTheme, LinkModel } from '@grafarg/data';
 import { useZoom } from './useZoom';
 import { Bounds, Config, defaultConfig, useLayout } from './layout';
 import { EdgeArrowMarker } from './EdgeArrowMarker';

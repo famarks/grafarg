@@ -1,4 +1,4 @@
-import { DataSourcePlugin } from '@grafana/data';
+import { DataSourcePlugin } from '@grafarg/data';
 import { ANNOTATION_QUERY_STEP_DEFAULT, PrometheusDatasource } from './datasource';
 
 import { PromQueryEditor } from './components/PromQueryEditor';

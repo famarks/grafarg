@@ -2,7 +2,7 @@ import React from 'react';
 import { mount, ReactWrapper } from 'enzyme';
 import { NamedColorsPalette } from './NamedColorsPalette';
 import { ColorSwatch } from './NamedColorsGroup';
-import { getColorDefinitionByName, GrafargThemeType } from '@grafana/data';
+import { getColorDefinitionByName, GrafargThemeType } from '@grafarg/data';
 import { getTheme } from '../../themes';
 
 describe('NamedColorsPalette', () => {

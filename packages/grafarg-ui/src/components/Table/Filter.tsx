@@ -1,6 +1,6 @@
 import React, { FC, useCallback, useMemo, useRef, useState } from 'react';
 import { css, cx } from 'emotion';
-import { Field, GrafargTheme } from '@grafana/data';
+import { Field, GrafargTheme } from '@grafarg/data';
 
 import { TableStyles } from './styles';
 import { stylesFactory, useStyles } from '../../themes';

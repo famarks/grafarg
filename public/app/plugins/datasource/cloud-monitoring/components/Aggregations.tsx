@@ -1,8 +1,8 @@
 import React, { FC, useState, useMemo } from 'react';
 import _ from 'lodash';
 
-import { SelectableValue } from '@grafana/data';
-import { Segment, Icon } from '@grafana/ui';
+import { SelectableValue } from '@grafarg/data';
+import { Segment, Icon } from '@grafarg/ui';
 import { getAggregationOptionsByMetric } from '../functions';
 import { ValueTypes, MetricKind } from '../constants';
 import { MetricDescriptor } from '../types';

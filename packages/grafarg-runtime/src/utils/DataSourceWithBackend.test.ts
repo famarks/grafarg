@@ -1,6 +1,6 @@
 import { BackendSrv, BackendSrvRequest } from 'src/services';
 import { DataSourceWithBackend } from './DataSourceWithBackend';
-import { DataSourceJsonData, DataQuery, DataSourceInstanceSettings, DataQueryRequest } from '@grafana/data';
+import { DataSourceJsonData, DataQuery, DataSourceInstanceSettings, DataQueryRequest } from '@grafarg/data';
 import { of } from 'rxjs';
 
 class MyDataSource extends DataSourceWithBackend<DataQuery, DataSourceJsonData> {

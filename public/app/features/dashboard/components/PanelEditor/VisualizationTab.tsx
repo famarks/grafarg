@@ -1,13 +1,13 @@
 import React, { useCallback, useState } from 'react';
 import { css } from 'emotion';
-import { GrafargTheme, PanelPlugin, PanelPluginMeta } from '@grafana/data';
-import { useTheme, stylesFactory, Icon, Input } from '@grafana/ui';
+import { GrafargTheme, PanelPlugin, PanelPluginMeta } from '@grafarg/data';
+import { useTheme, stylesFactory, Icon, Input } from '@grafarg/ui';
 import { changePanelPlugin } from '../../state/actions';
 import { StoreState } from 'app/types';
 import { PanelModel } from '../../state/PanelModel';
 import { connect, MapStateToProps, MapDispatchToProps } from 'react-redux';
 import { VizTypePicker, getAllPanelPluginMeta, filterPluginList } from '../VizTypePicker/VizTypePicker';
-import { Field } from '@grafana/ui/src/components/Forms/Field';
+import { Field } from '@grafarg/ui/src/components/Forms/Field';
 
 interface OwnProps {
   panel: PanelModel;

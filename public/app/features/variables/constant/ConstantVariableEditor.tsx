@@ -1,6 +1,6 @@
 import React, { FormEvent, PureComponent } from 'react';
 import { selectors } from '@grafarg/e2e-selectors';
-import { VerticalGroup } from '@grafana/ui';
+import { VerticalGroup } from '@grafarg/ui';
 
 import { ConstantVariableModel } from '../types';
 import { VariableEditorProps } from '../editor/types';

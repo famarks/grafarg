@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { css } from 'emotion';
 
-import { SelectableValue, GrafargTheme } from '@grafana/data';
+import { SelectableValue, GrafargTheme } from '@grafarg/data';
 import { stylesFactory, useTheme } from '../../themes';
 import { IconName, TabsBar, Tab, IconButton, CustomScrollbar, TabContent } from '../..';
 

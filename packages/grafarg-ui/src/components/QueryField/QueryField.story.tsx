@@ -1,6 +1,6 @@
 import React from 'react';
 import { withCenteredStory } from '../../utils/storybook/withCenteredStory';
-import { QueryField } from '@grafana/ui';
+import { QueryField } from '@grafarg/ui';
 
 export default {
   title: 'Data Source/QueryField',

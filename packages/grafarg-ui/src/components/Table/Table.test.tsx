@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { applyFieldOverrides, DataFrame, FieldType, locationUtil, toDataFrame } from '@grafana/data';
+import { applyFieldOverrides, DataFrame, FieldType, locationUtil, toDataFrame } from '@grafarg/data';
 
 import { Props, Table } from './Table';
 import { getTheme } from '../../themes';

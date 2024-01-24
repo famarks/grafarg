@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
-import { renderMarkdown, LinkModelSupplier, ScopedVars } from '@grafana/data';
-import { Tooltip, PopoverContent } from '@grafana/ui';
-import { getLocationSrv, getTemplateSrv } from '@grafana/runtime';
+import { renderMarkdown, LinkModelSupplier, ScopedVars } from '@grafarg/data';
+import { Tooltip, PopoverContent } from '@grafarg/ui';
+import { getLocationSrv, getTemplateSrv } from '@grafarg/runtime';
 
 import { PanelModel } from 'app/features/dashboard/state/PanelModel';
 import { getTimeSrv, TimeSrv } from 'app/features/dashboard/services/TimeSrv';

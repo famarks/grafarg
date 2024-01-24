@@ -1,4 +1,4 @@
-import { DataFrame, FieldConfigSource, PanelPlugin } from '@grafana/data';
+import { DataFrame, FieldConfigSource, PanelPlugin } from '@grafarg/data';
 
 export interface PanelEditorTab {
   id: string;

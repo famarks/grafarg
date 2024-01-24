@@ -1,6 +1,6 @@
 import React from 'react';
-import { FeatureState } from '@grafana/data';
-import { InfoBox, FeatureInfoBox } from '@grafana/ui';
+import { FeatureState } from '@grafarg/data';
+import { InfoBox, FeatureInfoBox } from '@grafarg/ui';
 import mdx from './InfoBox.mdx';
 import { Story } from '@storybook/react';
 import { FeatureInfoBoxProps } from './FeatureInfoBox';

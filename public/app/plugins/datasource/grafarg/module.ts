@@ -1,4 +1,4 @@
-import { DataSourcePlugin } from '@grafana/data';
+import { DataSourcePlugin } from '@grafarg/data';
 import { GrafargDatasource } from './datasource';
 import { QueryEditor } from './components/QueryEditor';
 import { GrafargQuery } from './types';

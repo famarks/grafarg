@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react';
 import { css, cx } from 'emotion';
-import { GrafargTheme, Labels } from '@grafana/data';
+import { GrafargTheme, Labels } from '@grafarg/data';
 
 import { stylesFactory } from '../../themes';
 import { Themeable } from '../../types/theme';

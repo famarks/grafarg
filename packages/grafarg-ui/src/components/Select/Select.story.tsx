@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { withCenteredStory, withHorizontallyCenteredStory } from '../../utils/storybook/withCenteredStory';
-import { SelectableValue } from '@grafana/data';
-import { Icon, Select, AsyncSelect, MultiSelect, AsyncMultiSelect } from '@grafana/ui';
+import { SelectableValue } from '@grafarg/data';
+import { Icon, Select, AsyncSelect, MultiSelect, AsyncMultiSelect } from '@grafarg/ui';
 import { getAvailableIcons, IconName } from '../../types';
 import { select, boolean, number } from '@storybook/addon-knobs';
 import kebabCase from 'lodash/kebabCase';

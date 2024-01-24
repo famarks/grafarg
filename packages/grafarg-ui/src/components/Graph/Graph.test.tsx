@@ -2,7 +2,7 @@ import React from 'react';
 import { mount } from 'enzyme';
 import Graph from './Graph';
 import Chart from '../Chart';
-import { GraphSeriesXY, FieldType, ArrayVector, dateTime, FieldColorModeId } from '@grafana/data';
+import { GraphSeriesXY, FieldType, ArrayVector, dateTime, FieldColorModeId } from '@grafarg/data';
 
 const series: GraphSeriesXY[] = [
   {

@@ -1,5 +1,5 @@
-import { Field, PanelProps } from '@grafana/data';
-import { GraphNG, GraphNGLegendEvent, TooltipPlugin, ZoomPlugin } from '@grafana/ui';
+import { Field, PanelProps } from '@grafarg/data';
+import { GraphNG, GraphNGLegendEvent, TooltipPlugin, ZoomPlugin } from '@grafarg/ui';
 import { getFieldLinksForExplore } from 'app/features/explore/utils/links';
 import React, { useCallback } from 'react';
 import { changeSeriesColorConfigFactory } from './overrides/colorSeriesConfigFactory';

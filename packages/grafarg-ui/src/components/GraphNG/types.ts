@@ -1,4 +1,4 @@
-import { DataFrameFieldIndex, FieldMatcher } from '@grafana/data';
+import { DataFrameFieldIndex, FieldMatcher } from '@grafarg/data';
 
 /**
  * Mode to describe if a legend is isolated/selected or being appended to an existing

@@ -1,7 +1,7 @@
 import React from 'react';
 import { css } from 'emotion';
-import { Button, stylesFactory, useTheme } from '@grafana/ui';
-import { GrafargTheme, VariableOrigin, DataLinkBuiltInVars } from '@grafana/data';
+import { Button, stylesFactory, useTheme } from '@grafarg/ui';
+import { GrafargTheme, VariableOrigin, DataLinkBuiltInVars } from '@grafarg/data';
 import { DataLinkConfig } from '../types';
 import { DataLink } from './DataLink';
 

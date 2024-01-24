@@ -21,7 +21,7 @@ import {
   TimeRange,
   TimeZone,
   dateMath,
-} from '@grafana/data';
+} from '@grafarg/data';
 import { Themeable } from '../../types';
 import { otherOptions, quickOptions } from './rangeOptions';
 import { ButtonGroup, ToolbarButton } from '../Button';

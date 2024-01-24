@@ -1,7 +1,7 @@
 import React, { FunctionComponent, useContext, useState } from 'react';
 import { css, cx } from 'emotion';
 
-import { GrafargTheme } from '@grafana/data';
+import { GrafargTheme } from '@grafarg/data';
 import { ThemeContext } from '../../themes/ThemeContext';
 import { stylesFactory } from '../../themes/stylesFactory';
 import { Icon } from '../Icon/Icon';

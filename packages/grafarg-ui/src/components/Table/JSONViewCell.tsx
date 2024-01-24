@@ -5,7 +5,7 @@ import { Tooltip } from '../Tooltip/Tooltip';
 import { JSONFormatter } from '../JSONFormatter/JSONFormatter';
 import { useStyles } from '../../themes';
 import { TableCellProps } from './types';
-import { GrafargTheme } from '@grafana/data';
+import { GrafargTheme } from '@grafarg/data';
 
 export const JSONViewCell: FC<TableCellProps> = (props) => {
   const { cell, tableStyles, cellProps } = props;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow, ShallowWrapper } from 'enzyme';
-import { setTemplateSrv } from '@grafana/runtime';
+import { setTemplateSrv } from '@grafarg/runtime';
 import config from 'app/core/config';
 import { ShareLink, Props, State } from './ShareLink';
 import { initTemplateSrv } from '../../../../../test/helpers/initTemplateSrv';
@@ -44,8 +44,8 @@ function setUTCTimeZone() {
 }
 
 const mockUid = 'abc123';
-jest.mock('@grafana/runtime', () => {
-  const original = jest.requireActual('@grafana/runtime');
+jest.mock('@grafarg/runtime', () => {
+  const original = jest.requireActual('@grafarg/runtime');
 
   return {
     ...original,

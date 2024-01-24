@@ -3,8 +3,8 @@ import React, { FC } from 'react';
 import { css } from 'emotion';
 // @ts-ignore
 import { components } from '@torkelo/react-select';
-import { AsyncSelect, stylesFactory, useTheme, resetSelectStyles, Icon } from '@grafana/ui';
-import { escapeStringForRegex, GrafargTheme } from '@grafana/data';
+import { AsyncSelect, stylesFactory, useTheme, resetSelectStyles, Icon } from '@grafarg/ui';
+import { escapeStringForRegex, GrafargTheme } from '@grafarg/data';
 // Components
 import { TagOption } from './TagOption';
 import { TagBadge } from './TagBadge';

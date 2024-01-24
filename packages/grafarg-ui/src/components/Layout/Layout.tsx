@@ -1,6 +1,6 @@
 import React, { HTMLProps } from 'react';
 import { css, cx } from 'emotion';
-import { GrafargTheme } from '@grafana/data';
+import { GrafargTheme } from '@grafarg/data';
 import { stylesFactory, useTheme } from '../../themes';
 
 enum Orientation {

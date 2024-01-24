@@ -1,5 +1,5 @@
 import React, { FC, memo, useCallback, useMemo } from 'react';
-import { DataFrame, Field, getFieldDisplayName } from '@grafana/data';
+import { DataFrame, Field, getFieldDisplayName } from '@grafarg/data';
 import {
   Cell,
   Column,

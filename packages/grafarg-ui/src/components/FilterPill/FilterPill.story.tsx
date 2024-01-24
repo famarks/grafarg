@@ -1,7 +1,7 @@
 import React from 'react';
 import { Story } from '@storybook/react';
 import { FilterPill, FilterPillProps } from './FilterPill';
-import { withCenteredStory } from '@grafana/ui/src/utils/storybook/withCenteredStory';
+import { withCenteredStory } from '@grafarg/ui/src/utils/storybook/withCenteredStory';
 import mdx from './FilterPill.mdx';
 import { getAvailableIcons } from '../../types';
 

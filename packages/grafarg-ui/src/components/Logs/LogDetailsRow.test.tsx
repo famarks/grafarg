@@ -1,6 +1,6 @@
 import React from 'react';
 import { LogDetailsRow, Props } from './LogDetailsRow';
-import { GrafargTheme } from '@grafana/data';
+import { GrafargTheme } from '@grafarg/data';
 import { mount } from 'enzyme';
 import { LogLabelStats } from './LogLabelStats';
 

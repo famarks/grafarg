@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { css } from 'emotion';
 import { stylesFactory, useStyles } from '../../themes';
-import { GrafargTheme, locale } from '@grafana/data';
+import { GrafargTheme, locale } from '@grafarg/data';
 
 const getStyles = stylesFactory((theme: GrafargTheme) => {
   return {

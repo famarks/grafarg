@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { SelectableValue, TimeZone } from '@grafana/data';
-import { Select, TagsInput, Input, Field, CollapsableSection, RadioButtonGroup } from '@grafana/ui';
+import { SelectableValue, TimeZone } from '@grafarg/data';
+import { Select, TagsInput, Input, Field, CollapsableSection, RadioButtonGroup } from '@grafarg/ui';
 import { selectors } from '@grafarg/e2e-selectors';
 import { FolderPicker } from 'app/core/components/Select/FolderPicker';
 import { DashboardModel } from '../../state/DashboardModel';

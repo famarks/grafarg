@@ -8,12 +8,12 @@ import {
   FieldConfig,
   DisplayProcessor,
   DisplayValue,
-} from '@grafana/data';
-import { BarGauge, DataLinksContextMenu, VizRepeater, VizRepeaterRenderValueProps } from '@grafana/ui';
+} from '@grafarg/data';
+import { BarGauge, DataLinksContextMenu, VizRepeater, VizRepeaterRenderValueProps } from '@grafarg/ui';
 
 import { config } from 'app/core/config';
 import { BarGaugeOptions } from './types';
-import { DataLinksContextMenuApi } from '@grafana/ui/src/components/DataLinks/DataLinksContextMenu';
+import { DataLinksContextMenuApi } from '@grafarg/ui/src/components/DataLinks/DataLinksContextMenu';
 import { isNumber } from 'lodash';
 
 export class BarGaugePanel extends PureComponent<PanelProps<BarGaugeOptions>> {

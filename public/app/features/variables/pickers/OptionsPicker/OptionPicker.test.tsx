@@ -3,7 +3,7 @@ import { Provider } from 'react-redux';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { selectors } from '@grafarg/e2e-selectors';
-import { LoadingState } from '@grafana/data';
+import { LoadingState } from '@grafarg/data';
 
 import { VariablePickerProps } from '../types';
 import { QueryVariableModel } from '../../types';

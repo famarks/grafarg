@@ -1,4 +1,4 @@
-import { CircularDataFrame, FieldCache, FieldType, MutableDataFrame } from '@grafana/data';
+import { CircularDataFrame, FieldCache, FieldType, MutableDataFrame } from '@grafarg/data';
 import {
   LokiStreamResult,
   LokiTailResponse,
@@ -8,7 +8,7 @@ import {
   LokiMatrixResult,
 } from './types';
 import * as ResultTransformer from './result_transformer';
-import { setTemplateSrv } from '@grafana/runtime';
+import { setTemplateSrv } from '@grafarg/runtime';
 import { TemplateSrv } from 'app/features/templating/template_srv';
 
 const streamResult: LokiStreamResult[] = [
@@ -39,9 +39,9 @@ const lokiResponse: LokiStreamResponse = {
   },
 };
 
-jest.mock('@grafana/runtime', () => ({
+jest.mock('@grafarg/runtime', () => ({
   // @ts-ignore
-  ...jest.requireActual('@grafana/runtime'),
+  ...jest.requireActual('@grafarg/runtime'),
   getDataSourceSrv: () => {
     return {
       getInstanceSettings: () => {

@@ -1,7 +1,7 @@
 import { of, throwError } from 'rxjs';
 import { take } from 'rxjs/operators';
-import { AnnotationQueryRequest, CoreApp, DataFrame, dateTime, FieldCache, TimeSeries } from '@grafana/data';
-import { BackendSrvRequest, FetchResponse } from '@grafana/runtime';
+import { AnnotationQueryRequest, CoreApp, DataFrame, dateTime, FieldCache, TimeSeries } from '@grafarg/data';
+import { BackendSrvRequest, FetchResponse } from '@grafarg/runtime';
 
 import LokiDatasource from './datasource';
 import { LokiQuery, LokiResponse, LokiResultType } from './types';
@@ -13,9 +13,9 @@ import { initialCustomVariableModelState } from '../../../features/variables/cus
 import { makeMockLokiDatasource } from './mocks';
 import { createFetchResponse } from 'test/helpers/createFetchResponse';
 
-jest.mock('@grafana/runtime', () => ({
+jest.mock('@grafarg/runtime', () => ({
   // @ts-ignore
-  ...jest.requireActual('@grafana/runtime'),
+  ...jest.requireActual('@grafarg/runtime'),
   getBackendSrv: () => backendSrv,
 }));
 

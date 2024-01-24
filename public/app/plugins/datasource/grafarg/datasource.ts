@@ -7,10 +7,10 @@ import {
   DataSourceApi,
   DataSourceInstanceSettings,
   LiveChannelScope,
-} from '@grafana/data';
+} from '@grafarg/data';
 
 import { GrafargQuery, GrafargAnnotationQuery, GrafargAnnotationType, GrafargQueryType } from './types';
-import { getBackendSrv, getTemplateSrv, toDataQueryResponse, getLiveMeasurementsObserver } from '@grafana/runtime';
+import { getBackendSrv, getTemplateSrv, toDataQueryResponse, getLiveMeasurementsObserver } from '@grafarg/runtime';
 import { Observable, of, merge } from 'rxjs';
 import { map, catchError } from 'rxjs/operators';
 

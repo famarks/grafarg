@@ -1,11 +1,11 @@
 import React, { ChangeEvent } from 'react';
-import { Button, HorizontalGroup, Input, Label, LoadingPlaceholder, stylesFactory, withTheme } from '@grafana/ui';
+import { Button, HorizontalGroup, Input, Label, LoadingPlaceholder, stylesFactory, withTheme } from '@grafarg/ui';
 import LokiLanguageProvider from '../language_provider';
 import { css, cx } from 'emotion';
 import store from 'app/core/store';
 import { FixedSizeList } from 'react-window';
 
-import { GrafargTheme } from '@grafana/data';
+import { GrafargTheme } from '@grafarg/data';
 import { LokiLabel } from './LokiLabel';
 
 // Hard limit on labels to render

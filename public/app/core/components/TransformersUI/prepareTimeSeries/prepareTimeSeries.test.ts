@@ -1,4 +1,4 @@
-import { toDataFrame, ArrayVector, DataFrame, FieldType, toDataFrameDTO, DataFrameDTO } from '@grafana/data';
+import { toDataFrame, ArrayVector, DataFrame, FieldType, toDataFrameDTO, DataFrameDTO } from '@grafarg/data';
 import { prepareTimeSeries, PrepareTimeSeriesOptions, timeSeriesFormat } from './prepareTimeSeries';
 
 describe('Prepair time series transformer', () => {

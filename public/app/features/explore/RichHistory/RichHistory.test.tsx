@@ -1,9 +1,9 @@
 import React from 'react';
 import { mount } from 'enzyme';
-import { GrafargTheme } from '@grafana/data';
+import { GrafargTheme } from '@grafarg/data';
 import { ExploreId } from '../../../types/explore';
 import { RichHistory, RichHistoryProps, Tabs } from './RichHistory';
-import { Tab } from '@grafana/ui';
+import { Tab } from '@grafarg/ui';
 
 jest.mock('../state/selectors', () => ({ getExploreDatasources: jest.fn() }));
 

@@ -1,4 +1,4 @@
-import { DataSourceApi, DataQueryRequest, DataQueryResponse, DataSourceInstanceSettings } from '@grafana/data';
+import { DataSourceApi, DataQueryRequest, DataQueryResponse, DataSourceInstanceSettings } from '@grafarg/data';
 import { DashboardQuery } from './types';
 
 /**

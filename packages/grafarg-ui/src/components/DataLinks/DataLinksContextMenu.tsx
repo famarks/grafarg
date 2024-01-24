@@ -1,5 +1,5 @@
 import React from 'react';
-import { FieldConfig, LinkModel } from '@grafana/data';
+import { FieldConfig, LinkModel } from '@grafarg/data';
 import { selectors } from '@grafarg/e2e-selectors';
 import { css } from 'emotion';
 import { WithContextMenu } from '../ContextMenu/WithContextMenu';

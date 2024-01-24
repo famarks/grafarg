@@ -1,8 +1,8 @@
 import React, { PureComponent } from 'react';
-import { AsyncSelect } from '@grafana/ui';
+import { AsyncSelect } from '@grafarg/ui';
 import { getBackendSrv } from 'app/core/services/backend_srv';
 import { Organization } from 'app/types';
-import { SelectableValue } from '@grafana/data';
+import { SelectableValue } from '@grafarg/data';
 
 export interface OrgSelectItem {
   id: number;

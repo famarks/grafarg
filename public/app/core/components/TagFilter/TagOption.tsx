@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { css, cx } from 'emotion';
-import { useTheme, stylesFactory } from '@grafana/ui';
-import { GrafargTheme } from '@grafana/data';
+import { useTheme, stylesFactory } from '@grafarg/ui';
+import { GrafargTheme } from '@grafarg/data';
 
 import { OptionProps } from 'react-select/src/components/Option';
 import { TagBadge } from './TagBadge';

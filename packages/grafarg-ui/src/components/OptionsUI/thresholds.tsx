@@ -1,5 +1,5 @@
 import React from 'react';
-import { FieldConfigEditorProps, ThresholdsConfig, ThresholdsMode, ThresholdsFieldConfigSettings } from '@grafana/data';
+import { FieldConfigEditorProps, ThresholdsConfig, ThresholdsMode, ThresholdsFieldConfigSettings } from '@grafarg/data';
 import { ThresholdsEditor } from '../ThresholdsEditorNew/ThresholdsEditor';
 
 export class ThresholdsValueEditor extends React.PureComponent<

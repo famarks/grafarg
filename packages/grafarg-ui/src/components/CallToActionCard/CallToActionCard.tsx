@@ -1,6 +1,6 @@
 import React from 'react';
 import { Themeable } from '../../types/theme';
-import { GrafargTheme } from '@grafana/data';
+import { GrafargTheme } from '@grafarg/data';
 import { css, cx } from 'emotion';
 import { stylesFactory } from '../../themes';
 

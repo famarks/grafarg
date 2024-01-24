@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
-import { dateTimeFormat } from '@grafana/data';
+import { dateTimeFormat } from '@grafarg/data';
 import { SyncInfo, UserDTO } from 'app/types';
-import { Button, LinkButton } from '@grafana/ui';
+import { Button, LinkButton } from '@grafarg/ui';
 
 interface Props {
   ldapSyncInfo: SyncInfo;

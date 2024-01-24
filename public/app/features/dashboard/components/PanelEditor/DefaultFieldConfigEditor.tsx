@@ -1,9 +1,9 @@
 import React, { useCallback, ReactNode } from 'react';
 import { get, groupBy } from 'lodash';
-import { Counter, Field, Label } from '@grafana/ui';
+import { Counter, Field, Label } from '@grafarg/ui';
 import { selectors } from '@grafarg/e2e-selectors';
 import { updateDefaultFieldConfigValue } from './utils';
-import { FieldConfigPropertyItem, FieldConfigSource, VariableSuggestionsScope } from '@grafana/data';
+import { FieldConfigPropertyItem, FieldConfigSource, VariableSuggestionsScope } from '@grafarg/data';
 import { getDataLinksVariableSuggestions } from '../../../panel/panellinks/link_srv';
 import { OptionsGroup } from './OptionsGroup';
 import { Props } from './types';

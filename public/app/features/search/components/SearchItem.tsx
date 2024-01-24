@@ -1,8 +1,8 @@
 import React, { FC, useCallback } from 'react';
 import { css } from 'emotion';
 import { selectors as e2eSelectors } from '@grafarg/e2e-selectors';
-import { TagList, Card, useStyles, Icon, IconName } from '@grafana/ui';
-import { GrafargTheme } from '@grafana/data';
+import { TagList, Card, useStyles, Icon, IconName } from '@grafarg/ui';
+import { GrafargTheme } from '@grafarg/data';
 import { DashboardSectionItem, OnToggleChecked } from '../types';
 import { SearchCheckbox } from './SearchCheckbox';
 import { SEARCH_ITEM_HEIGHT, SEARCH_ITEM_MARGIN } from '../constants';

@@ -17,9 +17,9 @@ import {
   PluginSignatureStatus,
   PluginType,
   UrlQueryMap,
-} from '@grafana/data';
+} from '@grafarg/data';
 import { AppNotificationSeverity, CoreEvents, StoreState } from 'app/types';
-import { Alert, InfoBox, Tooltip } from '@grafana/ui';
+import { Alert, InfoBox, Tooltip } from '@grafarg/ui';
 
 import Page from 'app/core/components/Page/Page';
 import { getPluginSettings } from './PluginSettingsCache';

@@ -10,7 +10,7 @@ import {
   LinkModel,
   LogRowModel,
   GrafargTheme,
-} from '@grafana/data';
+} from '@grafarg/data';
 
 import { Themeable } from '../../types/theme';
 import { withTheme } from '../../themes/index';

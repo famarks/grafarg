@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Card, Icon, IconButton, Tooltip, useStyles } from '@grafana/ui';
+import { Card, Icon, IconButton, Tooltip, useStyles } from '@grafarg/ui';
 import { css } from 'emotion';
-import { GrafargTheme } from '@grafana/data';
+import { GrafargTheme } from '@grafarg/data';
 import { LibraryPanelDTO } from '../../types';
 import { DeleteLibraryPanelModal } from '../DeleteLibraryPanelModal/DeleteLibraryPanelModal';
 

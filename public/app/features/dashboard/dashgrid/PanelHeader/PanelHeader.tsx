@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { cx } from 'emotion';
-import { DataLink, PanelData } from '@grafana/data';
-import { Icon } from '@grafana/ui';
+import { DataLink, PanelData } from '@grafarg/data';
+import { Icon } from '@grafarg/ui';
 import { selectors } from '@grafarg/e2e-selectors';
 
 import PanelHeaderCorner from './PanelHeaderCorner';

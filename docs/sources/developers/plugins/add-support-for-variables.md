@@ -43,7 +43,7 @@ For data sources, you need to use the [getTemplateSrv]({{< relref "../../package
 1. Import `getTemplateSrv` from the `runtime` package.
 
    ```ts
-   import { getTemplateSrv } from '@grafana/runtime';
+   import { getTemplateSrv } from '@grafarg/runtime';
    ```
 
 1. In your `query` method, call the `replace` method with a user-defined template string.
@@ -89,7 +89,7 @@ The following example shows how to update a variable called `service`.
 - `replace: true` tells Grafarg to update the current URL state, rather than creating a new history entry.
 
 ```ts
-import { getLocationSrv } from '@grafana/runtime';
+import { getLocationSrv } from '@grafarg/runtime';
 ```
 
 ```ts

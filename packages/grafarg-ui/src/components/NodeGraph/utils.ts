@@ -1,4 +1,4 @@
-import { DataFrame, Field, FieldCache, FieldType, ArrayVector, MutableDataFrame } from '@grafana/data';
+import { DataFrame, Field, FieldCache, FieldType, ArrayVector, MutableDataFrame } from '@grafarg/data';
 import { EdgeDatum, NodeDatum } from './types';
 import { NodeGraphDataFrameFieldNames } from './index';
 

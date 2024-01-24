@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from 'react';
-import { GrafargTheme } from '@grafana/data';
+import { GrafargTheme } from '@grafarg/data';
 import { css, cx } from 'emotion';
 import { Tooltip, PopoverContent } from '../Tooltip/Tooltip';
 import { Icon } from '../Icon/Icon';

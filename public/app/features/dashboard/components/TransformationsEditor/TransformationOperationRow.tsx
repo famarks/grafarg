@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { DataFrame, DataTransformerConfig, TransformerRegistryItem } from '@grafana/data';
-import { HorizontalGroup } from '@grafana/ui';
+import { DataFrame, DataTransformerConfig, TransformerRegistryItem } from '@grafarg/data';
+import { HorizontalGroup } from '@grafarg/ui';
 
 import { TransformationEditor } from './TransformationEditor';
 import {

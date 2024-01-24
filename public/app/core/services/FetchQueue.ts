@@ -1,6 +1,6 @@
 import { Observable, Subject } from 'rxjs';
 
-import { BackendSrvRequest } from '@grafana/runtime';
+import { BackendSrvRequest } from '@grafarg/runtime';
 
 export interface QueueState extends Record<string, { state: FetchStatus; options: BackendSrvRequest }> {}
 

@@ -1,4 +1,4 @@
-import { DataFrameFieldIndex, FALLBACK_COLOR, FieldColorMode, GrafargTheme, ThresholdsConfig } from '@grafana/data';
+import { DataFrameFieldIndex, FALLBACK_COLOR, FieldColorMode, GrafargTheme, ThresholdsConfig } from '@grafarg/data';
 import tinycolor from 'tinycolor2';
 import uPlot, { Series } from 'uplot';
 import {

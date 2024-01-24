@@ -1,4 +1,4 @@
-import { getBackendSrv } from '@grafana/runtime';
+import { getBackendSrv } from '@grafarg/runtime';
 import { LibraryPanelDTO, LibraryPanelSearchResult, PanelModelWithLibraryPanel } from '../types';
 
 export interface GetLibraryPanelsOptions {

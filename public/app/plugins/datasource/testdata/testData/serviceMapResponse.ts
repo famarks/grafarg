@@ -1,5 +1,5 @@
-import { FieldColorModeId, FieldType, PreferredVisualisationType } from '@grafana/data';
-import { NodeGraphDataFrameFieldNames } from '@grafana/ui';
+import { FieldColorModeId, FieldType, PreferredVisualisationType } from '@grafarg/data';
+import { NodeGraphDataFrameFieldNames } from '@grafarg/ui';
 
 export const nodes = {
   fields: [

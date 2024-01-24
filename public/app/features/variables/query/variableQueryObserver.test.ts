@@ -1,5 +1,5 @@
 import { variableQueryObserver } from './variableQueryObserver';
-import { LoadingState } from '@grafana/data';
+import { LoadingState } from '@grafarg/data';
 import { VariableIdentifier } from '../state/types';
 import { UpdateOptionsResults } from './VariableQueryRunner';
 

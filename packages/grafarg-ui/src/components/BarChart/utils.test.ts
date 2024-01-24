@@ -1,5 +1,5 @@
 import { preparePlotConfigBuilder, preparePlotFrame } from './utils';
-import { FieldConfig, FieldType, GrafargTheme, MutableDataFrame, VizOrientation } from '@grafana/data';
+import { FieldConfig, FieldType, GrafargTheme, MutableDataFrame, VizOrientation } from '@grafarg/data';
 import { BarChartFieldConfig, BarChartOptions, BarStackingMode, BarValueVisibility } from './types';
 import { GraphGradientMode } from '../uPlot/config';
 import { LegendDisplayMode } from '../VizLegend/types';

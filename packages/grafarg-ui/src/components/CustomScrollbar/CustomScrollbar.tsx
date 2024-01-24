@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import { css } from 'emotion';
 import Scrollbars from 'react-custom-scrollbars';
 import { useStyles } from '../../themes';
-import { GrafargTheme } from '@grafana/data';
+import { GrafargTheme } from '@grafarg/data';
 
 interface Props {
   className?: string;

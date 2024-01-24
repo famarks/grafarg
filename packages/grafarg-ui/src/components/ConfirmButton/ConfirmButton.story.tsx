@@ -1,6 +1,6 @@
 import React from 'react';
 import { Story } from '@storybook/react';
-import { ConfirmButton } from '@grafana/ui';
+import { ConfirmButton } from '@grafarg/ui';
 import { withCenteredStory } from '../../utils/storybook/withCenteredStory';
 import { NOOP_CONTROL } from '../../utils/storybook/noopControl';
 import { action } from '@storybook/addon-actions';

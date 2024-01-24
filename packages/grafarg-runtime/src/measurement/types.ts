@@ -1,4 +1,4 @@
-import { DataFrame, Labels, FieldConfig } from '@grafana/data';
+import { DataFrame, Labels, FieldConfig } from '@grafarg/data';
 
 /**
  * the raw channel events are batches of Measurements

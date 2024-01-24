@@ -1,7 +1,7 @@
 import { coreModule, NavModelSrv } from 'app/core/core';
-import { dateTimeFormat, dateTimeFormatTimeAgo } from '@grafana/data';
+import { dateTimeFormat, dateTimeFormatTimeAgo } from '@grafarg/data';
 import { UserSession } from 'app/types';
-import { getBackendSrv } from '@grafana/runtime';
+import { getBackendSrv } from '@grafarg/runtime';
 import { promiseToDigest } from 'app/core/utils/promiseToDigest';
 import { IScope } from 'angular';
 

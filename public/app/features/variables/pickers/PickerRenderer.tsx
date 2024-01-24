@@ -2,7 +2,7 @@ import React, { FunctionComponent, PropsWithChildren, ReactElement, useMemo } fr
 import { VariableHide, VariableModel } from '../types';
 import { selectors } from '@grafarg/e2e-selectors';
 import { variableAdapters } from '../adapters';
-import { Tooltip } from '@grafana/ui';
+import { Tooltip } from '@grafarg/ui';
 
 interface Props {
   variable: VariableModel;

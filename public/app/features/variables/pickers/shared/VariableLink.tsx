@@ -1,8 +1,8 @@
 import React, { FC, MouseEvent, useCallback } from 'react';
 import { css } from 'emotion';
-import { getTagColorsFromName, Icon, Tooltip, useStyles } from '@grafana/ui';
+import { getTagColorsFromName, Icon, Tooltip, useStyles } from '@grafarg/ui';
 import { selectors } from '@grafarg/e2e-selectors';
-import { GrafargTheme } from '@grafana/data';
+import { GrafargTheme } from '@grafarg/data';
 
 import { VariableTag } from '../../types';
 

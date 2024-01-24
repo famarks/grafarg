@@ -3,10 +3,10 @@ import { connect, MapDispatchToProps } from 'react-redux';
 import { css, cx, keyframes } from 'emotion';
 import _ from 'lodash';
 import tinycolor from 'tinycolor2';
-import { LocationUpdate } from '@grafana/runtime';
-import { Icon, IconButton, styleMixins, useStyles } from '@grafana/ui';
+import { LocationUpdate } from '@grafarg/runtime';
+import { Icon, IconButton, styleMixins, useStyles } from '@grafarg/ui';
 import { selectors } from '@grafarg/e2e-selectors';
-import { DateTimeInput, GrafargTheme } from '@grafana/data';
+import { DateTimeInput, GrafargTheme } from '@grafarg/data';
 
 import config from 'app/core/config';
 import store from 'app/core/store';

@@ -1,6 +1,6 @@
 import React, { MouseEvent, useCallback, useState } from 'react';
 import { EdgeDatum, NodeDatum } from './types';
-import { DataFrame, Field, GrafargTheme, LinkModel } from '@grafana/data';
+import { DataFrame, Field, GrafargTheme, LinkModel } from '@grafarg/data';
 import { ContextMenu } from '../ContextMenu/ContextMenu';
 import { useTheme } from '../../themes/ThemeContext';
 import { stylesFactory } from '../../themes/stylesFactory';

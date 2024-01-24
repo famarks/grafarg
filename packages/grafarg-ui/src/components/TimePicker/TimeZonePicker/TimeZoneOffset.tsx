@@ -1,6 +1,6 @@
 import React, { PropsWithChildren } from 'react';
 import { css, cx } from 'emotion';
-import { GrafargTheme, TimeZone, dateTimeFormat } from '@grafana/data';
+import { GrafargTheme, TimeZone, dateTimeFormat } from '@grafarg/data';
 import { useTheme, stylesFactory } from '../../../themes';
 import isString from 'lodash/isString';
 

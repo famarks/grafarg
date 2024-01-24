@@ -1,7 +1,7 @@
 import React, { FC, useCallback, useMemo, useState } from 'react';
 import { FixedSizeList as List } from 'react-window';
 import { css } from 'emotion';
-import { GrafargTheme, SelectableValue } from '@grafana/data';
+import { GrafargTheme, SelectableValue } from '@grafarg/data';
 
 import { stylesFactory, useTheme } from '../../themes';
 import { Checkbox, Input, Label, VerticalGroup } from '..';

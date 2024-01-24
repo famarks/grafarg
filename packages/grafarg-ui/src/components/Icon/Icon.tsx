@@ -1,6 +1,6 @@
 import React, { ComponentType } from 'react';
 import { css, cx } from 'emotion';
-import { GrafargTheme, toPascalCase } from '@grafana/data';
+import { GrafargTheme, toPascalCase } from '@grafarg/data';
 import { stylesFactory } from '../../themes/stylesFactory';
 import { useTheme } from '../../themes/ThemeContext';
 import { IconName, IconType, IconSize } from '../../types/icon';

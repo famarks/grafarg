@@ -12,8 +12,8 @@ jest.mock('app/core/core', () => ({
   },
 }));
 
-jest.mock('@grafana/runtime', () => ({
-  ...((jest.requireActual('@grafana/runtime') as unknown) as object),
+jest.mock('@grafarg/runtime', () => ({
+  ...((jest.requireActual('@grafarg/runtime') as unknown) as object),
   getBackendSrv: () => backendSrv,
 }));
 

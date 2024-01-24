@@ -1,5 +1,5 @@
-import { ScopedVars } from '@grafana/data';
-import { getTemplateSrv } from '@grafana/runtime';
+import { ScopedVars } from '@grafarg/data';
+import { getTemplateSrv } from '@grafarg/runtime';
 import { variableAdapters } from './adapters';
 
 export function getAllVariableValuesForUrl(scopedVars?: ScopedVars) {

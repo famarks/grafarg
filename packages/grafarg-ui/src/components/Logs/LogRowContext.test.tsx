@@ -1,5 +1,5 @@
 import React from 'react';
-import { LogRowModel } from '@grafana/data';
+import { LogRowModel } from '@grafarg/data';
 import { render, screen } from '@testing-library/react';
 import { LogRowContextGroup } from './LogRowContext';
 

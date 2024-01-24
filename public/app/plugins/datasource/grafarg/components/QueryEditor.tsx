@@ -1,9 +1,9 @@
 import defaults from 'lodash/defaults';
 
 import React, { PureComponent } from 'react';
-import { InlineField, Select, FeatureInfoBox } from '@grafana/ui';
-import { QueryEditorProps, SelectableValue, LiveChannelScope, FeatureState } from '@grafana/data';
-import { getLiveMeasurements, LiveMeasurements } from '@grafana/runtime';
+import { InlineField, Select, FeatureInfoBox } from '@grafarg/ui';
+import { QueryEditorProps, SelectableValue, LiveChannelScope, FeatureState } from '@grafarg/data';
+import { getLiveMeasurements, LiveMeasurements } from '@grafarg/runtime';
 import { GrafargDatasource } from '../datasource';
 import { defaultQuery, GrafargQuery, GrafargQueryType } from '../types';
 

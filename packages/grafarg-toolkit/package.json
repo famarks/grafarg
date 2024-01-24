@@ -1,7 +1,7 @@
 {
   "author": "Grafarg Labs",
   "license": "Apache-2.0",
-  "name": "@grafana/toolkit",
+  "name": "@grafarg/toolkit",
   "version": "7.5.17",
   "description": "Grafarg Toolkit",
   "keywords": [
@@ -28,10 +28,10 @@
   "dependencies": {
     "@babel/core": "7.9.0",
     "@babel/preset-env": "7.9.0",
-    "@grafana/data": "7.5.17",
+    "@grafarg/data": "7.5.17",
     "@grafana/eslint-config": "2.3.0",
     "@grafana/tsconfig": "^1.0.0-rc1",
-    "@grafana/ui": "7.5.17",
+    "@grafarg/ui": "7.5.17",
     "@types/command-exists": "^1.2.0",
     "@types/expect-puppeteer": "3.3.1",
     "@types/fs-extra": "^8.1.0",

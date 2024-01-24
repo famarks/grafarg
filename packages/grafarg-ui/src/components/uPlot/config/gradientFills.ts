@@ -1,4 +1,4 @@
-import { FieldColorMode, getColorForTheme, GrafargTheme, ThresholdsConfig } from '@grafana/data';
+import { FieldColorMode, getColorForTheme, GrafargTheme, ThresholdsConfig } from '@grafarg/data';
 import tinycolor from 'tinycolor2';
 import uPlot from 'uplot';
 import darkTheme from '../../../themes/dark';

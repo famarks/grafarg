@@ -13,8 +13,8 @@ import {
   RadioButtonGroup,
   FieldSet,
   TimeZonePicker,
-} from '@grafana/ui';
-import { SelectableValue } from '@grafana/data';
+} from '@grafarg/ui';
+import { SelectableValue } from '@grafarg/data';
 import { selectors } from '@grafarg/e2e-selectors';
 
 import { DashboardSearchHit, DashboardSearchItemType } from 'app/features/search/types';

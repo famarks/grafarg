@@ -5,11 +5,11 @@ import {
   standardTransformers,
   TransformerRegistryItem,
   TransformerUIProps,
-} from '@grafana/data';
+} from '@grafarg/data';
 import { getAllFieldNamesFromDataFrames } from './OrganizeFieldsTransformerEditor';
-import { Select } from '@grafana/ui';
+import { Select } from '@grafarg/ui';
 
-import { SeriesToColumnsOptions } from '@grafana/data/src/transformations/transformers/seriesToColumns';
+import { SeriesToColumnsOptions } from '@grafarg/data/src/transformations/transformers/seriesToColumns';
 
 export const SeriesToFieldsTransformerEditor: React.FC<TransformerUIProps<SeriesToColumnsOptions>> = ({
   input,

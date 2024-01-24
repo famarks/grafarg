@@ -118,4 +118,4 @@ const toolkitBuildTaskRunner: TaskRunner<ToolkitBuildOptions> = async () => {
   await copySassFiles();
 };
 
-export const toolkitBuildTask = new Task<ToolkitBuildOptions>('@grafana/toolkit build', toolkitBuildTaskRunner);
+export const toolkitBuildTask = new Task<ToolkitBuildOptions>('@grafarg/toolkit build', toolkitBuildTaskRunner);

@@ -14,8 +14,8 @@ The editor in the example below lets the user toggle a boolean value by clicking
 
 ```ts
 import React from 'react';
-import { Button } from '@grafana/ui';
-import { StandardEditorProps } from '@grafana/data';
+import { Button } from '@grafarg/ui';
+import { StandardEditorProps } from '@grafarg/data';
 
 export const SimpleEditor: React.FC<StandardEditorProps<boolean>> = ({ value, onChange }) => {
   return <Button onClick={() => onChange(!value)}>{value ? 'Disable' : 'Enable'}</Button>;

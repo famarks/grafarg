@@ -6,7 +6,7 @@ import {
   DataSourceInstanceSettings,
   dateMath,
   getFrameDisplayName,
-} from '@grafana/data';
+} from '@grafarg/data';
 
 import * as redux from 'app/store/store';
 import { CloudWatchDatasource, MAX_ATTEMPTS } from '../datasource';
@@ -33,8 +33,8 @@ jest.mock('rxjs/operators', () => {
   return operators;
 });
 
-jest.mock('@grafana/runtime', () => ({
-  ...((jest.requireActual('@grafana/runtime') as unknown) as object),
+jest.mock('@grafarg/runtime', () => ({
+  ...((jest.requireActual('@grafarg/runtime') as unknown) as object),
   getBackendSrv: () => backendSrv,
 }));
 

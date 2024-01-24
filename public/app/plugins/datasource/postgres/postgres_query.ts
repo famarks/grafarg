@@ -1,6 +1,6 @@
 import _ from 'lodash';
-import { TemplateSrv } from '@grafana/runtime';
-import { ScopedVars } from '@grafana/data';
+import { TemplateSrv } from '@grafarg/runtime';
+import { ScopedVars } from '@grafarg/data';
 
 export default class PostgresQuery {
   target: any;

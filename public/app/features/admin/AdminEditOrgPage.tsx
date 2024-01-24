@@ -5,9 +5,9 @@ import { StoreState, OrgUser } from 'app/types';
 import { getNavModel } from 'app/core/selectors/navModel';
 import UsersTable from '../users/UsersTable';
 import { useAsyncFn } from 'react-use';
-import { getBackendSrv } from '@grafana/runtime';
-import { UrlQueryValue } from '@grafana/data';
-import { Form, Field, Input, Button, Legend } from '@grafana/ui';
+import { getBackendSrv } from '@grafarg/runtime';
+import { UrlQueryValue } from '@grafarg/data';
+import { Form, Field, Input, Button, Legend } from '@grafarg/ui';
 import { css } from 'emotion';
 
 interface OrgNameDTO {

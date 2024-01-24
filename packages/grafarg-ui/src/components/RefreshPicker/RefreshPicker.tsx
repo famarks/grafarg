@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { SelectableValue } from '@grafana/data';
+import { SelectableValue } from '@grafarg/data';
 import { Tooltip } from '../Tooltip/Tooltip';
 import { ButtonSelect } from '../Dropdown/ButtonSelect';
 import { ButtonGroup, ToolbarButton, ToolbarButtonVariant } from '../Button';

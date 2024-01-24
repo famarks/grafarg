@@ -1,7 +1,7 @@
 import React, { FunctionComponent, Fragment } from 'react';
 import _ from 'lodash';
-import { SelectableValue } from '@grafana/data';
-import { Segment, Icon } from '@grafana/ui';
+import { SelectableValue } from '@grafarg/data';
+import { Segment, Icon } from '@grafarg/ui';
 import { labelsToGroupedOptions, filtersToStringArray, stringArrayToFilters, toOption } from '../functions';
 import { Filter } from '../types';
 

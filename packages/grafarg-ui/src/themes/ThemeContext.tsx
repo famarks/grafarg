@@ -1,4 +1,4 @@
-import { GrafargTheme, GrafargThemeType } from '@grafana/data';
+import { GrafargTheme, GrafargThemeType } from '@grafarg/data';
 import hoistNonReactStatics from 'hoist-non-react-statics';
 import React, { useContext, useEffect } from 'react';
 import { Themeable } from '../types/theme';

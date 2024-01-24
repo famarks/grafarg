@@ -1,7 +1,7 @@
 import React, { HTMLProps, useRef } from 'react';
 import { css, cx } from 'emotion';
 import useClickAway from 'react-use/lib/useClickAway';
-import { SelectableValue } from '@grafana/data';
+import { SelectableValue } from '@grafarg/data';
 import { Select } from '../Forms/Legacy/Select/Select';
 
 export interface Props<T> extends Omit<HTMLProps<HTMLDivElement>, 'value' | 'onChange'> {

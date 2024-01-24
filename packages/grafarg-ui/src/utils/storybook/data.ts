@@ -1,4 +1,4 @@
-import { applyFieldOverrides, DataFrame, GrafargTheme } from '@grafana/data';
+import { applyFieldOverrides, DataFrame, GrafargTheme } from '@grafarg/data';
 
 export function prepDataForStorybook(data: DataFrame[], theme: GrafargTheme) {
   return applyFieldOverrides({

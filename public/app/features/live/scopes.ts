@@ -1,5 +1,5 @@
-import { LiveChannelScope, LiveChannelSupport, SelectableValue } from '@grafana/data';
-import { getDataSourceSrv } from '@grafana/runtime';
+import { LiveChannelScope, LiveChannelSupport, SelectableValue } from '@grafarg/data';
+import { getDataSourceSrv } from '@grafarg/runtime';
 import { config } from 'app/core/config';
 import { loadPlugin } from '../plugins/PluginPage';
 

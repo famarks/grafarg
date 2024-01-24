@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { IconName } from '../../types';
-import { SelectableValue } from '@grafana/data';
+import { SelectableValue } from '@grafarg/data';
 import { Button, ButtonVariant } from '../Button';
 import { Select } from '../Select/Select';
 import { FullWidthButtonContainer } from '../Button/FullWidthButtonContainer';

@@ -1,4 +1,4 @@
-import { dateTime, TimeRange } from '@grafana/data';
+import { dateTime, TimeRange } from '@grafarg/data';
 import { render } from '@testing-library/react';
 import React from 'react';
 import dark from '../../themes/dark';

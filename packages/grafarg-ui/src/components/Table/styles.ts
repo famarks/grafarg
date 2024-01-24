@@ -1,5 +1,5 @@
 import { css, cx } from 'emotion';
-import { GrafargTheme } from '@grafana/data';
+import { GrafargTheme } from '@grafarg/data';
 import { styleMixins, stylesFactory } from '../../themes';
 import { getScrollbarWidth } from '../../utils';
 

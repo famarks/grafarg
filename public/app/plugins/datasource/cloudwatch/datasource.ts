@@ -15,8 +15,8 @@ import {
   takeWhile,
   tap,
 } from 'rxjs/operators';
-import { getBackendSrv, getGrafargLiveSrv, toDataQueryResponse } from '@grafana/runtime';
-import { RowContextOptions } from '@grafana/ui/src/components/Logs/LogRowContextProvider';
+import { getBackendSrv, getGrafargLiveSrv, toDataQueryResponse } from '@grafarg/runtime';
+import { RowContextOptions } from '@grafarg/ui/src/components/Logs/LogRowContextProvider';
 import {
   DataFrame,
   DataQueryErrorType,
@@ -33,7 +33,7 @@ import {
   rangeUtil,
   ScopedVars,
   TimeRange,
-} from '@grafana/data';
+} from '@grafarg/data';
 
 import { notifyApp } from 'app/core/actions';
 import { createErrorNotification } from 'app/core/copy/appNotification';

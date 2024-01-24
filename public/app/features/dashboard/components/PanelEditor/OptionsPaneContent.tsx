@@ -1,6 +1,6 @@
 import React, { CSSProperties, useCallback, useState } from 'react';
 import Transition from 'react-transition-group/Transition';
-import { FieldConfigSource, GrafargTheme, PanelPlugin, SelectableValue } from '@grafana/data';
+import { FieldConfigSource, GrafargTheme, PanelPlugin, SelectableValue } from '@grafarg/data';
 import { DashboardModel, PanelModel } from '../../state';
 import {
   CustomScrollbar,
@@ -13,7 +13,7 @@ import {
   TabsBar,
   ToolbarButton,
   useTheme,
-} from '@grafana/ui';
+} from '@grafarg/ui';
 import { OverrideFieldConfigEditor } from './OverrideFieldConfigEditor';
 import { DefaultFieldConfigEditor } from './DefaultFieldConfigEditor';
 import { css } from 'emotion';

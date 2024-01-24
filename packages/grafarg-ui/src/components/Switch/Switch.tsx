@@ -1,7 +1,7 @@
 import React, { HTMLProps, useRef } from 'react';
 import { css, cx } from 'emotion';
 import uniqueId from 'lodash/uniqueId';
-import { GrafargTheme, deprecationWarning } from '@grafana/data';
+import { GrafargTheme, deprecationWarning } from '@grafarg/data';
 import { stylesFactory, useTheme } from '../../themes';
 import { focusCss } from '../../themes/mixins';
 

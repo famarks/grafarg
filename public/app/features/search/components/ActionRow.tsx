@@ -1,7 +1,7 @@
 import React, { Dispatch, FC, FormEvent, SetStateAction } from 'react';
 import { css } from 'emotion';
-import { HorizontalGroup, RadioButtonGroup, stylesFactory, useTheme, Checkbox } from '@grafana/ui';
-import { GrafargTheme, SelectableValue } from '@grafana/data';
+import { HorizontalGroup, RadioButtonGroup, stylesFactory, useTheme, Checkbox } from '@grafarg/ui';
+import { GrafargTheme, SelectableValue } from '@grafarg/data';
 import { SortPicker } from 'app/core/components/Select/SortPicker';
 import { TagFilter } from 'app/core/components/TagFilter/TagFilter';
 import { SearchSrv } from 'app/core/services/search_srv';

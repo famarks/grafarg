@@ -1,4 +1,4 @@
-import { GrafargTheme } from '@grafana/data';
+import { GrafargTheme } from '@grafarg/data';
 import {
   Button,
   Input,
@@ -7,7 +7,7 @@ import {
   stylesFactory,
   Tooltip as GrafargTooltip,
   useTheme,
-} from '@grafana/ui';
+} from '@grafarg/ui';
 import { ButtonProps, Elements, PopoverProps, TooltipProps } from '@jaegertracing/jaeger-ui-components';
 import cx from 'classnames';
 import { css } from 'emotion';

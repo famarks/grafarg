@@ -2,7 +2,7 @@ import React, { HTMLAttributes } from 'react';
 import { Label } from './Label';
 import { stylesFactory, useTheme } from '../../themes';
 import { css, cx } from 'emotion';
-import { GrafargTheme } from '@grafana/data';
+import { GrafargTheme } from '@grafarg/data';
 import { FieldValidationMessage } from './FieldValidationMessage';
 import { getChildId } from '../../utils/children';
 

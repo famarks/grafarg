@@ -1,11 +1,11 @@
 import React, { PureComponent } from 'react';
-import { DataSourceHttpSettings, InlineFormLabel, LegacyForms } from '@grafana/ui';
+import { DataSourceHttpSettings, InlineFormLabel, LegacyForms } from '@grafarg/ui';
 const { Select, Switch } = LegacyForms;
 import {
   DataSourcePluginOptionsEditorProps,
   onUpdateDatasourceJsonDataOptionSelect,
   onUpdateDatasourceJsonDataOptionChecked,
-} from '@grafana/data';
+} from '@grafarg/data';
 import { GraphiteOptions, GraphiteType } from '../types';
 
 const graphiteVersions = [

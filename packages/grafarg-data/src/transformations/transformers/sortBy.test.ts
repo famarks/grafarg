@@ -4,7 +4,7 @@ import { mockTransformationsRegistry } from '../../utils/tests/mockTransformatio
 import { transformDataFrame } from '../transformDataFrame';
 import { Field, FieldType } from '../../types';
 import { DataTransformerID } from './ids';
-import { DataTransformerConfig } from '@grafana/data';
+import { DataTransformerConfig } from '@grafarg/data';
 
 const testFrame = toDataFrame({
   name: 'A',

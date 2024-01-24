@@ -1,7 +1,7 @@
 import React, { FC, useState } from 'react';
 import { css } from 'emotion';
-import { PanelMenuItem } from '@grafana/data';
-import { Icon, IconName, useTheme } from '@grafana/ui';
+import { PanelMenuItem } from '@grafarg/data';
+import { Icon, IconName, useTheme } from '@grafarg/ui';
 import { selectors } from '@grafarg/e2e-selectors';
 
 interface Props {

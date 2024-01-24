@@ -1,4 +1,4 @@
-import { Icon } from '@grafana/ui';
+import { Icon } from '@grafarg/ui';
 import { cx, css } from 'emotion';
 import React, { FunctionComponent, ComponentProps, ButtonHTMLAttributes } from 'react';
 

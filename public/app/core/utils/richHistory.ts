@@ -2,14 +2,14 @@
 import _ from 'lodash';
 
 // Services & Utils
-import { DataQuery, DataSourceApi, dateTimeFormat, AppEvents, urlUtil, ExploreUrlState } from '@grafana/data';
+import { DataQuery, DataSourceApi, dateTimeFormat, AppEvents, urlUtil, ExploreUrlState } from '@grafarg/data';
 import appEvents from 'app/core/app_events';
 import store from 'app/core/store';
 
 // Types
 import { RichHistoryQuery } from 'app/types/explore';
-import { serializeStateToUrlParam } from '@grafana/data/src/utils/url';
-import { getDataSourceSrv } from '@grafana/runtime';
+import { serializeStateToUrlParam } from '@grafarg/data/src/utils/url';
+import { getDataSourceSrv } from '@grafarg/runtime';
 
 const RICH_HISTORY_KEY = 'grafarg.explore.richHistory';
 

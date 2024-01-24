@@ -24,8 +24,8 @@ Here's how to use Grafarg themes in React components.
 
 ```tsx
 import React, { FC } from 'react';
-import { GrafargTheme } from '@grafana/data';
-import { useStyles } from '@grafana/ui';
+import { GrafargTheme } from '@grafarg/data';
+import { useStyles } from '@grafarg/ui';
 import { css } from 'emotion';
 
 const getComponentStyles = (theme: GrafargTheme) => css`
@@ -43,7 +43,7 @@ const Foo: FC<FooProps> = () => {
 
 ```tsx
 import React, { FC } from 'react';
-import { useTheme } from '@grafana/ui';
+import { useTheme } from '@grafarg/ui';
 
 const Foo: FC<FooProps> = () => {
   const theme = useTheme();
@@ -55,7 +55,7 @@ const Foo: FC<FooProps> = () => {
 #### Using `ThemeContext` directly
 
 ```tsx
-import { ThemeContext } from '@grafana/ui';
+import { ThemeContext } from '@grafarg/ui';
 
 <ThemeContext.Consumer>{theme => <Foo theme={theme} />}</ThemeContext.Consumer>;
 ```
@@ -65,7 +65,7 @@ import { ThemeContext } from '@grafana/ui';
 With this method your component will be automatically wrapped in `ThemeContext.Consumer` and provided with current theme via `theme` prop. Components used with `withTheme` must implement the `Themeable` interface.
 
 ```ts
-import  { ThemeContext, Themeable } from '@grafana/ui';
+import  { ThemeContext, Themeable } from '@grafarg/ui';
 
 interface FooProps extends Themeable {}
 
@@ -81,7 +81,7 @@ When implementing snapshot tests for components that use the `withTheme` HOC, th
 To make your snapshot theme independent, use the `mockThemeContext` helper function:
 
 ```tsx
-import { mockThemeContext } from '@grafana/ui';
+import { mockThemeContext } from '@grafarg/ui';
 import { MyComponent } from './MyComponent';
 
 describe('MyComponent', () => {

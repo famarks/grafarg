@@ -1,4 +1,4 @@
-import { DataSourceSettings } from '@grafana/data';
+import { DataSourceSettings } from '@grafarg/data';
 import { ElasticsearchOptions } from '../types';
 import { createDatasourceSettings } from '../../../../features/datasources/mocks';
 

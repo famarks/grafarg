@@ -4,7 +4,7 @@
  *
  * @public
  */
-import { UrlQueryMap } from '@grafana/data';
+import { UrlQueryMap } from '@grafarg/data';
 
 /**
  * @public

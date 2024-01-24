@@ -1,6 +1,6 @@
 // Libraries
 import React, { Component } from 'react';
-import { dateMath, GrafargTheme, TimeZone, TimeRange } from '@grafana/data';
+import { dateMath, GrafargTheme, TimeZone, TimeRange } from '@grafarg/data';
 import { css } from 'emotion';
 
 // Types
@@ -8,7 +8,7 @@ import { DashboardModel } from '../../state';
 import { LocationState, CoreEvents } from 'app/types';
 
 // Components
-import { RefreshPicker, withTheme, stylesFactory, Themeable, defaultIntervals } from '@grafana/ui';
+import { RefreshPicker, withTheme, stylesFactory, Themeable, defaultIntervals } from '@grafarg/ui';
 import { TimePickerWithHistory } from 'app/core/components/TimePicker/TimePickerWithHistory';
 
 // Utils & Services

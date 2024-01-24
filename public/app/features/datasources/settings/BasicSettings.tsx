@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { InlineFormLabel, LegacyForms } from '@grafana/ui';
+import { InlineFormLabel, LegacyForms } from '@grafarg/ui';
 import { selectors } from '@grafarg/e2e-selectors';
 
 const { Input, Switch } = LegacyForms;

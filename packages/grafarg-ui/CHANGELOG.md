@@ -43,7 +43,7 @@
 
 ## Breaking changes
 
-### @grafana/ui forms migration notice
+### @grafarg/ui forms migration notice
 
 In Grafarg 7 we have migrated from our old form components to `LegacyForms` namespace. The new components were previously available under the `Forms` namespace.
 
@@ -64,7 +64,7 @@ One exception to this is `FormLabel`, which has been renamed to `InlineFormLabel
 If you were previously using the legacy form styles and your plugin is breaking, change from this:
 
 ```jsx
-import { Switch } from '@grafana/ui';
+import { Switch } from '@grafarg/ui';
 …
 <Switch .../>
 ```
@@ -72,7 +72,7 @@ import { Switch } from '@grafana/ui';
 To this:
 
 ```jsx
-import { LegacyForms } from '@grafana/ui';
+import { LegacyForms } from '@grafarg/ui';
 …
 <LegacyForms.Switch ... />
 ```
@@ -80,7 +80,7 @@ import { LegacyForms } from '@grafana/ui';
 If you were previously using the new form styles under the `Forms` namespace, change from this:
 
 ```jsx
-import { Forms } from '@grafana/ui';
+import { Forms } from '@grafarg/ui';
 …
 <Forms.Switch ... />
 ```
@@ -88,7 +88,7 @@ import { Forms } from '@grafana/ui';
 To this:
 
 ```jsx
-import { Switch} from '@grafana/ui';
+import { Switch} from '@grafarg/ui';
 …
 <Switch ... />
 ```
@@ -102,7 +102,7 @@ Previously the only thing you had to do to enable creating a custom value with S
 Before:
 
 ```jsx
-import { Select } from '@grafana/ui';
+import { Select } from '@grafarg/ui';
 ...
 <Select
 ...
@@ -114,7 +114,7 @@ allowCustomValue
 After:
 
 ```jsx
-import { Select } from '@grafana/ui';
+import { Select } from '@grafarg/ui';
 ...
 <Select
 ...
@@ -128,9 +128,9 @@ onCreateOption={(customValue) => {
 
 ### Features / Enhancements
 
-- **@grafana/ui**: Create Icon component and replace icons. [#23402](https://github.com/famarks/grafarg/pull/23402), [@ivanahuckova](https://github.com/ivanahuckova)
-- **@grafana/ui**: Create slider component. [#22275](https://github.com/famarks/grafarg/pull/22275), [@ivanahuckova](https://github.com/ivanahuckova)
-- **@grafana/ui**: Remove ColorPalette component. [#23592](https://github.com/famarks/grafarg/pull/23592), [@ivanahuckova](https://github.com/ivanahuckova)
+- **@grafarg/ui**: Create Icon component and replace icons. [#23402](https://github.com/famarks/grafarg/pull/23402), [@ivanahuckova](https://github.com/ivanahuckova)
+- **@grafarg/ui**: Create slider component. [#22275](https://github.com/famarks/grafarg/pull/22275), [@ivanahuckova](https://github.com/ivanahuckova)
+- **@grafarg/ui**: Remove ColorPalette component. [#23592](https://github.com/famarks/grafarg/pull/23592), [@ivanahuckova](https://github.com/ivanahuckova)
 - **Components**: IconButton. [#23510](https://github.com/famarks/grafarg/pull/23510), [@torkelo](https://github.com/torkelo)
 - **Docs**: Adding API reference documentation support for the packages libraries. [#21931](https://github.com/famarks/grafarg/pull/21931), [@mckn](https://github.com/mckn)
 - **Migration**: Add old Input to legacy namespace. [#23286](https://github.com/famarks/grafarg/pull/23286), [@tskarhed](https://github.com/tskarhed)
@@ -143,7 +143,7 @@ onCreateOption={(customValue) => {
 
 ### Bug Fixes
 
-- **@grafana/ui**: Fix time range when only partial datetime is provided. [#23122](https://github.com/famarks/grafarg/pull/23122), [@ivanahuckova](https://github.com/ivanahuckova)
+- **@grafarg/ui**: Fix time range when only partial datetime is provided. [#23122](https://github.com/famarks/grafarg/pull/23122), [@ivanahuckova](https://github.com/ivanahuckova)
 
 # 6.6.0-beta.1.0 (2020-01-20)
 
@@ -162,7 +162,7 @@ onCreateOption={(customValue) => {
 
 # 6.0.0-alpha.0 (2019-02-22)
 
-Version update to 6.0.0 to keep @grafana/ui version in sync with [Grafarg](https://github.com/famarks/grafarg)
+Version update to 6.0.0 to keep @grafarg/ui version in sync with [Grafarg](https://github.com/famarks/grafarg)
 
 # 1.0.0-alpha.0 (2019-02-21)
 

@@ -1,4 +1,4 @@
-import { getEchoSrv, EchoEventType } from '@grafana/runtime';
+import { getEchoSrv, EchoEventType } from '@grafarg/runtime';
 import { BaseTransport } from '@sentry/browser/dist/transports';
 import { Event } from '@sentry/browser';
 import { Status } from '@sentry/types';

@@ -1,6 +1,6 @@
 import React from 'react';
 import { css, cx } from 'emotion';
-import { GrafargTheme } from '@grafana/data';
+import { GrafargTheme } from '@grafarg/data';
 import { Icon } from '../Icon/Icon';
 import { IconButton } from '../IconButton/IconButton';
 import { HorizontalGroup } from '../Layout/Layout';

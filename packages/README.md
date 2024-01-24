@@ -10,7 +10,7 @@ All packages are versioned according to the current Grafarg version:
 - Grafarg v6.2.5 -> @grafarg/* packages @ 6.2.5
 - Grafarg - master branch version (based on package.json, i.e. 6.4.0-pre) -> @grafarg/* packages @ 6.4.0-pre-<COMMIT-SHA> (see details below about packages publishing channels)
 
-> Please note that @grafana/toolkit, @grafana/ui, @grafana/data, and @grafana/runtime packages are considered ALPHA even though they are not released as alpha versions.
+> Please note that @grafarg/toolkit, @grafarg/ui, @grafarg/data, and @grafarg/runtime packages are considered ALPHA even though they are not released as alpha versions.
 
 ### Stable releases
 > **Even though packages are released under a stable version, they are considered ALPHA until further notice!**
@@ -47,7 +47,7 @@ As mentioned above the `canary` releases are published to the Github package reg
 // plugin's package.json
 {
   ...
-  "@grafana/data": "canary"
+  "@grafarg/data": "canary"
 }
 ```
 
@@ -110,6 +110,6 @@ Locally published packages will be published under `dev` channel, so in your plu
 
 {
   ...
-  "@grafana/data": "dev"
+  "@grafarg/data": "dev"
 }
 ```

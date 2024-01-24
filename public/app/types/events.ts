@@ -1,4 +1,4 @@
-import { BusEventBase, BusEventWithPayload, eventFactory, GrafargTheme, TimeRange } from '@grafana/data';
+import { BusEventBase, BusEventWithPayload, eventFactory, GrafargTheme, TimeRange } from '@grafarg/data';
 import { DashboardModel } from 'app/features/dashboard/state';
 
 /**

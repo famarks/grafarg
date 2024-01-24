@@ -1,5 +1,5 @@
 import React, { FC, useCallback, useMemo, useState } from 'react';
-import { Field, GrafargTheme, SelectableValue } from '@grafana/data';
+import { Field, GrafargTheme, SelectableValue } from '@grafarg/data';
 import { css, cx } from 'emotion';
 
 import { TableStyles } from './styles';

@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
-import { SegmentAsync } from '@grafana/ui';
+import { SegmentAsync } from '@grafarg/ui';
 import { getDatasourceSrv } from '../../../plugins/datasource_srv';
-import { MetricFindValue, SelectableValue } from '@grafana/data';
+import { MetricFindValue, SelectableValue } from '@grafarg/data';
 
 interface Props {
   datasource: string;

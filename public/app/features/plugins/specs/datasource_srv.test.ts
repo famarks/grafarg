@@ -1,5 +1,5 @@
 import { DatasourceSrv } from 'app/features/plugins/datasource_srv';
-import { DataSourceInstanceSettings, DataSourcePlugin } from '@grafana/data';
+import { DataSourceInstanceSettings, DataSourcePlugin } from '@grafarg/data';
 
 // Datasource variable $datasource with current value 'BBB'
 const templateSrv: any = {

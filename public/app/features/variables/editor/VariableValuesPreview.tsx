@@ -1,8 +1,8 @@
 import React, { MouseEvent, useCallback, useEffect, useState } from 'react';
 import { VariableOption, VariableWithOptions } from '../types';
 import { selectors } from '@grafarg/e2e-selectors';
-import { Button, InlineFieldRow, InlineLabel, useStyles, VerticalGroup } from '@grafana/ui';
-import { GrafargTheme } from '@grafana/data';
+import { Button, InlineFieldRow, InlineLabel, useStyles, VerticalGroup } from '@grafarg/ui';
+import { GrafargTheme } from '@grafarg/data';
 import { css } from 'emotion';
 
 export interface VariableValuesPreviewProps {

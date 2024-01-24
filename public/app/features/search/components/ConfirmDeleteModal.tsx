@@ -1,8 +1,8 @@
 import React, { FC } from 'react';
 import { css } from 'emotion';
-import { GrafargTheme } from '@grafana/data';
-import { ConfirmModal, stylesFactory, useTheme } from '@grafana/ui';
-import { getLocationSrv } from '@grafana/runtime';
+import { GrafargTheme } from '@grafarg/data';
+import { ConfirmModal, stylesFactory, useTheme } from '@grafarg/ui';
+import { getLocationSrv } from '@grafarg/runtime';
 import { DashboardSection, OnDeleteItems } from '../types';
 import { getCheckedUids } from '../utils';
 import { deleteFoldersAndDashboards } from 'app/features/manage-dashboards/state/actions';

@@ -1,4 +1,4 @@
-import { NavModel } from '@grafana/data';
+import { NavModel } from '@grafarg/data';
 import { StoreState } from 'app/types';
 import { getUrl } from 'app/core/selectors/location';
 import { getNavModel } from 'app/core/selectors/navModel';

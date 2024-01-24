@@ -1,6 +1,6 @@
 import React from 'react';
 import { HttpSettingsBaseProps } from './types';
-import { DataSourceSettings } from '@grafana/data';
+import { DataSourceSettings } from '@grafarg/data';
 import {
   AwsAuthDataSourceSecureJsonData,
   AwsAuthDataSourceJsonData,

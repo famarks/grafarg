@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import debounce from 'debounce-promise';
-import { SelectableValue } from '@grafana/data';
-import { AsyncSelect } from '@grafana/ui';
+import { SelectableValue } from '@grafarg/data';
+import { AsyncSelect } from '@grafarg/ui';
 import { backendSrv } from 'app/core/services/backend_srv';
 import { DashboardSearchHit } from 'app/features/search/types';
 import { DashboardDTO } from 'app/types';

@@ -1,4 +1,4 @@
-import { DataQuery, SelectableValue } from '@grafana/data';
+import { DataQuery, SelectableValue } from '@grafarg/data';
 import { AwsAuthDataSourceSecureJsonData, AwsAuthDataSourceJsonData } from '@grafana/aws-sdk';
 
 export interface CloudWatchMetricsQuery extends DataQuery {

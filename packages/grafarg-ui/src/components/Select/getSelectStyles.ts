@@ -1,6 +1,6 @@
 import { stylesFactory } from '../../themes/stylesFactory';
 import { css } from 'emotion';
-import { GrafargTheme } from '@grafana/data';
+import { GrafargTheme } from '@grafarg/data';
 
 export const getSelectStyles = stylesFactory((theme: GrafargTheme) => {
   const bgColor = theme.colors.formInputBg;

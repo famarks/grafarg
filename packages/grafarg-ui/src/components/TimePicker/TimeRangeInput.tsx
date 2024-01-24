@@ -1,6 +1,6 @@
 import React, { FC, FormEvent, MouseEvent, useState } from 'react';
 import { css, cx } from 'emotion';
-import { dateMath, dateTime, getDefaultTimeRange, GrafargTheme, TimeRange, TimeZone } from '@grafana/data';
+import { dateMath, dateTime, getDefaultTimeRange, GrafargTheme, TimeRange, TimeZone } from '@grafarg/data';
 import { useStyles } from '../../themes/ThemeContext';
 import { ClickOutsideWrapper } from '../ClickOutsideWrapper/ClickOutsideWrapper';
 import { Icon } from '../Icon/Icon';

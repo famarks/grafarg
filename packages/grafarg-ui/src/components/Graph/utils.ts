@@ -7,7 +7,7 @@ import {
   TimeZone,
   dateTimeFormat,
   systemDateFormats,
-} from '@grafana/data';
+} from '@grafarg/data';
 
 /**
  * Returns index of the closest datapoint BEFORE hover position

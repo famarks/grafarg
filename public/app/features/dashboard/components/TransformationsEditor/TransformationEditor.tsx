@@ -1,14 +1,14 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { mergeMap } from 'rxjs/operators';
 import { css } from 'emotion';
-import { Icon, JSONFormatter, useStyles } from '@grafana/ui';
+import { Icon, JSONFormatter, useStyles } from '@grafarg/ui';
 import {
   DataFrame,
   DataTransformerConfig,
   GrafargTheme,
   transformDataFrame,
   TransformerRegistryItem,
-} from '@grafana/data';
+} from '@grafarg/data';
 import { selectors } from '@grafarg/e2e-selectors';
 
 import { TransformationsEditorTransformation } from './types';

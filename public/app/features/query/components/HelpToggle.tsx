@@ -1,5 +1,5 @@
-import { GrafargTheme } from '@grafana/data';
-import { Icon, InfoBox, stylesFactory, useTheme } from '@grafana/ui';
+import { GrafargTheme } from '@grafarg/data';
+import { Icon, InfoBox, stylesFactory, useTheme } from '@grafarg/ui';
 import { css, cx } from 'emotion';
 import React, { useState } from 'react';
 

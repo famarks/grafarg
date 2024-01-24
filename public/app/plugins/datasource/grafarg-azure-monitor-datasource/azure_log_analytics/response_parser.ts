@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import { AnnotationEvent, dateTime, TimeSeries } from '@grafana/data';
+import { AnnotationEvent, dateTime, TimeSeries } from '@grafarg/data';
 import {
   AzureLogsTableData,
   AzureLogsVariable,

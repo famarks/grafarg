@@ -1,6 +1,6 @@
 import React from 'react';
-import { SelectableValue } from '@grafana/data';
-import { SegmentAsync } from '@grafana/ui';
+import { SelectableValue } from '@grafarg/data';
+import { SegmentAsync } from '@grafarg/ui';
 import CloudMonitoringDatasource from '../datasource';
 
 export interface Props {

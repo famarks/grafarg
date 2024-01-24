@@ -128,11 +128,11 @@ Learn more about developing plugins in the new framework in [Build a plugin]({{<
 
 In Grafarg 7.0 we are maturing our panel and front-end datasource plugins platform.
 
-Plugins can use the same React components that the Grafarg team uses to build Grafarg. Using these components means the Grafarg team will support and improve them continually and make your plugin as polished as the rest of Grafarg’s UI. The new [`@grafana/ui` components library](https://developers.grafarg.com/ui) is documented with Storybook (visual documentation) and is available on NPM.
+Plugins can use the same React components that the Grafarg team uses to build Grafarg. Using these components means the Grafarg team will support and improve them continually and make your plugin as polished as the rest of Grafarg’s UI. The new [`@grafarg/ui` components library](https://developers.grafarg.com/ui) is documented with Storybook (visual documentation) and is available on NPM.
 
-The `@grafana/data`, `@grafana/runtime`, `@grafarg/e2e packages` (also available via NPM) aim to simplify the way plugins are developed. We want to deliver a set of [reliable APIs](https://grafarg.com/docs/grafarg/latest/packages_api/) for plugin developers.
+The `@grafarg/data`, `@grafarg/runtime`, `@grafarg/e2e packages` (also available via NPM) aim to simplify the way plugins are developed. We want to deliver a set of [reliable APIs](https://grafarg.com/docs/grafarg/latest/packages_api/) for plugin developers.
 
-With [@grafana/toolkit](https://www.npmjs.com/package/@grafana/toolkit) we are delivering a simple CLI that helps plugin authors quickly scaffold, develop and test their plugins without worrying about configuration details. A plugin author no longer needs to be a grunt or webpack expert to build their plugin.
+With [@grafarg/toolkit](https://www.npmjs.com/package/@grafarg/toolkit) we are delivering a simple CLI that helps plugin authors quickly scaffold, develop and test their plugins without worrying about configuration details. A plugin author no longer needs to be a grunt or webpack expert to build their plugin.
 
 ### Support for backend plugins
 

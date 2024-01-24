@@ -1,8 +1,8 @@
 import _ from 'lodash';
 import { Observable, of } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { getBackendSrv } from '@grafana/runtime';
-import { DataQueryResponse, ScopedVars } from '@grafana/data';
+import { getBackendSrv } from '@grafarg/runtime';
+import { DataQueryResponse, ScopedVars } from '@grafarg/data';
 
 import ResponseParser from './response_parser';
 import PostgresQuery from 'app/plugins/datasource/postgres/postgres_query';

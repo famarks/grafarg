@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { getBackendSrv } from '@grafana/runtime';
-import { UserOrgDTO } from '@grafana/data';
-import { Modal, Button } from '@grafana/ui';
+import { getBackendSrv } from '@grafarg/runtime';
+import { UserOrgDTO } from '@grafarg/data';
+import { Modal, Button } from '@grafarg/ui';
 
 import { contextSrv } from 'app/core/services/context_srv';
 import config from 'app/core/config';

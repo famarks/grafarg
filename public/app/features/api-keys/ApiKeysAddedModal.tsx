@@ -1,5 +1,5 @@
 import React from 'react';
-import { Icon } from '@grafana/ui';
+import { Icon } from '@grafarg/ui';
 
 export interface Props {
   apiKey: string;

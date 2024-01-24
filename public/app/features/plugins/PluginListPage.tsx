@@ -7,7 +7,7 @@ import PluginList from './PluginList';
 import { loadPlugins } from './state/actions';
 import { getNavModel } from 'app/core/selectors/navModel';
 import { getPlugins, getPluginsSearchQuery } from './state/selectors';
-import { NavModel, PluginMeta } from '@grafana/data';
+import { NavModel, PluginMeta } from '@grafarg/data';
 import { StoreState } from 'app/types';
 import { setPluginsSearchQuery } from './state/reducers';
 import { useAsync } from 'react-use';

@@ -1,14 +1,14 @@
 import React, { PureComponent } from 'react';
-import { Button, JSONFormatter, LoadingPlaceholder } from '@grafana/ui';
+import { Button, JSONFormatter, LoadingPlaceholder } from '@grafarg/ui';
 import { selectors } from '@grafarg/e2e-selectors';
-import { AppEvents, DataFrame } from '@grafana/data';
+import { AppEvents, DataFrame } from '@grafarg/data';
 
 import appEvents from 'app/core/app_events';
 import { CopyToClipboard } from 'app/core/components/CopyToClipboard/CopyToClipboard';
 import { PanelModel } from 'app/features/dashboard/state';
 import { getPanelInspectorStyles } from './styles';
 import { supportsDataQuery } from 'app/features/dashboard/components/PanelEditor/utils';
-import { config } from '@grafana/runtime';
+import { config } from '@grafarg/runtime';
 import { css } from 'emotion';
 import { Subscription } from 'rxjs';
 import { backendSrv } from 'app/core/services/backend_srv';

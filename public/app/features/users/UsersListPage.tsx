@@ -1,8 +1,8 @@
 import React, { PureComponent } from 'react';
 import { hot } from 'react-hot-loader';
 import { connect } from 'react-redux';
-import { NavModel, renderMarkdown } from '@grafana/data';
-import { HorizontalGroup, Pagination, VerticalGroup } from '@grafana/ui';
+import { NavModel, renderMarkdown } from '@grafarg/data';
+import { HorizontalGroup, Pagination, VerticalGroup } from '@grafarg/ui';
 
 import Page from 'app/core/components/Page/Page';
 import UsersActionBar from './UsersActionBar';

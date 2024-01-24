@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import { chain } from 'lodash';
-import { AppEvents, PanelData, SelectableValue } from '@grafana/data';
-import { Button, CodeEditor, Field, Select } from '@grafana/ui';
+import { AppEvents, PanelData, SelectableValue } from '@grafarg/data';
+import { Button, CodeEditor, Field, Select } from '@grafarg/ui';
 import AutoSizer from 'react-virtualized-auto-sizer';
 import { selectors } from '@grafarg/e2e-selectors';
 import { appEvents } from 'app/core/core';

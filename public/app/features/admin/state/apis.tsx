@@ -1,6 +1,6 @@
 import React from 'react';
-import { getBackendSrv } from '@grafana/runtime';
-import { PopoverContent } from '@grafana/ui';
+import { getBackendSrv } from '@grafarg/runtime';
+import { PopoverContent } from '@grafarg/ui';
 import { config } from 'app/core/config';
 
 export interface ServerStat {

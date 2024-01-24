@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import { Unsubscribable, PartialObserver } from 'rxjs';
-import { FeatureInfoBox, stylesFactory, Button, JSONFormatter, CustomScrollbar, CodeEditor } from '@grafana/ui';
+import { FeatureInfoBox, stylesFactory, Button, JSONFormatter, CustomScrollbar, CodeEditor } from '@grafarg/ui';
 import {
   GrafargTheme,
   PanelProps,
@@ -14,10 +14,10 @@ import {
   PanelData,
   LoadingState,
   applyFieldOverrides,
-} from '@grafana/data';
+} from '@grafarg/data';
 import { TablePanel } from '../table/TablePanel';
 import { LivePanelOptions, MessageDisplayMode } from './types';
-import { config, getGrafargLiveSrv, MeasurementCollector } from '@grafana/runtime';
+import { config, getGrafargLiveSrv, MeasurementCollector } from '@grafarg/runtime';
 import { css, cx } from 'emotion';
 
 interface Props extends PanelProps<LivePanelOptions> {}

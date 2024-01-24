@@ -1,6 +1,6 @@
 import memoizeOne from 'memoize-one';
-import { SelectableValue } from '@grafana/data';
-import { config } from '@grafana/runtime';
+import { SelectableValue } from '@grafarg/data';
+import { config } from '@grafarg/runtime';
 import { NotificationChannelDTO, NotificationChannelType } from 'app/types';
 
 export const defaultValues: NotificationChannelDTO = {

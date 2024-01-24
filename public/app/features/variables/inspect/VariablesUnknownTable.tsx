@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { css } from 'emotion';
-import { Icon, Tooltip, useStyles } from '@grafana/ui';
-import { GrafargTheme } from '@grafana/data';
+import { Icon, Tooltip, useStyles } from '@grafarg/ui';
+import { GrafargTheme } from '@grafarg/data';
 import { UsagesToNetwork } from './utils';
 import { VariablesUnknownButton } from './VariablesUnknownButton';
 

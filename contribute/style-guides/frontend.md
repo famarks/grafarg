@@ -257,9 +257,9 @@ Organize your code in a directory that encloses feature code:
 
 For code that needs to be used by external plugin:
 
-- Put components and types in `@grafana/ui`.
-- Put data models and data utilities in `@grafana/data`.
-- Put runtime services interfaces in `@grafana/runtime`.
+- Put components and types in `@grafarg/ui`.
+- Put data models and data utilities in `@grafarg/data`.
+- Put runtime services interfaces in `@grafarg/runtime`.
 
 #### Exports
 

@@ -6,7 +6,7 @@ import tinycolor from 'tinycolor2';
 import ColorInput from './ColorInput';
 import { Themeable } from '../../types';
 import SpectrumPalettePointer, { SpectrumPalettePointerProps } from './SpectrumPalettePointer';
-import { GrafargTheme, getColorForTheme } from '@grafana/data';
+import { GrafargTheme, getColorForTheme } from '@grafarg/data';
 
 export interface SpectrumPaletteProps extends Themeable {
   color: string;

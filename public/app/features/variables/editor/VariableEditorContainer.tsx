@@ -1,5 +1,5 @@
 import React, { MouseEvent, PureComponent } from 'react';
-import { Icon } from '@grafana/ui';
+import { Icon } from '@grafarg/ui';
 import { selectors } from '@grafarg/e2e-selectors';
 
 import { toVariableIdentifier, toVariablePayload, VariableIdentifier } from '../state/types';

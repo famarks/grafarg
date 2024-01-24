@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
-import { Input, TimeZonePicker, Field, Switch, CollapsableSection } from '@grafana/ui';
-import { rangeUtil, TimeZone } from '@grafana/data';
+import { Input, TimeZonePicker, Field, Switch, CollapsableSection } from '@grafarg/ui';
+import { rangeUtil, TimeZone } from '@grafarg/data';
 import isEmpty from 'lodash/isEmpty';
 import { selectors } from '@grafarg/e2e-selectors';
 import { AutoRefreshIntervals } from './AutoRefreshIntervals';

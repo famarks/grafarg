@@ -1,4 +1,4 @@
-import { DataQuery, DataSourceJsonData, DataFrameDTO } from '@grafana/data';
+import { DataQuery, DataSourceJsonData, DataFrameDTO } from '@grafarg/data';
 
 export interface InputQuery extends DataQuery {
   // Data saved in the panel

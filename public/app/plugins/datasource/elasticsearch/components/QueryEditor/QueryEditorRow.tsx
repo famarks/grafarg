@@ -1,5 +1,5 @@
-import { GrafargTheme } from '@grafana/data';
-import { IconButton, InlineFieldRow, InlineLabel, InlineSegmentGroup, stylesFactory, useTheme } from '@grafana/ui';
+import { GrafargTheme } from '@grafarg/data';
+import { IconButton, InlineFieldRow, InlineLabel, InlineSegmentGroup, stylesFactory, useTheme } from '@grafarg/ui';
 import { css } from 'emotion';
 import { noop } from 'lodash';
 import React, { FunctionComponent } from 'react';

@@ -175,7 +175,7 @@ The data frame structure is inspired by, and uses the [Apache Arrow Project](htt
 
 ### Javascript
 
-The Javascript implementation of data frames is in the [`/src/dataframe` folder](https://github.com/famarks/grafarg/tree/master/packages/grafarg-data/src/dataframe) and [`/src/types/dataframe.ts`](https://github.com/famarks/grafarg/blob/master/packages/grafarg-data/src/types/dataFrame.ts) of the [`@grafana/data` package](https://github.com/famarks/grafarg/tree/master/packages/grafarg-data).
+The Javascript implementation of data frames is in the [`/src/dataframe` folder](https://github.com/famarks/grafarg/tree/master/packages/grafarg-data/src/dataframe) and [`/src/types/dataframe.ts`](https://github.com/famarks/grafarg/blob/master/packages/grafarg-data/src/types/dataFrame.ts) of the [`@grafarg/data` package](https://github.com/famarks/grafarg/tree/master/packages/grafarg-data).
 
 ### Go
 

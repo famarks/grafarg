@@ -3,7 +3,7 @@ import { css } from 'emotion';
 import { Button } from '../Button';
 import { TagItem } from './TagItem';
 import { useStyles } from '../../themes/ThemeContext';
-import { GrafargTheme } from '@grafana/data';
+import { GrafargTheme } from '@grafarg/data';
 import { Input } from '../Input/Input';
 
 export interface Props {

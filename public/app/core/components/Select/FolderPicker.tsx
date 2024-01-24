@@ -1,8 +1,8 @@
 import React, { PureComponent } from 'react';
 import { debounce } from 'lodash';
-import { AsyncSelect } from '@grafana/ui';
-import { AppEvents, SelectableValue } from '@grafana/data';
-import { getBackendSrv } from '@grafana/runtime';
+import { AsyncSelect } from '@grafarg/ui';
+import { AppEvents, SelectableValue } from '@grafarg/data';
+import { getBackendSrv } from '@grafarg/runtime';
 import { selectors } from '@grafarg/e2e-selectors';
 
 import appEvents from '../../app_events';

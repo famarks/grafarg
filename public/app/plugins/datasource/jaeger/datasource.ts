@@ -8,8 +8,8 @@ import {
   DateTime,
   FieldType,
   MutableDataFrame,
-} from '@grafana/data';
-import { BackendSrvRequest, getBackendSrv } from '@grafana/runtime';
+} from '@grafarg/data';
+import { BackendSrvRequest, getBackendSrv } from '@grafarg/runtime';
 import { from, Observable, of } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
 

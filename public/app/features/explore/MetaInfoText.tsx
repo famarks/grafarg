@@ -1,7 +1,7 @@
 import React, { memo, useContext } from 'react';
 import { css } from 'emotion';
-import { GrafargTheme } from '@grafana/data';
-import { stylesFactory, ThemeContext } from '@grafana/ui';
+import { GrafargTheme } from '@grafarg/data';
+import { stylesFactory, ThemeContext } from '@grafarg/ui';
 
 const getStyles = stylesFactory((theme: GrafargTheme) => ({
   metaContainer: css`

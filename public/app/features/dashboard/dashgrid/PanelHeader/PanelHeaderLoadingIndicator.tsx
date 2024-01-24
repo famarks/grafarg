@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { css } from 'emotion';
-import { GrafargTheme, LoadingState } from '@grafana/data';
-import { Icon, Tooltip, useStyles } from '@grafana/ui';
+import { GrafargTheme, LoadingState } from '@grafarg/data';
+import { Icon, Tooltip, useStyles } from '@grafarg/ui';
 
 interface Props {
   state: LoadingState;

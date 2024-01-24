@@ -1,8 +1,8 @@
 import React, { PureComponent } from 'react';
 import { hot } from 'react-hot-loader';
 import { connect } from 'react-redux';
-import { Icon, Tooltip } from '@grafana/ui';
-import { NavModel } from '@grafana/data';
+import { Icon, Tooltip } from '@grafarg/ui';
+import { NavModel } from '@grafarg/data';
 import { StoreState } from 'app/types';
 import { getNavModel } from 'app/core/selectors/navModel';
 import Page from 'app/core/components/Page/Page';

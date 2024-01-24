@@ -4,7 +4,7 @@ import _ from 'lodash';
 import config from 'app/core/config';
 import coreModule from 'app/core/core_module';
 
-import { DataSourceApi, PanelEvents } from '@grafana/data';
+import { DataSourceApi, PanelEvents } from '@grafarg/data';
 import { importPanelPlugin, importDataSourcePlugin, importAppPlugin } from './plugin_loader';
 import DatasourceSrv from './datasource_srv';
 import { GrafargRootScope } from 'app/routes/GrafargCtrl';

@@ -1,4 +1,4 @@
-import { GrafargTheme, isDateTime, TimeOption, TimeRange, TimeZone } from '@grafana/data';
+import { GrafargTheme, isDateTime, TimeOption, TimeRange, TimeZone } from '@grafarg/data';
 import { css, cx } from 'emotion';
 import React, { memo, useState } from 'react';
 import { useMedia } from 'react-use';

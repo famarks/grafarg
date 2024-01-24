@@ -8,7 +8,7 @@ import {
   parseLabels,
   CircularVector,
   ArrayVector,
-} from '@grafana/data';
+} from '@grafarg/data';
 import { Measurement, MeasurementBatch, LiveMeasurements, MeasurementsQuery, MeasurementAction } from './types';
 
 interface MeasurementCacheConfig {

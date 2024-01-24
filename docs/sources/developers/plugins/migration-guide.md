@@ -33,7 +33,7 @@ While the previous Angular-based plugin SDK did support TypeScript, for the Reac
 
 With Grafarg 7.0, we released a new tool for making it easier to develop plugins. Before, you’d use Gulp, Grunt, or similar tools to generate the minified assets. Grafarg Toolkit takes care of building and testing your plugin without complicated configuration files.
 
-For more information, refer to [@grafana/toolkit](https://www.npmjs.com/package/@grafana/toolkit).
+For more information, refer to [@grafarg/toolkit](https://www.npmjs.com/package/@grafarg/toolkit).
 
 ### Field options
 
@@ -105,7 +105,7 @@ Starting with 7.0, plugins now export a PanelPlugin from module.ts where MyPanel
 **src/module.ts**
 
 ```ts
-import { PanelPlugin } from '@grafana/data';
+import { PanelPlugin } from '@grafarg/data';
 
 export const plugin = new PanelPlugin<MyOptions>(MyPanel);
 ```
@@ -113,7 +113,7 @@ export const plugin = new PanelPlugin<MyOptions>(MyPanel);
 **src/MyPanel.tsx**
 
 ```ts
-import { PanelProps } from '@grafana/data';
+import { PanelProps } from '@grafarg/data';
 
 interface Props extends PanelProps<SimpleOptions> {}
 
@@ -146,7 +146,7 @@ The `DataQueryResponse` returned by the `query` method can be either a [LegacyRe
 The [toDataFrame()](https://grafarg.com/docs/grafarg/latest/packages_api/data/todataframe/) function converts a legacy response, such as `TimeSeries` or `Table`, to a `DataFrame`. Use it to gradually move your code to the new format.
 
 ```ts
-import { toDataFrame } from '@grafana/data';
+import { toDataFrame } from '@grafarg/data';
 ```
 
 ```ts

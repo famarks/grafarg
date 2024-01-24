@@ -14,11 +14,11 @@ const yarnlink = () =>
   useSpinner('Linking local toolkit', async () => {
     try {
       // Make sure we are not using package.json defined toolkit
-      await execa('yarn', ['remove', '@grafana/toolkit']);
+      await execa('yarn', ['remove', '@grafarg/toolkit']);
     } catch (e) {
       console.log('\n', e.message, '\n');
     }
-    await execa('yarn', ['link', '@grafana/toolkit']);
+    await execa('yarn', ['link', '@grafarg/toolkit']);
 
     // Add all the same dependencies as toolkit
     const args: string[] = ['add'];
@@ -28,7 +28,7 @@ const yarnlink = () =>
     }
     await execa('yarn', args);
 
-    console.log('Added dependencies required by local @grafana/toolkit.  Do not checkin this package.json!');
+    console.log('Added dependencies required by local @grafarg/toolkit.  Do not checkin this package.json!');
   });
 
 const pluginDevRunner: TaskRunner<PluginBundleOptions> = async (options) => {

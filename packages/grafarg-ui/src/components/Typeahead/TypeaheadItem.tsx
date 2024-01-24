@@ -3,7 +3,7 @@ import React, { useContext } from 'react';
 // @ts-ignore
 import Highlighter from 'react-highlight-words';
 import { css, cx } from 'emotion';
-import { GrafargTheme } from '@grafana/data';
+import { GrafargTheme } from '@grafarg/data';
 import { CompletionItem, CompletionItemKind } from '../../types/completion';
 import { ThemeContext } from '../../themes/ThemeContext';
 

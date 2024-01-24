@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
-import { useStyles } from '@grafana/ui';
-import { GrafargTheme } from '@grafana/data';
+import { useStyles } from '@grafarg/ui';
+import { GrafargTheme } from '@grafarg/data';
 import { css } from 'emotion';
 
 const getStyles = (theme: GrafargTheme) => css`

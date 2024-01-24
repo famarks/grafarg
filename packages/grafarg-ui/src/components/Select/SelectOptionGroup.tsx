@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import { css } from 'emotion';
-import { GrafargTheme } from '@grafana/data';
+import { GrafargTheme } from '@grafarg/data';
 import { GroupProps } from 'react-select';
 import { stylesFactory, withTheme } from '../../themes';
 import { Themeable } from '../../types';

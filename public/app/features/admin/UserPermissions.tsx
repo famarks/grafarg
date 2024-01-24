@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { ConfirmButton, RadioButtonGroup, Icon } from '@grafana/ui';
+import { ConfirmButton, RadioButtonGroup, Icon } from '@grafarg/ui';
 import { cx } from 'emotion';
 
 interface Props {

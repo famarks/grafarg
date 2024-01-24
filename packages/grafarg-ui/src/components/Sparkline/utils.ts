@@ -1,4 +1,4 @@
-import { DataFrame, FieldConfig, FieldSparkline, IndexVector } from '@grafana/data';
+import { DataFrame, FieldConfig, FieldSparkline, IndexVector } from '@grafarg/data';
 import { GraphFieldConfig } from '../uPlot/config';
 
 /** @internal

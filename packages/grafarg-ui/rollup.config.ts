@@ -29,7 +29,7 @@ const buildCjsPackage = ({ env }) => {
       'react',
       'react-dom',
       '@grafana/aws-sdk',
-      '@grafana/data',
+      '@grafarg/data',
       '@grafarg/e2e-selectors',
       'moment',
       'monaco-editor', // Monaco should not be used directly

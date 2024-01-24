@@ -1,7 +1,7 @@
 import React from 'react';
 import debounce from 'lodash/debounce';
 import { css } from 'emotion';
-import { GrafargTheme, DataFrame, CSVConfig, readCSV } from '@grafana/data';
+import { GrafargTheme, DataFrame, CSVConfig, readCSV } from '@grafarg/data';
 import { Icon } from '../Icon/Icon';
 import { Themeable } from '../../types/theme';
 import { TextArea } from '../TextArea/TextArea';

@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
-import { Icon, Tooltip } from '@grafana/ui';
-import { sanitize, sanitizeUrl } from '@grafana/data/src/text/sanitize';
+import { Icon, Tooltip } from '@grafarg/ui';
+import { sanitize, sanitizeUrl } from '@grafarg/data/src/text/sanitize';
 import { getBackendSrv } from 'app/core/services/backend_srv';
 import { getLinkSrv } from '../../../panel/panellinks/link_srv';
 import { DashboardLink } from '../../state/DashboardModel';

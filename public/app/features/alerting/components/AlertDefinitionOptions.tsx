@@ -1,7 +1,7 @@
 import React, { FC, FormEvent, useMemo } from 'react';
 import { css } from 'emotion';
-import { GrafargTheme, SelectableValue } from '@grafana/data';
-import { Field, Input, Select, Tab, TabContent, TabsBar, TextArea, useStyles } from '@grafana/ui';
+import { GrafargTheme, SelectableValue } from '@grafarg/data';
+import { Field, Input, Select, Tab, TabContent, TabsBar, TextArea, useStyles } from '@grafarg/ui';
 import { AlertDefinition, QueryGroupOptions } from 'app/types';
 
 const intervalOptions: Array<SelectableValue<number>> = [

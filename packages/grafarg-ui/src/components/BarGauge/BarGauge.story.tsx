@@ -1,8 +1,8 @@
 import React from 'react';
 import { Story } from '@storybook/react';
-import { BarGauge, BarGaugeDisplayMode } from '@grafana/ui';
+import { BarGauge, BarGaugeDisplayMode } from '@grafarg/ui';
 import { NOOP_CONTROL } from '../../utils/storybook/noopControl';
-import { VizOrientation, ThresholdsMode, Field, FieldType, getDisplayProcessor } from '@grafana/data';
+import { VizOrientation, ThresholdsMode, Field, FieldType, getDisplayProcessor } from '@grafarg/data';
 import { Props } from './BarGauge';
 import { withCenteredStory } from '../../utils/storybook/withCenteredStory';
 import mdx from './BarGauge.mdx';

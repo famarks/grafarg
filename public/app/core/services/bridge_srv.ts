@@ -3,7 +3,7 @@ import { dispatch, store } from 'app/store/store';
 import { updateLocation } from 'app/core/actions';
 import { ILocationService, ITimeoutService } from 'angular';
 import { GrafargRootScope } from 'app/routes/GrafargCtrl';
-import { UrlQueryMap } from '@grafana/data';
+import { UrlQueryMap } from '@grafarg/data';
 import { getDashboardSrv } from 'app/features/dashboard/services/DashboardSrv';
 import { templateVarsChangedInUrl } from 'app/features/variables/state/actions';
 import { isArray, isEqual } from 'lodash';

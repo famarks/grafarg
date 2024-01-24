@@ -1,5 +1,5 @@
 import { DashboardModel } from './DashboardModel';
-import { reportMetaAnalytics, MetaAnalyticsEventName, DashboardViewEventPayload } from '@grafana/runtime';
+import { reportMetaAnalytics, MetaAnalyticsEventName, DashboardViewEventPayload } from '@grafarg/runtime';
 
 export function emitDashboardViewEvent(dashboard: DashboardModel) {
   const eventData: DashboardViewEventPayload = {

@@ -1,8 +1,8 @@
 import React, { FC } from 'react';
 import { cx, css, keyframes } from 'emotion';
-import { useStyles } from '@grafana/ui';
+import { useStyles } from '@grafarg/ui';
 import { Branding } from '../Branding/Branding';
-import { GrafargTheme } from '@grafana/data';
+import { GrafargTheme } from '@grafarg/data';
 import { Footer } from '../Footer/Footer';
 
 interface InnerBoxProps {

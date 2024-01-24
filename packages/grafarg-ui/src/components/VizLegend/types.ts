@@ -1,4 +1,4 @@
-import { DataFrameFieldIndex, DisplayValue } from '@grafana/data';
+import { DataFrameFieldIndex, DisplayValue } from '@grafarg/data';
 
 export interface VizLegendBaseProps {
   placement: LegendPlacement;

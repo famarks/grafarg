@@ -6,9 +6,9 @@ import {
   GrafargTheme,
   QueryResultMetaStat,
   TimeZone,
-} from '@grafana/data';
+} from '@grafarg/data';
 import { config } from 'app/core/config';
-import { stylesFactory, useTheme } from '@grafana/ui';
+import { stylesFactory, useTheme } from '@grafarg/ui';
 import { css } from 'emotion';
 
 interface InspectStatsTableProps {

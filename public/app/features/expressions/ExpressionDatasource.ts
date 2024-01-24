@@ -1,7 +1,7 @@
-import { DataSourceInstanceSettings, DataSourcePluginMeta } from '@grafana/data';
+import { DataSourceInstanceSettings, DataSourcePluginMeta } from '@grafarg/data';
 import { ExpressionQuery, GELQueryType } from './types';
 import { ExpressionQueryEditor } from './ExpressionQueryEditor';
-import { DataSourceWithBackend } from '@grafana/runtime';
+import { DataSourceWithBackend } from '@grafarg/runtime';
 
 /**
  * This is a singleton instance that just pretends to be a DataSource

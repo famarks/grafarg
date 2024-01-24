@@ -1,4 +1,4 @@
-import { toDataFrame, DataFrameDTO, toCSV } from '@grafana/data';
+import { toDataFrame, DataFrameDTO, toCSV } from '@grafarg/data';
 
 export function dataFrameToCSV(dto?: DataFrameDTO[]) {
   if (!dto || !dto.length) {

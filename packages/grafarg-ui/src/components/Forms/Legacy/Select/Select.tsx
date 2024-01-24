@@ -22,7 +22,7 @@ import NoOptionsMessage from './NoOptionsMessage';
 import resetSelectStyles from '../../../Select/resetSelectStyles';
 import { CustomScrollbar } from '../../../CustomScrollbar/CustomScrollbar';
 import { PopoverContent, Tooltip } from '../../../Tooltip/Tooltip';
-import { SelectableValue } from '@grafana/data';
+import { SelectableValue } from '@grafarg/data';
 
 /**
  * Changes in new selects:

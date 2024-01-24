@@ -9,12 +9,12 @@ For more information on the types of plugins you can build, refer to the [Plugin
 
 ## Get started
 
-The easiest way to start developing Grafarg plugins is to use the [Grafarg Toolkit](https://www.npmjs.com/package/@grafana/toolkit).
+The easiest way to start developing Grafarg plugins is to use the [Grafarg Toolkit](https://www.npmjs.com/package/@grafarg/toolkit).
 
 Open the terminal, and run the following command in your [plugin directory]({{< relref "../../administration/configuration.md#plugins" >}}):
 
 ```bash
-npx @grafana/toolkit plugin:create my-grafarg-plugin
+npx @grafarg/toolkit plugin:create my-grafarg-plugin
 ```
 
 If you want a more guided introduction to plugin development, check out our tutorials:

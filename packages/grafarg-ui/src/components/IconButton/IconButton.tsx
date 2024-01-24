@@ -4,7 +4,7 @@ import { IconName, IconSize, IconType } from '../../types/icon';
 import { stylesFactory } from '../../themes/stylesFactory';
 import { css, cx } from 'emotion';
 import { useTheme } from '../../themes/ThemeContext';
-import { GrafargTheme } from '@grafana/data';
+import { GrafargTheme } from '@grafarg/data';
 import { Tooltip } from '../Tooltip/Tooltip';
 import { TooltipPlacement } from '../Tooltip/PopoverController';
 

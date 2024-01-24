@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
-import { OrgRole } from '@grafana/data';
-import { Select } from '@grafana/ui';
+import { OrgRole } from '@grafarg/data';
+import { Select } from '@grafarg/ui';
 
 interface Props {
   value: OrgRole;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { css, cx } from 'emotion';
-import { GrafargTheme } from '@grafana/data';
-import { stylesFactory, Button, HorizontalGroup, useTheme } from '@grafana/ui';
+import { GrafargTheme } from '@grafarg/data';
+import { stylesFactory, Button, HorizontalGroup, useTheme } from '@grafarg/ui';
 
 type Props = {
   addQueryRowButtonDisabled?: boolean;

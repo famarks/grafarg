@@ -1,6 +1,6 @@
 import React, { ChangeEvent } from 'react';
 import { mount } from 'enzyme';
-import { ThresholdsMode } from '@grafana/data';
+import { ThresholdsMode } from '@grafarg/data';
 import { ThresholdsEditor, Props, thresholdsWithoutKey } from './ThresholdsEditor';
 import { colors } from '../../utils';
 import { mockThemeContext } from '../../themes/ThemeContext';

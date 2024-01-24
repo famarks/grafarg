@@ -1,5 +1,5 @@
 import React from 'react';
-import { DataTransformerConfig, standardTransformersRegistry } from '@grafana/data';
+import { DataTransformerConfig, standardTransformersRegistry } from '@grafarg/data';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { TransformationsEditor } from './TransformationsEditor';

@@ -1,6 +1,6 @@
-import { DynamicConfigValue, FieldConfigOptionsRegistry, FieldOverrideContext, GrafargTheme } from '@grafana/data';
+import { DynamicConfigValue, FieldConfigOptionsRegistry, FieldOverrideContext, GrafargTheme } from '@grafarg/data';
 import React from 'react';
-import { Counter, Field, HorizontalGroup, IconButton, Label, stylesFactory, useTheme } from '@grafana/ui';
+import { Counter, Field, HorizontalGroup, IconButton, Label, stylesFactory, useTheme } from '@grafarg/ui';
 import { css, cx } from 'emotion';
 import { OptionsGroup } from './OptionsGroup';
 

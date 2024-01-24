@@ -1,6 +1,6 @@
 import React from 'react';
-import { DataSourceHttpSettings } from '@grafana/ui';
-import { DataSourcePluginOptionsEditorProps } from '@grafana/data';
+import { DataSourceHttpSettings } from '@grafarg/ui';
+import { DataSourcePluginOptionsEditorProps } from '@grafarg/data';
 import { OpenTsdbDetails } from './OpenTsdbDetails';
 import { OpenTsdbOptions } from '../types';
 

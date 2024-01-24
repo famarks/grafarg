@@ -2,7 +2,7 @@ import React, { FC, ReactElement } from 'react';
 import { selectors } from '@grafarg/e2e-selectors';
 
 import { FormModel } from './LoginCtrl';
-import { Button, Form, Input, Field } from '@grafana/ui';
+import { Button, Form, Input, Field } from '@grafarg/ui';
 import { css } from 'emotion';
 
 interface Props {

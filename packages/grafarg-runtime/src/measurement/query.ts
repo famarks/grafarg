@@ -5,7 +5,7 @@ import {
   isValidLiveChannelAddress,
   LiveChannelAddress,
   LoadingState,
-} from '@grafana/data';
+} from '@grafarg/data';
 import { LiveMeasurements, MeasurementsQuery } from './types';
 import { getGrafargLiveSrv } from '../services/live';
 

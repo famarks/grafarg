@@ -2,8 +2,8 @@ import React, { PureComponent, FC } from 'react';
 import { UserDTO } from 'app/types';
 import { cx, css } from 'emotion';
 import { config } from 'app/core/config';
-import { GrafargTheme } from '@grafana/data';
-import { ConfirmButton, ConfirmModal, LegacyInputStatus, Button, stylesFactory, Input } from '@grafana/ui';
+import { GrafargTheme } from '@grafarg/data';
+import { ConfirmButton, ConfirmModal, LegacyInputStatus, Button, stylesFactory, Input } from '@grafarg/ui';
 
 interface Props {
   user: UserDTO;

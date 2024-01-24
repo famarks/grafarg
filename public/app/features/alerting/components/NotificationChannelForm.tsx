@@ -1,7 +1,7 @@
 import React, { FC, useEffect } from 'react';
 import { css } from 'emotion';
-import { GrafargTheme, SelectableValue } from '@grafana/data';
-import { Button, FormAPI, HorizontalGroup, stylesFactory, useTheme, Spinner } from '@grafana/ui';
+import { GrafargTheme, SelectableValue } from '@grafarg/data';
+import { Button, FormAPI, HorizontalGroup, stylesFactory, useTheme, Spinner } from '@grafarg/ui';
 import { NotificationChannelType, NotificationChannelDTO, NotificationChannelSecureFields } from '../../../types';
 import { NotificationSettings } from './NotificationSettings';
 import { BasicSettings } from './BasicSettings';

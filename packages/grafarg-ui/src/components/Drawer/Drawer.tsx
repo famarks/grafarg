@@ -1,5 +1,5 @@
 import React, { CSSProperties, FC, ReactNode, useState } from 'react';
-import { GrafargTheme } from '@grafana/data';
+import { GrafargTheme } from '@grafarg/data';
 import RcDrawer from 'rc-drawer';
 import { css } from 'emotion';
 import { selectors } from '@grafarg/e2e-selectors';

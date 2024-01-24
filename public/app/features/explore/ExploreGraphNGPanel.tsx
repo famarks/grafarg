@@ -9,7 +9,7 @@ import {
   FieldConfigSource,
   GrafargTheme,
   TimeZone,
-} from '@grafana/data';
+} from '@grafarg/data';
 import {
   Collapse,
   DrawStyle,
@@ -21,7 +21,7 @@ import {
   useStyles,
   useTheme,
   ZoomPlugin,
-} from '@grafana/ui';
+} from '@grafarg/ui';
 import { defaultGraphConfig, getGraphFieldConfig } from 'app/plugins/panel/timeseries/config';
 import { hideSeriesConfigFactory } from 'app/plugins/panel/timeseries/overrides/hideSeriesConfigFactory';
 import { ContextMenuPlugin } from 'app/plugins/panel/timeseries/plugins/ContextMenuPlugin';

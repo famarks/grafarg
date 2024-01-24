@@ -8,7 +8,7 @@ import {
   getDefaultTimeRange,
   GrafargTheme,
   MutableDataFrame,
-} from '@grafana/data';
+} from '@grafarg/data';
 import { BarAlignment, DrawStyle, GraphFieldConfig, GraphGradientMode, LineInterpolation, PointVisibility } from '..';
 
 function mockDataFrame() {

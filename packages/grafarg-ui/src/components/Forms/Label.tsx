@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTheme, stylesFactory } from '../../themes';
-import { GrafargTheme } from '@grafana/data';
+import { GrafargTheme } from '@grafarg/data';
 import { css, cx } from 'emotion';
 import { Icon } from '../Icon/Icon';
 import tinycolor from 'tinycolor2';

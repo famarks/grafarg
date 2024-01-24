@@ -1,6 +1,6 @@
 import React from 'react';
 import { PluginListPage, Props } from './PluginListPage';
-import { NavModel, PluginErrorCode, PluginMeta } from '@grafana/data';
+import { NavModel, PluginErrorCode, PluginMeta } from '@grafarg/data';
 import { mockToolkitActionCreator } from 'test/core/redux/mocks';
 import { setPluginsSearchQuery } from './state/reducers';
 import { render, screen, waitFor } from '@testing-library/react';
@@ -11,8 +11,8 @@ import { afterEach } from '../../../test/lib/common';
 
 let errorsReturnMock: any = [];
 
-jest.mock('@grafana/runtime', () => ({
-  ...(jest.requireActual('@grafana/runtime') as object),
+jest.mock('@grafarg/runtime', () => ({
+  ...(jest.requireActual('@grafarg/runtime') as object),
   getBackendSrv: () => ({
     get: () => {
       return errorsReturnMock as any;

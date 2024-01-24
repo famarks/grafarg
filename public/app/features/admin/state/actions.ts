@@ -1,7 +1,7 @@
 import { updateLocation } from 'app/core/actions';
 import config from 'app/core/config';
-import { dateTimeFormat, dateTimeFormatTimeAgo } from '@grafana/data';
-import { getBackendSrv } from '@grafana/runtime';
+import { dateTimeFormat, dateTimeFormatTimeAgo } from '@grafarg/data';
+import { getBackendSrv } from '@grafarg/runtime';
 import { ThunkResult, LdapUser, UserSession, UserDTO } from 'app/types';
 
 import {

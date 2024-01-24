@@ -1,7 +1,7 @@
 import React, { FC, useContext } from 'react';
 import { css, cx } from 'emotion';
-import { ThemeContext } from '@grafana/ui';
-import { GrafargTheme } from '@grafana/data';
+import { ThemeContext } from '@grafarg/ui';
+import { GrafargTheme } from '@grafarg/data';
 import { DashboardQuery } from '../types';
 
 type Omit<T, K extends keyof T> = Pick<T, Exclude<keyof T, K>>;

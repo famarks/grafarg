@@ -1,5 +1,5 @@
 import React from 'react';
-import { RangeSlider } from '@grafana/ui';
+import { RangeSlider } from '@grafarg/ui';
 import { select, number, boolean } from '@storybook/addon-knobs';
 
 export default {

@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import { css } from 'emotion';
-import { LogLabelStatsModel, GrafargTheme } from '@grafana/data';
+import { LogLabelStatsModel, GrafargTheme } from '@grafarg/data';
 
 import { Themeable } from '../../types/theme';
 import { stylesFactory } from '../../themes';

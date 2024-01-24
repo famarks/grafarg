@@ -1,7 +1,7 @@
 {
   "author": "Grafarg Labs",
   "license": "Apache-2.0",
-  "name": "@grafana/ui",
+  "name": "@grafarg/ui",
   "version": "7.5.17",
   "description": "Grafarg Components Library",
   "keywords": [
@@ -28,7 +28,7 @@
   "dependencies": {
     "@emotion/core": "10.0.27",
     "@grafana/aws-sdk": "0.0.3",
-    "@grafana/data": "7.5.17",
+    "@grafarg/data": "7.5.17",
     "@grafarg/e2e-selectors": "7.5.17",
     "@grafana/tsconfig": "^1.0.0-rc1",
     "@iconscout/react-unicons": "1.1.4",

@@ -6,8 +6,8 @@ import {
   PanelData,
   sortLogsResult,
   standardTransformers,
-} from '@grafana/data';
-import { config } from '@grafana/runtime';
+} from '@grafarg/data';
+import { config } from '@grafarg/runtime';
 import { groupBy } from 'lodash';
 import { Observable, of } from 'rxjs';
 import { map } from 'rxjs/operators';

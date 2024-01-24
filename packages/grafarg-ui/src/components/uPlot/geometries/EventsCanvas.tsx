@@ -1,4 +1,4 @@
-import { DataFrame } from '@grafana/data';
+import { DataFrame } from '@grafarg/data';
 import React, { useMemo } from 'react';
 import { usePlotContext } from '../context';
 import { useRefreshAfterGraphRendered } from '../hooks';
