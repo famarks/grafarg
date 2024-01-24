@@ -2,7 +2,7 @@
   "author": "Famarks",
   "license": "Apache-2.0",
   "name": "@grafarg/data",
-  "version": "7.4.5",
+  "version": "7.4.6",
   "description": "Grafarg Data Library",
   "keywords": [
     "typescript"
