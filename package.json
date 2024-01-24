@@ -3,7 +3,7 @@
   "license": "Apache-2.0",
   "private": true,
   "name": "grafarg",
-  "version": "7.4.5",
+  "version": "7.4.6",
   "repository": "github:famarks/grafarg",
   "scripts": {
     "api-tests": "jest --notify --watch --config=devenv/e2e-api-tests/jest.js",
@@ -76,7 +76,7 @@
     "@babel/preset-typescript": "7.8.3",
     "@grafana/api-documenter": "7.11.2",
     "@grafana/api-extractor": "7.10.1",
-    "@grafarg/eslint-config": "2.3.0",
+    "@grafarg/eslint-config": "2.4.1",
     "@rtsao/plugin-proposal-class-properties": "7.0.1-patch.1",
     "@testing-library/jest-dom": "5.11.5",
     "@testing-library/react": "11.1.2",
@@ -203,7 +203,7 @@
   },
   "dependencies": {
     "@emotion/core": "10.0.27",
-    "@grafarg/aws-sdk": "0.0.3",
+    "@grafarg/aws-sdk": "0.0.5",
     "@popperjs/core": "2.5.4",
     "@reduxjs/toolkit": "1.5.0",
     "@sentry/browser": "5.25.0",
