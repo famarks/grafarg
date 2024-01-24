@@ -12,7 +12,7 @@
     "allowJs": true,
     "strictNullChecks": true
   },
-  "extends": "@grafana/tsconfig/base.json",
+  "extends": "@grafarg/tsconfig/base.json",
   "include": [
     "public/app/**/*.ts*",
     "public/e2e-test/**/*.ts",

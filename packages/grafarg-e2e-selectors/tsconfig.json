@@ -6,6 +6,6 @@
     "typeRoots": ["node_modules/@types"]
   },
   "exclude": ["dist", "node_modules"],
-  "extends": "@grafana/tsconfig",
+  "extends": "@grafarg/tsconfig",
   "include": ["src/**/*.ts"]
 }

@@ -2,5 +2,5 @@
   "compilerOptions": {
     "module": "commonjs"
   },
-  "extends": "@grafana/tsconfig"
+  "extends": "@grafarg/tsconfig"
 }
