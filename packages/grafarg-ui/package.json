@@ -1,5 +1,5 @@
 {
-  "author": "Grafarg Labs",
+  "author": "Famarks",
   "license": "Apache-2.0",
   "name": "@grafarg/ui",
   "version": "7.4.5",
@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "@emotion/core": "10.0.27",
-    "@grafana/aws-sdk": "0.0.3",
+    "@grafarg/aws-sdk": "0.0.3",
     "@grafarg/data": "7.4.5",
     "@grafarg/e2e-selectors": "7.4.5",
     "@grafarg/tsconfig": "^1.2.0-rc1",
