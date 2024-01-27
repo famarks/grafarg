@@ -2,7 +2,7 @@
   "author": "Famarks",
   "license": "Apache-2.0",
   "name": "@grafarg/e2e",
-  "version": "7.4.6",
+  "version": "7.4.63",
   "description": "Grafarg End-to-End Test Library",
   "keywords": [
     "cli",
