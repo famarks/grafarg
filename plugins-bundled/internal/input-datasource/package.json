@@ -1,6 +1,6 @@
 {
   "name": "@grafarg-plugins/input-datasource",
-  "version": "7.4.6",
+  "version": "7.4.66",
   "description": "Input Datasource",
   "private": true,
   "repository": {
@@ -16,9 +16,9 @@
   "author": "Grafarg Labs",
   "license": "Apache-2.0",
   "devDependencies": {
-    "@grafarg/data": "7.4.6",
-    "@grafarg/toolkit": "7.4.6",
-    "@grafarg/ui": "7.4.6"
+    "@grafarg/data": "7.4.66",
+    "@grafarg/toolkit": "7.4.66",
+    "@grafarg/ui": "7.4.66"
   },
   "volta": {
     "node": "12.16.2"
