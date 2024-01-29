@@ -27,7 +27,8 @@
   },
   "dependencies": {
     "@emotion/core": "10.0.27",
-    "@grafarg/aws-sdk": "0.0.55",
+    "@grafana/aws-sdk": "0.0.3",
+    "@grafana/data": "7.5.17",
     "@grafarg/data": "7.4.66",
     "@grafarg/e2e-selectors": "7.4.66",
     "@grafarg/tsconfig": "^1.2.0-rc1",
