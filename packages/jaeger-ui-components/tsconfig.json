@@ -1,6 +1,9 @@
 {
   "compilerOptions": {
     "baseUrl": "node_modules/@types",
+    "paths": {
+      "@grafarg/slate-react": ["slate-react"]
+    },
     "typeRoots": ["node_modules/@types"]
   },
   "extends": "@grafarg/tsconfig",

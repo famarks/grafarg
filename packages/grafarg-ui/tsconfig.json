@@ -4,6 +4,7 @@
     "declarationDir": "dist",
     "outDir": "compiled",
     "paths": {
+      "@grafarg/slate-react": ["slate-react"],
       "@grafarg/ui": ["."]
     },
     "rootDirs": [".", "stories"],

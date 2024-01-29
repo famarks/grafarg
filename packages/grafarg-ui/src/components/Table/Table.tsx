@@ -14,7 +14,7 @@ import {
   useTable,
 } from 'react-table';
 import { FixedSizeList } from 'react-window';
-import { getColumns, sortCaseInsensitive } from './utils';
+import { getColumns } from './utils';
 import { useTheme } from '../../themes';
 import {
   TableColumnResizeActionCallback,
@@ -151,9 +151,6 @@ export const Table: FC<Props> = memo((props: Props) => {
       disableResizing: !resizable,
       stateReducer: stateReducer,
       initialState: getInitialState(initialSortBy, memoizedColumns),
-      sortTypes: {
-        'alphanumeric-insensitive': sortCaseInsensitive,
-      },
     }),
     [initialSortBy, memoizedColumns, memoizedData, resizable, stateReducer]
   );
@@ -169,8 +166,8 @@ export const Table: FC<Props> = memo((props: Props) => {
   const { fields } = data;
 
   const RenderRow = React.useCallback(
-    ({ index: rowIndex, style }) => {
-      const row = rows[rowIndex];
+    ({ index, style }) => {
+      const row = rows[index];
       prepareRow(row);
       return (
         <div {...row.getRowProps({ style })} className={tableStyles.row}>
@@ -183,7 +180,6 @@ export const Table: FC<Props> = memo((props: Props) => {
               onCellFilterAdded={onCellFilterAdded}
               columnIndex={index}
               columnCount={row.cells.length}
-              dataRowIndex={row.index}
             />
           ))}
         </div>

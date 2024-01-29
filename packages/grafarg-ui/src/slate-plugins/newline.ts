@@ -1,4 +1,5 @@
-import { Plugin } from 'slate-react';
+import { Plugin } from '@grafarg/slate-react';
+import { Editor as CoreEditor } from 'slate';
 
 function getIndent(text: string) {
   let offset = text.length - text.trimLeft().length;
@@ -14,15 +15,16 @@ function getIndent(text: string) {
 
 export function NewlinePlugin(): Plugin {
   return {
-    onKeyDown(event, editor, next) {
+    onKeyDown(event: Event, editor: CoreEditor, next: Function) {
+      const keyEvent = event as KeyboardEvent;
       const value = editor.value;
 
       if (value.selection.isExpanded) {
         return next();
       }
 
-      if (event.key === 'Enter') {
-        event.preventDefault();
+      if (keyEvent.key === 'Enter') {
+        keyEvent.preventDefault();
 
         const { startBlock } = value;
         const currentLineText = startBlock.text;

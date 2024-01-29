@@ -90,6 +90,7 @@ export const getTableStyles = stylesFactory((theme: GrafargTheme) => {
     `,
     cellContainer: buildCellContainerStyle(),
     cellText: css`
+      cursor: text;
       overflow: hidden;
       text-overflow: ellipsis;
       user-select: text;

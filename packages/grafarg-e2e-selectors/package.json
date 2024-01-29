@@ -2,7 +2,7 @@
   "author": "Famarks",
   "license": "Apache-2.0",
   "name": "@grafarg/e2e-selectors",
-  "version": "7.4.66",
+  "version": "7.4.71",
   "description": "Grafarg End-to-End Test Selectors Library",
   "keywords": [
     "cli",

@@ -1,8 +1,7 @@
 import Plain from 'slate-plain-serializer';
 import React from 'react';
+import { Editor } from '@grafarg/slate-react';
 import { shallow } from 'enzyme';
-import { Editor } from 'slate-react';
-
 import { ClearPlugin } from './clear';
 
 describe('clear', () => {
@@ -15,7 +14,7 @@ describe('clear', () => {
       key: 'k',
       ctrlKey: true,
     });
-    handler(event as any, editor.instance(), () => {});
+    handler(event as Event, editor.instance() as any, () => {});
     expect(Plain.serialize(editor.instance().value)).toEqual('');
   });
 
@@ -26,7 +25,7 @@ describe('clear', () => {
       key: 'k',
       ctrlKey: true,
     });
-    handler(event as any, editor.instance(), () => {});
+    handler(event as Event, editor.instance() as any, () => {});
     expect(Plain.serialize(editor.instance().value)).toEqual('');
   });
 
@@ -37,8 +36,7 @@ describe('clear', () => {
       key: 'k',
       ctrlKey: true,
     });
-    editor.instance().moveForward(4);
-    handler(event as any, editor.instance(), () => {});
+    handler(event as Event, editor.instance().moveForward(4) as any, () => {});
     expect(Plain.serialize(editor.instance().value)).toEqual('foo ');
   });
 });

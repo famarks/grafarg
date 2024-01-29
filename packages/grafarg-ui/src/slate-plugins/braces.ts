@@ -1,5 +1,5 @@
-import { Annotation } from 'slate';
-import { Plugin } from 'slate-react';
+import { Plugin } from '@grafarg/slate-react';
+import { Editor as CoreEditor, Annotation } from 'slate';
 import { v4 as uuidv4 } from 'uuid';
 
 const BRACES: any = {
@@ -12,10 +12,11 @@ const MATCH_MARK = 'brace_match';
 
 export function BracesPlugin(): Plugin {
   return {
-    onKeyDown(event, editor, next) {
+    onKeyDown(event: Event, editor: CoreEditor, next: Function) {
+      const keyEvent = event as KeyboardEvent;
       const { value } = editor;
 
-      switch (event.key) {
+      switch (keyEvent.key) {
         case '(':
         case '{':
         case '[': {
@@ -28,10 +29,10 @@ export function BracesPlugin(): Plugin {
 
           // If text is selected, wrap selected text in parens
           if (value.selection.isExpanded) {
-            event.preventDefault();
+            keyEvent.preventDefault();
             editor
-              .insertTextByKey(startKey, startOffset, event.key)
-              .insertTextByKey(endKey, endOffset + 1, BRACES[event.key])
+              .insertTextByKey(startKey, startOffset, keyEvent.key)
+              .insertTextByKey(endKey, endOffset + 1, BRACES[keyEvent.key])
               .moveEndBackward(1);
             return true;
           } else if (
@@ -40,8 +41,8 @@ export function BracesPlugin(): Plugin {
             text[focusOffset] === ' ' ||
             Object.values(BRACES).includes(text[focusOffset])
           ) {
-            event.preventDefault();
-            const complement = BRACES[event.key];
+            keyEvent.preventDefault();
+            const complement = BRACES[keyEvent.key];
             const matchAnnotation = {
               key: `${MATCH_MARK}-${uuidv4()}`,
               type: `${MATCH_MARK}-${complement}`,
@@ -57,7 +58,7 @@ export function BracesPlugin(): Plugin {
               },
               object: 'annotation',
             } as Annotation;
-            editor.insertText(event.key).insertText(complement).addAnnotation(matchAnnotation).moveBackward(1);
+            editor.insertText(keyEvent.key).insertText(complement).addAnnotation(matchAnnotation).moveBackward(1);
 
             return true;
           }
@@ -71,13 +72,13 @@ export function BracesPlugin(): Plugin {
           const offset = value.selection.anchor.offset;
           const nextChar = text[offset];
           // Handle closing brace when it's already the next character
-          const complement = event.key;
+          const complement = keyEvent.key;
           const annotationType = `${MATCH_MARK}-${complement}`;
           const annotation = value.annotations.find(
             (a) => a?.type === annotationType && a.anchor.key === value.anchorText.key
           );
           if (annotation && nextChar === complement && !value.selection.isExpanded) {
-            event.preventDefault();
+            keyEvent.preventDefault();
             editor.moveFocusForward(1).removeAnnotation(annotation).moveAnchorForward(1);
             return true;
           }
@@ -90,7 +91,7 @@ export function BracesPlugin(): Plugin {
           const previousChar = text[offset - 1];
           const nextChar = text[offset];
           if (BRACES[previousChar] && BRACES[previousChar] === nextChar) {
-            event.preventDefault();
+            keyEvent.preventDefault();
             // Remove closing brace if directly following
             editor.deleteBackward(1).deleteForward(1).focus();
             return true;

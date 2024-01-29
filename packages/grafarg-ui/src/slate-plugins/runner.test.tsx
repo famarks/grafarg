@@ -1,8 +1,7 @@
 import Plain from 'slate-plain-serializer';
 import React from 'react';
+import { Editor } from '@grafarg/slate-react';
 import { shallow } from 'enzyme';
-import { Editor } from 'slate-react';
-
 import { RunnerPlugin } from './runner';
 
 describe('runner', () => {
@@ -11,13 +10,10 @@ describe('runner', () => {
 
   it('should execute query when enter with shift is pressed', () => {
     const value = Plain.deserialize('');
-    const editor = shallow(<Editor value={value} />);
+    const editor = shallow<Editor>(<Editor value={value} />);
     handler(
-      new window.KeyboardEvent('keydown', {
-        key: 'Enter',
-        shiftKey: true,
-      }) as any,
-      editor.instance() as Editor,
+      { key: 'Enter', shiftKey: true, preventDefault: () => {} } as KeyboardEvent,
+      editor.instance() as any,
       () => {}
     );
     expect(mockHandler).toBeCalled();

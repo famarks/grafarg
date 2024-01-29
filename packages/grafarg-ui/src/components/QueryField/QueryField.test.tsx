@@ -1,7 +1,7 @@
 import React from 'react';
+import { shallow } from 'enzyme';
 import { QueryField } from './QueryField';
-import { shallow, mount } from 'enzyme';
-import { Editor } from 'slate-react';
+import { Editor } from 'slate';
 
 describe('<QueryField />', () => {
   it('should render with null initial value', () => {
@@ -21,20 +21,19 @@ describe('<QueryField />', () => {
 
   it('should execute query on blur', () => {
     const onRun = jest.fn();
-    const wrapper = mount(
+    const wrapper = shallow(
       <QueryField query="my query" onTypeahead={jest.fn()} onRunQuery={onRun} portalOrigin="mock-origin" />
     );
     const field = wrapper.instance() as QueryField;
-    const ed = wrapper.find(Editor).instance() as Editor;
     expect(onRun.mock.calls.length).toBe(0);
-    field.handleBlur(undefined, ed, () => {});
+    field.handleBlur(new Event('bogus'), new Editor({}), () => {});
     expect(onRun.mock.calls.length).toBe(1);
   });
 
   it('should run custom on blur, but not necessarily execute query', () => {
     const onBlur = jest.fn();
     const onRun = jest.fn();
-    const wrapper = mount(
+    const wrapper = shallow(
       <QueryField
         query="my query"
         onTypeahead={jest.fn()}
@@ -44,10 +43,9 @@ describe('<QueryField />', () => {
       />
     );
     const field = wrapper.instance() as QueryField;
-    const ed = wrapper.find(Editor).instance() as Editor;
     expect(onBlur.mock.calls.length).toBe(0);
     expect(onRun.mock.calls.length).toBe(0);
-    field.handleBlur(undefined, ed, () => {});
+    field.handleBlur(new Event('bogus'), new Editor({}), () => {});
     expect(onBlur.mock.calls.length).toBe(1);
     expect(onRun.mock.calls.length).toBe(0);
   });

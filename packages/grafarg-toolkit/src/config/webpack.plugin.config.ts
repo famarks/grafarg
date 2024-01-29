@@ -177,7 +177,7 @@ const getBaseWebpackConfig: WebpackConfigurationGetter = async (options) => {
       'emotion',
       'prismjs',
       'slate-plain-serializer',
-      'slate-react',
+      '@grafarg/slate-react',
       'react',
       'react-dom',
       'react-redux',

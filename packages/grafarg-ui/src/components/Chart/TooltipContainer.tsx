@@ -20,7 +20,7 @@ export const TooltipContainer: React.FC<TooltipContainerProps> = ({
 }) => {
   const theme = useTheme();
   const tooltipRef = useRef<HTMLDivElement>(null);
-  const [tooltipMeasurement, setTooltipMeasurement] = useState<Dimensions2D>({ width: 0, height: 0 });
+  const tooltipMeasurementRef = useRef<Dimensions2D>({ width: 0, height: 0 });
   const { width, height } = useWindowSize();
   const [placement, setPlacement] = useState({
     x: positionX + offsetX,
@@ -36,15 +36,15 @@ export const TooltipContainer: React.FC<TooltipContainerProps> = ({
           const tW = Math.floor(entry.contentRect.width + 2 * 8); //  adding padding until Safari supports borderBoxSize
           const tH = Math.floor(entry.contentRect.height + 2 * 8);
 
-          if (tooltipMeasurement.width !== tW || tooltipMeasurement.height !== tH) {
-            setTooltipMeasurement({
+          if (tooltipMeasurementRef.current.width !== tW || tooltipMeasurementRef.current.height !== tH) {
+            tooltipMeasurementRef.current = {
               width: tW,
               height: tH,
-            });
+            };
           }
         }
       }),
-    [tooltipMeasurement.height, tooltipMeasurement.width]
+    []
   );
 
   useLayoutEffect(() => {
@@ -62,14 +62,15 @@ export const TooltipContainer: React.FC<TooltipContainerProps> = ({
     let xO = 0,
       yO = 0;
     if (tooltipRef && tooltipRef.current) {
-      const xOverflow = width - (positionX + tooltipMeasurement.width);
-      const yOverflow = height - (positionY + tooltipMeasurement.height);
+      const measurement = tooltipMeasurementRef.current;
+      const xOverflow = width - (positionX + measurement.width);
+      const yOverflow = height - (positionY + measurement.height);
       if (xOverflow < 0) {
-        xO = tooltipMeasurement.width;
+        xO = measurement.width;
       }
 
       if (yOverflow < 0) {
-        yO = tooltipMeasurement.height;
+        yO = measurement.height;
       }
     }
 
@@ -77,7 +78,7 @@ export const TooltipContainer: React.FC<TooltipContainerProps> = ({
       x: positionX + offsetX - xO,
       y: positionY + offsetY - yO,
     });
-  }, [width, height, positionX, offsetX, positionY, offsetY, tooltipMeasurement.width, tooltipMeasurement.height]);
+  }, [width, height, positionX, offsetX, positionY, offsetY]);
 
   const styles = getTooltipContainerStyles(theme);
 

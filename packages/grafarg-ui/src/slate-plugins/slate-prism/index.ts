@@ -1,9 +1,8 @@
 import Prism, { LanguageMap } from 'prismjs';
 import { Block, Text, Decoration } from 'slate';
-import { Plugin } from 'slate-react';
-
-import TOKEN_MARK from './TOKEN_MARK';
+import { Plugin } from '@grafarg/slate-react';
 import Options, { OptionsFormat } from './options';
+import TOKEN_MARK from './TOKEN_MARK';
 
 export interface Token {
   content: string;
