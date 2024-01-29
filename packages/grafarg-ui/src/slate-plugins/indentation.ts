@@ -1,5 +1,5 @@
 import { RangeJSON, Range as SlateRange, Editor as CoreEditor } from 'slate';
-import { Plugin } from '@grafana/slate-react';
+import { Plugin } from 'slate-react';
 import { isKeyHotkey } from 'is-hotkey';
 
 const isIndentLeftHotkey = isKeyHotkey('mod+[');
