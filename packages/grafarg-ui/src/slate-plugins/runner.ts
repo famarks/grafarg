@@ -1,4 +1,4 @@
-import { Plugin } from '@grafarg/slate-react';
+import { Plugin } from '@grafana/slate-react';
 import { Editor as CoreEditor } from 'slate';
 
 export function RunnerPlugin({ handler }: any): Plugin {

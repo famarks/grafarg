@@ -29,6 +29,7 @@
     "@emotion/core": "10.0.27",
     "@grafarg/data": "7.4.71",
     "@grafarg/e2e-selectors": "7.4.71",
+    "@grafana/slate-react": "0.22.9-grafana",
     "@grafarg/tsconfig": "^1.2.0-rc1",
     "@iconscout/react-unicons": "1.1.4",
     "@popperjs/core": "2.5.4",

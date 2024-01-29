@@ -5,7 +5,7 @@
     "outDir": "compiled",
     "rootDirs": ["."],
     "paths": {
-      "@grafarg/slate-react": ["../grafarg-ui/node_modules/@types/slate-react"]
+      "@grafana/slate-react": ["../grafarg-ui/node_modules/@types/slate-react"]
     },
     "typeRoots": ["node_modules/@types"]
   },
