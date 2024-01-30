@@ -28,6 +28,7 @@ const buildCjsPackage = ({ env }) => {
     external: [
       'react',
       'react-dom',
+      '@grafarg/aws-sdk',
       '@grafarg/data',
       '@grafarg/e2e-selectors',
       'moment',

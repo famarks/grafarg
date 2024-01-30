@@ -1,7 +1,7 @@
 import React, { FC, useEffect, useState } from 'react';
 import { Input, InlineField } from '@grafarg/ui';
 import { DataSourcePluginOptionsEditorProps, onUpdateDatasourceJsonDataOption } from '@grafarg/data';
-import { ConnectionConfig } from '@grafana/aws-sdk';
+import { ConnectionConfig } from '@grafarg/aws-sdk';
 
 import { getDatasourceSrv } from 'app/features/plugins/datasource_srv';
 import { store } from 'app/store/store';
