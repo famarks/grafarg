@@ -43,7 +43,7 @@ export NODE_OPTIONS="--max-old-space-size=3072 --openssl-legacy-provider"
 	
 yarn install
 
-npx update-browserslist-db@latest
+npx -y update-browserslist-db@latest
 
 mkdir plugins-bundled/external
 
