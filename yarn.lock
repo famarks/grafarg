@@ -6974,9 +6974,9 @@
     immutable "^3.8.2"
 
 "@types/slate@*":
-  version "0.47.9"
-  resolved "https://registry.yarnpkg.com/@types/slate/-/slate-0.47.9.tgz#ce212ba09bb2c0de470b59b496efeac739eff1b4"
-  integrity sha512-KzC0iNuZJkiKx0dMAC9PBF6TXZNd0l3hqVCF5/7GwCEnLDx6VsETAedAi4OjRpzObvL4x7n8ZS51+sgXHn/HvQ==
+  version "0.47.2"
+  resolved "https://registry.yarnpkg.com/@types/slate/-/slate-0.47.2.tgz#54c57c223919bb70b3047600ab6b0ccf800bff77"
+  integrity sha512-1qwuAtuJ2Tnhewr2tz3OsDeM9xIC1ttTkBuSuf2P4Dy7K9I/I8HVeVowpo8k2vzVX7UMkc3OHo0RpC7V6pWCBw==
   dependencies:
     "@types/react" "*"
     immutable "^3.8.2"
