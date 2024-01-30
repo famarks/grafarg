@@ -2,7 +2,7 @@ import _ from 'lodash';
 import React, { Context } from 'react';
 
 import { Value, Editor as CoreEditor } from 'slate';
-import { Editor, Plugin } from 'slate-react';
+import { Editor, Plugin } from '@grafana/slate-react';
 import Plain from 'slate-plain-serializer';
 import classnames from 'classnames';
 
