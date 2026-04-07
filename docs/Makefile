@@ -1,8 +1,8 @@
 .PHONY: docs docs-no-pull docs-test docs-local-static
 
-IMAGE = grafarg/grafarg-docs-dev:latest
+IMAGE = famarks/grafarg-docs-dev:latest
 CONTENT_PATH = /hugo/content/docs/grafarg/latest
-LOCAL_STATIC_PATH = ../../website/static
+LOCAL_STATIC_PATH = ../../website
 PORT = 3002:3002
 
 docs:
