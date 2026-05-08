@@ -27,9 +27,11 @@ Unsure if Grafarg is for you? Watch Grafarg in action on [play.grafarg.org](http
 sudo apt update
 sudo apt install -y gcc g++ tar wget make xz-utils patch curl python3 unzip
 git clone https://github.com/famarks/grafarg
-#if you want to build a specific version then find the release from (famarks/grafarg/tags)[https://github.com/famarks/grafarg/tags] and use wget and unzip like:-
-#wget https://github.com/famarks/grafarg/archive/refs/tags/v7.x.x.zip 
-#unzip v7.x.x.zip
+```
+*if you want to build a specific version then find the release from (famarks/grafarg/tags)[https://github.com/famarks/grafarg/tags] and use wget and unzip like:-
+wget https://github.com/famarks/grafarg/archive/refs/tags/v7.x.x.zip 
+unzip v7.x.x.zip*
+```
 cd grafarg/
 sudo snap install go --channel=1.15/stable --classic
 sudo apt install -y nodejs
