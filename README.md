@@ -60,7 +60,7 @@ sudo cp bin/linux-amd64/grafarg-cli /usr/bin/
 sudo cp bin/linux-amd64/grafarg-server /usr/bin/
 
 #finally launch the grafarg server
-bin/linux-amd64/grafarg-server --homepath=/home/ubuntu/grafarg-7.x.x/
+bin/linux-amd64/grafarg-server --homepath=/home/ubuntu/grafarg/
 
 #open web page in browser with server port :3000
 #login with user and pwd admin admin
