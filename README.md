@@ -2,7 +2,7 @@
 
 The open-source platform for monitoring and observability.
 
-[![License](https://img.shields.io/github/license/famarks/grafarg)](LICENSE)
+[![License](https://img.shields.io/github/license/famarks/grafarg?cacheSeconds=3600)](LICENSE)
 [![Go Report Card](https://goreportcard.com/badge/github.com/famarks/grafarg)](https://goreportcard.com/report/github.com/famarks/grafarg)
 
 Grafarg allows you to query, visualize, alert on and understand your metrics no matter where they are stored. Create, explore, and share dashboards with your team and foster a data driven culture:
@@ -26,10 +26,11 @@ Unsure if Grafarg is for you? Watch Grafarg in action on [play.grafarg.org](http
 ```
 sudo apt update
 sudo apt install -y gcc g++ tar wget make xz-utils patch curl python3 unzip
-#find the latest release from https://github.com/famarks/grafarg/tags and replace v7.x.x below
-wget https://github.com/famarks/grafarg/archive/refs/tags/v7.x.x.zip 
-unzip v7.x.x.zip
-cd grafarg-7.x.x/
+git clone https://github.com/famarks/grafarg
+#if you want to build a specific version then find the release from (famarks/grafarg/tags)[https://github.com/famarks/grafarg/tags] and use wget and unzip like:-
+#wget https://github.com/famarks/grafarg/archive/refs/tags/v7.x.x.zip 
+#unzip v7.x.x.zip
+cd grafarg/
 sudo snap install go --channel=1.15/stable --classic
 sudo apt install -y nodejs
 sudo apt install -y npm
@@ -87,4 +88,4 @@ If you're interested in contributing to the Grafarg project:
 
 Grafarg is distributed under the [Apache 2.0 License](https://github.com/famarks/grafarg/blob/master/LICENSE).
 
-Apache licensed from https://github.com/grafana/grafana/archive/refs/tags/v7.5.17.zip released on [Sep 26, 2022](https://github.com/grafana/grafana/tags?after=v9.2.0-279c6c6c7d) plublished at Grafarg repository on Jan 17, 2024.
+Apache licensed from https://github.com/grafana/grafana/archive/refs/tags/v7.5.17.zip released on [Sep 26, 2022](https://github.com/grafana/grafana/tags?after=v9.2.0-279c6c6c7d)
