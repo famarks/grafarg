@@ -22,3 +22,12 @@ docs-local-static:
 	if [ ! -d "$(LOCAL_STATIC_PATH)" ]; then echo "local path (website project) $(LOCAL_STATIC_PATH) not found"]; exit 1; fi
 	docker run -v $(shell pwd)/sources:$(CONTENT_PATH):Z \
 		-v $(shell pwd)/$(LOCAL_STATIC_PATH):/hugo/static:Z -p $(PORT) --rm -it $(IMAGE)
+
+# target to build and export static files
+docs-build-static:
+	docker pull $(IMAGE)
+	mkdir -p $(shell pwd)/dist
+	docker run -v $(shell pwd)/sources:$(CONTENT_PATH):Z \
+		-v $(shell pwd)/$(LOCAL_STATIC_PATH):/hugo/static:Z \
+		-v $(shell pwd)/dist:/output:Z \
+		--rm -it $(IMAGE) /bin/bash -c 'make prod && cp -r dist/* /output/'
