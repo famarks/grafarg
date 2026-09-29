@@ -38,6 +38,9 @@ const azureMonitorPlugin = async () =>
 const tempoPlugin = async () =>
   await import(/* webpackChunkName: "tempoPlugin" */ 'app/plugins/datasource/tempo/module');
 
+const famarkCloudPlugin = async () =>
+  await import(/* webpackChunkName: "famarkCloudPlugin" */ 'app/plugins/datasource/famark-cloud-datasource/module');
+
 import * as textPanel from 'app/plugins/panel/text/module';
 import * as timeseriesPanel from 'app/plugins/panel/timeseries/module';
 import * as graphPanel from 'app/plugins/panel/graph/module';
@@ -82,6 +85,7 @@ const builtInPlugins: any = {
   'app/plugins/datasource/cloud-monitoring/module': cloudMonitoringPlugin,
   'app/plugins/datasource/grafarg-azure-monitor-datasource/module': azureMonitorPlugin,
   'app/plugins/datasource/tempo/module': tempoPlugin,
+  'app/plugins/datasource/famark-cloud-datasource/module': famarkCloudPlugin,
 
   'app/plugins/panel/text/module': textPanel,
   'app/plugins/panel/timeseries/module': timeseriesPanel,

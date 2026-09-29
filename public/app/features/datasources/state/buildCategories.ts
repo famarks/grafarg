@@ -4,12 +4,12 @@ import { config } from '../../../core/config';
 
 export function buildCategories(plugins: DataSourcePluginMeta[]): DataSourcePluginCategory[] {
   const categories: DataSourcePluginCategory[] = [
+    { id: 'enterprise', title: 'Enterprise plugins', plugins: [] },
     { id: 'tsdb', title: 'Time series databases', plugins: [] },
     { id: 'logging', title: 'Logging & document databases', plugins: [] },
     { id: 'tracing', title: 'Distributed tracing', plugins: [] },
     { id: 'sql', title: 'SQL', plugins: [] },
     { id: 'cloud', title: 'Cloud', plugins: [] },
-    { id: 'enterprise', title: 'Enterprise plugins', plugins: [] },
     { id: 'iot', title: 'Industrial & IoT', plugins: [] },
     { id: 'other', title: 'Others', plugins: [] },
   ].filter((item) => item);
@@ -71,6 +71,7 @@ export function buildCategories(plugins: DataSourcePluginMeta[]): DataSourcePlug
 
 function sortPlugins(plugins: DataSourcePluginMeta[]) {
   const sortingRules: { [id: string]: number } = {
+    'famark-cloud-datasource': 110,
     prometheus: 100,
     graphite: 95,
     loki: 90,

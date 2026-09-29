@@ -381,6 +381,8 @@ github.com/facebookgo/subset v0.0.0-20150612182917-8dac2c3c4870/go.mod h1:5tD+ne
 github.com/facette/natsort v0.0.0-20181210072756-2cd4dd1e2dcb/go.mod h1:bH6Xx7IW64qjjJq8M2u4dxNaBiDfKK+z/3eGDpXEQhc=
 github.com/famarks/go-mssqldb v0.0.0-20240118064113-4d8a88026753 h1:z/sPOEcjpUXtnCfgelOEfF0m7asoLb5ofHFEKz2M+kk=
 github.com/famarks/go-mssqldb v0.0.0-20240118064113-4d8a88026753/go.mod h1:xbL0rPBG9cCiLr28tMa8zpbdarY27NDyej4t/EjAShU=
+github.com/famarks/go-mssqldb v0.0.0-20240118085359-f53a89c45246 h1:sOdumL5cch/8EgRfHY95kcEMwXckPYijzN/aem7zXnc=
+github.com/famarks/go-mssqldb v0.0.0-20240118085359-f53a89c45246/go.mod h1:xbL0rPBG9cCiLr28tMa8zpbdarY27NDyej4t/EjAShU=
 github.com/famarks/grafarg-aws-sdk v0.4.2 h1:TmQrOYXIwPw5TV5GIo+vjo9HlAH3u6HavZ+l3NQiJm4=
 github.com/famarks/grafarg-aws-sdk v0.4.2/go.mod h1:kBvrAwNXov1BXrTS7qwCH3Pi992Fhf+2Oab3Oc3ptDo=
 github.com/famarks/grafarg-plugin-model v0.0.0-20240117054422-c110bc476b06 h1:v7JIjcsFSdkUsscEBrF8ju5qIjAZPLW0mkOLDJjfgco=

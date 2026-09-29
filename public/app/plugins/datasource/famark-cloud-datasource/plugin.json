@@ -1,0 +1,56 @@
+{
+  "$schema": "https://github.com/famarks/grafarg/raw/main/docs/sources/developers/plugins/plugin.schema.json",
+  "type": "datasource",
+  "name": "Famark JSON API",
+  "id": "famark-cloud-datasource",
+  "metrics": true,
+  "logs": true,
+  "annotations": true,
+  "info": {
+    "description": "A data source plugin for loading JSON APIs into Grafarg.",
+    "author": {
+      "name": "Grafarg Labs",
+      "url": "https://grafarg.com"
+    },
+    "keywords": [
+      "json",
+      "api"
+    ],
+    "logos": {
+      "small": "img/logo.svg",
+      "large": "img/logo.svg"
+    },
+    "links": [
+      {
+        "name": "Documentation",
+        "url": "https://grafarg.github.io/famark-cloud-datasource"
+      },
+      {
+        "name": "Website",
+        "url": "https://github.com/famarks/famark-cloud-datasource"
+      },
+      {
+        "name": "License",
+        "url": "https://github.com/famarks/famark-cloud-datasource/blob/main/LICENSE"
+      }
+    ],
+    "screenshots": [
+      {
+        "name": "Explore (Dark)",
+        "path": "img/dark.png"
+      },
+      {
+        "name": "Explore (Light)",
+        "path": "img/light.png"
+      }
+    ],
+    "version": "%VERSION%",
+    "updated": "%TODAY%"
+  },
+  "dependencies": {
+    "grafargDependency": ">=8.5.13",
+    "grafargVersion": "8.5.x",
+    "plugins": []
+  },
+  "category": "enterprise"
+}
