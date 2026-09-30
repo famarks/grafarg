@@ -39,7 +39,7 @@ sudo npm install -g n
 sudo n latest
 sudo npm install -g yarn
 
-#set node memory to 1536 for 2GB ram t2.small (to use 1.5GB) or 3072 for 4GB t2.medium
+#for t2.small (2GB ram) set node memory to use 1536 (1.5GB) or for t2.medium  (4GB ram) set to 3072 (3GB) also set openssl to lagacy provider
 export NODE_OPTIONS="--max-old-space-size=3072 --openssl-legacy-provider"
 	
 yarn install
@@ -47,6 +47,9 @@ yarn install
 npx -y update-browserslist-db@latest
 
 mkdir plugins-bundled/external
+
+#when yarn install takes long set node options again for openssl
+export NODE_OPTIONS="--max-old-space-size=3072 --openssl-legacy-provider"
 
 #building frontend, this is independent of backend
 #following command can take 10 mins on t2 medium, if envelop error then re-run the above export...
