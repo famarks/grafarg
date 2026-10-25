@@ -47,11 +47,12 @@ yarn install
 npx -y update-browserslist-db@latest
 
 mkdir plugins-bundled/external
-
-#when yarn install takes long set node options again for openssl
-export NODE_OPTIONS="--max-old-space-size=3072 --openssl-legacy-provider"
+chmod +x node_modules/.bin/grafarg-toolkit
 
 #building frontend, this is independent of backend
+#set openssl to lagacy provider before building frontend
+export NODE_OPTIONS="--openssl-legacy-provider"
+
 #following command can take 10 mins on t2 medium, if envelop error then re-run the above export...
 make build-js
 
