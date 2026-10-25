@@ -52,4 +52,5 @@ export interface JsonApiDataSourceOptions extends DataSourceJsonData {
 
   // User/Password mode
   credUsername?: string;
+  httpHeaderName1?: string;
 }

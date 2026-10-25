@@ -102,7 +102,9 @@ export const fetchAttributeOptions = async (
     },
     OrderBy: 'SystemName',
   });
-  const records = await datasource.api.get('POST', ATTRIBUTE_PATH, [], headers, body);
+  const records = await datasource.api.cachedGet(300, 'POST', ATTRIBUTE_PATH, [], headers, body, {
+    hideFromInspector: true,
+  });
   return records.map((r: any) => ({ label: r.SystemName, value: r.SystemName, attributeType: r.AttributeType }));
 };
 
@@ -261,7 +263,13 @@ export const BodyQueryBuilder: React.FC<Props> = ({ datasource, entityId, header
   // ── Save Helpers ──
 
   /** Save columns, orderBy, and dateTime fields to body JSON */
-  const saveColumns = (cols: string[], order: string, dtPart = dateTimePart, dtInterval = dateTimeInterval) => {
+  const saveColumns = (
+    cols: string[],
+    order: string,
+    dtPart = dateTimePart,
+    dtInterval = dateTimeInterval,
+    conds = conditions
+  ) => {
     let obj: any = {};
     try {
       obj = JSON.parse(body || '{}');
@@ -270,9 +278,10 @@ export const BodyQueryBuilder: React.FC<Props> = ({ datasource, entityId, header
     obj.Columns = cols.filter(Boolean).join(', ') || undefined;
 
     if (isStats) {
+      const isDate = attrType(order) === 'TypeDateTime';
       obj.GroupBy = order || undefined;
-      obj.DateTimePart = dtPart || undefined;
-      obj.DateTimeInterval = dtPart === 'Time' && dtInterval ? dtInterval : undefined;
+      obj.DateTimePart = isDate && dtPart ? dtPart : undefined;
+      obj.DateTimeInterval = isDate && dtPart === 'Time' && dtInterval ? dtInterval : undefined;
       delete obj.OrderBy;
     } else {
       obj.OrderBy = order || undefined;
@@ -281,23 +290,27 @@ export const BodyQueryBuilder: React.FC<Props> = ({ datasource, entityId, header
       delete obj.DateTimeInterval;
     }
 
-    // Remove undefined keys
-    Object.keys(obj).forEach((k) => obj[k] === undefined && delete obj[k]);
-    onBodyChange(JSON.stringify(obj, null, 2));
-  };
-
-  /** Save filter conditions to body JSON */
-  const saveFilter = (conds: any[]) => {
-    let obj: any = {};
-    try {
-      obj = JSON.parse(body || '{}');
-    } catch {}
     if (conds.length > 0) {
       obj.Filter = { Operator: 0, Conditions: conds };
     } else {
       delete obj.Filter;
     }
+
+    // Remove undefined keys
+    Object.keys(obj).forEach((k) => obj[k] === undefined && delete obj[k]);
     onBodyChange(JSON.stringify(obj, null, 2));
+  };
+
+  // ── Save filter conditions to body JSON — reads columns from body to avoid stale React state ──
+  const saveFilter = (conds: any[]) => {
+    const p = parseBody(body);
+    saveColumns(
+      p.columns.length ? p.columns : columns,
+      isStats ? p.groupBy || orderBy : p.orderBy || orderBy,
+      p.dateTimePart || dateTimePart,
+      p.dateTimeInterval || dateTimeInterval,
+      conds
+    );
   };
 
   // ── Column Actions ──
@@ -317,8 +330,15 @@ export const BodyQueryBuilder: React.FC<Props> = ({ datasource, entityId, header
 
   const changeOrderBy = (value?: string) => {
     const v = value ?? '';
+    const isDate = attrType(v) === 'TypeDateTime';
     setOrderBy(v);
-    saveColumns(columns, v);
+    if (!isDate) {
+      setDateTimePart('');
+      setDateTimeInterval('');
+      saveColumns(columns, v, '', '');
+    } else {
+      saveColumns(columns, v);
+    }
   };
 
   // ── Filter Actions ──

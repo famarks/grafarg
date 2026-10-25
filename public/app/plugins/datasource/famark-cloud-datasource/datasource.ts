@@ -11,7 +11,7 @@ import {
   TimeRange,
   toDataFrame,
 } from '@grafarg/data';
-import { getTemplateSrv } from '@grafarg/runtime';
+import { getBackendSrv, getTemplateSrv } from '@grafarg/runtime';
 import jsonata from 'jsonata';
 import { JSONPath } from 'jsonpath-plus';
 import { jp } from './jsonpath';
@@ -22,11 +22,25 @@ import { parseValues } from './parseValues';
 import { JsonApiDataSourceOptions, JsonApiQuery, Pair } from './types';
 import { trackRequest } from './tracking';
 
+let sessionPassword = '';
+let sessionListener: ((payload?: any) => void) | null = null;
+export const setSessionPassword = (pwd: string) => {
+  sessionPassword = pwd;
+};
+export const setSessionListener = (fn: ((payload?: any) => void) | null) => {
+  sessionListener = fn;
+};
+export const notifySessionUpdate = (payload?: any) => {
+  sessionListener?.(payload);
+};
+
 export class JsonDataSource extends DataSourceApi<JsonApiQuery, JsonApiDataSourceOptions> {
   api: API;
+  instanceSettings: DataSourceInstanceSettings<JsonApiDataSourceOptions>;
 
   constructor(instanceSettings: DataSourceInstanceSettings<JsonApiDataSourceOptions>) {
     super(instanceSettings);
+    this.instanceSettings = instanceSettings;
     this.api = new API(instanceSettings.url!, instanceSettings.jsonData.queryParams || '');
   }
 
@@ -80,41 +94,84 @@ export class JsonDataSource extends DataSourceApi<JsonApiQuery, JsonApiDataSourc
    * Checks whether we can connect to the API.
    */
   async testDatasource() {
-    const defaultErrorMessage = 'Cannot connect to API';
+    const jd = this.instanceSettings.jsonData as any;
+    const authMode = jd.authMode ?? (jd.credUsername || jd.httpHeaderName1 ? 'userpass' : 'oauth');
+    const domain = (jd.domainName ?? '').trim();
+    const username = (jd.credUsername ?? '').trim();
+    const password = sessionPassword?.trim();
+    const hasSavedSecret = Boolean(
+      jd.httpHeaderName1 ||
+        (this.instanceSettings as any).secureJsonFields?.httpHeaderValue1 ||
+        (this.instanceSettings as any).secureJsonFields?.password
+    );
+
+    // Validate required fields
+    const missing = [
+      !domain && 'Domain Name',
+      authMode === 'userpass' && !username && 'Username',
+      authMode === 'userpass' && !password && !hasSavedSecret && 'Password',
+    ].filter(Boolean);
+
+    if (missing.length > 0) {
+      return {
+        status: 'error',
+        message: `${missing.join(missing.length === 2 ? ' and ' : ', ')} ${missing.length > 1 ? 'are' : 'is'} required`,
+      };
+    }
+
+    const isUserPassAuth = authMode === 'userpass' && Boolean(password);
 
     try {
-      const response = await this.api.test();
+      const body = { DomainName: domain, ...(isUserPassAuth ? { UserName: username, Password: password } : {}) };
+      const res = await new API(`/api/datasources/proxy/${this.id}`, '').get(
+        'POST',
+        '/Credential/Connect',
+        [],
+        [['Content-Type', 'application/json']],
+        JSON.stringify(body),
+        { hideFromInspector: true }
+      );
 
-      if (response.status === 200) {
-        return {
-          status: 'success',
-          message: 'Success',
-        };
-      } else {
+      if (res?.ErrorMessage) {
         return {
           status: 'error',
-          message: response.statusText ? response.statusText : defaultErrorMessage,
+          message: res.ErrorMessage,
         };
       }
-    } catch (err) {
-      const e = err as any;
-      if (_.isString(e)) {
-        return {
-          status: 'error',
-          message: e,
-        };
-      } else {
-        let message = 'Famark JSON API: ';
-        message += e.statusText ? e.statusText : defaultErrorMessage;
-        if (e.data && e.data.error && e.data.error.code) {
-          message += ': ' + e.data.error.code + '. ' + e.data.error.message;
+
+      // In userpass mode with new password, save SessionId as custom HTTP header
+      if (isUserPassAuth) {
+        const sessionId = (typeof res === 'string' ? res.replace(/^"|"$/g, '') : res)?.trim?.();
+        if (sessionId) {
+          const currentDs = await getBackendSrv().get(`/api/datasources/${this.id}`);
+          const saved = await getBackendSrv().put(`/api/datasources/${this.id}`, {
+            ...currentDs,
+            jsonData: { ...currentDs.jsonData, httpHeaderName1: 'SessionId' },
+            secureJsonData: { ...(currentDs.secureJsonData ?? {}), httpHeaderValue1: sessionId },
+          });
+          this.instanceSettings = { ...this.instanceSettings, ...(saved?.datasource ?? {}) };
+          sessionPassword = '';
+          notifySessionUpdate(saved?.datasource ?? (currentDs.version ? currentDs.version + 1 : undefined));
+
+          return {
+            status: 'success',
+            message: 'Authenticated & Connected to Famark Cloud!',
+          };
         }
-
-        return {
-          status: 'error',
-          message,
-        };
       }
+
+      return {
+        status: 'success',
+        message: authMode === 'oauth' ? 'Domain verified & Connected to Famark Cloud!' : 'Connected to Famark Cloud!',
+      };
+    } catch (authErr) {
+      const err = authErr as any;
+      const errMsg =
+        err?.data?.ErrorMessage ?? err?.data?.Message ?? err?.statusText ?? err?.message ?? 'Connection failed';
+      return {
+        status: 'error',
+        message: errMsg,
+      };
     }
   }
 

@@ -67,30 +67,28 @@ export default class Api {
     cacheDurationSeconds: number,
     method: string,
     path: string,
-    params: Array<Pair<string, string>>,
+    params?: Array<Pair<string, string>>,
     headers?: Array<Pair<string, string>>,
-    body?: string
+    body?: string,
+    options?: { hideFromInspector?: boolean }
   ): Promise<any> {
     if (!cacheDurationSeconds) {
-      return await this.get(method, path, params, headers, body);
+      return await this.get(method, path, params, headers, body, options);
     }
 
     const cacheKey = JSON.stringify({ method, url: this.baseUrl + path, params, headers, body });
 
-    if (this.lastCacheDuration !== cacheDurationSeconds) {
-      this.cache.del(cacheKey);
-    }
-    this.lastCacheDuration = cacheDurationSeconds;
-
     const cachedItem = this.cache.get(cacheKey);
     if (cachedItem) {
-      return Promise.resolve(cachedItem);
+      return cachedItem;
     }
 
-    const result = await this.get(method, path, params, headers, body);
+    const result = this.get(method, path, params, headers, body, options).catch((err) => {
+      this.cache.del(cacheKey);
+      throw err;
+    });
 
     this.cache.put(cacheKey, result, cacheDurationSeconds * 1000);
-
     return result;
   }
 

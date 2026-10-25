@@ -1,3 +1,4 @@
+import { syncFieldsFromBody } from './FieldEditor';
 import { TimeRange } from '@grafarg/data';
 import { CodeEditor, InfoBox, InlineField, InlineFieldRow, RadioButtonGroup, Segment, useTheme } from '@grafarg/ui';
 import { JsonDataSource } from '../datasource';
@@ -30,6 +31,8 @@ interface Props {
   experimentalTab: React.ReactNode;
 }
 
+const EMPTY_HEADERS: Array<Pair<string, string>> = [];
+
 export const TabbedQueryEditor = ({
   query,
   onChange,
@@ -48,9 +51,15 @@ export const TabbedQueryEditor = ({
   const theme = useTheme();
 
   const q = defaults(query, defaultQuery);
+  const parts = (q.urlPath ?? '').split('/').filter(Boolean);
+  const currentEntity = entityId || parts[0];
+  const currentOp = operation || parts[1] || 'RetrieveMultipleRecords';
+  const headers = q.headers ?? EMPTY_HEADERS;
 
   const onBodyChange = (body: string) => {
-    onChange({ ...q, body });
+    const next = syncFieldsFromBody(body, currentOp, q.fields);
+    const fields = next[0]?.jsonPath ? next : q.fields;
+    onChange({ ...q, body, fields });
     onRunQuery();
   };
 
@@ -82,7 +91,7 @@ export const TabbedQueryEditor = ({
           onEntityIdChange={onEntityIdChange}
           onOperationChange={onOperationChange}
           datasource={datasource}
-          headers={q.headers ?? []}
+          headers={headers}
         />
       ),
     },
@@ -129,11 +138,11 @@ export const TabbedQueryEditor = ({
           {bodyMode === 'builder' ? (
             <BodyQueryBuilder
               datasource={datasource}
-              entityId={entityId}
-              headers={q.headers ?? []}
+              entityId={currentEntity}
+              headers={headers}
               body={q.body ?? ''}
               onBodyChange={onBodyChange}
-              operation={operation}
+              operation={currentOp}
             />
           ) : (
             <>

@@ -3,7 +3,7 @@ import { Icon, InlineField, InlineFieldRow, Input, Select } from '@grafarg/ui';
 import { JsonDataSource } from '../datasource';
 import React, { useEffect, useState } from 'react';
 import { JsonField, Pair, QueryLanguage } from '../types';
-import { fetchAttributeOptions, splitColumnIntoAggAndAttribute } from './BodyQueryBuilder';
+import { fetchAttributeOptions } from './BodyQueryBuilder';
 import { JsonataQueryField } from './JsonataQueryField';
 import { JsonPathQueryField } from './JsonPathQueryField';
 
@@ -34,29 +34,100 @@ const toFieldType = (attrType?: string): FieldType | undefined => {
       return FieldType.number;
     case 'TypeSingleLine':
     case 'TypeMultipleLine':
+    case 'TypeOptionSet':
+    case 'TypeLookup':
       return FieldType.string;
     case 'TypeDateTime':
       return FieldType.time;
     case 'TypeTwoOptions':
       return FieldType.boolean;
-    case 'TypeLookup':
-    case 'TypeOptionSet':
-      return undefined;
     default:
       return undefined;
   }
 };
 
-/** Parse the Columns string from body JSON */
-const parseColumns = (body?: string): string[] => {
-  try {
-    return String(JSON.parse(body || '{}').Columns ?? '')
-      .split(',')
-      .map((s) => s.trim())
-      .filter(Boolean);
-  } catch {
-    return [];
+/** Parse body JSON to get Columns, GroupBy, and DateTimePart */
+export const parseBodyFields = (body?: string) => {
+  if (!body || !body.trim()) {
+    return { columns: [] as string[], groupBy: '', dateTimePart: '', isValid: true };
   }
+  try {
+    const obj = JSON.parse(body);
+    const columns = String(obj.Columns ?? '')
+      .split(',')
+      .map((s: string) => s.trim())
+      .filter(Boolean);
+    return {
+      columns,
+      groupBy: String(obj.GroupBy ?? '').trim(),
+      dateTimePart: String(obj.DateTimePart ?? '').trim(),
+      isValid: true,
+    };
+  } catch {
+    return { columns: [] as string[], groupBy: '', dateTimePart: '', isValid: false };
+  }
+};
+
+/** Auto-generate fields matching the Famark response schema for body columns */
+export const EMPTY_FIELD: JsonField = { name: '', jsonPath: '', language: 'jsonpath' };
+
+export const syncFieldsFromBody = (
+  body?: string,
+  operation?: string,
+  existingFields: JsonField[] = [],
+  attributes: Array<SelectableValue<string>> = []
+): JsonField[] => {
+  const { columns, groupBy, dateTimePart, isValid } = parseBodyFields(body);
+  if (!isValid || (!columns.length && !groupBy)) {
+    return [EMPTY_FIELD];
+  }
+
+  const isStats = operation === 'RetrieveStats';
+  const prefix = operation === 'RetrieveMultipleRecords' ? '$[*].' : '$.';
+  const getAttrType = (name?: string) => attributes.find((a) => a.value === name)?.attributeType as string | undefined;
+
+  if (isStats) {
+    const fields: JsonField[] = [];
+
+    if (groupBy) {
+      const metaType = toFieldType(getAttrType(groupBy));
+      const groupType = dateTimePart ? FieldType.time : metaType;
+      const existing = existingFields.find((f) => f.name === groupBy || f.jsonPath === '$.Data[*][0]');
+      const isSame = existing?.name === groupBy;
+      fields.push({
+        name: isSame && existing?.name ? existing.name : groupBy,
+        jsonPath: '$.Data[*][0]',
+        language: 'jsonpath',
+        type: isSame && existing?.type ? existing.type : groupType,
+      });
+    }
+
+    columns.forEach((col, i) => {
+      const path = `$.Data[*][${groupBy ? i + 1 : i}]`;
+      const existing = existingFields.find((f) => f.name === col || f.jsonPath === path);
+      const isSame = existing?.name === col;
+      fields.push({
+        name: isSame && existing?.name ? existing.name : col,
+        jsonPath: path,
+        language: 'jsonpath',
+        type: isSame && existing?.type ? existing.type : FieldType.number,
+      });
+    });
+
+    return fields;
+  }
+
+  // RetrieveMultipleRecords: $[*].col | RetrieveRecord: $.col
+  return columns.map((col) => {
+    const path = `${prefix}${col}`;
+    const existing = existingFields.find((f) => f.name === col || f.jsonPath === path);
+    return {
+      name: existing?.name || col,
+      jsonPath: path,
+      language: (existing?.language ?? 'jsonpath') as QueryLanguage,
+      type: existing?.type || toFieldType(getAttrType(col)),
+    };
+  });
 };
 
 /** Find the last attribute name in a JSONPath like "$[*].SomeName" */
@@ -99,11 +170,12 @@ export const FieldEditor = ({
   operation,
   body,
 }: Props) => {
-  const prevKey = React.useRef<string>('');
   const [attributes, setAttributes] = useState<Array<SelectableValue<string>>>([]);
   const [loading, setLoading] = useState(false);
   const isStats = operation === 'RetrieveStats';
   const prefix = operation === 'RetrieveMultipleRecords' ? '$[*].' : '$.';
+  // Ensure there is always at least one empty field row so the user can manually add/edit fields
+  const fields: JsonField[] = value && value.length > 0 ? value : [EMPTY_FIELD];
 
   /** Get attribute type by name */
   const getAttrType = (name?: string) => attributes.find((a) => a.value === name)?.attributeType as string | undefined;
@@ -121,59 +193,33 @@ export const FieldEditor = ({
       .finally(() => setLoading(false));
   }, [datasource, entityId, headers]);
 
-  // ── Auto-fill fields from body columns ──
+  // ── Auto-fill fields from body ──
+  // Reads Columns, GroupBy, DateTimePart from body JSON and generates correct fields.
+  // Body → Fields only (one-way). Editing fields never changes the body.
   useEffect(() => {
-    const columns = parseColumns(body);
-    if (!columns.length) {
+    const { columns, groupBy, isValid } = parseBodyFields(body);
+    if (!isValid) {
       return;
     }
+    if (columns.length > 0 || groupBy) {
+      const next = syncFieldsFromBody(body, operation, value, attributes);
+      const unchanged =
+        next.length === value.length &&
+        value.every((f, i) => f.jsonPath === next[i].jsonPath && f.type === next[i].type && f.name === next[i].name);
 
-    // Only re-run when columns or attributes actually change
-    const key = columns.join(',') + '|' + attributes.map((a) => `${a.value}:${a.attributeType}`).join(',');
-    if (key === prevKey.current) {
-      return;
-    }
-    prevKey.current = key;
-
-    const next = columns.map((col, i) => {
-      const existing = value[i];
-      const attrName = isStats ? splitColumnIntoAggAndAttribute(col)[1] || col : col;
-      const defaultPath = isStats ? '$.Data[*][*]' : `${prefix}${col}`;
-      return {
-        name: existing?.name ?? '',
-        // Preserve user-set path; only use default for new empty fields.
-        jsonPath: existing?.jsonPath || defaultPath,
-        language: existing?.language ?? 'jsonpath',
-        type: existing?.type || toFieldType(getAttrType(attrName)),
-      };
-    });
-
-    // Preserve any extra fields the user added beyond the column count.
-    const extra = value.slice(columns.length);
-    const merged = [...next, ...extra];
-
-    const unchanged =
-      value.length === merged.length &&
-      value.every((f, i) => f.jsonPath === merged[i].jsonPath && f.type === merged[i].type);
-
-    if (!unchanged) {
-      onChange(merged);
+      if (!unchanged) {
+        onChange(next);
+      }
+    } else if (!value || value.length === 0) {
+      onChange([EMPTY_FIELD]);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [body, isStats, operation, attributes]); // onChange excluded: stable ref, prevKey handles change detection
-
-  // ── Ensure stats fields have a jsonPath ──
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  useEffect(() => {
-    if (isStats && value.some((f) => !f.jsonPath)) {
-      onChange(value.map((f) => (f.jsonPath ? f : { ...f, jsonPath: '$.Data[*][*]' })));
-    }
-  }, [isStats, value]); // onChange excluded: stable ref, no need to re-run on ref change
+  }, [body, isStats, operation, attributes]); // onChange excluded: stable ref
 
   // ── Field update helpers ──
 
   const updateField = (i: number, patch: Partial<JsonField>) =>
-    onChange(value.map((f, n) => (n === i ? { ...value[i], ...patch } : f)));
+    onChange(fields.map((f, n) => (n === i ? { ...fields[i], ...patch } : f)));
 
   const onPathChange = (i: number) => (path: string) => updateField(i, { jsonPath: path });
 
@@ -185,7 +231,7 @@ export const FieldEditor = ({
   const onAliasChange = (i: number) => (e: any) => updateField(i, { name: e.currentTarget.value });
 
   const onAttributeChange = (i: number) => (selected: SelectableValue<string> | null) => {
-    const currentPath = value[i]?.jsonPath ?? '';
+    const currentPath = fields[i]?.jsonPath ?? '';
     const found = findAttribute(currentPath, attributes);
 
     let nextPath: string;
@@ -212,15 +258,22 @@ export const FieldEditor = ({
   };
 
   const addField = (i: number, defaults?: { language: QueryLanguage }) => () =>
-    onChange([...value.slice(0, i + 1), { name: '', jsonPath: '', ...defaults }, ...value.slice(i + 1)]);
+    onChange([...fields.slice(0, i + 1), { name: '', jsonPath: '', ...defaults }, ...fields.slice(i + 1)]);
 
-  const removeField = (i: number) => () => onChange(value.filter((_, n) => n !== i));
+  const removeField = (i: number) => () => {
+    if (fields.length <= 1) {
+      // Don't totally remove the last field - leave an empty field so the user can manually add/edit
+      onChange([EMPTY_FIELD]);
+    } else {
+      onChange(fields.filter((_, n) => n !== i));
+    }
+  };
 
   // ── Render ──
 
   return (
     <>
-      {value.map((field, i) => (
+      {fields.map((field, i) => (
         <InlineFieldRow key={i}>
           {/* Attribute selector — hidden for stats */}
           {!isStats && (
@@ -252,10 +305,10 @@ export const FieldEditor = ({
             grow
           >
             {field.language === 'jsonata' ? (
-              <JsonataQueryField onBlur={() => onChange(value)} onChange={onPathChange(i)} query={field.jsonPath} />
+              <JsonataQueryField onBlur={() => onChange(fields)} onChange={onPathChange(i)} query={field.jsonPath} />
             ) : (
               <JsonPathQueryField
-                onBlur={() => onChange(value)}
+                onBlur={() => onChange(fields)}
                 onChange={onPathChange(i)}
                 query={field.jsonPath}
                 onData={onComplete}

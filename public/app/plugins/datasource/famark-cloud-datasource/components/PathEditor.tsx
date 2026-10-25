@@ -17,7 +17,7 @@ interface Props {
 const operationOptions = [
   { label: 'RetrieveMultipleRecords', value: 'RetrieveMultipleRecords' },
   { label: 'RetrieveStats', value: 'RetrieveStats' },
-  { label: 'RetrieveRecord', value: 'RetrieveRecord' },
+  // { label: 'RetrieveRecord', value: 'RetrieveRecord' },
 ];
 const defaultOperation = operationOptions[0].value;
 
@@ -60,7 +60,9 @@ export const PathEditor = ({
     (async () => {
       try {
         setEntitiesLoading(true);
-        const data = await datasource.api.get('POST', entityPath, [], headers, entityBody, { hideFromInspector: true });
+        const data = await datasource.api.cachedGet(300, 'POST', entityPath, [], headers, entityBody, {
+          hideFromInspector: true,
+        });
         if (!active) {
           return;
         }
