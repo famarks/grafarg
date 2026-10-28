@@ -1,7 +1,7 @@
 import { FieldType, SelectableValue } from '@grafarg/data';
 import { Icon, InlineField, InlineFieldRow, Input, Select } from '@grafarg/ui';
 import { JsonDataSource } from '../datasource';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { JsonField, Pair, QueryLanguage } from '../types';
 import { fetchAttributeOptions } from './BodyQueryBuilder';
 import { JsonataQueryField } from './JsonataQueryField';
@@ -92,25 +92,25 @@ export const syncFieldsFromBody = (
     if (groupBy) {
       const metaType = toFieldType(getAttrType(groupBy));
       const groupType = dateTimePart ? FieldType.time : metaType;
-      const existing = existingFields.find((f) => f.name === groupBy || f.jsonPath === '$.Data[*][0]');
-      const isSame = existing?.name === groupBy;
+      const existing = existingFields[0];
       fields.push({
-        name: isSame && existing?.name ? existing.name : groupBy,
-        jsonPath: '$.Data[*][0]',
-        language: 'jsonpath',
-        type: isSame && existing?.type ? existing.type : groupType,
+        name: groupBy,
+        jsonPath: existing?.jsonPath || '$.Data[*][0]',
+        language: existing?.language ?? 'jsonpath',
+        type: (existing?.name === groupBy && existing.type) || groupType,
       });
     }
 
     columns.forEach((col, i) => {
       const path = `$.Data[*][${groupBy ? i + 1 : i}]`;
-      const existing = existingFields.find((f) => f.name === col || f.jsonPath === path);
-      const isSame = existing?.name === col;
+      const existingIdx = groupBy ? i + 1 : i;
+      const byPath = existingFields.find((f) => f.jsonPath?.toLowerCase() === path.toLowerCase());
+      const existing = byPath ?? existingFields[existingIdx];
       fields.push({
-        name: isSame && existing?.name ? existing.name : col,
-        jsonPath: path,
-        language: 'jsonpath',
-        type: isSame && existing?.type ? existing.type : FieldType.number,
+        name: col,
+        jsonPath: existing?.jsonPath || path,
+        language: existing?.language ?? 'jsonpath',
+        type: (existing?.name === col && existing.type) || FieldType.number,
       });
     });
 
@@ -118,13 +118,14 @@ export const syncFieldsFromBody = (
   }
 
   // RetrieveMultipleRecords: $[*].col | RetrieveRecord: $.col
-  return columns.map((col) => {
+  return columns.map((col, i) => {
     const path = `${prefix}${col}`;
-    const existing = existingFields.find((f) => f.name === col || f.jsonPath === path);
+    const byPath = existingFields.find((f) => f.jsonPath === path);
+    const existing = byPath ?? existingFields[i];
     return {
-      name: existing?.name || col,
-      jsonPath: path,
-      language: (existing?.language ?? 'jsonpath') as QueryLanguage,
+      name: byPath?.name || col,
+      jsonPath: existing?.jsonPath || path,
+      language: existing?.language ?? 'jsonpath',
       type: existing?.type || toFieldType(getAttrType(col)),
     };
   });
@@ -176,6 +177,8 @@ export const FieldEditor = ({
   const prefix = operation === 'RetrieveMultipleRecords' ? '$[*].' : '$.';
   // Ensure there is always at least one empty field row so the user can manually add/edit fields
   const fields: JsonField[] = value && value.length > 0 ? value : [EMPTY_FIELD];
+  // Track previous body to skip re-sync when body hasn't changed
+  const prevBodyRef = useRef(body);
 
   /** Get attribute type by name */
   const getAttrType = (name?: string) => attributes.find((a) => a.value === name)?.attributeType as string | undefined;
@@ -191,12 +194,16 @@ export const FieldEditor = ({
       .then(setAttributes)
       .catch(() => setAttributes([]))
       .finally(() => setLoading(false));
-  }, [datasource, entityId, headers]);
+  }, [datasource, entityId, JSON.stringify(headers)]);
 
   // ── Auto-fill fields from body ──
-  // Reads Columns, GroupBy, DateTimePart from body JSON and generates correct fields.
-  // Body → Fields only (one-way). Editing fields never changes the body.
+  // Reads body columns and generates field rows. Skips if body unchanged and attributes not yet loaded.
   useEffect(() => {
+    if (prevBodyRef.current === body && !attributes.length) {
+      return;
+    }
+    prevBodyRef.current = body;
+
     const { columns, groupBy, isValid } = parseBodyFields(body);
     if (!isValid) {
       return;
@@ -205,7 +212,7 @@ export const FieldEditor = ({
       const next = syncFieldsFromBody(body, operation, value, attributes);
       const unchanged =
         next.length === value.length &&
-        value.every((f, i) => f.jsonPath === next[i].jsonPath && f.type === next[i].type && f.name === next[i].name);
+        value.every((f, i) => f.jsonPath === next[i].jsonPath && f.type === next[i].type);
 
       if (!unchanged) {
         onChange(next);
@@ -213,7 +220,6 @@ export const FieldEditor = ({
     } else if (!value || value.length === 0) {
       onChange([EMPTY_FIELD]);
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [body, isStats, operation, attributes]); // onChange excluded: stable ref
 
   // ── Field update helpers ──
