@@ -92,25 +92,23 @@ export const syncFieldsFromBody = (
     if (groupBy) {
       const metaType = toFieldType(getAttrType(groupBy));
       const groupType = dateTimePart ? FieldType.time : metaType;
-      const existing = existingFields.find((f) => f.name === groupBy || f.jsonPath === '$.Data[*][0]');
-      const isSame = existing?.name === groupBy;
+      const existing = existingFields.find((f) => f.name === groupBy);
       fields.push({
-        name: isSame && existing?.name ? existing.name : groupBy,
+        name: groupBy,
         jsonPath: '$.Data[*][0]',
         language: 'jsonpath',
-        type: isSame && existing?.type ? existing.type : groupType,
+        type: existing?.type || groupType,
       });
     }
 
     columns.forEach((col, i) => {
       const path = `$.Data[*][${groupBy ? i + 1 : i}]`;
-      const existing = existingFields.find((f) => f.name === col || f.jsonPath === path);
-      const isSame = existing?.name === col;
+      const existing = existingFields.find((f) => f.name === col);
       fields.push({
-        name: isSame && existing?.name ? existing.name : col,
+        name: col,
         jsonPath: path,
         language: 'jsonpath',
-        type: isSame && existing?.type ? existing.type : FieldType.number,
+        type: existing?.type || FieldType.number,
       });
     });
 
@@ -120,7 +118,7 @@ export const syncFieldsFromBody = (
   // RetrieveMultipleRecords: $[*].col | RetrieveRecord: $.col
   return columns.map((col) => {
     const path = `${prefix}${col}`;
-    const existing = existingFields.find((f) => f.name === col || f.jsonPath === path);
+    const existing = existingFields.find((f) => f.jsonPath === path);
     return {
       name: existing?.name || col,
       jsonPath: path,
