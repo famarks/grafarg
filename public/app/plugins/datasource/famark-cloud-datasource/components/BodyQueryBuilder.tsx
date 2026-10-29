@@ -208,7 +208,7 @@ interface Props {
   entityId?: string;
   headers: Array<Pair<string, string>>;
   body: string;
-  onBodyChange: (body: string) => void;
+  onBodyChange: (body: string, attributes?: Array<SelectableValue<string>>) => void;
   operation?: string;
 }
 
@@ -298,7 +298,7 @@ export const BodyQueryBuilder: React.FC<Props> = ({ datasource, entityId, header
 
     // Remove undefined keys
     Object.keys(obj).forEach((k) => obj[k] === undefined && delete obj[k]);
-    onBodyChange(JSON.stringify(obj, null, 2));
+    onBodyChange(JSON.stringify(obj, null, 2), attributes);
   };
 
   // ── Save filter conditions to body JSON — reads columns from body to avoid stale React state ──
