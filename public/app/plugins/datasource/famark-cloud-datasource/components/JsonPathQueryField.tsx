@@ -7,12 +7,13 @@ interface Props {
   onBlur: () => void;
   onChange: (v: string) => void;
   onData: () => Promise<any>;
+  disabled?: boolean;
 }
 
 /**
  * JsonPathQueryField is an editor for JSON Path.
  */
-export const JsonPathQueryField: React.FC<Props> = ({ query, onBlur, onChange, onData }) => {
+export const JsonPathQueryField: React.FC<Props> = ({ query, onBlur, onChange, onData, disabled }) => {
   /**
    * The QueryField supports Slate plugins, so let's add a few useful ones.
    */
@@ -31,6 +32,7 @@ export const JsonPathQueryField: React.FC<Props> = ({ query, onBlur, onChange, o
 
   return (
     <QueryField
+      disabled={disabled}
       additionalPlugins={plugins}
       query={query}
       cleanText={cleanText}

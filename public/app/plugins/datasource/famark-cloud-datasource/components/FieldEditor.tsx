@@ -263,8 +263,9 @@ export const FieldEditor = ({
         <InlineFieldRow key={i}>
           {/* Attribute selector — hidden for stats */}
           {!isStats && (
-            <InlineField label="Attribute">
+            <InlineField label="Attribute" disabled>
               <Select
+                disabled={true}
                 placeholder="Attribute"
                 isLoading={loading}
                 isClearable
@@ -282,6 +283,7 @@ export const FieldEditor = ({
 
           {/* JSONPath / JSONata editor */}
           <InlineField
+            disabled
             tooltip={
               <div>
                 A <a href="https://goessner.net/articles/JsonPath/">JSON Path</a> query that selects one or more values
@@ -291,9 +293,15 @@ export const FieldEditor = ({
             grow
           >
             {field.language === 'jsonata' ? (
-              <JsonataQueryField onBlur={() => onChange(fields)} onChange={onPathChange(i)} query={field.jsonPath} />
+              <JsonataQueryField
+                disabled={true}
+                onBlur={() => onChange(fields)}
+                onChange={onPathChange(i)}
+                query={field.jsonPath}
+              />
             ) : (
               <JsonPathQueryField
+                disabled={true}
                 onBlur={() => onChange(fields)}
                 onChange={onPathChange(i)}
                 query={field.jsonPath}
@@ -303,8 +311,9 @@ export const FieldEditor = ({
           </InlineField>
 
           {/* Language selector */}
-          <InlineField>
+          <InlineField disabled>
             <Select
+              disabled={true}
               value={field.language ?? 'jsonpath'}
               width={14}
               onChange={onLanguageChange(i)}
@@ -323,10 +332,10 @@ export const FieldEditor = ({
           </InlineField>
 
           {/* Add / Remove */}
-          <a className="gf-form-label" onClick={addField(i, { language: field.language ?? 'jsonpath' })}>
+          <a className="gf-form-label" hidden onClick={addField(i, { language: field.language ?? 'jsonpath' })}>
             <Icon name="plus" />
           </a>
-          <a className="gf-form-label" onClick={removeField(i)}>
+          <a className="gf-form-label" hidden onClick={removeField(i)}>
             <Icon name="minus" />
           </a>
         </InlineFieldRow>
