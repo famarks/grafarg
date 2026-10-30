@@ -57,7 +57,8 @@ export const TabbedQueryEditor = ({
   const headers = q.headers ?? EMPTY_HEADERS;
 
   const onBodyChange = (body: string, attributes?: Array<SelectableValue<string>>) => {
-    const next = syncFieldsFromBody(body, currentOp, [], attributes);
+    // Sync fields using the new body, keeping edits from the existing fields (q.fields) by comparing with the old body (q.body)
+    const next = syncFieldsFromBody(body, currentOp, q.fields ?? [], attributes, q.body);
     const fields = next[0]?.jsonPath ? next : q.fields;
     onChange({ ...q, body, fields });
     onRunQuery();

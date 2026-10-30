@@ -75,7 +75,8 @@ export const syncFieldsFromBody = (
   body?: string,
   operation?: string,
   existingFields: JsonField[] = [],
-  attributes: Array<SelectableValue<string>> = []
+  attributes: Array<SelectableValue<string>> = [],
+  previousBody?: string
 ): JsonField[] => {
   const { columns, groupBy, dateTimePart, isValid } = parseBodyFields(body);
   if (!isValid || (!columns.length && !groupBy)) {
@@ -88,13 +89,17 @@ export const syncFieldsFromBody = (
 
   if (isStats) {
     const fields: JsonField[] = [];
+    const prevParsed = parseBodyFields(previousBody);
+    const oldLayout = [...(prevParsed.groupBy ? [prevParsed.groupBy] : []), ...prevParsed.columns];
+    const findExisting = (name: string) =>
+      existingFields.find((f) => f.jsonPath === `$.Data[*][${oldLayout.indexOf(name)}]`);
 
     if (groupBy) {
       const metaType = toFieldType(getAttrType(groupBy));
       const groupType = dateTimePart ? FieldType.time : metaType;
-      const existing = existingFields.find((f) => f.name === groupBy);
+      const existing = findExisting(groupBy);
       fields.push({
-        name: groupBy,
+        name: existing?.name || groupBy,
         jsonPath: '$.Data[*][0]',
         language: 'jsonpath',
         type: existing?.type || groupType,
@@ -102,11 +107,10 @@ export const syncFieldsFromBody = (
     }
 
     columns.forEach((col, i) => {
-      const path = `$.Data[*][${groupBy ? i + 1 : i}]`;
-      const existing = existingFields.find((f) => f.name === col);
+      const existing = findExisting(col);
       fields.push({
-        name: col,
-        jsonPath: path,
+        name: existing?.name || col,
+        jsonPath: `$.Data[*][${groupBy ? i + 1 : i}]`,
         language: 'jsonpath',
         type: existing?.type || FieldType.number,
       });
