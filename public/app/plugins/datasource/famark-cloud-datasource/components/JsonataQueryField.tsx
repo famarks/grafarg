@@ -5,12 +5,13 @@ interface Props {
   query: string;
   onBlur: () => void;
   onChange: (v: string) => void;
+  disabled?: boolean;
 }
 
 /**
  * JsonataQueryField is an editor for JSONata expressions.
  */
-export const JsonataQueryField: React.FC<Props> = ({ query, onBlur, onChange }) => {
+export const JsonataQueryField: React.FC<Props> = ({ query, onBlur, onChange, disabled }) => {
   /**
    * The QueryField supports Slate plugins, so let's add a few useful ones.
    */
@@ -24,6 +25,7 @@ export const JsonataQueryField: React.FC<Props> = ({ query, onBlur, onChange }) 
 
   return (
     <QueryField
+      disabled={disabled}
       additionalPlugins={plugins}
       query={query}
       onRunQuery={onBlur}
