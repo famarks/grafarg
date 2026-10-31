@@ -267,7 +267,6 @@ export const FieldEditor = ({
           {!isStats && (
             <InlineField label="Attribute" disabled>
               <Select
-                disabled={true}
                 placeholder="Attribute"
                 isLoading={loading}
                 isClearable
@@ -315,7 +314,6 @@ export const FieldEditor = ({
           {/* Language selector */}
           <InlineField disabled>
             <Select
-              disabled={true}
               value={field.language ?? 'jsonpath'}
               width={14}
               onChange={onLanguageChange(i)}
