@@ -75,7 +75,8 @@ export const syncFieldsFromBody = (
   body?: string,
   operation?: string,
   existingFields: JsonField[] = [],
-  attributes: Array<SelectableValue<string>> = []
+  attributes: Array<SelectableValue<string>> = [],
+  previousBody?: string
 ): JsonField[] => {
   const { columns, groupBy, dateTimePart, isValid } = parseBodyFields(body);
   if (!isValid || (!columns.length && !groupBy)) {
@@ -88,29 +89,30 @@ export const syncFieldsFromBody = (
 
   if (isStats) {
     const fields: JsonField[] = [];
+    const prevParsed = parseBodyFields(previousBody);
+    const oldLayout = [...(prevParsed.groupBy ? [prevParsed.groupBy] : []), ...prevParsed.columns];
+    const findExisting = (name: string) =>
+      existingFields.find((f) => f.jsonPath === `$.Data[*][${oldLayout.indexOf(name)}]`);
 
     if (groupBy) {
       const metaType = toFieldType(getAttrType(groupBy));
       const groupType = dateTimePart ? FieldType.time : metaType;
-      const existing = existingFields.find((f) => f.name === groupBy || f.jsonPath === '$.Data[*][0]');
-      const isSame = existing?.name === groupBy;
+      const existing = findExisting(groupBy);
       fields.push({
-        name: isSame && existing?.name ? existing.name : groupBy,
+        name: existing?.name || groupBy,
         jsonPath: '$.Data[*][0]',
         language: 'jsonpath',
-        type: isSame && existing?.type ? existing.type : groupType,
+        type: existing?.type || groupType,
       });
     }
 
     columns.forEach((col, i) => {
-      const path = `$.Data[*][${groupBy ? i + 1 : i}]`;
-      const existing = existingFields.find((f) => f.name === col || f.jsonPath === path);
-      const isSame = existing?.name === col;
+      const existing = findExisting(col);
       fields.push({
-        name: isSame && existing?.name ? existing.name : col,
-        jsonPath: path,
+        name: existing?.name || col,
+        jsonPath: `$.Data[*][${groupBy ? i + 1 : i}]`,
         language: 'jsonpath',
-        type: isSame && existing?.type ? existing.type : FieldType.number,
+        type: existing?.type || FieldType.number,
       });
     });
 
@@ -120,7 +122,7 @@ export const syncFieldsFromBody = (
   // RetrieveMultipleRecords: $[*].col | RetrieveRecord: $.col
   return columns.map((col) => {
     const path = `${prefix}${col}`;
-    const existing = existingFields.find((f) => f.name === col || f.jsonPath === path);
+    const existing = existingFields.find((f) => f.jsonPath === path);
     return {
       name: existing?.name || col,
       jsonPath: path,
@@ -193,28 +195,14 @@ export const FieldEditor = ({
       .finally(() => setLoading(false));
   }, [datasource, entityId, headers]);
 
-  // ── Auto-fill fields from body ──
-  // Reads Columns, GroupBy, DateTimePart from body JSON and generates correct fields.
-  // Body → Fields only (one-way). Editing fields never changes the body.
+  // Auto-fill if empty
   useEffect(() => {
-    const { columns, groupBy, isValid } = parseBodyFields(body);
-    if (!isValid) {
-      return;
-    }
-    if (columns.length > 0 || groupBy) {
+    if (!value || value.length === 0) {
       const next = syncFieldsFromBody(body, operation, value, attributes);
-      const unchanged =
-        next.length === value.length &&
-        value.every((f, i) => f.jsonPath === next[i].jsonPath && f.type === next[i].type && f.name === next[i].name);
-
-      if (!unchanged) {
-        onChange(next);
-      }
-    } else if (!value || value.length === 0) {
-      onChange([EMPTY_FIELD]);
+      onChange(next.length > 0 && next[0]?.jsonPath ? next : [EMPTY_FIELD]);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [body, isStats, operation, attributes]); // onChange excluded: stable ref
+  }, [body, operation, attributes]);
 
   // ── Field update helpers ──
 
@@ -277,7 +265,7 @@ export const FieldEditor = ({
         <InlineFieldRow key={i}>
           {/* Attribute selector — hidden for stats */}
           {!isStats && (
-            <InlineField label="Attribute">
+            <InlineField label="Attribute" disabled>
               <Select
                 placeholder="Attribute"
                 isLoading={loading}
@@ -296,6 +284,7 @@ export const FieldEditor = ({
 
           {/* JSONPath / JSONata editor */}
           <InlineField
+            disabled
             tooltip={
               <div>
                 A <a href="https://goessner.net/articles/JsonPath/">JSON Path</a> query that selects one or more values
@@ -305,9 +294,15 @@ export const FieldEditor = ({
             grow
           >
             {field.language === 'jsonata' ? (
-              <JsonataQueryField onBlur={() => onChange(fields)} onChange={onPathChange(i)} query={field.jsonPath} />
+              <JsonataQueryField
+                disabled={true}
+                onBlur={() => onChange(fields)}
+                onChange={onPathChange(i)}
+                query={field.jsonPath}
+              />
             ) : (
               <JsonPathQueryField
+                disabled={true}
                 onBlur={() => onChange(fields)}
                 onChange={onPathChange(i)}
                 query={field.jsonPath}
@@ -317,7 +312,7 @@ export const FieldEditor = ({
           </InlineField>
 
           {/* Language selector */}
-          <InlineField>
+          <InlineField disabled>
             <Select
               value={field.language ?? 'jsonpath'}
               width={14}
@@ -337,10 +332,10 @@ export const FieldEditor = ({
           </InlineField>
 
           {/* Add / Remove */}
-          <a className="gf-form-label" onClick={addField(i, { language: field.language ?? 'jsonpath' })}>
+          <a className="gf-form-label" hidden onClick={addField(i, { language: field.language ?? 'jsonpath' })}>
             <Icon name="plus" />
           </a>
-          <a className="gf-form-label" onClick={removeField(i)}>
+          <a className="gf-form-label" hidden onClick={removeField(i)}>
             <Icon name="minus" />
           </a>
         </InlineFieldRow>

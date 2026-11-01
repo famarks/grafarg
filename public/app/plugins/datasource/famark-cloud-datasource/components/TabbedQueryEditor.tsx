@@ -1,5 +1,5 @@
 import { syncFieldsFromBody } from './FieldEditor';
-import { TimeRange } from '@grafarg/data';
+import { SelectableValue, TimeRange } from '@grafarg/data';
 import { CodeEditor, InfoBox, InlineField, InlineFieldRow, RadioButtonGroup, Segment, useTheme } from '@grafarg/ui';
 import { JsonDataSource } from '../datasource';
 import { css } from 'emotion';
@@ -56,8 +56,9 @@ export const TabbedQueryEditor = ({
   const currentOp = operation || parts[1] || 'RetrieveMultipleRecords';
   const headers = q.headers ?? EMPTY_HEADERS;
 
-  const onBodyChange = (body: string) => {
-    const next = syncFieldsFromBody(body, currentOp, q.fields);
+  const onBodyChange = (body: string, attributes?: Array<SelectableValue<string>>) => {
+    // Sync fields using the new body, keeping edits from the existing fields (q.fields) by comparing with the old body (q.body)
+    const next = syncFieldsFromBody(body, currentOp, q.fields ?? [], attributes, q.body);
     const fields = next[0]?.jsonPath ? next : q.fields;
     onChange({ ...q, body, fields });
     onRunQuery();
